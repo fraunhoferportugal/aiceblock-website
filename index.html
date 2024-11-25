@@ -1,73 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-image: url('images/background.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .container {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 600px;
-            box-sizing: border-box;
-        }
-        .container img.logo {
-            width: 100%;
-            max-width: 300px; 
-            margin: 20px auto;
-        }
-        h1 {
-            margin: 20px 0;
-            font-size: 2.5em;
-            color: #333;
-        }
-        p {
-            font-size: 1.2em;
-            color: #555;
-        }
-        img.partner-logo {
-            width: 100%;
-            max-width: 150px;
-            margin: 10px;
-        }
-        @media (min-width: 600px) {
-            h1 {
-                font-size: 3em;
-            }
-            .container img.logo {
-                max-width: 400px; 
-            }
-            img.partner-logo {
-                max-width: 200px;
-                margin: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>AICeBlock - Making AI Compliance Effortless</title>
+  <meta name="description" content="Streamline your ML workflows with verifiable compliance using AICeBlock.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <div class="container">
-        <img src="images/AICeBlock.png" alt="AICeBlock" class="logo">
-        <h1>Coming Soon</h1>
-        <p>A joint venture by:</p>
-        <img src="images/04 fhp_color_ExtraLarge.png" alt="Fraunhofer Portugal" class="partner-logo">
-        <img src="images/incmlab_color.png" alt="INCM-Lab" class="partner-logo">
-        <p>Our website is under construction. Stay tuned!</p>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#"><img src="images/AICeBlock_Avatar.png" alt="AICeBlock Logo"></a>
     </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#guided-tour">Demo</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Scroll Container -->
+  <div class="scroll-container">
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="hero-content">
+        <h1>Secure, Transparent, Compliant: Elevate Your AI with AICeBlock</h1>
+        <p>Making the right thing the easiest thing to do—streamline your ML workflows with verifiable compliance, built on blockchain for unparalleled transparency.</p>
+        <a href="#signup-modal" class="cta-button">Start Your Guided Tour</a>
+      </div>
+      <div class="hero-animation">
+        <!-- Placeholder for dynamic animation -->
+        <img src="images/hero-animation-placeholder.png" alt="Blockchain and AI Animation">
+      </div>
+    </header>
+
+    <!-- Three Pillars Section -->
+    <section id="features" class="pillars-section">
+      <h2>The Three Pillars of AI Compliance</h2>
+      <p>Building trustworthy AI isn't just about technology—it's about meeting and exceeding the standards that ensure safety, privacy, and reliability. AICeBlock is grounded on three core pillars essential for robust AI compliance:</p>
+      <div class="pillars">
+        <div class="pillar">
+          <img src="images/icon-target.png" alt="Target Icon">
+          <h3>Set Clear Compliance Targets</h3>
+          <p>Define and align with the latest regulations, standards, and internal guidelines—including the EU AI Act, GDPR, and emerging ISO standards—to ensure your AI projects meet all necessary compliance requirements.</p>
+        </div>
+        <div class="pillar">
+          <img src="images/icon-gear.png" alt="Gear Icon">
+          <h3>Ensure Adherence with Robust Processes</h3>
+          <p>Implement processes and technologies that facilitate compliance. AICeBlock provides tools that integrate seamlessly into your workflows, making adherence to standards straightforward and efficient.</p>
+        </div>
+        <div class="pillar">
+          <img src="images/icon-shield.png" alt="Shield Icon">
+          <h3>Achieve Verification through Immutable Proof</h3>
+          <p>Establish objective, blockchain-backed evidence of compliance. With AICeBlock, every action is recorded immutably, providing verifiable proof that your AI solutions meet regulatory standards.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive ML Pipeline Section -->
+    <section id="pipeline" class="pipeline-section">
+      <h2>Interactive ML Pipeline: Traceable and Trustworthy Workflows</h2>
+      <p>Discover how AICeBlock empowers you to visualize and document every critical stage of your ML pipeline. From data collection to deployment, each phase is transparent, secure, and compliant with key regulations like the EU AI Act and GDPR.</p>
+      <!-- Placeholder for interactive pipeline diagram -->
+      <div class="pipeline-diagram">
+        <img src="images/pipeline-placeholder.png" alt="Interactive ML Pipeline">
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+      <h2>Benefits Tailored to Your Needs</h2>
+      <p>AICeBlock simplifies compliance, reduces risks, and fosters trust in AI solutions across various industries. Explore how we deliver value to each stakeholder.</p>
+      <div class="benefits-cards">
+        <div class="benefit-card">
+          <img src="images/icon-checklist.png" alt="Checklist Icon">
+          <h3>Compliance Officers & CIOs</h3>
+          <h4>Streamline Compliance and Reduce Costs</h4>
+          <p>Simplify documentation and auditing with verifiable, blockchain-backed records. Reduce the time and resources spent on compliance, aligning effortlessly with regulations like the EU AI Act and GDPR.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="images/icon-developer.png" alt="Developer Icon">
+          <h3>AI Developers & Providers</h3>
+          <h4>Enhance Efficiency and Minimize Errors</h4>
+          <p>Implement best practices that lead to fewer errors and inaccuracies. Automate adherence checks and maintain traceable workflows, saving time and reducing costs while focusing on innovation.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="images/icon-public-sector.png" alt="Public Sector Icon">
+          <h3>Public Sector & High-Risk Industries</h3>
+          <h4>Build Public Trust and Ensure Efficiency</h4>
+          <p>Deliver transparent and compliant AI solutions, critical in sectors where trust is paramount. Efficient compliance reduces operational risks and associated costs.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="images/icon-regulatory.png" alt="Regulatory Icon">
+          <h3>Governance and Regulatory Bodies</h3>
+          <h4>Access Reliable Verification Frameworks</h4>
+          <p>Utilize immutable records to verify AI solutions against regulatory standards easily, reducing reliance on self-reported compliance and enhancing regulatory efficiency.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guided Tour Section -->
+    <section id="guided-tour" class="guided-tour-section">
+      <h2>Your Journey to Compliance Starts Here</h2>
+      <p>Embark on an interactive tour and see how AICeBlock makes compliance effortless at every stage of your ML workflow. By integrating best practices, we help you reduce errors and inefficiencies, ultimately saving costs while ensuring adherence to regulations like the EU AI Act and GDPR.</p>
+      <a href="#signup-modal" class="cta-button">Start Your Guided Tour</a>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources-section">
+      <h2>Resources for Responsible AI Compliance</h2>
+      <p>Stay informed with the latest insights, official documents, and tools supporting responsible AI development.</p>
+      <div class="resources-grid">
+        <!-- Official Documents -->
+        <div class="resource-card">
+          <h3>Official Documents</h3>
+          <ul>
+            <li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206" target="_blank">EU AI Act Text</a></li>
+            <li><a href="https://gdpr.eu/" target="_blank">GDPR Guidelines</a></li>
+          </ul>
+        </div>
+        <!-- Blog Posts -->
+        <div class="resource-card">
+          <h3>Blog Posts</h3>
+          <ul>
+            <li><a href="#" target="_blank">Understanding the Impact of the EU AI Act on AI Development</a></li>
+            <li><a href="#" target="_blank">Best Practices for Generating Data and Model Cards</a></li>
+          </ul>
+        </div>
+        <!-- White Papers -->
+        <div class="resource-card">
+          <h3>White Papers</h3>
+          <ul>
+            <li><a href="#" target="_blank">Blockchain's Role in AI Compliance</a> (Coming Soon)</li>
+            <li><a href="#" target="_blank">Navigating ISO's Emerging AI Standards</a> (Coming Soon)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us-section">
+      <h2>About AICeBlock</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>AICeBlock is an initiative born from a visionary collaboration between Fraunhofer Portugal AICOS and INCM. United by a mission to advance trustworthy technology, we're committed to making the right thing the easiest thing to do in AI development.</p>
+          <h3>Our Mission</h3>
+          <p>To simplify AI compliance, making it accessible and verifiable, so organizations can innovate with confidence and integrity.</p>
+          <a href="#contact" class="cta-button">Learn More</a>
+        </div>
+        <div class="about-logos">
+          <img src="images/04 fhp_color_ExtraLarge.png" alt="Fraunhofer Portugal AICOS Logo">
+          <img src="images/incmlab_color.png" alt="INCM Logo">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Get in Touch</h2>
+      <p>Have questions or want to learn more about how AICeBlock can support your AI compliance journey? Reach out to us—we're here to help.</p>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:info@aiceblock.com">info@aiceblock.com</a></p>
+        <p><strong>Phone:</strong> +351 ZZZ-ZZZ-ZZZ</p>
+        <p><strong>Address:</strong> Rua Alfredo Allen 455-461, Porto, Portugal</p>
+      </div>
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </section>
+
+  </div> <!-- End of Scroll Container -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#features">Features</a>
+      <a href="#guided-tour">Demo</a>
+      <a href="#resources">Resources</a>
+      <a href="#about-us">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Help Center</a>
+    </div>
+    <div class="footer-newsletter">
+      <p>Subscribe for Updates</p>
+      <form class="newsletter-form">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit" class="cta-button">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-social">
+      <a href="#"><img src="images/icon-linkedin.png" alt="LinkedIn"></a>
+      <a href="#"><img src="images/icon-twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/icon-github.png" alt="GitHub"></a>
+    </div>
+    <p>&copy; 2024 AICeBlock Initiative. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Signup Modal -->
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Sign Up for the Guided Tour</h2>
+      <form class="signup-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit" class="cta-button">Start Tour</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+
 </body>
 </html>
