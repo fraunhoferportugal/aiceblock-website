@@ -1,0 +1,14 @@
+<header class="header">
+  <div class="header-desktop">
+    <div class="logo">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ site.data.header.logo.src }}" alt="{{ site.data.header.logo.alt }}" height="{{ site.data.header.logo.height }}">
+      </a>
+    </div>
+    <nav class="header-nav">
+      {% for link in site.data.header.nav %}
+        <a href="{{ link.url | relative_url }}" class="button">{{ link.text }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
