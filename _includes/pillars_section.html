@@ -1,0 +1,17 @@
+<div class="pillars-section">
+    <div class="pillars-content-wrapper">
+        <div class="pillars-text-content">
+            <h2>{{ site.data.pillars_section.title }}</h2>
+            <p>{{ site.data.pillars_section.subtitle }}</p>
+        </div>
+        <div class="pillars-container">
+            {% for pillar in site.data.pillars_section.pillars %}
+            <div class="pillar">
+                <img src="{{ pillar.image.src }}" alt="{{ pillar.image.alt }}" />
+                <h3>{{ pillar.title }}</h3>
+                <p>{{ pillar.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
