@@ -22,14 +22,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 29px;
-    position: fixed;
     height: 70px;
-    left: 0;
-    right: 0;
-    top: 0;
     background: #180D5B;
     border-bottom: 1px solid #EFF2F5;
-    z-index: 1;
 }
 
 .header-desktop {
@@ -77,7 +72,7 @@ body {
     align-items: center;
     background-color: #180D5B;
     color: #FFFFFF;
-    height: 100vh;
+    height: calc(100vh - 70px);
     padding: 0 20px;
 }
 
