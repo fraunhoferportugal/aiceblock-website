@@ -2,6 +2,7 @@ logo:
   src: "/assets/images/logo.png"
   alt: "AICeBlock Homepage"
   height: "40px"
+
 nav:
   - text: "Guided Tour"
     url: "/guided-tour/"
