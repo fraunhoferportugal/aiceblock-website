@@ -33,12 +33,12 @@ newsletter:
 social_links:
   title: "Follow us"
   links:
-    - icon: "/assets/images/linkedin-icon.svg"
+    - icon: "/assets/images/icons/linkedin-icon.svg"
       alt: "LinkedIn"
       url: "https://www.linkedin.com"
-    - icon: "/assets/images/twitter-icon.svg"
+    - icon: "/assets/images/icons/twitter-icon.svg"
       alt: "Twitter"
       url: "https://www.twitter.com"
-    - icon: "/assets/images/github-icon.svg"
+    - icon: "/assets/images/icons/github-icon.svg"
       alt: "GitHub"
       url: "https://www.github.com"

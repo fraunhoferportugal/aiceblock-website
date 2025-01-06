@@ -6,26 +6,26 @@ benefits:
     subtitle: "Streamline compliance and reduce costs"
     description: "Simplify documentation and auditing with verifiable, blockchain-backed records. Reduce the time and resources spent on compliance, aligning effortlessly with regulations like the EU AI Act and GDPR."
     image:
-      src: "/assets/images/benefit-1.svg"
+      src: "/assets/images/benefits/benefit-1.svg"
       alt: "Illustration representing compliance and technology"
 
   - title: "Public Sector & High-Risk Industries"
     subtitle: "Build public trust and ensure efficiency"
     description: "Deliver transparent and compliant AI solutions, critical in sectors where trust is paramount. Efficient compliance reduces operational risks and associated costs."
     image:
-      src: "/assets/images/benefit-2.svg"
+      src: "/assets/images/benefits/benefit-2.svg"
       alt: "Illustration representing data security and trust"
 
   - title: "AI Developers"
     subtitle: "Enhance efficiency and minimize errors"
     description: "Implement best practices that lead to fewer errors and inaccuracies. Automate adherence checks and maintain traceable workflows, saving time and reducing costs while focusing on innovation."
     image:
-      src: "/assets/images/benefit-3.svg"
+      src: "/assets/images/benefits/benefit-3.svg"
       alt: "Illustration representing AI development and efficiency"
 
   - title: "Governance and Regulatory Bodies"
     subtitle: "Access reliable verification frameworks"
     description: "Utilize immutable records to verify AI solutions against regulatory standards easily, reducing reliance on self-reported compliance and enhancing regulatory efficiency."
     image:
-      src: "/assets/images/benefit-4.svg"
+      src: "/assets/images/benefits/benefit-4.svg"
       alt: "Illustration representing regulatory compliance and verification"

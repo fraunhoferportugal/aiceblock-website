@@ -1,0 +1,59 @@
+title: "Interactive ML pipeline: traceable and trustworthy workflows"
+subtitle: "Discover how AICeBlock empowers you to visualize and document every critical stage of your ML pipeline."
+
+main_pipeline_image:
+  src: "/assets/images/pipeline/pipeline.svg"
+  alt: "Interactive pipeline illustration"
+
+overlays:
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-1.svg"
+      alt: "..."
+    position:
+      top: "14"
+      left: "8"
+    description: "..."
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-2.svg"
+      alt: "..."
+    position:
+      top: "15"
+      left: "270"
+    description: "..."
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-3.svg"
+      alt: "..."
+    position:
+      top: "478"
+      left: "180"
+    description: "..."
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-4.svg"
+      alt: "..."
+    position:
+      top: "13"
+      left: "549"
+    description: "..."
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-5.svg"
+      alt: "..."
+    position:
+      top: "477"
+      left: "558"
+    description: "..."
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-6.svg"
+      alt: "..."
+    position:
+      top: "358"
+      left: "1127"
+    description: "..."
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-7.svg"
+      alt: "..."
+    position:
+      top: "5"
+      left: "1012"
+    description: "..."
+
+bottom_text: "From data collection to deployment, each phase is transparent, secure, and compliant with key regulations like the EU AI Act and GDPR. Every connection is verifiable and immutable, ensuring your AI solutions are built on a foundation of trust."
