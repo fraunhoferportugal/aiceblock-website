@@ -2,6 +2,13 @@ title: "The three pillars of AI compliance"
 subtitle: >
   Building trustworthy AI isn't just about technology — it's about meeting and exceeding the standards that ensure safety, privacy, and reliability.
   AICeBlock is grounded on three core pillars essential for robust AI compliance: Targets, Adherence Support, and Verification.
+
+cta_button:
+  text: "Start Your Guided Tour"
+  url: "/guided-tour/"
+  img_alt: "Arrow Icon"
+  img_src: "/assets/images/icons/arrow-icon.svg"
+
 pillars:
   - image:
       src: "/assets/images/pillars/compliance.svg"

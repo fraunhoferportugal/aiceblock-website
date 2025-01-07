@@ -303,6 +303,7 @@ body {
     height: 60px;
     text-decoration: none;
     margin-top: 100px;
+    transition: box-shadow 0.2s ease;
 }
 
 .hero-section .cta-button span {
@@ -338,9 +339,9 @@ body {
 }
 
 .hero-section .cta-button:hover {
-    -webkit-box-shadow: 0px 0px 30px 10px rgba(136, 255, 243, 0.33);
-    -moz-box-shadow: 0px 0px 30px 10px rgba(136, 255, 243, 0.33);
-    box-shadow: 0px 0px 30px 10px rgba(136, 255, 243, 0.33);
+    -webkit-box-shadow: 0px 0px 30px 15px rgba(136, 255, 243, 0.33);
+    -moz-box-shadow: 0px 0px 30px 15px rgba(136, 255, 243, 0.33);
+    box-shadow: 0px 0px 30px 15px rgba(136, 255, 243, 0.33);
 }
 
 .hero-section .image-container {
@@ -363,6 +364,72 @@ body {
     color: #180D5B;
     height: 100vh;
     padding: 0 20px;
+}
+
+.pillars-section .cta-button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 6px 0px 24px;
+    gap: 20px;
+    background: #180D5B;
+    border-radius: 40px;
+    width: 320px;
+    height: 60px;
+    text-decoration: none;
+    z-index: 10;
+    -webkit-box-shadow: 0px 0px 30px 6px rgba(24, 13, 91, 0.33);
+    -moz-box-shadow: 0px 0px 30px 6px rgba(24, 13, 91, 0.33);
+    box-shadow: 0px 0px 30px 6px rgba(24, 13, 91, 0.33);
+    transition: box-shadow 0.2s ease;
+}
+
+.pillars-section .cta-button span {
+    margin: 0 auto;
+    width: 219px;
+    height: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #88FFF3;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.pillars-section .cta-button img {
+    filter: brightness(0) saturate(100%) invert(10%) sepia(75%) saturate(2865%) hue-rotate(242deg) brightness(82%) contrast(111%);
+}
+
+.pillars-section .cta-button-img-container {
+    width: 48px;
+    height: 48px;
+    background-color: #88FFF3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pillars-section .cta-button:hover {
+    -webkit-box-shadow: 0px 0px 30px 15px rgba(24, 13, 91, 0.33);
+    -moz-box-shadow: 0px 0px 30px 15px rgba(24, 13, 91, 0.33);
+    box-shadow: 0px 0px 30px 15px rgba(24, 13, 91, 0.33);
+}
+
+.pillars-section .cta-button.scrolled {
+    position: fixed;
+    top: 50px;
+    right: 50px;
 }
 
 .pillars-content-wrapper {
@@ -734,7 +801,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
     width: 320px;
-    z-index: 1;
+    z-index: 20;
 }
 
 .bubble-number {
