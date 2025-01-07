@@ -365,7 +365,7 @@ body {
     padding: 0 20px;
 }
 
-.pillars-section .pillars-content-wrapper {
+.pillars-content-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -375,11 +375,11 @@ body {
     gap: 80px;
 }
 
-.pillars-section .pillars-text-content {
+.pillars-text-content {
     text-align: center;
 }
 
-.pillars-section .pillars-text-content h2 {
+.pillars-text-content h2 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -389,7 +389,7 @@ body {
     margin: 20px;
 }
 
-.pillars-section .pillars-text-content p {
+.pillars-text-content p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -400,16 +400,15 @@ body {
     width: 66%;
 }
 
-.pillars-section .pillars-container {
+.pillars-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     align-items: stretch;
     width: 100%;
 }
 
-.pillars-section .pillar {
+.pillar {
     background: linear-gradient(to bottom, #FFFFFF, #EFF2F5);
     border-radius: 32px;
     padding: 60px 40px;
@@ -421,14 +420,14 @@ body {
     align-items: center;
 }
 
-.pillars-section .pillar img {
+.pillar img {
     width: auto;
     height: auto;
     max-width: 204px;
     max-height: 270px;
 }
 
-.pillars-section .pillar h3 {
+.pillar h3 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -440,7 +439,7 @@ body {
     align-items: center;
 }
 
-.pillars-section .pillar p {
+.pillar p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -450,8 +449,8 @@ body {
     margin: 0;
 }
 
-.pillars-section .pillar h3,
-.pillars-section .pillar p {
+.pillar h3,
+.pillar p {
     align-self: flex-start;
 }
 
@@ -773,4 +772,101 @@ body {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+}
+
+/*============================ RESOURCES SECTION ============================*/
+
+.resources-section {
+    font-family: 'Inter';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFF2F5;
+    color: #180D5B;
+    padding: 0 20px;
+    height: 100vh;
+}
+
+.resources-content-wrapper {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.resources-text-content {
+    text-align: center;
+}
+
+.resources-text-content h2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    margin: 20px 0;
+}
+
+.resources-text-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 66%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.resources-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.resource-column {
+    font-family: 'Inter';
+    font-style: normal;
+    background: linear-gradient(to bottom, #FFFFFF, #EFF2F5);
+    border-radius: 32px;
+    padding: 38px;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.resource-column h3 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+    color: #180D5B;
+    margin: 0;
+}
+
+.resource-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resource-link h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #180D5B;
+    margin: 0;
+    display: inline;
+}
+
+.resource-link img {
+    margin: 0 0 0 5px;
+    display: inline;
 }

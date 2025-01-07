@@ -1,0 +1,21 @@
+title: "Resources for responsible AI compliance"
+subtitle: >
+  Stay informed with the latest insights, white papers, and tools supporting responsible AI development.
+  Learn how AICeBlock and our partners are at the forefront of compliance, aligning with regulations like the EU AI Act, GDPR, and emerging ISO standards.
+
+columns:
+  - title: "Official Documents"
+    resource_group_id: "official_documents"
+    image:
+      src: "/assets/images/resources/documents.svg"
+      alt: "..."
+  - title: "Blog Posts"
+    resource_group_id: "blog_posts"
+    image:
+      src: "/assets/images/resources/blog.svg"
+      alt: "..."
+  - title: "White Papers"
+    resource_group_id: "white_papers"
+    image:
+      src: "/assets/images/resources/papers.svg"
+      alt: "..."
