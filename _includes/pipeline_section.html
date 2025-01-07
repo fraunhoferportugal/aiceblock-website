@@ -14,7 +14,11 @@
                 <div class="overlay-image" data-top="{{ overlay.position.top }}" data-left="{{ overlay.position.left }}"
                     data-description="{{ overlay.description }}">
                     <img src="{{ overlay.image.src }}" alt="{{ overlay.image.alt }}" />
-                    <div class="description-bubble">{{ overlay.description }}</div>
+                    <div class="description-bubble">
+                        <span class="bubble-number">{{ forloop.index | prepend: "0" }}</span>
+                        <span class="bubble-title">{{ overlay.title }}</span>
+                        <p class="bubble-description">{{ overlay.description }}</p>
+                    </div>
                 </div>
                 {% endfor %}
             </div>

@@ -672,7 +672,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -686,6 +686,7 @@ body {
     width: 100%;
     height: auto;
     padding: 111px 0 0 157px;
+    margin: 0 0 63px 0;
 }
 
 .pipeline-overlays {
@@ -719,21 +720,50 @@ body {
 }
 
 .description-bubble {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     position: absolute;
-    bottom: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
+    bottom: 50%;
+    right: 50%;
+    transform: translateX(100%);
+    background: rgba(12, 3, 65, 0.9);
+    padding: 30px 18px;
+    border-radius: 10px;
+    border: 1px solid #88FFF3;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 320px;
+    z-index: 1;
+}
+
+.bubble-number {
+    display: block;
     font-size: 14px;
-    display: none;
-    white-space: nowrap;
+    font-weight: 700;
+    line-height: 18px;
+    color: #88FFF3;
+}
+
+.bubble-title {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.bubble-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    white-space: pre-line;
 }
 
 .overlay-image:hover .description-bubble {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .pipeline-bottom-text {
