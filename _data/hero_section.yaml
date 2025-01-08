@@ -16,5 +16,5 @@ cta_button:
     alt: "Arrow Icon"
 
 image:
-  src: "/assets/images/blockchain-illustration.svg"
+  src: "/assets/images/hero/blockchain-illustration.svg"
   alt: "Blockchain Illustration"
