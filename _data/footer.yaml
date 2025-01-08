@@ -14,7 +14,7 @@ footer_links:
       - text: "Resources"
         url: "/resources/"
       - text: "About us"
-        url: "/about/"
+        url: "/about-us/"
       - text: "Contact us"
         url: "/contact/"
   - links:

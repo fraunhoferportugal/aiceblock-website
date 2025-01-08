@@ -1,0 +1,25 @@
+title: "Our Strategic Partnerships"
+subtitle: "We collaborate with industry leaders to drive innovation and success."
+
+partnerships:
+  - title: "Fraunhofer Portugal AICOS"
+    description: >
+      Fraunhofer Portugal AICOS is a leading research center, committed to delivering innovative solutions that address societal challenges through advanced technology.
+      With a strong focus on applied research and practical impact, AICOS bridges the gap between cutting-edge developments and real-world applications.
+      Dedicated to the future of AI governance and compliance, AICOS provides tools to streamline these processes, enhance trust and reliability in AI solutions, and ensure their positive impact on society.
+    image:
+      src: "/assets/images/about-us/fhp-logo.svg"
+      alt: "Logo of Fraunhofer Portugal AICOS"
+    url: "https://www.aicos.fraunhofer.pt"
+
+  - title: "Imprensa Nacional Casa da Moeda"
+    description: >
+      INCM is the result of the merger of two of the oldest industrial establishments in the country, Imprensa Nacional, created in 1768, and Casa da Moeda, with more than 700 years of history.
+      Currently, technological innovation, developed in partnership with some of the main universities and national research centers, is one of the strategic pillars of INCM, whose mission is to
+      create, produce and supply goods and services that require high safety standards, focused on the customer and innovative solutions.
+      Among these essential goods and services, the production of security documents, such as the citizen's card or the passport, the minting of current and collector's coins, the authentication
+      of precious metals, the edition of the Diário da República, and the publication of fundamental works on the Portuguese language and culture.
+    image:
+      src: "/assets/images/about-us/incm-logo.svg"
+      alt: "Logo of Imprensa Nacional Casa da Moeda"
+    url: "https://incm.pt"

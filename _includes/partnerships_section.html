@@ -1,0 +1,20 @@
+<div class="partnerships-section">
+    <div class="partnerships-content-wrapper">
+        <div class="partnerships-text-content">
+            <h2>{{ site.data.partnerships_section.title }}</h2>
+            <p>{{ site.data.partnerships_section.subtitle }}</p>
+        </div>
+        <div class="partnerships-container">
+            {% for partnership in site.data.partnerships_section.partnerships %}
+            <div class="partnership">
+                <a href="{{ partnership.url }}">
+                    <img src="{{ partnership.image.src }}" alt="{{ partnership.image.alt }}" />
+                </a>
+                <h3>{{ partnership.title }}</h3>
+                <p>{{ partnership.description }}</p>
+                <a href="{{ partnership.url }}">Know more</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
