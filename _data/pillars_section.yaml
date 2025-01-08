@@ -13,7 +13,7 @@ pillars:
   - image:
       src: "/assets/images/pillars/compliance.svg"
       alt: "Compliance Illustration"
-    title: "Set Clear Compliance Targets"
+    title: "Set Clear\nCompliance Targets"
     description: >
       Define and align with the latest regulations, standards, and internal guidelines — including the EU AI Act,
       GDPR, and emerging ISO standards — to ensure your AI projects meet all necessary compliance requirements.

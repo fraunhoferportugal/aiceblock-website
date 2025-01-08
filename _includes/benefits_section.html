@@ -38,23 +38,58 @@
         const mainImage = document.getElementById("carousel-main-image");
         const benefits = JSON.parse(document.getElementById("carousel-data").textContent);
 
+        let currentIndex = 0;
+        let autoScrollInterval;
+        let autoScrollDuration = 8000;
+        let autoScrollTimeout = 4000;
+        let currentTimeout;
+
         function updateCarousel(index) {
             dots.forEach(dot => dot.classList.remove("active"));
             items.forEach(item => item.classList.remove("active"));
-
             dots[index].classList.add("active");
             items[index].classList.add("active");
-
             mainImage.src = benefits[index].image.src;
             mainImage.alt = benefits[index].image.alt;
+            currentIndex = index;
+        }
+
+        function startAutoScroll(intervalDuration) {
+            autoScrollInterval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % benefits.length;
+                updateCarousel(currentIndex);
+            }, intervalDuration);
+        }
+
+        function stopAutoScroll() {
+            clearInterval(autoScrollInterval);
+        }
+
+        function restartAutoScrollAfterDelay() {
+            if (currentTimeout) {
+                clearTimeout(currentTimeout);
+            }
+            currentTimeout = setTimeout(() => {
+                startAutoScroll(autoScrollDuration);
+            }, autoScrollTimeout);
         }
 
         dots.forEach((dot, index) => {
-            dot.addEventListener("click", () => updateCarousel(index));
+            dot.addEventListener("click", () => {
+                stopAutoScroll();
+                updateCarousel(index);
+                restartAutoScrollAfterDelay();
+            });
         });
 
         items.forEach((item, index) => {
-            item.addEventListener("click", () => updateCarousel(index));
+            item.addEventListener("click", () => {
+                stopAutoScroll();
+                updateCarousel(index);
+                restartAutoScrollAfterDelay();
+            });
         });
+
+        startAutoScroll(autoScrollDuration);
     });
 </script>

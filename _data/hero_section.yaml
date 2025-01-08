@@ -1,5 +1,8 @@
 title: "Elevate your AI with AICeBlock."
-subtitle: "Secure, Transparent, Compliant."
+subtitle:
+  - "Secure."
+  - "Transparent."
+  - "Compliant."
 description: >
   Making the right thing the easiest thing to do — streamline your ML workflows
   with verifiable compliance, built on blockchain for unparalleled transparency.
