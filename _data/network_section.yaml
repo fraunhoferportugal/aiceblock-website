@@ -1,0 +1,23 @@
+title: "Join us in building the Future of Trustworthy AI"
+subtitle: >
+  Collaboration is at the heart of AICeBlock's mission to make AI transparent, compliant, and trustworthy.
+  We're looking for visionary partners to help us shape the tools of tomorrow and trusted third-parties to strengthen the network that ensures AI compliance and accountability.
+
+image:
+  src: "/assets/images/about-us/global-network.svg"
+  alt: "Global Network Image"
+
+columns:
+  - title: "Collaborate on Product Innovation"
+    description: >
+      Help shape AICeBlock's innovative features. Bring your expertise in AI, compliance, or technology to the forefront of innovation, co-developing solutions that empower organizations worldwide.
+    button:
+      text: "Collaborate"
+      url: "/"
+
+  - title: "Become a Trusted Network Member"
+    description: >
+      Join the AICeBlock compliance ecosystem as a trusted third-party. Play a pivotal role in ensuring AI accountability and verifiability while gaining access to a growing network of trustworthy AI practitioners.
+    button:
+      text: "Join Us"
+      url: "/"
