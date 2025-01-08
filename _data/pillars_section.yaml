@@ -6,8 +6,9 @@ subtitle: >
 cta_button:
   text: "Start Your Guided Tour"
   url: "/guided-tour/"
-  img_alt: "Arrow Icon"
-  img_src: "/assets/images/icons/arrow-icon.svg"
+  icon:
+    src: "/assets/images/icons/arrow-icon.svg"
+    alt: "Arrow Icon"
 
 pillars:
   - image:

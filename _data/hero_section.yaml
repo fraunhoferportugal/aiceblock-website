@@ -3,14 +3,18 @@ subtitle:
   - "Secure."
   - "Transparent."
   - "Compliant."
+
 description: >
   Making the right thing the easiest thing to do — streamline your ML workflows
   with verifiable compliance, built on blockchain for unparalleled transparency.
+
 cta_button:
   text: "Start Your Guided Tour"
   url: "/guided-tour/"
-  img_alt: "Arrow Icon"
-  img_src: "/assets/images/icons/arrow-icon.svg"
+  icon:
+    src: "/assets/images/icons/arrow-icon.svg"
+    alt: "Arrow Icon"
+
 image:
   src: "/assets/images/blockchain-illustration.svg"
   alt: "Blockchain Illustration"
