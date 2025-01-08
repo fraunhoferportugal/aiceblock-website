@@ -29,6 +29,7 @@ newsletter:
   title: "Newsletter sign-up"
   placeholder: "Your email"
   button_text: "Subscribe"
+  email_subject: "AICeBlock - New newsletter subscription request"
 
 social_links:
   title: "Follow us"

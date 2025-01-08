@@ -11,28 +11,32 @@
                     <div class="contacts-item">
                         <img src="{{ contact.image.src }}" alt="{{ contact.image.alt }}">
                         {% if contact.ref %}
-                            <a href="{{ contact.ref }}" target="_blank">{{ contact.text }}</a>
+                        <a href="{{ contact.ref }}" target="_blank">{{ contact.text }}</a>
                         {% else %}
-                            <span>{{ contact.text }}</span>
+                        <span>{{ contact.text }}</span>
                         {% endif %}
                     </div>
                     {% endfor %}
                 </div>
             </div>
-            <form class="contacts-form" action="#" method="post">
+            <form class="contacts-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="{{ site.env.WEB3FORMS_ACCESS_KEY }}">
+                <input type="hidden" name="subject" value="{{ site.data.contacts_section.form.email_subject }}">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                 <h3>{{ site.data.contacts_section.form.title }}</h3>
                 <div class="contacts-form-name">
-                    <input type="text" id="first_name"
+                    <input type="text" name="first_name"
                         placeholder="{{ site.data.contacts_section.form.first_name_placeholder }}" required>
-                    <input type="text" id="last_name"
+                    <input type="text" name="last_name"
                         placeholder="{{ site.data.contacts_section.form.last_name_placeholder }}" required>
                 </div>
                 <div class="contacts-form-email">
-                    <input type="email" id="email" placeholder="{{ site.data.contacts_section.form.email_placeholder }}"
-                        required>
+                    <input type="email" name="email"
+                        placeholder="{{ site.data.contacts_section.form.email_placeholder }}" required>
                 </div>
                 <div class="contacts-form-message">
-                    <textarea id="message" placeholder="{{ site.data.contacts_section.form.message_placeholder }}"
+                    <textarea name="Message" placeholder="{{ site.data.contacts_section.form.message_placeholder }}"
                         required></textarea>
                 </div>
                 <button type="submit">{{ site.data.contacts_section.form.button_text }}</button>

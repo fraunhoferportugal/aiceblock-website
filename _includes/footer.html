@@ -23,9 +23,13 @@
             <div class="footer-extra">
                 <div class="newsletter">
                     <h3>{{ site.data.footer.newsletter.title }}</h3>
-                    <form action="#" method="post">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="{{ site.env.WEB3FORMS_ACCESS_KEY }}">
+                        <input type="hidden" name="subject" value="{{ site.data.footer.newsletter.email_subject }}">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                         <div class="footer-input-wrapper">
-                            <input type="email" placeholder="{{ site.data.footer.newsletter.placeholder }}" required>
+                            <input type="email" name="email" placeholder="{{ site.data.footer.newsletter.placeholder }}"
+                                required>
                             <button type="submit">{{ site.data.footer.newsletter.button_text }}</button>
                         </div>
                     </form>
