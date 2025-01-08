@@ -16,7 +16,7 @@ footer_links:
       - text: "About us"
         url: "/about-us/"
       - text: "Contact us"
-        url: "/contact/"
+        url: "/about-us/#contacts"
   - links:
       - text: "Privacy Policy"
         url: "/privacy-policy/"
