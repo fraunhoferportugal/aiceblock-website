@@ -6,7 +6,7 @@
                     class="footer-logo">
                 <p>{{ site.data.footer.logo.description }}</p>
             </div>
-            <p class="footer-copyright">
+            <p class="footer-copyright-left">
                 {{ site.data.footer.copyright }}
             </p>
         </div>
@@ -36,13 +36,18 @@
                 </div>
                 <div class="social-links">
                     <h3>{{ site.data.footer.social_links.title }}</h3>
-                    {% for social in site.data.footer.social_links.links %}
-                    <a href="{{ social.url }}" target="_blank" rel="noopener">
-                        <img src="{{ site.baseurl }}{{ social.icon }}" alt="{{ social.alt }}">
-                    </a>
-                    {% endfor %}
+                    <div class="social-links-list">
+                        {% for social in site.data.footer.social_links.links %}
+                        <a href="{{ social.url }}" target="_blank" rel="noopener">
+                            <img src="{{ site.baseurl }}{{ social.icon }}" alt="{{ social.alt }}">
+                        </a>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
+        <p class="footer-copyright-bottom">
+            {{ site.data.footer.copyright }}
+        </p>
     </div>
 </div>
