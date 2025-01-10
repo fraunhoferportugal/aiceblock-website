@@ -5,3 +5,5 @@ favicon:
 
 plugins:
   - jekyll-dotenv
+
+exclude: ["README.md"]

@@ -1,0 +1,80 @@
+title: "Our Innovation Roadmap: building the future of trustworthy AI Development"
+subtitle: >
+  AICeBlock's innovation roadmap outlines our journey from empowering organizations today with cutting-edge compliance tools to shaping the future of trustworthy, efficient, and collaborative AI development.
+
+sections:
+  - title: "Now"
+    subtitle: "The foundations for Trustworthy and Transparent AI Development"
+    description: >
+      The first version of AICeBlock lays the groundwork to empower organizations in achieving compliance through verifiable declaration.
+    image:
+      src: "/assets/images/roadmap/now.svg"
+      alt: "Radmap now section illustration"
+    roadmap:
+      - title: "ML Project Governance"
+        description: >
+          Seamlessly manage your machine learning projects, including datasets, modules, experiments, and released pipelines.
+          Assign roles to team members, reuse data and code across projects, and even collaborate across organizations—all with built-in governance for traceability and accountability.
+      - title: "Compliance Checklists"
+        description: >
+          Streamline regulatory and standard adherence with predefined or custom checklists.
+          These checklists connect directly to deployed pipeline versions, ensuring verifiable transparency and helping organizations meet compliance requirements more easily.
+      - title: "Interactive Workflow Editor"
+        description: >
+          Visualize and edit ML pipelines with our one-of-a-kind Graphical Workflow Builder.
+          This tool bridges the gap between technical execution and organizational oversight, enabling non-programmers to
+          iterate quickly while maintaining a direct link between visual representations and the actual pipeline code.
+      - title: "Verifiable Declarations"
+        description: >
+          Go beyond self-declaration with blockchain-backed verification. AICeBlock ensures the integrity of datasets, code modules, and other ML artifacts by linking them to
+          cryptographic signatures on the blockchain. Auditors can instantly verify authenticity and compliance, making the review process faster, more standardized, and secure.
+
+  - title: "Next"
+    subtitle: "Advancing the Compliance Support"
+    description: >
+      The next step in AICeBlock's journey focuses on expanding our capabilities to simplify compliance,
+      enhance privacy, and empower organizations to build AI responsibly with greater confidence. Key features:
+    image:
+      src: "/assets/images/roadmap/next.svg"
+      alt: "Radmap next section illustration"
+    roadmap:
+      - title: "Modules for Compliance Support"
+        description: >
+          Access a growing library of advanced tools to streamline compliance processes and integrate responsible AI practices directly into your pipelines. These modules range Bias analysis
+          and mitigation tools, data quality validation techniques, sensitive data detection and anonymization capabilities, robustness tests and an explainability suite.
+      - title: "Semi-Automated Checklists"
+        description: >
+          Save time and reduce errors with intelligent checklists. Map outputs from your pipelines to checklist fields, ensuring real-time, up-to-date documentation for compliance checks.
+          These automated links streamline audits and enhance traceability without the need for constant manual updates.
+      - title: "Privacy-Preserving ML"
+        description: >
+          Ensure data security and compliance with privacy-enhancing technologies like Federated Learning for privacy-preserving collaboration, and Differential Privacy to protect
+          sensitive information while still enabling valuable insights.\n\nAICeBlock empowers organizations to meet privacy regulations while driving innovation.
+
+  - title: "Beyond"
+    subtitle: "Shaping the Future of Trustworthy and Collaborative AI Development"
+    description: >
+      AICeBlock's visionary roadmap aims to set the tone on AI governance, sustainability, and collaboration. Key features:
+    image:
+      src: "/assets/images/roadmap/beyond.svg"
+      alt: "Radmap beyond section illustration"
+    roadmap:
+      - title: "ML Copilot"
+        description: >
+          Imagine an intelligent guide that bridges the gap between technical and non-technical teams — from decision-makers and end-users to developers and auditors — throughout the
+          entire lifecycle of an AI solution. AICeBlock's ML Copilot will recommend tailored methodologies based on project scope, data, and pipeline goals; and support
+          decision-making during the design, experimentation, and deployment stages.
+      - title: "Support for Green AI"
+        description: >
+          In the pursuit of sustainable AI, AICeBlock envisions tools that help users optimize their pipelines for data and energy efficiency, reducing redundant or unnecessary
+          data usage, and minimizing energy consumption, tailored to the infrastructure or hardware where solutions will be deployed. These efforts align with the growing
+          demand for eco-conscious AI development, benefiting both the environment and operational costs.
+      - title: "Confidential Computing"
+        description: >
+          Enabling tamper-aware computations ensures organizations can securely perform local computations while maintaining zero-trust principles. With confidential computing
+          sensitive operations are protected from unauthorized access, and verifiable declarations remain intact, safeguarding trust and security throughout the process.
+      - title: "Fair Collaboration"
+        description: >
+          Building on the transparent tracing of contributions within ML pipelines, AICeBlock will introduce objective payout parameters for revenue-sharing agreements,
+          and transparent reward strategies embedded in smart contracts to fairly distribute value among collaborators. This approach fosters a culture of equitable,
+          transparent, and trustworthy collaboration.

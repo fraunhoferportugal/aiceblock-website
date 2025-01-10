@@ -300,45 +300,50 @@ body {
 
 /*============================ HERO SECTION ============================*/
 
+@media (max-width: 1440px) {
+    .footer {
+        min-height: auto;
+    }
+}
+
 .hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #180D5B;
     color: #FFFFFF;
-    height: calc(100vh - 70px);
-    padding: 0 20px;
+    height: calc(100vh - 4.375rem);
+    padding: 0 1.25rem;
+    scroll-snap-type: y mandatory;
 }
 
 .hero-section .hero-section-content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .hero-section .hero-section-text-content {
-    max-width: 600px;
+    max-width: 37.5rem;
 }
 
 .hero-section .hero-section-text-content h1 {
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     color: #88FFF2;
     margin: 0;
 }
 
 .hero-section .hero-section-text-content h2 {
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     color: #EFF2F5;
     margin: 0;
 }
@@ -346,7 +351,7 @@ body {
 .changing-subtitle {
     display: flex;
     flex-direction: column;
-    height: 50px;
+    height: 3.125rem;
     overflow: hidden;
     position: relative;
 }
@@ -396,10 +401,9 @@ body {
 
 .hero-section .hero-section-text-content p {
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.25rem;
+    line-height: 2rem;
     color: #EFF2F5;
 }
 
@@ -408,35 +412,29 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 6px 0px 24px;
-    gap: 20px;
+    padding: 0 0.375rem 0 1.5rem;
+    gap: 1.25rem;
     background: #88FFF3;
-    -webkit-box-shadow: 0px 0px 30px 6px rgba(136, 255, 243, 0.33);
-    -moz-box-shadow: 0px 0px 30px 6px rgba(136, 255, 243, 0.33);
-    box-shadow: 0px 0px 30px 6px rgba(136, 255, 243, 0.33);
-    border-radius: 40px;
-    width: 320px;
-    height: 60px;
+    box-shadow: 0px 0px 1.875rem 0.375rem rgba(136, 255, 243, 0.33);
+    border-radius: 2.5rem;
+    width: 20rem;
+    height: 3.75rem;
     text-decoration: none;
-    margin-top: 100px;
+    margin-top: 6.25rem;
     transition: box-shadow 0.2s ease;
 }
 
 .hero-section .cta-button span {
     margin: 0 auto;
-    width: 219px;
-    height: 15px;
+    width: 13.6875rem;
+    height: 0.9375rem;
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.25rem;
+    line-height: 2rem;
     display: flex;
     align-items: center;
     color: #180D5B;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .hero-section .cta-button img {
@@ -444,8 +442,8 @@ body {
 }
 
 .hero-section .cta-button-img-container {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     background-color: #180D5B;
     border-radius: 50%;
     display: flex;
@@ -455,9 +453,7 @@ body {
 }
 
 .hero-section .cta-button:hover {
-    -webkit-box-shadow: 0px 0px 30px 15px rgba(136, 255, 243, 0.33);
-    -moz-box-shadow: 0px 0px 30px 15px rgba(136, 255, 243, 0.33);
-    box-shadow: 0px 0px 30px 15px rgba(136, 255, 243, 0.33);
+    box-shadow: 0px 0px 1.875rem 0.9375rem rgba(136, 255, 243, 0.33);
 }
 
 .hero-section .image-container {
@@ -1706,4 +1702,127 @@ body {
     line-height: 26px;
     width: 60%;
     margin: 0 auto;
+}
+
+/*============================ ROADMAP SECTION ============================*/
+
+.roadmap-section {
+    font-family: 'Inter';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #180D5B;
+    padding: 0 20px;
+    height: 100vh;
+}
+
+.roadmap-content-wrapper {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.roadmap-top-buttons {
+    z-index: 10;
+    cursor: pointer;
+}
+
+.roadmap-text-content {
+    text-align: center;
+}
+
+.roadmap-text-content h2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    margin: 20px 0;
+}
+
+.roadmap-text-content h4 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 66%;
+    margin: 0 auto;
+}
+
+.roadmap-container {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    flex-direction: row;
+}
+
+.roadmap-container.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    width: 100vw;
+    justify-content: center;
+}
+
+.roadmap-container .section-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 29rem;
+    gap: 2.25rem;
+    padding: 0 1.125rem;
+    margin-left: 10%;
+}
+
+.roadmap-container .section-column img {
+    width: 16.3125rem;
+    height: auto;
+}
+
+.roadmap-container .section-column * {
+    margin: 0;
+}
+
+.roadmap-container .section-column h2 {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+}
+
+.roadmap-container .section-column h4 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.roadmap-container .section-column p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+
+.roadmap-row {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    justify-content: start;
+    width: 60rem;
+}
+
+.roadmap-column {
+    background-color: #180D5B;
+    border-radius: 0.625rem;
+    padding: 2.5rem 1.125rem;
+    min-width: 40rem;
+    height: 29rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem 0 0;
+}
+
+.roadmap-column * {
+    color: white;
 }

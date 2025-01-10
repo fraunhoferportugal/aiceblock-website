@@ -28,8 +28,6 @@
         const targetElement = document.querySelector('.pillars-section .cta-button');
         const originalPosition = targetElement.getBoundingClientRect().top + window.scrollY;
         targetElement.dataset.originalTop = originalPosition;
-
-        console.log("idk");
     });
 
     window.addEventListener('scroll', function () {

@@ -1,0 +1,58 @@
+<div class="roadmap-section">
+    <div class="roadmap-content-wrapper">
+        <div class="roadmap-text-content">
+            <h2>{{ site.data.roadmap_section.title }}</h2>
+            <h4>{{ site.data.roadmap_section.subtitle }}</h4>
+        </div>
+        <div class="roadmap-top-buttons">
+            {% for section in site.data.roadmap_section.sections %}
+            <a data-index="{{ forloop.index0 }}" class="roadmap-button">{{ section.title }}</a>
+            {% unless forloop.last %}
+            <span>|</span>
+            {% endunless %}
+            {% endfor %}
+        </div>
+        {% for section in site.data.roadmap_section.sections %}
+        <div class="roadmap-container">
+            <div class="section-column">
+                <img src="{{ section.image.src }}" alt="{{ section.image.alt }}" />
+                <h2>{{ section.title }}</h2>
+                <h4>{{ section.subtitle }}</h4>
+                <p>{{ section.description }}</p>
+            </div>
+            <div class="roadmap-row">
+                {% for roadmap in section.roadmap %}
+                <div class="roadmap-column">
+                    <span>{{ forloop.index | prepend: "0" }}</span>
+                    <span>{{ roadmap.title }}</span>
+                    <p>{{ roadmap.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".roadmap-button");
+        const sections = document.querySelectorAll(".roadmap-container");
+
+        console.log(buttons);
+
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                sections.forEach(section => {
+                    section.classList.remove("active");
+                });
+                const sectionToShow = sections[index];
+                sectionToShow.classList.add("active");
+            });
+        });
+
+        if (sections.length > 0) {
+            sections[0].classList.add("active");
+        }
+    });
+</script>
