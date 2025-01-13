@@ -1050,7 +1050,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FCFCFC;
+    background-color: #EFF2F5;
     color: #180D5B;
     padding: 0 20px;
     height: 100vh;
@@ -1713,22 +1713,43 @@ body {
     align-items: center;
     background-color: #FFFFFF;
     color: #180D5B;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     height: 100vh;
 }
 
 .roadmap-content-wrapper {
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    justify-content: center;
+    gap: 5rem;
 }
 
 .roadmap-top-buttons {
-    z-index: 10;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.roadmap-button {
     cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 1.375rem;
+    line-height: 2.125rem;
+    padding: 0.625rem 2rem;
+    opacity: 25%;
+}
+
+.roadmap-button:hover {
+    opacity: 50%;
+}
+
+.roadmap-button.active {
+    opacity: 100%;
 }
 
 .roadmap-text-content {
@@ -1757,13 +1778,13 @@ body {
     transition: opacity 1s ease-in-out;
     display: flex;
     flex-direction: row;
+    gap: 1.5rem;
 }
 
 .roadmap-container.active {
     opacity: 1;
     visibility: visible;
     position: relative;
-    width: 100vw;
     justify-content: center;
 }
 
@@ -1774,10 +1795,19 @@ body {
     max-width: 29rem;
     gap: 2.25rem;
     padding: 0 1.125rem;
-    margin-left: 10%;
+    margin-top: 10rem;
 }
 
-.roadmap-container .section-column img {
+.roadmap-container .section-column-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 17rem;
+    position: absolute;
+    top: -9rem;
+}
+
+.roadmap-container .section-column-image img {
     width: 16.3125rem;
     height: auto;
 }
@@ -1804,25 +1834,134 @@ body {
     line-height: 1.625rem;
 }
 
+.roadmap-row-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 59.5rem;
+}
+
 .roadmap-row {
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
+    overflow-x: hidden;
     justify-content: start;
-    width: 60rem;
+    width: 100%;
+    height: 30rem;
+    gap: 1.5rem;
+    scroll-snap-type: x mandatory;
 }
 
 .roadmap-column {
-    background-color: #180D5B;
     border-radius: 0.625rem;
     padding: 2.5rem 1.125rem;
-    min-width: 40rem;
+    width: 29rem;
     height: 29rem;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    margin: 0 1.5rem 0 0;
+    gap: 1.2rem;
+    scroll-snap-align: start;
+}
+
+.roadmap-bottom-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.roadmap-bottom-buttons * img {
+    width: 1.125rem;
+    height: auto;
+}
+
+.roadmap-bottom-buttons button:first-child img {
+    transform: rotate(180deg);
+}
+
+.roadmap-bottom-buttons * {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.roadmap-bottom-buttons button:disabled {
+    opacity: 25%;
+    cursor: default;
+}
+
+.roadmap-bottom-buttons button:disabled img {
+    pointer-events: none;
 }
 
 .roadmap-column * {
-    color: white;
+    margin: 0;
+}
+
+.roadmap-column span {
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+}
+
+.roadmap-column h4 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.roadmap-column p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.roadmap-container:nth-child(3n) .roadmap-column {
+    background-color: #180D5B;
+}
+
+.roadmap-container:nth-child(3n) .roadmap-column span {
+    color: #88FFF3;
+}
+
+.roadmap-container:nth-child(3n) .roadmap-column h4 {
+    color: #FFFFFF;
+}
+
+.roadmap-container:nth-child(3n) .roadmap-column p {
+    color: #FFFFFF;
+}
+
+.roadmap-container:nth-child(3n+1) .roadmap-column {
+    background-color: #88FFF3;
+}
+
+.roadmap-container:nth-child(3n+1) .roadmap-column span {
+    color: #180D5B;
+}
+
+.roadmap-container:nth-child(3n+1) .roadmap-column h4 {
+    color: #180D5B;
+}
+
+.roadmap-container:nth-child(3n+1) .roadmap-column p {
+    color: #180D5B;
+}
+
+.roadmap-container:nth-child(3n+2) .roadmap-column {
+    background-color: #EFF2F5;
+}
+
+.roadmap-container:nth-child(3n+2) .roadmap-column span {
+    color: #42E8E0;
+}
+
+.roadmap-container:nth-child(3n+2) .roadmap-column h4 {
+    color: #180D5B;
+}
+
+.roadmap-container:nth-child(3n+2) .roadmap-column p {
+    color: #180D5B;
 }
