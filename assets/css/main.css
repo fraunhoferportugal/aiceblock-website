@@ -413,7 +413,7 @@ body {
     padding: 0 0.375rem 0 1.5rem;
     gap: 1.25rem;
     background: #88FFF3;
-    box-shadow: 0px 0px 1.875rem 0.375rem rgba(136, 255, 243, 0.33);
+    box-shadow: 0 0 1.875rem 0.375rem rgba(136, 255, 243, 0.33);
     border-radius: 2.5rem;
     width: 20rem;
     height: 3.75rem;
@@ -451,7 +451,7 @@ body {
 }
 
 .hero-section .cta-button:hover {
-    box-shadow: 0px 0px 1.875rem 0.9375rem rgba(136, 255, 243, 0.33);
+    box-shadow: 0 0 1.875rem 0.9375rem rgba(136, 255, 243, 0.33);
 }
 
 .hero-section .image-container {
@@ -1571,22 +1571,20 @@ body {
     align-items: center;
     background-color: #180D5B;
     color: #FFFFFF;
-    height: calc(100vh - 70px);
-    padding: 0 20px;
+    height: calc(100vh - 4.375rem);
+    padding: 0 1.25rem;
 }
 
 .demo-section-content-wrapper {
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
     height: 80%;
     background-image: url('/assets/images/backgrounds/bottom-right-blocks.svg');
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: auto;
-    border-radius: 32px;
-    -webkit-box-shadow: 0px 0px 30px 6px rgba(136, 255, 243, 0.33);
-    -moz-box-shadow: 0px 0px 30px 6px rgba(136, 255, 243, 0.33);
-    box-shadow: 0px 0px 30px 6px rgba(136, 255, 243, 0.33);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 1.875rem 0.375rem rgba(136, 255, 243, 0.33);
 }
 
 .demo-section-text-content {
@@ -1594,7 +1592,7 @@ body {
     font-style: normal;
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 4.375rem;
     align-items: center;
     text-align: center;
     height: 100%;
@@ -1603,20 +1601,20 @@ body {
 
 .demo-section-text-content h1 {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     color: #88FFF3;
     margin: 0;
 }
 
 .demo-section-text-content h4 {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.25rem;
+    line-height: 2rem;
     color: #EFF2F5;
     margin: 0;
     white-space: pre-line;
-    max-width: 600px;
+    max-width: 37.5rem;
 }
 
 .demo-section .cta-button {
@@ -1624,27 +1622,23 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 6px 0px 24px;
-    gap: 20px;
+    padding: 0px 0.375rem 0px 1.5rem;
+    gap: 1.5rem;
     background: #88FFF3;
-    -webkit-box-shadow: 0px 0px 30px 6px rgba(136, 255, 243, 0.33);
-    -moz-box-shadow: 0px 0px 30px 6px rgba(136, 255, 243, 0.33);
-    box-shadow: 0px 0px 30px 6px rgba(136, 255, 243, 0.33);
-    border-radius: 40px;
-    width: 320px;
-    height: 60px;
+    box-shadow: 0px 0px 1.875rem 0.375rem rgba(136, 255, 243, 0.33);
+    border-radius: 2.5rem;
+    height: 3.75rem;
     text-decoration: none;
     transition: box-shadow 0.2s ease;
-    margin: 50px 0 0 0;
+    margin: 3.125rem 0 0 0;
 }
 
 .demo-section .cta-button span {
     margin: 0 auto;
-    width: 219px;
-    height: 15px;
+    height: 0.9375rem;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.25rem;
+    line-height: 2rem;
     color: #180D5B;
     display: flex;
     align-items: center;
@@ -1655,8 +1649,8 @@ body {
 }
 
 .demo-section .cta-button-img-container {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     background-color: #180D5B;
     border-radius: 50%;
     display: flex;
@@ -1666,9 +1660,7 @@ body {
 }
 
 .demo-section .cta-button:hover {
-    -webkit-box-shadow: 0px 0px 30px 15px rgba(136, 255, 243, 0.33);
-    -moz-box-shadow: 0px 0px 30px 15px rgba(136, 255, 243, 0.33);
-    box-shadow: 0px 0px 30px 15px rgba(136, 255, 243, 0.33);
+    box-shadow: 0px 0px 1.875rem 0.9375rem rgba(136, 255, 243, 0.33);
 }
 
 .demo-section .image-container {
