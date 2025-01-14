@@ -1534,6 +1534,7 @@ body {
 }
 
 .contacts-form-subject select {
+    cursor: pointer;
     width: 100%;
     appearance: none;
     background-image: url("/assets/images/icons/down-arrow-icon.svg");
