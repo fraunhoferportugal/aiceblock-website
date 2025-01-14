@@ -19,4 +19,9 @@ form:
   email_placeholder: "*Email"
   message_placeholder: "*Your Message"
   button_text: "Submit"
-  email_subject: "AICeBlock - New contact form submission"
+  prepend_subject: "AICeBlock"
+  subjects:
+    - "General"
+    - "Request Demo"
+    - "Collaborate in Product Innovation"
+    - "Join as Trusted Third-Party"

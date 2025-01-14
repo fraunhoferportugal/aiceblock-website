@@ -21,7 +21,6 @@
             </div>
             <form class="contacts-form" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="{{ site.env.WEB3FORMS_ACCESS_KEY }}">
-                <input type="hidden" name="subject" value="{{ site.data.contacts_section.form.email_subject }}">
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                 <h3>{{ site.data.contacts_section.form.title }}</h3>
@@ -35,6 +34,14 @@
                     <input type="email" name="email"
                         placeholder="{{ site.data.contacts_section.form.email_placeholder }}" required>
                 </div>
+                <div class="contacts-form-subject">
+                    <select name="subject" id="subject-dropdown">
+                        {% for subject in site.data.contacts_section.form.subjects %}
+                        <option value="{{ site.data.contacts_section.form.prepend_subject }} - {{ subject }}">{{ subject
+                            }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
                 <div class="contacts-form-message">
                     <textarea name="Message" placeholder="{{ site.data.contacts_section.form.message_placeholder }}"
                         required></textarea>
@@ -44,3 +51,18 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedIndex = parseInt(urlParams.get("subject"), 10);
+        if (!isNaN(selectedIndex)) {
+            console.log(selectedIndex);
+            const dropdown = document.getElementById("subject-dropdown");
+            const options = dropdown.options;
+            if (selectedIndex >= 0 && selectedIndex < options.length) {
+                dropdown.selectedIndex = selectedIndex;
+            }
+        }
+    });
+</script>

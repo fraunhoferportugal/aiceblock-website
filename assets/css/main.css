@@ -4,8 +4,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    /* overflow: scroll;
-    scrollbar-width: none; */
+    scroll-behavior: smooth;
 }
 
 * {
@@ -314,7 +313,6 @@ body {
     color: #FFFFFF;
     height: calc(100vh - 4.375rem);
     padding: 0 1.25rem;
-    scroll-snap-type: y mandatory;
 }
 
 .hero-section .hero-section-content-wrapper {
@@ -1011,7 +1009,7 @@ body {
     gap: 20px;
 }
 
-.resource-column > img {
+.resource-column>img {
     max-width: 5rem;
     width: 100%;
     height: auto;
@@ -1505,11 +1503,13 @@ body {
 }
 
 .contacts-form * input,
-.contacts-form * textarea {
+.contacts-form * textarea,
+.contacts-form * select {
     border-radius: 26px;
     background-color: #EFF2F5;
     border: solid;
     border-color: #180D5B;
+    color: #180D5B;
     border-width: 1px;
     padding: 5px 18px;
     font-weight: 500;
@@ -1529,6 +1529,16 @@ body {
 
 .contacts-form-email input {
     width: 100%;
+}
+
+.contacts-form-subject select {
+    width: 100%;
+    appearance: none;
+    background-image: url("/assets/images/icons/down-arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right 1.25rem top 50%;
+    background-size: 0.65rem auto;
+    font-family: 'Inter';
 }
 
 .contacts-form-message textarea {
