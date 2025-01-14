@@ -47,9 +47,7 @@ sections:
           Save time and reduce errors with intelligent checklists. Map outputs from your pipelines to checklist fields, ensuring real-time, up-to-date documentation for compliance checks.
           These automated links streamline audits and enhance traceability without the need for constant manual updates.
       - title: "Privacy-Preserving ML"
-        description: >
-          Ensure data security and compliance with privacy-enhancing technologies like Federated Learning for privacy-preserving collaboration, and Differential Privacy to protect
-          sensitive information while still enabling valuable insights.\n\nAICeBlock empowers organizations to meet privacy regulations while driving innovation.
+        description: "Ensure data security and compliance with privacy-enhancing technologies like Federated Learning for privacy-preserving collaboration, and Differential Privacy to protect sensitive information while still enabling valuable insights.\n\nAICeBlock empowers organizations to meet privacy regulations while driving innovation."
 
   - title: "Beyond"
     subtitle: "Shaping the Future of Trustworthy and Collaborative AI Development"
