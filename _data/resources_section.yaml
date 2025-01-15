@@ -8,14 +8,14 @@ columns:
     resource_group_id: "official_documents"
     image:
       src: "/assets/images/resources/documents.svg"
-      alt: "..."
-  - title: "Blog Posts"
-    resource_group_id: "blog_posts"
+      alt: "Documents icon"
+  - title: "Additional Documents"
+    resource_group_id: "additional_documents"
     image:
-      src: "/assets/images/resources/blog.svg"
-      alt: "..."
+      src: "/assets/images/resources/documents.svg"
+      alt: "Additional documents icon"
   - title: "White Papers"
     resource_group_id: "white_papers"
     image:
       src: "/assets/images/resources/papers.svg"
-      alt: "..."
+      alt: "White papers icon"
