@@ -7,3 +7,7 @@ plugins:
   - jekyll-dotenv
 
 exclude: ["README.md"]
+
+# Default WEB3FORM key associated with info@aiceblock.com
+# If .env isn't set it defaults to this key
+web3forms_access_key: "f3c588cf-4beb-40a2-b94f-54a4f13936d1"
