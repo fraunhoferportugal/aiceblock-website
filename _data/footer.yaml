@@ -19,9 +19,9 @@ footer_links:
         url: "/about-us/#contacts"
   - links:
       - text: "Privacy Policy"
-        url: "/policies/#privacy-policy"
+        url: "/privacy-policy"
       - text: "Terms of Service"
-        url: "/policies/#terms-of-service"
+        url: "/terms-of-service"
 
 newsletter:
   title: "Newsletter sign-up"

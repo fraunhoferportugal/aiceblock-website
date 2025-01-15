@@ -1998,32 +1998,48 @@ body {
     align-items: center;
     background-color: #FCFCFC;
     color: #180D5B;
-    padding: 0 20px;
-    height: calc(100vh - 4.375rem);
+    padding: 8rem 1.25rem;
+    min-height: calc(100vh - 4.375rem);
 }
 
 .text-content-wrapper {
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
     text-align: center;
+    gap: 5.125rem;
 }
 
-.text-content-wrapper h2 {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 42px;
-    margin: 20px 0;
+.text-content-wrapper .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.text-content-wrapper .header-wrapper h2 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 2.75rem;
+    margin: 0;
+}
+
+.text-content-wrapper .header-wrapper h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 0;
 }
 
 .text-content-wrapper p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.625rem;
     width: 100%;
     margin: 0 auto;
     text-align: left;
+    white-space: pre-line;
 }
