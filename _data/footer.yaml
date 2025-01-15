@@ -9,10 +9,8 @@ footer_links:
   - links:
       - text: "Guided Tour"
         url: "/guided-tour/"
-      - text: "Features"
-        url: "/features/"
       - text: "Resources"
-        url: "/resources/"
+        url: "/#resources"
       - text: "About us"
         url: "/about-us/"
       - text: "Contact us"
