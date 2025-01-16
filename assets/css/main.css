@@ -5,12 +5,17 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+main>section {
+    scroll-snap-align: start;
 }
 
 /*============================ HEADER ============================*/
@@ -24,6 +29,8 @@ body {
     height: 4.375rem;
     background: #180D5B;
     border-bottom: 0.0625rem solid #EFF2F5;
+    position: absolute;
+    width: 100%;
 }
 
 .header-desktop {
@@ -66,6 +73,7 @@ body {
     padding: 5rem 1.25rem 2.5rem 1.25rem;
     font-family: 'Inter', sans-serif;
     min-height: auto;
+    scroll-snap-align: end;
 }
 
 .footer-container {
@@ -311,8 +319,8 @@ body {
     align-items: center;
     background-color: #180D5B;
     color: #FFFFFF;
-    height: calc(100vh - 4.375rem);
-    padding: 0 1.25rem;
+    height: 100vh;
+    padding: 4.375rem 1.25rem 0 1.25rem;
 }
 
 .hero-section .hero-section-content-wrapper {
@@ -1146,6 +1154,25 @@ body {
     position: absolute;
     visibility: hidden;
     transition: opacity 0.3s ease;
+    max-height: 20rem;
+    overflow-y: auto;
+    padding-right: 1.5rem;
+    margin: 0.8rem 0 0 0;
+}
+
+.faq-answer::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+.faq-answer::-webkit-scrollbar-track {
+    background: #FFFFFF;
+    border-radius: 1rem;
+}
+
+.faq-answer::-webkit-scrollbar-thumb {
+    background-color: #180D5B;
+    border-radius: 1rem;
+    border: 0;
 }
 
 .faq-answer p {
@@ -1185,48 +1212,48 @@ body {
     align-items: center;
     background-color: #180D5B;
     color: #FFFFFF;
-    height: calc(100vh - 70px);
-    padding: 0 20px;
+    height: 100vh;
+    padding: 4.375re 1.25rem 0 1.25rem;
 }
 
 .about-section-content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
-    gap: 70px;
+    gap: 4.375rem;
 }
 
 .about-section-text-content {
     font-family: 'Inter';
     font-style: normal;
-    max-width: 720px;
+    max-width: 45rem;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .about-section-text-content h1 {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     color: #88FFF2;
     margin: 0;
 }
 
 .about-section-text-content h2 {
     font-weight: 500;
-    font-size: 22px;
-    line-height: 34px;
+    font-size: 1.375rem;
+    line-height: 2.125rem;
     color: #EFF2F5;
     margin: 0;
 }
 
 .about-section-text-content p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     color: #EFF2F5;
     margin: 0;
 }
@@ -1599,8 +1626,8 @@ body {
     align-items: center;
     background-color: #180D5B;
     color: #FFFFFF;
-    height: calc(100vh - 4.375rem);
-    padding: 0 1.25rem;
+    height: 100vh;
+    padding: 4.375rem 1.25rem 0 1.25rem;
 }
 
 .demo-section-content-wrapper {
@@ -2025,8 +2052,8 @@ body {
     align-items: center;
     background-color: #FCFCFC;
     color: #180D5B;
-    padding: 8rem 1.25rem;
-    min-height: calc(100vh - 4.375rem);
+    padding: calc(8rem + 4.375rem) 1.25rem 8rem 1.25rem;
+    min-height: 100vh;
 }
 
 .text-content-wrapper {

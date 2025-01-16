@@ -6,8 +6,6 @@ layout: default
 {% include pillars_section.html %}
 {% include benefits_section.html %}
 {% include pipeline_section.html %}
-<div id="resources">
-    {% include resources_section.html %}
-</div>
+{% include resources_section.html id="resources" %}
 {% include roadmap_section.html %}
 {% include faq_section.html %}
