@@ -6,7 +6,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    font-size: clamp(14px, 1vw, 18px);
+    font-size: clamp(14px, 0.5vw, 16px);
 }
 
 * {
@@ -320,7 +320,7 @@ main>section {
     align-items: center;
     background-color: #180D5B;
     color: #FFFFFF;
-    height: 100vh;
+    min-height: 100vh;
     padding: 4.375rem 1.25rem 0 1.25rem;
 }
 
@@ -482,8 +482,8 @@ main>section {
     align-items: center;
     background-color: #EFF2F5;
     color: #180D5B;
-    height: 100vh;
-    padding: 0 1.25rem;
+    min-height: 100vh;
+    padding: 3rem 1.25rem;
 }
 
 .pillars-section .cta-button {
@@ -612,8 +612,8 @@ main>section {
     align-items: center;
     background-color: white;
     color: #180D5B;
-    padding: 0 1.25rem;
-    height: 100vh;
+    padding: 3rem 1.25rem;
+    min-height: 100vh;
 }
 
 .benefits-content-wrapper {
@@ -759,9 +759,8 @@ main>section {
     align-items: center;
     background-color: #180D5B;
     color: #EFF2F5;
-    padding: 0 1.25rem;
+    padding: 3rem 1.25rem;
     min-height: 100vh;
-    padding: 3rem;
 }
 
 .pipeline-content-wrapper {
@@ -925,8 +924,8 @@ main>section {
     align-items: center;
     background-color: #EFF2F5;
     color: #180D5B;
-    padding: 0 1.25rem;
-    height: 100vh;
+    padding: 3rem 1.25rem;
+    min-height: 100vh;
 }
 
 .resources-content-wrapper {
@@ -1053,7 +1052,7 @@ main>section {
     align-items: center;
     background-color: #EFF2F5;
     color: #180D5B;
-    padding: 2.5rem 1.25rem;
+    padding: 3rem 1.25rem;
     min-height: 100vh;
 }
 
@@ -1175,8 +1174,8 @@ main>section {
     align-items: center;
     background-color: #180D5B;
     color: #FFFFFF;
-    height: 100vh;
-    padding: 4.375re 1.25rem 0 1.25rem;
+    min-height: 100vh;
+    padding: 4.375rem 1.25rem 0 1.25rem;
 }
 
 .about-section-content-wrapper {
@@ -1234,8 +1233,8 @@ main>section {
     align-items: center;
     background-color: #180D5B;
     color: #EFF2F5;
-    height: 100vh;
-    padding: 0 1.25rem;
+    min-height: 100vh;
+    padding: 3rem 1.25rem;
 }
 
 .partnerships-content-wrapper {
@@ -1331,8 +1330,8 @@ main>section {
     align-items: center;
     background-color: #180D5B;
     color: #EFF2F5;
-    height: 100vh;
-    padding: 0 1.25rem;
+    min-height: 100vh;
+    padding: 3rem 1.25rem;
 }
 
 .network-content-wrapper {
@@ -1439,8 +1438,8 @@ main>section {
     align-items: center;
     background-color: #EFF2F5;
     color: #180D5B;
-    padding: 0 1.25rem;
-    height: 100vh;
+    padding: 3rem 1.25rem;
+    min-height: 100vh;
 }
 
 .contacts-content-wrapper {
@@ -1592,7 +1591,7 @@ main>section {
     align-items: center;
     background-color: #180D5B;
     color: #FFFFFF;
-    height: 100vh;
+    min-height: 100vh;
     padding: 4.375rem 1.25rem 0 1.25rem;
 }
 
@@ -1660,7 +1659,7 @@ main>section {
     align-items: center;
     background-color: #FCFCFC;
     color: #180D5B;
-    padding: 0 1.25rem;
+    padding: 3rem 1.25rem;
     min-height: 100vh;
 }
 
@@ -1698,8 +1697,8 @@ main>section {
     align-items: center;
     background-color: #FFFFFF;
     color: #180D5B;
-    padding: 0 1.25rem;
-    height: 100vh;
+    padding: 3rem 1.25rem;
+    min-height: 100vh;
 }
 
 .roadmap-content-wrapper {
