@@ -1,0 +1,23 @@
+<section class="hero-section">
+    <div class="hero-section-content-wrapper">
+        <div class="hero-section-text-content">
+            <h1>{{ site.data.hero_section.title }}</h1>
+            <h2 class="changing-subtitle">
+                {% for word in site.data.hero_section.subtitle %}
+                <span>{{ word }}</span>
+                {% endfor %}
+            </h2>
+            <p>{{ site.data.hero_section.description }}</p>
+            <a href="{{ site.data.hero_section.cta_button.url }}" class="cta-button">
+                <span>{{ site.data.hero_section.cta_button.text }}</span>
+                <div class="cta-button-img-container">
+                    <img src="{{ site.data.hero_section.cta_button.icon.src }}"
+                        alt="{{ site.data.hero_section.cta_button.icon.alt }}">
+                </div>
+            </a>
+        </div>
+        <div class="image-container">
+            <img src="{{ site.data.hero_section.image.src }}" alt="{{ site.data.hero_section.image.alt }}">
+        </div>
+    </div>
+</section>

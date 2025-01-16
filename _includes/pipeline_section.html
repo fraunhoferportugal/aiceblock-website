@@ -1,0 +1,40 @@
+<section class="pipeline-section">
+    <div class="pipeline-content-wrapper">
+        <div class="pipeline-text-content">
+            <h2>{{ site.data.pipeline_section.title }}</h2>
+            <p>{{ site.data.pipeline_section.subtitle }}</p>
+        </div>
+        <div class="pipeline-container">
+            <div class="main-pipeline-image">
+                <img src="{{ site.data.pipeline_section.main_pipeline_image.src }}"
+                    alt="{{ site.data.pipeline_section.main_pipeline_image.alt }}" />
+            </div>
+            <div class="pipeline-overlays">
+                {% for overlay in site.data.pipeline_section.overlays %}
+                <div class="overlay-image" data-top="{{ overlay.position.top }}" data-left="{{ overlay.position.left }}"
+                    data-description="{{ overlay.description }}">
+                    <img src="{{ overlay.image.src }}" alt="{{ overlay.image.alt }}" />
+                    <div class="description-bubble">
+                        <span class="bubble-number">{{ forloop.index | prepend: "0" }}</span>
+                        <span class="bubble-title">{{ overlay.title }}</span>
+                        <p class="bubble-description">{{ overlay.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <p class="pipeline-bottom-text">{{ site.data.pipeline_section.bottom_text }}</p>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const overlayImages = document.querySelectorAll('.overlay-image');
+        overlayImages.forEach(function (overlay) {
+            const top = overlay.getAttribute('data-top');
+            const left = overlay.getAttribute('data-left');
+            overlay.style.top = `${Number(top) - 30}px`;
+            overlay.style.left = `${Number(left) - 30}px`;
+        });
+    });
+</script>

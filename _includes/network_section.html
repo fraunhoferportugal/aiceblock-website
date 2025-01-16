@@ -1,0 +1,18 @@
+<section class="network-section">
+    <div class="network-content-wrapper">
+        <div class="network-text-content">
+            <h2>{{ site.data.network_section.title }}</h2>
+            <p>{{ site.data.network_section.subtitle }}</p>
+        </div>
+        <div class="network-container">
+            <img src="{{ site.data.network_section.image.src }}" alt="{{ site.data.network_section.image.alt }}" />
+            {% for column in site.data.network_section.columns %}
+            <div class="network-column">
+                <h3>{{ column.title }}</h3>
+                <p>{{ column.description }}</p>
+                <a href="{{ column.button.url }}">{{ column.button.text }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

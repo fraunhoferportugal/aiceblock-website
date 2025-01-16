@@ -1,0 +1,68 @@
+<section class="contacts-section" id="{{ include.id }}">
+    <div class="contacts-content-wrapper">
+        <div class="contacts-text-content">
+            <h2>{{ site.data.contacts_section.title }}</h2>
+        </div>
+        <div class="contacts-container">
+            <div class="contacts-column">
+                <p>{{ site.data.contacts_section.description }}</p>
+                <div class="contacts-list">
+                    {% for contact in site.data.contacts_section.contacts %}
+                    <div class="contacts-item">
+                        <img src="{{ contact.image.src }}" alt="{{ contact.image.alt }}">
+                        {% if contact.ref %}
+                        <a href="{{ contact.ref }}" target="_blank">{{ contact.text }}</a>
+                        {% else %}
+                        <span>{{ contact.text }}</span>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <form class="contacts-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="{{ site.env.WEB3FORMS_ACCESS_KEY }}">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <h3>{{ site.data.contacts_section.form.title }}</h3>
+                <div class="contacts-form-name">
+                    <input type="text" name="first_name"
+                        placeholder="{{ site.data.contacts_section.form.first_name_placeholder }}" required>
+                    <input type="text" name="last_name"
+                        placeholder="{{ site.data.contacts_section.form.last_name_placeholder }}" required>
+                </div>
+                <div class="contacts-form-email">
+                    <input type="email" name="email"
+                        placeholder="{{ site.data.contacts_section.form.email_placeholder }}" required>
+                </div>
+                <div class="contacts-form-subject">
+                    <select name="subject" id="subject-dropdown">
+                        {% for subject in site.data.contacts_section.form.subjects %}
+                        <option value="{{ site.data.contacts_section.form.prepend_subject }} - {{ subject }}">{{ subject
+                            }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="contacts-form-message">
+                    <textarea name="Message" placeholder="{{ site.data.contacts_section.form.message_placeholder }}"
+                        required></textarea>
+                </div>
+                <button type="submit">{{ site.data.contacts_section.form.button_text }}</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedIndex = parseInt(urlParams.get("subject"), 10);
+        if (!isNaN(selectedIndex)) {
+            console.log(selectedIndex);
+            const dropdown = document.getElementById("subject-dropdown");
+            const options = dropdown.options;
+            if (selectedIndex >= 0 && selectedIndex < options.length) {
+                dropdown.selectedIndex = selectedIndex;
+            }
+        }
+    });
+</script>

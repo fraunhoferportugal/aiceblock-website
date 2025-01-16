@@ -1,0 +1,129 @@
+<section class="roadmap-section">
+    <div class="roadmap-content-wrapper">
+        <div class="roadmap-text-content">
+            <h2>{{ site.data.roadmap_section.title }}</h2>
+            <h4>{{ site.data.roadmap_section.subtitle }}</h4>
+        </div>
+        <div class="roadmap-top-buttons">
+            {% for section in site.data.roadmap_section.sections %}
+            <button data-index="{{ forloop.index0 }}" class="roadmap-button">{{ section.title }}</button>
+            {% unless forloop.last %}
+            <span>|</span>
+            {% endunless %}
+            {% endfor %}
+        </div>
+        {% for section in site.data.roadmap_section.sections %}
+        <div class="roadmap-container">
+            <div class="section-column">
+                <div class="section-column-image">
+                    <img src="{{ section.image.src }}" alt="{{ section.image.alt }}" />
+                </div>
+                <h2>{{ section.title }}</h2>
+                <h4>{{ section.subtitle }}</h4>
+                <p>{{ section.description }}</p>
+            </div>
+            <div class="roadmap-row-container">
+                <div class="roadmap-row">
+                    {% for roadmap in section.roadmap %}
+                    <div class="roadmap-column">
+                        <span>{{ forloop.index | prepend: "0" }}</span>
+                        <h4>{{ roadmap.title }}</h4>
+                        <p>{{ roadmap.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="roadmap-bottom-buttons">
+                    <button><img src="/assets/images/icons/arrow-icon.svg" alt="Roadmap button - backward"></button>
+                    <button><img src="/assets/images/icons/arrow-icon.svg" alt="Roadmap button - forward"></button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".roadmap-button");
+        const sections = document.querySelectorAll(".roadmap-container");
+
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                buttons.forEach((button) => {
+                    button.classList.remove("active");
+                });
+                sections.forEach(section => {
+                    section.classList.remove("active");
+                });
+                const sectionToShow = sections[index];
+                sectionToShow.classList.add("active");
+                button.classList.add("active");
+            });
+        });
+
+        if (buttons.length > 0) {
+            buttons[0].classList.add("active");
+        }
+
+        if (sections.length > 0) {
+            sections[0].classList.add("active");
+        }
+
+        sections.forEach(section => {
+            const row = section.querySelector(".roadmap-row");
+            const prevButton = section.querySelector(".roadmap-bottom-buttons button:first-child");
+            const nextButton = section.querySelector(".roadmap-bottom-buttons button:last-child");
+
+            let scrollAmount = 0;
+            const gap = parseInt(window.getComputedStyle(row).getPropertyValue("gap"));
+            const columnWidth = row.children[0].offsetWidth + gap;
+
+            function updateButtonStates() {
+                const maxScroll = row.scrollWidth - row.offsetWidth;
+
+                if (scrollAmount === 0) {
+                    prevButton.disabled = true;
+                } else {
+                    prevButton.disabled = false;
+                }
+
+                if (scrollAmount >= maxScroll) {
+                    nextButton.disabled = true;
+                } else {
+                    nextButton.disabled = false;
+                }
+            }
+
+            nextButton.addEventListener("click", () => {
+                const maxScroll = row.scrollWidth - row.offsetWidth;
+                if (scrollAmount + columnWidth <= maxScroll) {
+                    scrollAmount += columnWidth;
+                    row.scrollTo({
+                        left: scrollAmount,
+                        behavior: "smooth"
+                    });
+                } else {
+                    scrollAmount = maxScroll;
+                    row.scrollTo({
+                        left: scrollAmount,
+                        behavior: "smooth"
+                    });
+                }
+                updateButtonStates();
+            });
+
+            prevButton.addEventListener("click", () => {
+                if (scrollAmount - columnWidth >= 0) {
+                    scrollAmount -= columnWidth;
+                    row.scrollTo({
+                        left: scrollAmount,
+                        behavior: "smooth"
+                    });
+                }
+                updateButtonStates();
+            });
+
+            updateButtonStates();
+        });
+    });
+</script>

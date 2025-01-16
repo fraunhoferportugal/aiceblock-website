@@ -1,0 +1,21 @@
+title: "Resources for trustworthy AI compliance"
+subtitle: >
+  Stay informed with the latest official documentation, commentaries, white papers, and tools supporting trustworthy AI development.
+  Learn how AICeBlock and our partners are at the forefront of compliance, aligning with regulations like the EU AI Act, GDPR, and emerging ISO standards.
+
+columns:
+  - title: "Official Documents"
+    resource_group_id: "official_documents"
+    image:
+      src: "/assets/images/resources/documents.svg"
+      alt: "Documents icon"
+  - title: "Additional Documents"
+    resource_group_id: "additional_documents"
+    image:
+      src: "/assets/images/resources/documents.svg"
+      alt: "Additional documents icon"
+  - title: "White Papers"
+    resource_group_id: "white_papers"
+    image:
+      src: "/assets/images/resources/papers.svg"
+      alt: "White papers icon"

@@ -1,0 +1,54 @@
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="logo-section">
+                <img src="{{ site.baseurl }}{{ site.data.footer.logo.src }}" alt="{{ site.data.footer.logo.alt }}"
+                    class="footer-logo">
+                <p>{{ site.data.footer.logo.description }}</p>
+            </div>
+            <p class="footer-copyright-left">
+                {{ site.data.footer.copyright }}
+            </p>
+        </div>
+        <div class="footer-right">
+            {% for column in site.data.footer.footer_links %}
+            <ul class="footer-links">
+                {% for link in column.links %}
+                <li>
+                    <a href="{{ link.url | relative_url }}">{{ link.text }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+            <div class="footer-extra">
+                <div class="newsletter">
+                    <h3>{{ site.data.footer.newsletter.title }}</h3>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key"
+                            value="{{ site.env.WEB3FORMS_ACCESS_KEY | default: site.web3forms_access_key }}">
+                        <input type="hidden" name="subject" value="{{ site.data.footer.newsletter.email_subject }}">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <div class="footer-input-wrapper">
+                            <input type="email" name="email" placeholder="{{ site.data.footer.newsletter.placeholder }}"
+                                required>
+                            <button type="submit">{{ site.data.footer.newsletter.button_text }}</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <h3>{{ site.data.footer.social_links.title }}</h3>
+                    <div class="social-links-list">
+                        {% for social in site.data.footer.social_links.links %}
+                        <a href="{{ social.url }}" target="_blank" rel="noopener">
+                            <img src="{{ site.baseurl }}{{ social.icon }}" alt="{{ social.alt }}">
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copyright-bottom">
+            {{ site.data.footer.copyright }}
+        </p>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<section class="pillars-section">
+    <a href="{{ site.data.pillars_section.cta_button.url }}" class="cta-button">
+        <span>{{ site.data.pillars_section.cta_button.text }}</span>
+        <div class="cta-button-img-container">
+            <img src="{{ site.data.pillars_section.cta_button.icon.src }}"
+                alt="{{ site.data.pillars_section.cta_button.icon.alt }}">
+        </div>
+    </a>
+    <div class="pillars-content-wrapper">
+        <div class="pillars-text-content">
+            <h2>{{ site.data.pillars_section.title }}</h2>
+            <p>{{ site.data.pillars_section.subtitle }}</p>
+        </div>
+        <div class="pillars-container">
+            {% for pillar in site.data.pillars_section.pillars %}
+            <div class="pillar">
+                <img src="{{ pillar.image.src }}" alt="{{ pillar.image.alt }}" />
+                <h3>{{ pillar.title }}</h3>
+                <p>{{ pillar.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<script>
+    window.addEventListener('load', function () {
+        const targetElement = document.querySelector('.pillars-section .cta-button');
+        const originalPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        targetElement.dataset.originalTop = originalPosition;
+    });
+
+    window.addEventListener('scroll', function () {
+        const targetElement = document.querySelector('.pillars-section .cta-button');
+        const targetOffset = targetElement.getBoundingClientRect().top;
+        const threshold = 50;
+
+        if (window.scrollY + threshold > targetElement.dataset.originalTop) {
+            targetElement.classList.add('scrolled');
+        } else {
+            targetElement.classList.remove('scrolled');
+        }
+    });
+</script>

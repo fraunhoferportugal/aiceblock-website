@@ -1,0 +1,35 @@
+title: "The three pillars of AI compliance"
+subtitle: >
+  Building trustworthy AI isn't just about technology — it's about meeting and exceeding the standards that ensure safety, privacy, and reliability.
+  AICeBlock is grounded on three core pillars essential for robust AI compliance: Targets, Adherence Support, and Verification.
+
+cta_button:
+  #text: "Start Your Guided Tour"
+  text: "Request a Demo"
+  url: "/guided-tour/"
+  icon:
+    src: "/assets/images/icons/arrow-icon.svg"
+    alt: "Arrow Icon"
+
+pillars:
+  - image:
+      src: "/assets/images/pillars/compliance.svg"
+      alt: "Compliance Illustration"
+    title: "Set Clear\nCompliance Targets"
+    description: >
+      Define and fill Checklists to align with the latest regulations, standards, and internal guidelines — including the EU AI Act,
+      GDPR, and emerging ISO standards — to ensure your AI projects meet all necessary compliance requirements.
+  - image:
+      src: "/assets/images/pillars/adherence.svg"
+      alt: "Adherence Illustration"
+    title: "Support Adherence with Robust Processes"
+    description: >
+      Implement processes and technologies that facilitate compliance. AICeBlock provides tools that integrate
+      seamlessly into your workflows, making adherence to standards straightforward and efficient.
+  - image:
+      src: "/assets/images/pillars/verification.svg"
+      alt: "Verification Illustration"
+    title: "Achieve Verification through Immutable Proof"
+    description: >
+      Establish objective, blockchain-backed evidence of compliance. With AICeBlock, every action is recorded immutably,
+      providing verifiable proof of your efforts towards complying with regulatory frameworks and standards.

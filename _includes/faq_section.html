@@ -1,0 +1,43 @@
+<section class="faq-section">
+    <div class="faq-content-wrapper">
+        <div class="faq-text-content">
+            <h2>{{ site.data.faq_section.title }}</h2>
+            <p>{{ site.data.faq_section.subtitle }}</p>
+        </div>
+        <div class="faq-container">
+            <div class="questions-list">
+                {% for faq in site.data.faq_section.faqs %}
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h3>{{ faq.question }}</h3>
+                        <img class="faq-arrow" src="{{ '/assets/images/icons/down-arrow-icon.svg' | relative_url }}"
+                            alt="Small arrow icon">
+                    </div>
+                    <div class="faq-answer">
+                        <p>{{ faq.answer }}</p>
+                    </div>
+                    {% unless forloop.last %}
+                    <hr>
+                    {% endunless %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleAnswer(element) {
+        const faqItems = document.querySelectorAll('.faq-item');
+        const faqItem = element.closest('.faq-item');
+        const isActive = faqItem.classList.contains('active');
+
+        faqItems.forEach(item => {
+            item.classList.remove('active');
+        });
+
+        if (!isActive) {
+            faqItem.classList.add('active');
+        }
+    }
+</script>
