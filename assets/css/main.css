@@ -6,6 +6,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    font-size: clamp(14px, 1vw, 18px);
 }
 
 * {
@@ -419,8 +420,8 @@ main>section {
 }
 
 .hero-section .image-container img {
-    max-width: 100%;
-    height: auto;
+    width: 51.9375rem;
+    height: 50rem;
 }
 
 /*============================ CTA BUTTON ============================*/
@@ -482,18 +483,16 @@ main>section {
     background-color: #EFF2F5;
     color: #180D5B;
     height: 100vh;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .pillars-section .cta-button {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 3.125rem;
+    right: 3.125rem;
     background: #180D5B;
     z-index: 10;
-    -webkit-box-shadow: 0px 0px 30px 6px rgba(24, 13, 91, 0.33);
-    -moz-box-shadow: 0px 0px 30px 6px rgba(24, 13, 91, 0.33);
-    box-shadow: 0px 0px 30px 6px rgba(24, 13, 91, 0.33);
+    box-shadow: 0 0 1.875rem 0.375rem rgba(24, 13, 91, 0.33);
 }
 
 .pillars-section .cta-button span {
@@ -509,15 +508,13 @@ main>section {
 }
 
 .pillars-section .cta-button:hover {
-    -webkit-box-shadow: 0px 0px 30px 15px rgba(24, 13, 91, 0.33);
-    -moz-box-shadow: 0px 0px 30px 15px rgba(24, 13, 91, 0.33);
-    box-shadow: 0px 0px 30px 15px rgba(24, 13, 91, 0.33);
+    box-shadow: 0 0 1.875rem 0.9375rem rgba(24, 13, 91, 0.33);
 }
 
 .pillars-section .cta-button.scrolled {
     position: fixed;
-    top: 50px;
-    right: 50px;
+    top: 3.125rem;
+    right: 3.125rem;
 }
 
 .pillars-content-wrapper {
@@ -525,9 +522,9 @@ main>section {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
-    gap: 80px;
+    gap: 3rem;
 }
 
 .pillars-text-content {
@@ -538,18 +535,18 @@ main>section {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
     color: #180D5B;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .pillars-text-content p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     color: #180D5B;
     margin: 0 auto;
     width: 66%;
@@ -557,7 +554,7 @@ main>section {
 
 .pillars-container {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: center;
     align-items: stretch;
     width: 100%;
@@ -565,36 +562,38 @@ main>section {
 
 .pillar {
     background: linear-gradient(to bottom, #FFFFFF, #EFF2F5);
-    border-radius: 32px;
-    padding: 40px 40px;
+    border-radius: 2rem;
+    padding: 2.5rem;
     text-align: left;
-    max-width: 400px;
+    max-width: 25rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375rem;
     font-family: 'Inter';
     font-style: normal;
 }
 
 .pillar img {
-    margin: 0 0 20px 0;
+    margin: 0 0 1.25rem 0;
+    width: 12.875rem;
+    height: 16.9375rem;
 }
 
 .pillar h3 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 34px;
+    font-size: 1.375rem;
+    line-height: 2.125rem;
     white-space: pre-line;
 }
 
 .pillar p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
 }
 
 .pillar h3,
@@ -613,17 +612,17 @@ main>section {
     align-items: center;
     background-color: white;
     color: #180D5B;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     height: 100vh;
 }
 
 .benefits-content-wrapper {
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 3rem;
 }
 
 .benefits-text-content {
@@ -631,16 +630,17 @@ main>section {
 }
 
 .benefits-text-content h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
-    line-height: 42px;
-    margin: 20px 0;
+    line-height: 2.625rem;
+    margin: 1.25rem auto;
+    width: 66%;
 }
 
 .benefits-text-content h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 2rem;
     width: 80%;
     margin: 0 auto;
 }
@@ -649,20 +649,20 @@ main>section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
     width: 100%;
 }
 
 .carousel-dots {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-right: 20px;
+    gap: 0.625rem;
+    margin-right: 1.25rem;
 }
 
 .carousel-dots .dot {
-    width: 12px;
-    height: 12px;
+    width: 0.75rem;
+    height: 0.75rem;
     background-color: #ccc;
     border-radius: 50%;
     cursor: pointer;
@@ -680,24 +680,29 @@ main>section {
     align-items: center;
 }
 
+.carousel-image img {
+    width: 31rem;
+    height: 31rem;
+}
+
 .carousel-items {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .carousel-item {
     cursor: pointer;
-    border-radius: 32px;
-    padding: 0 28px;
+    border-radius: 2rem;
+    padding: 0 1.75rem;
     position: relative;
     transition: padding 0.2s ease;
 }
 
 .carousel-item.active {
     background: linear-gradient(to right, #EFF2F5, #FFFFFF);
-    padding: 28px;
+    padding: 1.75rem;
 }
 
 .carousel-item h3,
@@ -727,22 +732,22 @@ main>section {
 
 .carousel-item h3 {
     font-weight: 500;
-    font-size: 22px;
-    line-height: 34px;
-    margin-bottom: 5px;
+    font-size: 1.375rem;
+    line-height: 2.125rem;
+    margin-bottom: 0.3125rem;
 }
 
 .carousel-item h4 {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    margin-bottom: 15px;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 0.9375rem;
 }
 
 .carousel-item p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
 }
 
 /*============================ PIPELINE SECTION ============================*/
@@ -754,12 +759,13 @@ main>section {
     align-items: center;
     background-color: #180D5B;
     color: #EFF2F5;
-    padding: 0 20px;
-    height: 100vh;
+    padding: 0 1.25rem;
+    min-height: 100vh;
+    padding: 3rem;
 }
 
 .pipeline-content-wrapper {
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -769,32 +775,26 @@ main>section {
 
 .pipeline-text-content {
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pipeline-text-content h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
-    line-height: 42px;
-    margin: 20px 0;
+    line-height: 2.625rem;
+    margin: 1.25rem auto;
+    width: 66%;
 }
 
 .pipeline-text-content p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.625rem;
     width: 80%;
     margin: 0 auto;
-}
-
-.pipeline-section {
-    font-family: 'Inter';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #180D5B;
-    color: #EFF2F5;
-    padding: 0 20px;
-    height: 100vh;
 }
 
 .pipeline-text-content {
@@ -802,29 +802,31 @@ main>section {
 }
 
 .pipeline-text-content h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
-    line-height: 42px;
-    margin: 20px 0;
+    line-height: 2.625rem;
+    margin: 1.25rem 0;
 }
 
 .pipeline-text-content p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.625rem;
     width: 100%;
     margin: 0 auto;
 }
 
+/* PIPELINE (CAN'T BE RELATIVE) */
+
 .pipeline-container {
     position: relative;
-    width: 100%;
     height: 100%;
+    width: auto;
 }
 
 .main-pipeline-image img {
     width: max-content;
-    padding: 111px 0 0 157px;
+    padding: 111px 0 0 162px;
     margin: 0 0 63px 0;
 }
 
@@ -847,7 +849,7 @@ main>section {
 }
 
 .overlay-image:hover img {
-    filter: drop-shadow(0px 0px 20px rgba(136, 255, 243, 0.4));
+    filter: drop-shadow(0 0 1.25rem rgba(136, 255, 243, 0.4));
 }
 
 .overlay-image[data-top] {
@@ -861,41 +863,41 @@ main>section {
 .description-bubble {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.9375rem;
     position: absolute;
     bottom: 50%;
     right: 50%;
     transform: translateX(100%);
     background: rgba(12, 3, 65, 0.9);
-    padding: 30px 18px;
-    border-radius: 10px;
-    border: 1px solid #88FFF3;
+    padding: 1.875rem 1.125rem;
+    border-radius: 0.625rem;
+    border: 0.0625rem solid #88FFF3;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease;
-    width: 320px;
+    width: 20rem;
     z-index: 20;
 }
 
 .bubble-number {
     display: block;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 1.125rem;
     color: #88FFF3;
 }
 
 .bubble-title {
     display: block;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.75rem;
 }
 
 .bubble-description {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     margin: 0;
     white-space: pre-line;
 }
@@ -906,9 +908,9 @@ main>section {
 }
 
 .pipeline-bottom-text {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.625rem;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -933,7 +935,7 @@ main>section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .resources-text-content {
@@ -1147,7 +1149,7 @@ main>section {
 .faq-item hr {
     margin: 1.25rem 0 0 0;
     background-color: rgba(24, 13, 91, 0.3);
-    height: 1px;
+    height: 0.0625rem;
     border: none;
 }
 
@@ -1220,8 +1222,8 @@ main>section {
 }
 
 .about-section .image-container img {
-    max-width: 100%;
-    height: auto;
+    width: 30rem;
+    height: 43.5rem;
 }
 
 /*============================ PARTNERSHIPS SECTION ============================*/
@@ -1233,7 +1235,7 @@ main>section {
     background-color: #180D5B;
     color: #EFF2F5;
     height: 100vh;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .partnerships-content-wrapper {
@@ -1241,9 +1243,9 @@ main>section {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
-    gap: 80px;
+    gap: 3rem;
 }
 
 .partnerships-text-content {
@@ -1254,22 +1256,22 @@ main>section {
 
 .partnerships-text-content h2 {
     font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    margin: 20px 0;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    margin: 1.25rem 0;
 }
 
 .partnerships-text-content p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     margin: 0 auto;
     width: 100%;
 }
 
 .partnerships-container {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: center;
     align-items: stretch;
     width: 100%;
@@ -1277,21 +1279,23 @@ main>section {
 
 .partnership {
     background: linear-gradient(to bottom, #160C55, #180D5B);
-    border-radius: 32px;
-    padding: 60px 40px 60px 40px;
+    border-radius: 2rem;
+    padding: 3.75rem 2.5rem 3.75rem 2.5rem;
     text-align: left;
-    max-width: 700px;
+    max-width: 43.75rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 15px;
+    gap: 0.9375rem;
     font-family: 'Inter';
     font-style: normal;
 }
 
 .partnership img {
-    margin: 0 0 20px 0;
+    margin: 0 0 1.25rem 0;
+    height: 3.125rem;
+    width: auto;
 }
 
 .partnership h3,
@@ -1301,21 +1305,21 @@ main>section {
 
 .partnership h3 {
     font-weight: 500;
-    font-size: 22px;
-    line-height: 34px;
+    font-size: 1.375rem;
+    line-height: 2.125rem;
     white-space: pre-line;
 }
 
 .partnership p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
 }
 
 .partnership a {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     color: #88FFF3;
 }
 
@@ -1328,7 +1332,7 @@ main>section {
     background-color: #180D5B;
     color: #EFF2F5;
     height: 100vh;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .network-content-wrapper {
@@ -1336,9 +1340,9 @@ main>section {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 90rem;
     width: 70%;
-    gap: 80px;
+    gap: 3rem;
 }
 
 .network-text-content {
@@ -1349,41 +1353,42 @@ main>section {
 
 .network-text-content h2 {
     font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    margin: 20px 0;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    margin: 1.25rem 0;
 }
 
 .network-text-content p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     margin: 0 auto;
     width: 100%;
 }
 
 .network-container {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
     justify-content: center;
     align-items: stretch;
     width: 100%;
 }
 
 .network-container img {
-    margin: 38px;
+    width: 24.0625rem;
+    height: 24.125rem;
 }
 
 .network-column {
     background: linear-gradient(to bottom, #160C55, #180D5B);
-    border-radius: 32px;
-    padding: 60px 40px 60px 40px;
+    border-radius: 2rem;
+    padding: 3.75rem 2.5rem 3.75rem 2.5rem;
     text-align: left;
-    min-width: 460px;
+    min-width: 28.75rem;
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 20px;
+    gap: 1.25rem;
     font-family: 'Inter';
     font-style: normal;
 }
@@ -1396,29 +1401,29 @@ main>section {
 
 .network-column h3 {
     font-weight: 500;
-    font-size: 22px;
-    line-height: 34px;
+    font-size: 1.375rem;
+    line-height: 2.125rem;
     color: #88FFF3;
 }
 
 .network-column p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
 }
 
 .network-column a {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1rem;
+    line-height: 2rem;
     background-color: #88FFF3;
-    padding: 10px 0;
-    border-radius: 40px;
-    min-width: 175px;
+    padding: 0.625rem 0;
+    border-radius: 2.5rem;
+    min-width: 10.9375rem;
     text-align: center;
     text-decoration: none;
     color: #180D5B;
-    margin: 10px 0 0 0;
+    margin: 0.625rem 0 0 0;
 }
 
 /*============================ CONTACTS SECTION ============================*/
@@ -1434,17 +1439,17 @@ main>section {
     align-items: center;
     background-color: #EFF2F5;
     color: #180D5B;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     height: 100vh;
 }
 
 .contacts-content-wrapper {
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 3rem;
 }
 
 .contacts-text-content {
@@ -1452,50 +1457,50 @@ main>section {
 }
 
 .contacts-text-content h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
-    line-height: 42px;
-    margin: 20px 0;
+    line-height: 2.625rem;
+    margin: 0;
 }
 
 .contacts-container {
     width: 100%;
-    padding: 50px;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 3.125rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .contacts-column {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 460px;
+    gap: 1.25rem;
+    max-width: 28.75rem;
 }
 
 .contacts-column p {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     white-space: pre-line;
 }
 
 .contacts-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .contacts-item {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
 }
 
 .contacts-item a {
@@ -1503,42 +1508,42 @@ main>section {
 }
 
 .contacts-form {
-    min-width: 800px;
+    min-width: 50rem;
     background: linear-gradient(to bottom, #FFFFFF, #EFF2F5);
-    border-radius: 32px;
-    padding: 50px;
+    border-radius: 2rem;
+    padding: 3.125rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .contacts-form h3 {
     font-weight: 500;
-    font-size: 22px;
-    line-height: 34px;
+    font-size: 1.375rem;
+    line-height: 2.125rem;
     margin: 0;
 }
 
 .contacts-form * input,
 .contacts-form * textarea,
 .contacts-form * select {
-    border-radius: 26px;
+    border-radius: 1.625rem;
     background-color: #EFF2F5;
     border: solid;
     border-color: #180D5B;
     color: #180D5B;
-    border-width: 1px;
-    padding: 5px 18px;
+    border-width: 0.0625rem;
+    padding: 0.3125rem 1.125rem;
     font-family: 'Inter';
     font-weight: 500;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1rem;
+    line-height: 2rem;
 }
 
 .contacts-form-name {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .contacts-form-name input {
@@ -1561,21 +1566,21 @@ main>section {
 
 .contacts-form-message textarea {
     width: 100%;
-    height: 250px;
+    height: 15.625rem;
     resize: vertical;
-    padding-top: 10px;
+    padding-top: 0.625rem;
 }
 
 .contacts-form button {
     background-color: #180D5B;
-    border-radius: 40px;
+    border-radius: 2.5rem;
     text-align: center;
-    max-width: 200px;
+    max-width: 12.5rem;
     color: #88FFF3;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 32px;
-    padding: 6px 0;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0.375rem 0;
     border: none;
 }
 
@@ -1600,7 +1605,7 @@ main>section {
     background-repeat: no-repeat;
     background-size: auto;
     border-radius: 2rem;
-    box-shadow: 0px 0px 1.875rem 0.375rem rgba(136, 255, 243, 0.33);
+    box-shadow: 0 0 1.875rem 0.375rem rgba(136, 255, 243, 0.33);
 }
 
 .demo-section-text-content {
@@ -1655,31 +1660,31 @@ main>section {
     align-items: center;
     background-color: #FCFCFC;
     color: #180D5B;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     min-height: 100vh;
 }
 
 .coming-soon-content-wrapper {
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     text-align: center;
 }
 
 .coming-soon-content-wrapper h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
-    line-height: 42px;
-    margin: 20px 0;
+    line-height: 2.625rem;
+    margin: 1.25rem 0;
 }
 
 .coming-soon-content-wrapper p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.625rem;
     width: 60%;
     margin: 0 auto;
 }
@@ -1704,7 +1709,7 @@ main>section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 2.5rem;
 }
 
 .roadmap-top-buttons {
@@ -1737,16 +1742,17 @@ main>section {
 }
 
 .roadmap-text-content h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
-    line-height: 42px;
-    margin: 20px 0;
+    line-height: 2.625rem;
+    margin: 1.25rem auto;
+    width: 66%;
 }
 
 .roadmap-text-content h4 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.625rem;
     width: 66%;
     margin: 0 auto;
 }
