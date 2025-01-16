@@ -28,8 +28,8 @@ overlays:
     position:
       top: "478"
       left: "180"
-    title: "When done on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
-    description: "No need to re-run things every time if you have access to the correct data version - links from Data version and to Data Cards are immutable"
+    title: "Data Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
+    description: "No need to re-run things every time if you have access to the correct data version - links from Data and its Processing to Data Cards are immutable"
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-4.svg"
       alt: "Visualization of model training and evaluation in the pipeline"
@@ -44,7 +44,7 @@ overlays:
     position:
       top: "477"
       left: "558"
-    title: "When done on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
+    title: "Model Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
     description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Model version and Model Cards are immutable"
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-6.svg"

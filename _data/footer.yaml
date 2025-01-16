@@ -1,14 +1,14 @@
 logo:
   src: "/assets/images/logo-horizontal.svg"
   alt: "AIceBlock Logo"
-  description: "AICeBlock - Artificial Intelligence Certification Through the Blockchain"
+  #description: "AICeBlock"
 
 copyright: "© 2024 AICeBlock. All Rights Reserved."
 
 footer_links:
   - links:
-      - text: "Guided Tour"
-        url: "/guided-tour/"
+      #- text: "Guided Tour"
+      #  url: "/guided-tour/"
       - text: "Resources"
         url: "/#resources"
       - text: "About us"

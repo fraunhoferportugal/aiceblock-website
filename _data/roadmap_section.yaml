@@ -19,21 +19,21 @@ sections:
         description: >
           Streamline regulatory and standard adherence with predefined or custom checklists.
           These checklists connect directly to deployed pipeline versions, ensuring verifiable transparency and helping organizations meet compliance requirements more easily.
-      - title: "Interactive Workflow Editor"
-        description: >
-          Visualize and edit ML pipelines with our one-of-a-kind Graphical Workflow Builder.
-          This tool bridges the gap between technical execution and organizational oversight, enabling non-programmers to
-          iterate quickly while maintaining a direct link between visual representations and the actual pipeline code.
       - title: "Verifiable Declarations"
         description: >
           Go beyond self-declaration with blockchain-backed verification. AICeBlock ensures the integrity of datasets, code modules, and other ML artifacts by linking them to
           cryptographic signatures on the blockchain. Auditors can instantly verify authenticity and compliance, making the review process faster, more standardized, and secure.
-
+      - title: "Interactive Workflow Editor"
+        description: >
+          Visualize and edit ML pipelines with our one-of-a-kind graphical workflow builder.
+          This tool bridges the gap between technical execution and organizational oversight, enabling non-programmers to
+          iterate quickly while maintaining a direct link between visual representations and the actual pipeline code.
+      
   - title: "Next"
     subtitle: "Advancing the Compliance Support"
     description: >
       The next step in AICeBlock's journey focuses on expanding our capabilities to simplify compliance,
-      enhance privacy, and empower organizations to build AI responsibly with greater confidence. Key features:
+      enhance privacy, and empower organizations to build AI responsibly with greater confidence.
     image:
       src: "/assets/images/roadmap/next.svg"
       alt: "Radmap next section illustration"
@@ -47,19 +47,19 @@ sections:
           Save time and reduce errors with intelligent checklists. Map outputs from your pipelines to checklist fields, ensuring real-time, up-to-date documentation for compliance checks.
           These automated links streamline audits and enhance traceability without the need for constant manual updates.
       - title: "Privacy-Preserving ML"
-        description: "Ensure data security and compliance with privacy-enhancing technologies like Federated Learning for privacy-preserving collaboration, and Differential Privacy to protect sensitive information while still enabling valuable insights.\n\nAICeBlock empowers organizations to meet privacy regulations while driving innovation."
+        description: "Ensure data security and compliance with privacy-enhancing technologies like Federated Learning for privacy-preserving collaboration, and Differential Privacy to protect sensitive information while still enabling valuable insights."
 
   - title: "Beyond"
     subtitle: "Shaping the Future of Trustworthy and Collaborative AI Development"
     description: >
-      AICeBlock's visionary roadmap aims to set the tone on AI governance, sustainability, and collaboration. Key features:
+      AICeBlock's visionary roadmap aims to set the tone on AI governance, sustainability, and collaboration.
     image:
       src: "/assets/images/roadmap/beyond.svg"
       alt: "Radmap beyond section illustration"
     roadmap:
       - title: "ML Copilot"
         description: >
-          Imagine an intelligent guide that bridges the gap between technical and non-technical teams — from decision-makers and end-users to developers and auditors — throughout the
+          Imagine an intelligent guide that bridges the gap between technical and non-technical teams—from decision-makers and end-users to developers and auditors—throughout the
           entire lifecycle of an AI solution. AICeBlock's ML Copilot will recommend tailored methodologies based on project scope, data, and pipeline goals; and support
           decision-making during the design, experimentation, and deployment stages.
       - title: "Support for Green AI"
@@ -69,7 +69,7 @@ sections:
           demand for eco-conscious AI development, benefiting both the environment and operational costs.
       - title: "Confidential Computing"
         description: >
-          Enabling tamper-aware computations ensures organizations can securely perform local computations while maintaining zero-trust principles. With confidential computing
+          Enabling tamper-aware computations ensures organizations can securely perform local computations while maintaining zero-trust principles. With confidential computing,
           sensitive operations are protected from unauthorized access, and verifiable declarations remain intact, safeguarding trust and security throughout the process.
       - title: "Fair Collaboration"
         description: >

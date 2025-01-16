@@ -4,7 +4,7 @@ logo:
   height: "40px"
 
 nav:
-  - text: "Guided Tour"
-    url: "/guided-tour/"
+  #- text: "Guided Tour"
+  #  url: "/guided-tour/"
   - text: "About Us"
     url: "/about-us/"
