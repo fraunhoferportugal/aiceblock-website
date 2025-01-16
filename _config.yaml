@@ -3,8 +3,8 @@ favicon:
   src: "/assets/images/favicon.ico"
   type: "image/x-icon"
 
-plugins:
-  - jekyll-dotenv
+#plugins:
+#  - jekyll-dotenv
 
 exclude: ["README.md"]
 
