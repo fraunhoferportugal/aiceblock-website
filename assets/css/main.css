@@ -1511,6 +1511,12 @@ main>section {
     box-shadow: 0 0 1.875rem 0.9375rem rgba(136, 255, 243, 0.33);
 }
 
+@media (max-width: 90rem) {
+    .network-container img {
+        margin: 0;
+    }
+}
+
 /*============================ CONTACTS SECTION ============================*/
 
 .contacts-section {
