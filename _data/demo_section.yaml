@@ -3,7 +3,7 @@ title: "Your Journey to Compliance Starts Here"
 description: "Embark on a journey to make compliance effortless at every stage of your ML workflow.\n\nBy integrating best practices, we help you reduce errors and inefficiencies, ultimately saving costs while ensuring adherence to regulations like the EU AI Act and GDPR."
 
 cta_button:
-  url: "/about-us?subject=1#contacts"
+  url: "/about?subject=1#contacts"
   text: "Request a Demo"
   icon:
     src: "/assets/images/icons/arrow-icon.svg"
