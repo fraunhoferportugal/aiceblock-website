@@ -251,6 +251,12 @@ main>section {
     }
 }
 
+@media (max-width: 1440px) {
+    .footer {
+        min-height: auto;
+    }
+}
+
 @media (max-width: 1000px) {
     .footer-container {
         flex-direction: column;
@@ -308,12 +314,6 @@ main>section {
 
 /*============================ HERO SECTION ============================*/
 
-@media (max-width: 1440px) {
-    .footer {
-        min-height: auto;
-    }
-}
-
 .hero-section {
     display: flex;
     justify-content: center;
@@ -324,7 +324,7 @@ main>section {
     padding: 4.375rem 1.25rem 0 1.25rem;
 }
 
-.hero-section .hero-section-content-wrapper {
+.hero-section-content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -333,11 +333,11 @@ main>section {
     gap: 1.25rem;
 }
 
-.hero-section .hero-section-text-content {
+.hero-section-text-content {
     max-width: 37.5rem;
 }
 
-.hero-section .hero-section-text-content h1 {
+.hero-section-text-content h1 {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 2.5rem;
@@ -346,7 +346,7 @@ main>section {
     margin: 0;
 }
 
-.hero-section .hero-section-text-content h2 {
+.hero-section-text-content h2 {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 2.5rem;
@@ -406,7 +406,7 @@ main>section {
     }
 }
 
-.hero-section .hero-section-text-content p {
+.hero-section-text-content p {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 1.25rem;
@@ -420,8 +420,39 @@ main>section {
 }
 
 .hero-section .image-container img {
-    width: 51.9375rem;
-    height: 50rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-mobile-button {
+    display: none;
+}
+
+@media (max-width: 90rem) {
+    .hero-section-content-wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+
+    .hero-section .image-container img {
+        max-width: 66%;
+        height: auto;
+    }
+
+    .changing-subtitle span {
+        text-align: center;
+    }
+
+    .hero-section-text-content .cta-button {
+        display: none;
+    }
+
+    .hero-mobile-button {
+        display: block;
+    }
 }
 
 /*============================ CTA BUTTON ============================*/
@@ -557,6 +588,7 @@ main>section {
     gap: 1.25rem;
     justify-content: center;
     align-items: stretch;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -601,6 +633,12 @@ main>section {
     align-self: flex-start;
     margin: 0;
     color: #180D5B;
+}
+
+@media (max-width: 90rem) {
+    .pillars-section .cta-button {
+        display: none;
+    }
 }
 
 /*============================ BENEFITS SECTION ============================*/
@@ -748,6 +786,35 @@ main>section {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.625rem;
+}
+
+@media (max-width: 90rem) {
+    .carousel {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .carousel-items {
+        align-items: center;
+    }
+
+    .carousel-item {
+        display: none;
+        text-align: center;
+    }
+
+    .carousel-item.active {
+        display: block;
+        background: transparent;
+        padding: 0;
+        width: 66%;
+    }
+
+    .carousel-dots {
+        flex-direction: row;
+        gap: 0.625rem;
+        margin-right: 0;
+    }
 }
 
 /*============================ PIPELINE SECTION ============================*/
@@ -915,6 +982,12 @@ main>section {
     text-align: center;
 }
 
+@media (max-width: 90rem) {
+    .pipeline-section {
+        display: none;
+    }
+}
+
 /*============================ RESOURCES SECTION ============================*/
 
 .resources-section {
@@ -961,6 +1034,7 @@ main>section {
     gap: 1.25rem;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .resource-column {
@@ -1962,6 +2036,17 @@ main>section {
 
 .roadmap-container:nth-child(3n+2) .roadmap-column p {
     color: #180D5B;
+}
+
+@media (max-width: 90rem) {
+    .roadmap-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .roadmap-container .section-column {
+        text-align: center;
+    }
 }
 
 /*============================ TEXT SECTION ============================*/
