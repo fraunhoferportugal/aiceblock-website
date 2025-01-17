@@ -5,6 +5,6 @@ logo:
 
 nav:
   #- text: "Guided Tour"
-  #  url: "/guided-tour/"
+  #  url: "/guided-tour"
   - text: "About Us"
-    url: "/about-us/"
+    url: "/about-us"
