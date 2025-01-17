@@ -4,7 +4,9 @@
             <div class="logo-section">
                 <img src="{{ site.baseurl }}{{ site.data.footer.logo.src }}" alt="{{ site.data.footer.logo.alt }}"
                     class="footer-logo">
+                {% if site.data.footer.logo.description %}
                 <p>{{ site.data.footer.logo.description }}</p>
+                {% endif %}
             </div>
             <p class="footer-copyright-left">
                 {{ site.data.footer.copyright }}
