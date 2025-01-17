@@ -66,6 +66,18 @@ main>section {
     color: #D1D6DB;
 }
 
+.header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 2.8rem;
+    width: auto;
+}
+
 /*============================ FOOTER ============================*/
 
 .footer {
@@ -251,6 +263,12 @@ main>section {
     }
 }
 
+@media (max-width: 1440px) {
+    .footer {
+        min-height: auto;
+    }
+}
+
 @media (max-width: 1000px) {
     .footer-container {
         flex-direction: column;
@@ -308,12 +326,6 @@ main>section {
 
 /*============================ HERO SECTION ============================*/
 
-@media (max-width: 1440px) {
-    .footer {
-        min-height: auto;
-    }
-}
-
 .hero-section {
     display: flex;
     justify-content: center;
@@ -324,7 +336,7 @@ main>section {
     padding: 4.375rem 1.25rem 0 1.25rem;
 }
 
-.hero-section .hero-section-content-wrapper {
+.hero-section-content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -333,11 +345,11 @@ main>section {
     gap: 1.25rem;
 }
 
-.hero-section .hero-section-text-content {
+.hero-section-text-content {
     max-width: 37.5rem;
 }
 
-.hero-section .hero-section-text-content h1 {
+.hero-section-text-content h1 {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 2.5rem;
@@ -346,7 +358,7 @@ main>section {
     margin: 0;
 }
 
-.hero-section .hero-section-text-content h2 {
+.hero-section-text-content h2 {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 2.5rem;
@@ -406,7 +418,7 @@ main>section {
     }
 }
 
-.hero-section .hero-section-text-content p {
+.hero-section-text-content p {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 1.25rem;
@@ -420,8 +432,39 @@ main>section {
 }
 
 .hero-section .image-container img {
-    width: 51.9375rem;
-    height: 50rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-mobile-button {
+    display: none;
+}
+
+@media (max-width: 90rem) {
+    .hero-section-content-wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+
+    .hero-section .image-container img {
+        max-width: 66%;
+        height: auto;
+    }
+
+    .changing-subtitle span {
+        text-align: center;
+    }
+
+    .hero-section-text-content .cta-button {
+        display: none;
+    }
+
+    .hero-mobile-button {
+        display: block;
+    }
 }
 
 /*============================ CTA BUTTON ============================*/
@@ -557,6 +600,7 @@ main>section {
     gap: 1.25rem;
     justify-content: center;
     align-items: stretch;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -601,6 +645,12 @@ main>section {
     align-self: flex-start;
     margin: 0;
     color: #180D5B;
+}
+
+@media (max-width: 90rem) {
+    .pillars-section .cta-button {
+        display: none;
+    }
 }
 
 /*============================ BENEFITS SECTION ============================*/
@@ -748,6 +798,35 @@ main>section {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.625rem;
+}
+
+@media (max-width: 90rem) {
+    .carousel {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .carousel-items {
+        align-items: center;
+    }
+
+    .carousel-item {
+        display: none;
+        text-align: center;
+    }
+
+    .carousel-item.active {
+        display: block;
+        background: transparent;
+        padding: 0;
+        width: 66%;
+    }
+
+    .carousel-dots {
+        flex-direction: row;
+        gap: 0.625rem;
+        margin-right: 0;
+    }
 }
 
 /*============================ PIPELINE SECTION ============================*/
@@ -915,6 +994,12 @@ main>section {
     text-align: center;
 }
 
+@media (max-width: 90rem) {
+    .pipeline-section {
+        display: none;
+    }
+}
+
 /*============================ RESOURCES SECTION ============================*/
 
 .resources-section {
@@ -961,6 +1046,7 @@ main>section {
     gap: 1.25rem;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .resource-column {
@@ -1029,6 +1115,8 @@ main>section {
 .resource-link img {
     margin: 0 0 0 0.3125rem;
     display: inline;
+    width: auto;
+    height: 0.75rem;
 }
 
 .resource-column p {
@@ -1234,7 +1322,7 @@ main>section {
     background-color: #180D5B;
     color: #EFF2F5;
     min-height: 100vh;
-    padding: 3rem 1.25rem;
+    padding: calc(3rem + 4.375rem) 1.25rem 3rem 1.25rem;
 }
 
 .partnerships-content-wrapper {
@@ -1274,6 +1362,7 @@ main>section {
     justify-content: center;
     align-items: stretch;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .partnership {
@@ -1328,8 +1417,8 @@ main>section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #180D5B;
-    color: #EFF2F5;
+    background-color: #EFF2F5;
+    color: #180D5B;
     min-height: 100vh;
     padding: 3rem 1.25rem;
 }
@@ -1367,15 +1456,18 @@ main>section {
 
 .network-container {
     display: flex;
+    flex-direction: row;
     gap: 2rem;
     justify-content: center;
-    align-items: stretch;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .network-container img {
     width: 24.0625rem;
     height: 24.125rem;
+    filter: brightness(0) saturate(100%) invert(9%) sepia(85%) saturate(3415%) hue-rotate(247deg) brightness(73%) contrast(108%);
+    margin: 0 2rem 0 0;
 }
 
 .network-column {
@@ -1383,13 +1475,15 @@ main>section {
     border-radius: 2rem;
     padding: 3.75rem 2.5rem 3.75rem 2.5rem;
     text-align: left;
-    min-width: 28.75rem;
+    max-width: 28.75rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 1.25rem;
     font-family: 'Inter';
     font-style: normal;
+    color: #EFF2F5;
 }
 
 .network-column h3,
@@ -1423,6 +1517,18 @@ main>section {
     text-decoration: none;
     color: #180D5B;
     margin: 0.625rem 0 0 0;
+    box-shadow: 0 0 1.875rem 0.375rem rgba(136, 255, 243, 0.33);
+    transition: box-shadow 0.2s ease;
+}
+
+.network-column a:hover {
+    box-shadow: 0 0 1.875rem 0.9375rem rgba(136, 255, 243, 0.33);
+}
+
+@media (max-width: 90rem) {
+    .network-container img {
+        margin: 0;
+    }
 }
 
 /*============================ CONTACTS SECTION ============================*/
@@ -1962,6 +2068,17 @@ main>section {
 
 .roadmap-container:nth-child(3n+2) .roadmap-column p {
     color: #180D5B;
+}
+
+@media (max-width: 90rem) {
+    .roadmap-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .roadmap-container .section-column {
+        text-align: center;
+    }
 }
 
 /*============================ TEXT SECTION ============================*/

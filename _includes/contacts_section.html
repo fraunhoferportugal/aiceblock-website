@@ -20,7 +20,8 @@
                 </div>
             </div>
             <form class="contacts-form" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="{{ site.env.WEB3FORMS_ACCESS_KEY }}">
+                <input type="hidden" name="access_key"
+                    value="{{ site.env.WEB3FORMS_ACCESS_KEY | default: site.web3forms_access_key }}">
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                 <h3>{{ site.data.contacts_section.form.title }}</h3>
