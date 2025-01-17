@@ -66,6 +66,18 @@ main>section {
     color: #D1D6DB;
 }
 
+.header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 2.8rem;
+    width: auto;
+}
+
 /*============================ FOOTER ============================*/
 
 .footer {
@@ -1103,6 +1115,8 @@ main>section {
 .resource-link img {
     margin: 0 0 0 0.3125rem;
     display: inline;
+    width: auto;
+    height: 0.75rem;
 }
 
 .resource-column p {
