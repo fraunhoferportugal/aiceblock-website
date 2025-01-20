@@ -14,11 +14,9 @@ partnerships:
 
   - title: "Imprensa Nacional Casa da Moeda"
     description: >
-      INCM is the result of the merger of two of the oldest industrial establishments in the country, Imprensa Nacional, created in 1768, and Casa da Moeda, with more than 700 years of history.
-      Currently, technological innovation, developed in partnership with some of the main universities and national research centers, is one of the strategic pillars of INCM, whose mission is to
-      create, produce and supply goods and services that require high safety standards, focused on the customer and innovative solutions.
-      Among these essential goods and services, the production of security documents, such as the citizen's card or the passport, the minting of current and collector's coins, the authentication
-      of precious metals, the edition of the Diário da República, and the publication of fundamental works on the Portuguese language and culture.
+       INCM (The Portuguese Mint and Official Printing House) is a centennial public owned company fostering trust and security in relations between governments, citizens and companies. 
+       Currently, technological innovation, developed in partnership with some of the main universities and national research centers, is one of the strategic pillars of INCM, whose mission is to create, produce and supply goods and services that require high safety standards, securing the connection between the physical and digital worlds, in Portugal and abroad. 
+       As diverse examples of these essential goods and services, it is possible to highlight, for instance, the production of security documents such as citizen's cards or passports, the authentication of precious metals and other assets based on seamless end-user verifiable high security direct or indirect marking, the publication of fundamental works on the Portuguese language and culture or, within the AICeBlock ecosystem, acting as a Trusted Third Party for the certification of AI algorithms.
     image:
       src: "/assets/images/about-us/incm-logo.svg"
       alt: "Logo of Imprensa Nacional Casa da Moeda"
