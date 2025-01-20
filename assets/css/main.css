@@ -1354,8 +1354,8 @@ main>section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #180D5B;
-    color: #EFF2F5;
+    background-color: #EFF2F5;
+    color: #180D5B;
     min-height: 100vh;
     padding: calc(3rem + 4.375rem) 1.25rem 3rem 1.25rem;
 }
@@ -1413,6 +1413,7 @@ main>section {
     gap: 0.9375rem;
     font-family: 'Inter';
     font-style: normal;
+    color: #EFF2F5;
 }
 
 .partnership img {
@@ -1452,8 +1453,8 @@ main>section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EFF2F5;
-    color: #180D5B;
+    background-color: #180D5B;
+    color: #EFF2F5;
     min-height: 100vh;
     padding: 3rem 1.25rem;
 }
@@ -1500,7 +1501,8 @@ main>section {
 .network-container img {
     width: 24.0625rem;
     height: 24.125rem;
-    filter: brightness(0) saturate(100%) invert(9%) sepia(85%) saturate(3415%) hue-rotate(247deg) brightness(73%) contrast(108%);
+    /*filter: brightness(0) saturate(100%) invert(9%) sepia(85%) saturate(3415%) hue-rotate(247deg) brightness(73%) contrast(108%);*/
+    filter: brightness(0) saturate(100%) invert(85%) sepia(49%) saturate(349%) hue-rotate(106deg) brightness(101%) contrast(102%);
     margin: 0 2rem 0 0;
 }
 

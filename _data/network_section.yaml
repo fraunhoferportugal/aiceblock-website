@@ -13,11 +13,11 @@ columns:
       Help Fraunhofer AICOS shape AICeBlock's innovative features. Bring your expertise in AI, compliance, or technology to the forefront of innovation, co-developing solutions that empower organizations worldwide.
     button:
       text: "Collaborate"
-      url: "/about?subject=2#contacts"
+      url: "/join-us?subject=2#contacts"
 
   - title: "Become a Trusted Network Member"
     description: >
       Join the AICeBlock compliance ecosystem started by INCM as a trusted third-party. Play a pivotal role in ensuring AI accountability and verifiability while gaining access to a growing network of trustworthy AI practitioners.
     button:
       text: "Join Us"
-      url: "/about?subject=3#contacts"
+      url: "/join-us?subject=3#contacts"
