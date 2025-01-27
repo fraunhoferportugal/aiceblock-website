@@ -6,8 +6,10 @@
         </div>
         <div class="pipeline-container">
             <div class="main-pipeline-image">
-                <img src="{{ site.data.pipeline_section.main_pipeline_image.src }}"
+                <img class="desktop" src="{{ site.data.pipeline_section.main_pipeline_image.src }}"
                     alt="{{ site.data.pipeline_section.main_pipeline_image.alt }}" />
+                <img class="mobile" src="{{ site.data.pipeline_section.main_pipeline_image_mobile.src }}"
+                    alt="{{ site.data.pipeline_section.main_pipeline_image_mobile.alt }}" />
             </div>
             <div class="pipeline-overlays">
                 {% for overlay in site.data.pipeline_section.overlays %}
@@ -19,6 +21,14 @@
                         <span class="bubble-title">{{ overlay.title }}</span>
                         <p class="bubble-description">{{ overlay.description }}</p>
                     </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="pipeline-descriptions">
+                {% for overlay in site.data.pipeline_section.overlays %}
+                <div class="description" data-top="{{ overlay.mobile-top }}">
+                    <span class>{{ overlay.title }}</span>
+                    <p>{{ overlay.description }}</p>
                 </div>
                 {% endfor %}
             </div>
@@ -35,6 +45,12 @@
             const left = overlay.getAttribute('data-left');
             overlay.style.top = `${Number(top) - 30}px`;
             overlay.style.left = `${Number(left) - 30}px`;
+        });
+
+        const descriptions = document.querySelectorAll('.pipeline-descriptions .description');
+        descriptions.forEach(function (description) {
+            const top = description.getAttribute('data-top');
+            description.style.top = `${Number(top)}px`;
         });
     });
 </script>
