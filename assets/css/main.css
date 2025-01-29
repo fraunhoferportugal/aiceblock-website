@@ -20,6 +20,7 @@ main>section {
 }
 
 @media (max-width: 62.5rem) {
+
     html,
     body {
         scroll-snap-type: none;
@@ -457,8 +458,9 @@ main>section {
     }
 
     .hero-section .image-container img {
-        max-width: 66%;
+        max-width: 100%;
         height: auto;
+        max-height: 50vh;
     }
 
     .changing-subtitle span {
@@ -599,7 +601,7 @@ main>section {
     line-height: 1.625rem;
     color: #180D5B;
     margin: 0 auto;
-    width: 66%;
+    width: 100%;
 }
 
 .pillars-container {
@@ -691,14 +693,14 @@ main>section {
     font-weight: 400;
     line-height: 2.625rem;
     margin: 1.25rem auto;
-    width: 66%;
+    width: 100%;
 }
 
 .benefits-text-content h4 {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 2rem;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -807,6 +809,13 @@ main>section {
     line-height: 1.625rem;
 }
 
+@media (max-width: 62.5rem) {
+    .carousel-dots .dot {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
 @media (max-width: 90rem) {
     .carousel {
         flex-direction: column;
@@ -826,7 +835,8 @@ main>section {
         display: block;
         background: transparent;
         padding: 0;
-        width: 66%;
+        width: 100%;
+        min-height: 14rem;
     }
 
     .carousel-dots {
@@ -875,14 +885,14 @@ main>section {
     font-weight: 400;
     line-height: 2.625rem;
     margin: 1.25rem auto;
-    width: 66%;
+    width: 100%;
 }
 
 .pipeline-text-content p {
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.625rem;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -913,10 +923,14 @@ main>section {
     width: auto;
 }
 
-.main-pipeline-image img {
+.main-pipeline-image .desktop {
     width: max-content;
     padding: 111px 0 0 162px;
     margin: 0 0 63px 0;
+}
+
+.main-pipeline-image .mobile {
+    display: none;
 }
 
 .pipeline-overlays {
@@ -996,6 +1010,37 @@ main>section {
     opacity: 1;
 }
 
+.pipeline-descriptions {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.pipeline-descriptions .description {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 19.625rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pipeline-descriptions .description span {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.pipeline-descriptions .description p {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0;
+    white-space: pre-line;
+}
+
 .pipeline-bottom-text {
     font-size: 1.125rem;
     font-weight: 400;
@@ -1005,10 +1050,34 @@ main>section {
     text-align: center;
 }
 
-/* THIS MAKES PIPELINE INVISIBLE FOR MOBILE (FOR NOW) */
 @media (max-width: 90rem) {
-    .pipeline-section {
+    .main-pipeline-image .desktop {
         display: none;
+    }
+
+    .main-pipeline-image .mobile {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .pipeline-overlays {
+        display: none;
+    }
+
+    .pipeline-descriptions {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        width: 75%;
+    }
+
+    .pipeline-content-wrapper {
+        gap: 0;
     }
 }
 
@@ -1049,7 +1118,7 @@ main>section {
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.625rem;
-    width: 66%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1142,6 +1211,11 @@ main>section {
 @media (max-width: 62.5rem) {
     .resources-container {
         gap: 1rem;
+    }
+
+    .resource-column {
+        height: auto;
+        max-height: 30rem;
     }
 }
 
@@ -1456,7 +1530,7 @@ main>section {
     background-color: #180D5B;
     color: #EFF2F5;
     min-height: 100vh;
-    padding: 3rem 1.25rem;
+    padding: 4.375rem 1.25rem 0 1.25rem;
 }
 
 .network-content-wrapper {
@@ -1465,7 +1539,7 @@ main>section {
     justify-content: space-between;
     align-items: center;
     max-width: 90rem;
-    width: 70%;
+    width: 100%;
     gap: 3rem;
 }
 
@@ -1479,7 +1553,7 @@ main>section {
     font-weight: 400;
     font-size: 2.25rem;
     line-height: 2.625rem;
-    margin: 1.25rem 0;
+    margin: 0 0 1.25rem 0;
 }
 
 .network-text-content p {
@@ -1496,12 +1570,13 @@ main>section {
     gap: 2rem;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .network-container img {
-    width: 24.0625rem;
-    height: 24.125rem;
-    /*filter: brightness(0) saturate(100%) invert(9%) sepia(85%) saturate(3415%) hue-rotate(247deg) brightness(73%) contrast(108%);*/
+    max-width: 24rem;
+    width: 100%;
+    height: auto;
     filter: brightness(0) saturate(100%) invert(85%) sepia(49%) saturate(349%) hue-rotate(106deg) brightness(101%) contrast(102%);
     margin: 0 2rem 0 0;
 }
@@ -1560,13 +1635,21 @@ main>section {
     box-shadow: 0 0 1.875rem 0.9375rem rgba(136, 255, 243, 0.33);
 }
 
+@media (max-width: 30rem) {
+    .network-container img {
+        max-width: 60vw;
+    }
+}
+
+@media (max-width: 62.5rem) {
+    .network-content-wrapper {
+        padding: 4rem 1rem;
+    }
+}
+
 @media (max-width: 90rem) {
     .network-container img {
         margin: 0;
-    }
-
-    .network-container {
-        flex-wrap: wrap;
     }
 }
 
@@ -1693,7 +1776,7 @@ main>section {
 }
 
 .contacts-form-name input {
-    flex: 1;
+    width: 100%;
 }
 
 .contacts-form-email input {
@@ -1871,12 +1954,31 @@ main>section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 4rem;
 }
 
 .roadmap-top-buttons {
     font-weight: 100;
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.roadmap-top-buttons::before,
+.roadmap-top-buttons::after {
+    align-self: stretch;
+    content: '';
+    border: 0.0625rem solid #180D5B;
+}
+
+.roadmap-button:first-child {
+    order: -1;
+}
+
+.roadmap-button:last-child {
+    order: 1;
 }
 
 .roadmap-button {
@@ -1887,8 +1989,8 @@ main>section {
     font-weight: 500;
     font-size: 1.375rem;
     line-height: 2.125rem;
-    padding: 0.625rem 2rem;
     opacity: 25%;
+    flex-grow: 1;
 }
 
 .roadmap-button:hover {
@@ -1908,14 +2010,14 @@ main>section {
     font-weight: 400;
     line-height: 2.625rem;
     margin: 1.25rem auto;
-    width: 66%;
+    width: 100%;
 }
 
 .roadmap-text-content h4 {
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.625rem;
-    width: 66%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -2128,7 +2230,11 @@ main>section {
 
 @media (max-width: 62.5rem) {
     .roadmap-row-container {
-        width: 29rem;
+        max-width: 80vw;
+    }
+
+    .roadmap-column {
+        max-width: 80vw;
     }
 }
 
@@ -2136,7 +2242,7 @@ main>section {
     .roadmap-container {
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        gap: 3rem;
     }
 
     .roadmap-container .section-column {
@@ -2149,6 +2255,10 @@ main>section {
         display: block;
         position: relative;
         top: 1rem;
+    }
+
+    .roadmap-top-buttons {
+        gap: 1rem;
     }
 }
 

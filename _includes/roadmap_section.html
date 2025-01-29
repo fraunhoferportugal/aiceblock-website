@@ -7,9 +7,6 @@
         <div class="roadmap-top-buttons">
             {% for section in site.data.roadmap_section.sections %}
             <button data-index="{{ forloop.index0 }}" class="roadmap-button">{{ section.title }}</button>
-            {% unless forloop.last %}
-            <span>|</span>
-            {% endunless %}
             {% endfor %}
         </div>
         {% for section in site.data.roadmap_section.sections %}
