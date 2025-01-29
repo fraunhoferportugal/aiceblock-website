@@ -6,10 +6,28 @@
         </div>
         <div class="pipeline-container">
             <div class="main-pipeline-image">
+                <!-- WIP -->
+                <map name="image-map">
+                    <area target="" alt="" title="" href="" coords="6,4,138,130" shape="rect">
+                    <area target="" alt="" title="" href="" coords="210,198,290,10" shape="rect">
+                    <area target="" alt="" title="" href="" coords="430,6,660,238" shape="rect">
+                    <area target="" alt="" title="" href="" coords="792,0,1094,236" shape="rect">
+                    <area target="" alt="" title="" href="" coords="140,369,324,509" shape="rect">
+                    <area target="" alt="" title="" href="" coords="628,509,436,373" shape="rect">
+                    <area target="" alt="" title="" href="" coords="876,277,1036,451" shape="rect">
+                </map>
                 <img class="desktop" src="{{ site.data.pipeline_section.main_pipeline_image.src }}"
-                    alt="{{ site.data.pipeline_section.main_pipeline_image.alt }}" />
+                    alt="{{ site.data.pipeline_section.main_pipeline_image.alt }}" usemap="#image-map" />
                 <img class="mobile" src="{{ site.data.pipeline_section.main_pipeline_image_mobile.src }}"
                     alt="{{ site.data.pipeline_section.main_pipeline_image_mobile.alt }}" />
+                <div class="pipeline-descriptions">
+                    {% for overlay in site.data.pipeline_section.overlays %}
+                    <div class="description" data-top="{{ overlay.mobile-top }}">
+                        <span class>{{ overlay.title }}</span>
+                        <p>{{ overlay.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
             <div class="pipeline-overlays">
                 {% for overlay in site.data.pipeline_section.overlays %}
@@ -21,14 +39,6 @@
                         <span class="bubble-title">{{ overlay.title }}</span>
                         <p class="bubble-description">{{ overlay.description }}</p>
                     </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="pipeline-descriptions">
-                {% for overlay in site.data.pipeline_section.overlays %}
-                <div class="description" data-top="{{ overlay.mobile-top }}">
-                    <span class>{{ overlay.title }}</span>
-                    <p>{{ overlay.description }}</p>
                 </div>
                 {% endfor %}
             </div>
@@ -49,8 +59,7 @@
 
         const descriptions = document.querySelectorAll('.pipeline-descriptions .description');
         descriptions.forEach(function (description) {
-            const top = description.getAttribute('data-top');
-            description.style.top = `${Number(top)}px`;
+            description.style.top = description.getAttribute('data-top');
         });
     });
 </script>
