@@ -43,6 +43,10 @@
                 {% endfor %}
             </div>
         </div>
+        <div class="pipeline-explanation-container">
+            <span>{{ site.data.pipeline_section.explanation.text }}</span>
+            <img src="{{ site.data.pipeline_section.explanation.image.src }}" alt="{{ site.data.pipeline_section.explanation.image.alt }}" />
+        </div>
         <p class="pipeline-bottom-text">{{ site.data.pipeline_section.bottom_text }}</p>
     </div>
 </section>

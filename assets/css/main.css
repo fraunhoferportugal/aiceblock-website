@@ -1041,6 +1041,25 @@ main>section {
     white-space: pre-line;
 }
 
+.pipeline-explanation-container {
+    display: none;
+    width: 100%;
+}
+
+.pipeline-explanation-container span {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #88FFF2;
+    text-align: center;
+}
+
+.pipeline-explanation-container img {
+    max-width: 21.8125rem;
+    width: 100%;
+    height: auto;
+}
+
 .pipeline-bottom-text {
     font-size: 1.125rem;
     font-weight: 400;
@@ -1078,6 +1097,14 @@ main>section {
 
     .pipeline-content-wrapper {
         gap: 0;
+    }
+
+    .pipeline-explanation-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4375rem;
+        margin: 0 0 2.4375rem 0;
     }
 }
 
@@ -1322,7 +1349,7 @@ main>section {
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.625rem;
-    text-align: justify;
+    text-align: left;
     white-space: pre-line;
 }
 
@@ -1345,6 +1372,12 @@ main>section {
 
 .faq-item.active .faq-arrow {
     transform: rotate(180deg);
+}
+
+@media (max-width: 62.5rem) {
+    .faq-answer {
+        max-height: none;
+    }
 }
 
 /*============================ ABOUT SECTION ============================*/
