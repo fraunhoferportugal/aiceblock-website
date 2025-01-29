@@ -868,34 +868,22 @@
         </linearGradient>
         <linearGradient id="paint12_linear_163_1070" x1="67.6412" y1="494.137" x2="213.44"
             y2="410.12" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#120231" />
-            <stop offset="0.11" stop-color="#15133E" />
-            <stop offset="0.33" stop-color="#1F4060" />
-            <stop offset="0.64" stop-color="#2E8A98" />
+            <stop stop-color="#180D5B" />
             <stop offset="1" stop-color="#42E8E0" />
         </linearGradient>
         <linearGradient id="paint13_linear_163_1070" x1="46.4523" y1="599.4" x2="193.194"
             y2="514.839" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#120231" />
-            <stop offset="0.11" stop-color="#15133E" />
-            <stop offset="0.33" stop-color="#1F4060" />
-            <stop offset="0.64" stop-color="#2E8A98" />
+            <stop stop-color="#180D5B" />
             <stop offset="1" stop-color="#42E8E0" />
         </linearGradient>
         <linearGradient id="paint14_linear_163_1070" x1="93.7929" y1="632.537" x2="324.608"
             y2="499.528" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#120231" />
-            <stop offset="0.11" stop-color="#15133E" />
-            <stop offset="0.33" stop-color="#1F4060" />
-            <stop offset="0.64" stop-color="#2E8A98" />
+            <stop stop-color="#180D5B" />
             <stop offset="1" stop-color="#42E8E0" />
         </linearGradient>
         <linearGradient id="paint15_linear_163_1070" x1="116.822" y1="525.548" x2="326.474"
             y2="404.735" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#120231" />
-            <stop offset="0.11" stop-color="#15133E" />
-            <stop offset="0.33" stop-color="#1F4060" />
-            <stop offset="0.64" stop-color="#2E8A98" />
+            <stop offset="0.005" stop-color="#180D5B" />
             <stop offset="1" stop-color="#42E8E0" />
         </linearGradient>
         <clipPath id="clip0_163_1070">
