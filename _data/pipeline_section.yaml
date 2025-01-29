@@ -80,4 +80,10 @@ overlays:
     description: "• Drift detection\n• Triggers for retraining\n• Continuous learning\n• ..."
     mobile-top: "95.27%"
 
+explanation:
+  text: "Continuous model monitoring identifies opportunities for improvement, driving new iterations that enhance performance while allowing versionable compliance"
+  image:
+    src: "/assets/images/pipeline/explanation.svg"
+    alt: ""
+
 bottom_text: "From data collection to deployment, each phase is transparent, secure, and compliant with key regulations like the EU AI Act and GDPR. Every connection is verifiable and immutable, ensuring your AI solutions are built on a foundation of trust."
