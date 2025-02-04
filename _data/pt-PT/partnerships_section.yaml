@@ -1,0 +1,23 @@
+title: "Our Strategic Partnerships"
+subtitle: "We collaborate with industry leaders to drive innovation and success."
+
+partnerships:
+  - title: "Fraunhofer Portugal AICOS"
+    description: >
+      Fraunhofer Portugal AICOS is a leading research center, committed to delivering innovative solutions that address societal challenges through advanced technology.
+      With a strong focus on applied research and practical impact, AICOS bridges the gap between cutting-edge developments and real-world applications.
+      Dedicated to the future of AI governance and compliance, AICOS provides tools to streamline these processes, enhance trust and reliability in AI solutions, and ensure their positive impact on society.
+    image:
+      src: "/assets/images/about-us/fhp-logo.svg"
+      alt: "Logo of Fraunhofer Portugal AICOS"
+    url: "https://www.aicos.fraunhofer.pt"
+
+  - title: "Imprensa Nacional Casa da Moeda"
+    description: >
+       INCM (The Portuguese Mint and Official Printing House) is a centennial public owned company fostering trust and security in relations between governments, citizens and companies. 
+       Currently, technological innovation, developed in partnership with some of the main universities and national research centers, is one of the strategic pillars of INCM, whose mission is to create, produce and supply goods and services that require high safety standards, securing the connection between the physical and digital worlds, in Portugal and abroad. 
+       As diverse examples of these essential goods and services, it is possible to highlight, for instance, the production of security documents such as citizen's cards or passports, the authentication of precious metals and other assets based on seamless end-user verifiable high security direct or indirect marking, the publication of fundamental works on the Portuguese language and culture or, within the AICeBlock ecosystem, acting as a Trusted Third Party for the certification of AI algorithms.
+    image:
+      src: "/assets/images/about-us/incm-logo.svg"
+      alt: "Logo of Imprensa Nacional Casa da Moeda"
+    url: "https://incm.pt"

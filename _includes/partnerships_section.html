@@ -1,11 +1,11 @@
 <section class="partnerships-section">
     <div class="partnerships-content-wrapper">
         <div class="partnerships-text-content">
-            <h2>{{ site.data.partnerships_section.title }}</h2>
-            <p>{{ site.data.partnerships_section.subtitle }}</p>
+            <h2>{{ site.data[site.active_lang].partnerships_section.title }}</h2>
+            <p>{{ site.data[site.active_lang].partnerships_section.subtitle }}</p>
         </div>
         <div class="partnerships-container">
-            {% for partnership in site.data.partnerships_section.partnerships %}
+            {% for partnership in site.data[site.active_lang].partnerships_section.partnerships %}
             <div class="partnership">
                 <a href="{{ partnership.url }}">
                     <img src="{{ partnership.image.src }}" alt="{{ partnership.image.alt }}" />

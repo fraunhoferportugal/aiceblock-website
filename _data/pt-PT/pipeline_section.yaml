@@ -1,0 +1,89 @@
+title: "Interactive ML pipeline: traceable and trustworthy workflows"
+subtitle: "Discover how AICeBlock empowers you to visualize and document every critical stage of your ML pipeline."
+
+main_pipeline_image:
+  src: "/assets/images/pipeline/pipeline.svg"
+  alt: "Illustration of an interactive ML pipeline"
+
+main_pipeline_image_mobile:
+  src: "/assets/images/pipeline/pipeline-mobile.svg"
+  alt: "Illustration of an interactive ML pipeline"
+
+overlays:
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-1.svg"
+      alt: "Visualization of datasets management in the pipeline"
+    position:
+      top: "14"
+      left: "8"
+    title: "Datasets"
+    description: "AICeBlock can help you manage your datasets, but it can also only keep metadata for integrity checking"
+    mobile-top: "7.45%"
+
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-2.svg"
+      alt: "Illustration of data processing operations in the pipeline"
+    position:
+      top: "15"
+      left: "270"
+    title: "Data Processing entails different operations performed on the data, including:"
+    description: "• Cleaning (e.g., outlier removal, missing data imputation)\n• Anonymization\n• Bias analysis\n• Train/Test splits\n• ..."
+    mobile-top: "19.37%"
+
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-3.svg"
+      alt: "Illustration of traceable steps in ML workflows"
+    position:
+      top: "478"
+      left: "180"
+    title: "Data Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
+    description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Model version and Model Cards are immutable"
+    mobile-top: "32.27%"
+
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-4.svg"
+      alt: "Visualization of model training and evaluation in the pipeline"
+    position:
+      top: "13"
+      left: "549"
+    title: "Model Training & Evaluation comprises steps such as:"
+    description: "• Training (possibly including cross-validation, hyperparameter tuning)\n• Hold-out set evaluation\n• Stress-tests\n• Model bias analysis\n• Explainability\n• ..."
+    mobile-top: "48.49%"
+
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-5.svg"
+      alt: "Representation of reproducibility and traceability for ML processes"
+    position:
+      top: "477"
+      left: "558"
+    title: "Model Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
+    description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Model version and Model Cards are immutable"
+    mobile-top: "60.92%"
+
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-6.svg"
+      alt: "Illustration of inference monitoring in the ML pipeline"
+    position:
+      top: "358"
+      left: "1127"
+    title: "When inference is performed on AICeBlock, the platform ensures these outcomes and its monitoring results are traceable and reproducible"
+    description: "Links from Inference Model version to Monitoring results are immutable"
+    mobile-top: "79.21%"
+
+  - image:
+      src: "/assets/images/pipeline/pipeline-overlay-7.svg"
+      alt: "Visualization of monitoring steps in the ML pipeline"
+    position:
+      top: "5"
+      left: "1012"
+    title: "Monitoring includes steps like:"
+    description: "• Drift detection\n• Triggers for retraining\n• Continuous learning\n• ..."
+    mobile-top: "95.27%"
+
+explanation:
+  text: "Continuous model monitoring identifies opportunities for improvement, driving new iterations that enhance performance while allowing versionable compliance"
+  image:
+    src: "/assets/images/pipeline/explanation.svg"
+    alt: ""
+
+bottom_text: "From data collection to deployment, each phase is transparent, secure, and compliant with key regulations like the EU AI Act and GDPR. Every connection is verifiable and immutable, ensuring your AI solutions are built on a foundation of trust."

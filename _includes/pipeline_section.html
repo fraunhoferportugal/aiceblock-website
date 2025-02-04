@@ -1,8 +1,8 @@
 <section class="pipeline-section">
     <div class="pipeline-content-wrapper">
         <div class="pipeline-text-content">
-            <h2>{{ site.data.pipeline_section.title }}</h2>
-            <p>{{ site.data.pipeline_section.subtitle }}</p>
+            <h2>{{ site.data[site.active_lang].pipeline_section.title }}</h2>
+            <p>{{ site.data[site.active_lang].pipeline_section.subtitle }}</p>
         </div>
         <div class="pipeline-container">
             <div class="main-pipeline-image">
@@ -16,12 +16,12 @@
                     <area target="" alt="" title="" href="" coords="628,509,436,373" shape="rect">
                     <area target="" alt="" title="" href="" coords="876,277,1036,451" shape="rect">
                 </map>
-                <img class="desktop" src="{{ site.data.pipeline_section.main_pipeline_image.src }}"
-                    alt="{{ site.data.pipeline_section.main_pipeline_image.alt }}" usemap="#image-map" />
-                <img class="mobile" src="{{ site.data.pipeline_section.main_pipeline_image_mobile.src }}"
-                    alt="{{ site.data.pipeline_section.main_pipeline_image_mobile.alt }}" />
+                <img class="desktop" src="{{ site.data[site.active_lang].pipeline_section.main_pipeline_image.src }}"
+                    alt="{{ site.data[site.active_lang].pipeline_section.main_pipeline_image.alt }}" usemap="#image-map" />
+                <img class="mobile" src="{{ site.data[site.active_lang].pipeline_section.main_pipeline_image_mobile.src }}"
+                    alt="{{ site.data[site.active_lang].pipeline_section.main_pipeline_image_mobile.alt }}" />
                 <div class="pipeline-descriptions">
-                    {% for overlay in site.data.pipeline_section.overlays %}
+                    {% for overlay in site.data[site.active_lang].pipeline_section.overlays %}
                     <div class="description" data-top="{{ overlay.mobile-top }}">
                         <span class>{{ overlay.title }}</span>
                         <p>{{ overlay.description }}</p>
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="pipeline-overlays">
-                {% for overlay in site.data.pipeline_section.overlays %}
+                {% for overlay in site.data[site.active_lang].pipeline_section.overlays %}
                 <div class="overlay-image" data-top="{{ overlay.position.top }}" data-left="{{ overlay.position.left }}"
                     data-description="{{ overlay.description }}">
                     <img src="{{ overlay.image.src }}" alt="{{ overlay.image.alt }}" />
@@ -44,10 +44,10 @@
             </div>
         </div>
         <div class="pipeline-explanation-container">
-            <span>{{ site.data.pipeline_section.explanation.text }}</span>
-            <img src="{{ site.data.pipeline_section.explanation.image.src }}" alt="{{ site.data.pipeline_section.explanation.image.alt }}" />
+            <span>{{ site.data[site.active_lang].pipeline_section.explanation.text }}</span>
+            <img src="{{ site.data[site.active_lang].pipeline_section.explanation.image.src }}" alt="{{ site.data[site.active_lang].pipeline_section.explanation.image.alt }}" />
         </div>
-        <p class="pipeline-bottom-text">{{ site.data.pipeline_section.bottom_text }}</p>
+        <p class="pipeline-bottom-text">{{ site.data[site.active_lang].pipeline_section.bottom_text }}</p>
     </div>
 </section>
 

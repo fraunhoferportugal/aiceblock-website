@@ -1,0 +1,27 @@
+title: "Get in touch"
+description: "Have questions or want to learn more about how AICeBlock can support your AI compliance journey?\n\nReach out to us - we're here to help!"
+
+contacts:
+  - image:
+      src: "/assets/images/icons/email-icon.svg"
+      alt: "Contact 1 Image"
+    text: "info@aiceblock.com"
+    ref: "mailto:info@aiceblock.com"
+  # - image:
+  #     src: "/assets/images/icons/phone-icon.svg"
+  #     alt: "Contact 2 Image"
+  #   text: "+351 222 222 222"
+
+form:
+  title: "Contact form"
+  first_name_placeholder: "*First Name"
+  last_name_placeholder: "*Last Name"
+  email_placeholder: "*Email"
+  message_placeholder: "*Your Message"
+  button_text: "Submit"
+  prepend_subject: "AICeBlock"
+  subjects:
+    - "General"
+    - "Request Demo"
+    - "Collaborate in Product Innovation"
+    - "Join as Trusted Third-Party"
