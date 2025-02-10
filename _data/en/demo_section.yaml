@@ -1,10 +1,11 @@
 title: "Your Journey to Compliance Starts Here"
 #description: "Embark on an interactive tour and see how AICeBlock makes compliance effortless at every stage of your ML workflow.\n\nBy integrating best practices, we help you reduce errors and inefficiencies, ultimately saving costs while ensuring adherence to regulations like the EU AI Act and GDPR."
-description: "Embark on a journey to make compliance effortless at every stage of your ML workflow.\n\nBy integrating best practices, we help you reduce errors and inefficiencies, ultimately saving costs while ensuring adherence to regulations like the EU AI Act and GDPR."
+#description: "Embark on a journey to make compliance effortless at every stage of your ML workflow.\n\nBy integrating best practices, we help you reduce errors and inefficiencies, ultimately saving costs while ensuring adherence to regulations like the EU AI Act and GDPR."
+description: "Watch the videos below for a walkthrough from the perspective of three key roles in a project: Project Administrator, Developer, and Auditor."
 
 cta_button:
-  url: "/about?subject=1#contacts"
-  text: "Request a Demo"
+  url: "/guided-tour#start"
+  text: "Start Your Guided Tour"
   icon:
     src: "/assets/images/icons/arrow-icon.svg"
     alt: "Arrow Icon"

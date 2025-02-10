@@ -491,6 +491,7 @@ main>section {
     height: 3.75rem;
     text-decoration: none;
     transition: box-shadow 0.2s ease;
+    z-index: 10;
 }
 
 .cta-button span {
@@ -1887,16 +1888,27 @@ main>section {
 }
 
 .demo-section-content-wrapper {
+    position: relative;
     max-width: 90rem;
     width: 100%;
-    height: 80vh;
-    background-image: url('/assets/images/backgrounds/bottom-right-blocks.svg');
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: auto;
+    height: 60vh;
     border-radius: 2rem;
     box-shadow: 0 0 1.875rem 0.375rem rgba(136, 255, 243, 0.33);
     padding: 2rem;
+    overflow: hidden;
+}
+
+.demo-section-content-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/backgrounds/bottom-right-blocks.svg') right bottom no-repeat;
+    background-size: auto;
+    opacity: 0.3;
+    z-index: 0;
 }
 
 .demo-section-text-content {
@@ -2361,4 +2373,78 @@ main>section {
     margin: 0 auto;
     text-align: left;
     white-space: pre-line;
+}
+
+/*============================ VIDEO SECTION ============================*/
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #180D5B;
+    min-height: 100vh;
+    padding: 3rem 1.25rem 3rem 1.25rem;
+}
+
+.video-section.header-space {
+    padding-top: calc(3rem + 4.375rem);
+}
+
+.video-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 90rem;
+    width: 100%;
+    gap: 3rem;
+}
+
+.video-description {
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    width: 80%;
+}
+
+.video-description h2 {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    margin: 1.25rem 0;
+}
+
+.video-description p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.video {
+    max-width: 90%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+iframe {
+    border-radius: 1.25rem;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 42.5rem) {
+    .video-section {
+        min-height: 0;
+    }
+
+    .video-content-wrapper {
+        gap: 1.25rem;
+    }
+
+    .video-description {
+        width: 90%;
+    }
 }

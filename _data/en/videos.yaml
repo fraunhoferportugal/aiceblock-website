@@ -1,0 +1,29 @@
+video1:
+  url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
+  title: "Testing 1"
+  text: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, orci et blandit rutrum, augue libero ullamcorper nisl,
+    non pharetra sem justo a eros. Donec at ornare tortor. In a scelerisque ligula. Aliquam in neque id mauris suscipit varius sed vitae
+    odio. Donec ut erat non diam facilisis tincidunt et et lectus. Morbi sed sollicitudin nulla. Donec nec nisi felis. Donec ullamcorper,
+    tellus a aliquet suscipit, sapien ex scelerisque lorem, eget placerat nisl sapien at eros. Suspendisse hendrerit urna mauris, sit
+    amet lacinia justo vulputate a.
+
+video2:
+  url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
+  title: "Testing 2"
+  text: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, orci et blandit rutrum, augue libero ullamcorper nisl,
+    non pharetra sem justo a eros. Donec at ornare tortor. In a scelerisque ligula. Aliquam in neque id mauris suscipit varius sed vitae
+    odio. Donec ut erat non diam facilisis tincidunt et et lectus. Morbi sed sollicitudin nulla. Donec nec nisi felis. Donec ullamcorper,
+    tellus a aliquet suscipit, sapien ex scelerisque lorem, eget placerat nisl sapien at eros. Suspendisse hendrerit urna mauris, sit
+    amet lacinia justo vulputate a.
+
+video3:
+  url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
+  title: "Testing 3"
+  text: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, orci et blandit rutrum, augue libero ullamcorper nisl,
+    non pharetra sem justo a eros. Donec at ornare tortor. In a scelerisque ligula. Aliquam in neque id mauris suscipit varius sed vitae
+    odio. Donec ut erat non diam facilisis tincidunt et et lectus. Morbi sed sollicitudin nulla. Donec nec nisi felis. Donec ullamcorper,
+    tellus a aliquet suscipit, sapien ex scelerisque lorem, eget placerat nisl sapien at eros. Suspendisse hendrerit urna mauris, sit
+    amet lacinia justo vulputate a.
