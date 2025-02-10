@@ -40,6 +40,8 @@ main>section {
     border-bottom: 0.0625rem solid #EFF2F5;
     position: absolute;
     width: 100%;
+    z-index: 1000;
+    font-family: 'Inter', sans-serif;
 }
 
 .header-desktop {
@@ -61,8 +63,6 @@ main>section {
 }
 
 .header-nav .button {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.375rem;
@@ -76,14 +76,75 @@ main>section {
 
 .header .logo {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .header .logo img {
     height: 2.8rem;
     width: auto;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3125rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 1.875rem;
+    height: 0.1875rem;
+    background: #EFF2F5;
+    border-radius: 0.125rem;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4.375rem;
+    right: 0;
+    width: 100%;
+    background: #180D5B;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+.mobile-nav .button {
+    display: block;
+    padding: 1rem;
+    color: #EFF2F5;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+}
+
+.mobile-nav .button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 64rem) {
+    .header-desktop {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-nav.open {
+        display: flex;
+    }
 }
 
 /*============================ FOOTER ============================*/
