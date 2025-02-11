@@ -1,20 +1,20 @@
-title: "Interactive ML pipeline: traceable and trustworthy workflows"
-subtitle: "Discover how AICeBlock empowers you to visualize and document every critical stage of your ML pipeline."
+title: "Pipeline de ML InterativaL: fluxos rastreáveis e fiáveis"
+subtitle: "Descubra como o AICeBlock permite visualizar e documentar cada etapa crítica da sua pipeline de ML."
 
 main_pipeline_image:
   src: "/assets/images/pipeline/pipeline-base.svg"
-  alt: "Illustration of an interactive ML pipeline"
+  alt: "Ilustração de uma pipeline interativa de ML"
 
 main_pipeline_image_mobile:
   src: "/assets/images/pipeline/pipeline-mobile.svg"
-  alt: "Illustration of an interactive ML pipeline"
+  alt: "Ilustração de uma pipeline interativa de ML"
 
 overlays:
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-1.svg"
-      alt: "Visualization of datasets management in the pipeline"
+      alt: "Visualização da gestão de datasets na pipeline"
     title: "Datasets"
-    description: "AICeBlock can help you manage your datasets, but it can also only keep metadata for integrity checking"
+    description: "O AICeBlock pode ajudar a gerir os seus datasets, sendo possível manter apenas metadados para verificação de integridade."
     mobile-top: "7.45%"
     position:
       left: "3.81%"
@@ -27,9 +27,9 @@ overlays:
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-2.svg"
-      alt: "Illustration of data processing operations in the pipeline"
-    title: "Data Processing entails different operations performed on the data, including:"
-    description: "• Cleaning (e.g., outlier removal, missing data imputation)\n• Anonymization\n• Bias analysis\n• Train/Test splits\n• ..."
+      alt: "Ilustração das operações de processamento de dados na pipeline"
+    title: "O Processamento de Dados inclui operações como:"
+    description: "• Limpeza (ex.: remoção de anomalias, imputação de dados em falta)\n• Anonimização\n• Análise de viés\n• Divisão Treino/Teste\n• ..."
     mobile-top: "19.37%"
     position:
       left: "20.62%"
@@ -42,9 +42,9 @@ overlays:
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-3.svg"
-      alt: "Illustration of traceable steps in ML workflows"
-    title: "Data Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
-    description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Model version and Model Cards are immutable"
+      alt: "Ilustração dos passos rastreáveis em pipelines de ML"
+    title: "Data Cards - Quando processados na plataforma, o AICeBlock assegura que os passos, parâmetros e resultados são rastreáveis e reproduzíveis."
+    description: "Não é necessário repetir operações se tiver acesso à versão correta dos dados - as ligações entre versões de dados e os Data Cards são imutáveis."
     mobile-top: "32.27%"
     position:
       left: "14.96%"
@@ -57,9 +57,9 @@ overlays:
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-4.svg"
-      alt: "Visualization of model training and evaluation in the pipeline"
-    title: "Model Training & Evaluation comprises steps such as:"
-    description: "• Training (possibly including cross-validation, hyperparameter tuning)\n• Hold-out set evaluation\n• Stress-tests\n• Model bias analysis\n• Explainability\n• ..."
+      alt: "Visualização do treino e avaliação de modelos no pipeline"
+    title: "Treino e Avaliação de Modelos incluem etapas como:"
+    description: "• Treino (incluindo validação cruzada e ajuste de hiperparâmetros)\n• Avaliação com conjunto de teste\n• Testes de robustez\n• Análise de viés do modelo\n• Explicabilidade\n• ..."
     mobile-top: "48.49%"
     position:
       left: "39.03%"
@@ -72,9 +72,9 @@ overlays:
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-5.svg"
-      alt: "Representation of reproducibility and traceability for ML processes"
-    title: "Model Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
-    description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Model version and Model Cards are immutable"
+      alt: "Representação da rastreabilidade e reprodutibilidade dos processos de ML"
+    title: "Model Cards - Quando treinados na plataforma, o AICeBlock assegura que os passos, parâmetros e resultados são rastreáveis e reproduzíveis."
+    description: "Não é necessário repetir operações se tiver acesso à versão correta dos dados e modelos - as ligações entre versões de dados, modelos, e Model Cards são imutáveis."
     mobile-top: "60.92%"
     position:
       left: "39.56%"
@@ -87,9 +87,9 @@ overlays:
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-6.svg"
-      alt: "Illustration of inference monitoring in the ML pipeline"
-    title: "When inference is performed on AICeBlock, the platform ensures these outcomes and its monitoring results are traceable and reproducible"
-    description: "Links from Inference Model version to Monitoring results are immutable"
+      alt: "Ilustração da monitorização de inferências na pipeline de ML"
+    title: "Quando a inferência é realizada no AICeBlock, a plataforma assegura que os resultados e sua monitorização são rastreáveis e reproduzíveis."
+    description: "As ligações entre a versão do modelo de inferência e os resultados da monitorização são imutáveis."
     mobile-top: "79.21%"
     position:
       left: "75.84%"
@@ -102,9 +102,9 @@ overlays:
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-7.svg"
-      alt: "Visualization of monitoring steps in the ML pipeline"
-    title: "Monitoring includes steps like:"
-    description: "• Drift detection\n• Triggers for retraining\n• Continuous learning\n• ..."
+      alt: "Visualização de passos de monitorização na pipeline ML"
+    title: "A Monitorização inclui passos como:"
+    description: "• Deteção de desvios\n• Gatilhos para re-treino\n• Aprendizagem contínua\n• ..."
     mobile-top: "95.27%"
     position:
       left: "68.94%"
@@ -116,9 +116,9 @@ overlays:
     desktop_image_src: "/assets/images/pipeline/pipeline-7.svg"
 
 explanation:
-  text: "Continuous model monitoring identifies opportunities for improvement, driving new iterations that enhance performance while allowing versionable compliance"
+  text: "A monitorização contínua dos modelos identifica oportunidades para melhoria, levando a novas iterações que elevam a capacidade enquanto permitem conformidade versionável."
   image:
     src: "/assets/images/pipeline/explanation.svg"
     alt: ""
 
-bottom_text: "From data collection to deployment, each phase is transparent, secure, and compliant with key regulations like the EU AI Act and GDPR. Every connection is verifiable and immutable, ensuring your AI solutions are built on a foundation of trust."
+bottom_text: "Desde a recolha de dados até à implementação, cada fase é transparente, segura e com suporte à conformidade com regulamentos essenciais como o AI Act e o RGPD. Todas as conexões são verificáveis e imutáveis, garantindo que as suas soluções de IA são construídas de forma confiável."

@@ -1,16 +1,15 @@
-title: "Elevate your AI with AICeBlock."
+title: "Eleve a sua IA com AICeBlock."
 subtitle:
-  - "Secure."
-  - "Transparent."
-  - "Compliant."
+  - "Segura."
+  - "Transparente."
+  - "Conforme."
 
 description: >
-  Making the right thing the easiest thing to do — streamline your ML workflows
-  with verifiable compliance, built on blockchain for unparalleled transparency.
+  Tornar o caminho certo no mais fácil de seguir — otimize as suas soluções de Machine Learning
+  com conformidade verificável, sustentada por blockchain para uma transparência sem precedentes.
 
 cta_button:
-  #text: "Start Your Guided Tour"
-  text: "Request a Demo"
+  text: "Inicie a Visita Guiada"
   url: "/guided-tour"
   icon:
     src: "/assets/images/icons/arrow-icon.svg"
@@ -18,4 +17,4 @@ cta_button:
 
 image:
   src: "/assets/images/hero/blockchain-illustration.svg"
-  alt: "Blockchain Illustration"
+  alt: "Ilustração Blockchain"

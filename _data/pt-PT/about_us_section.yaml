@@ -1,12 +1,11 @@
-title: "About AICeBlock"
-subtitle: "Our mission is to simplify AI compliance, making it accessible and verifiable, so organizations can innovate with confidence and integrity."
+title: "Sobre o AICeBlock"
+subtitle: "A nossa missão é simplificar a conformidade com a IA, tornando-a acessível e verificável, para que as organizações possam inovar com confiança e integridade."
 
 description: >
-  AICeBlock is an initiative born from a visionary collaboration between Fraunhofer Portugal AICOS and INCM.
-  United by a mission to advance trustworthy technology, we're committed to making the right thing the easiest thing to do in AI development.
-  By aligning with key regulations like the EU AI Act and GDPR, and contributing to the development of and compliance with ISO standards,
-  we support developers and decision-makers every step of the way.
+  O AICeBlock é uma iniciativa resultante de uma colaboração visionária entre o Fraunhofer Portugal AICOS e a Imprensa Nacional - Casa da Moeda (INCM).
+  Unidos pela missão de promover tecnologia de confiança, estamos empenhados em tornar o caminho correto o mais simples no desenvolvimento de IA.
+  Ao alinharmo-nos com regulamentos chave como o AI Act da UE e o RGPD, e ao contribuir para o desenvolvimento e conformidade com normas ISO, apoiamos desenvolvedores e decisores em todas as fases do processo.
 
 image:
   src: "/assets/images/about-us/block-stack.svg"
-  alt: "About Us Illustration"
+  alt: "Ilustração Sobre Nós - AICeBlock"

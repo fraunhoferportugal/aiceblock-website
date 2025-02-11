@@ -1,23 +1,23 @@
-title: "Join us in building the Future of Trustworthy AI"
+title: "Junte-se a nós na construção do Futuro da IA Confiável"
 subtitle: >
-  Collaboration is at the heart of AICeBlock's mission to make AI transparent, compliant, and trustworthy.
-  We're looking for visionary partners to help us shape the tools of tomorrow and trusted third-parties to strengthen the network that ensures AI compliance and accountability.
+  A colaboração está no centro da missão da plataforma AICeBlock para tornar a IA transparente, conforme e fiável.
+  Procuramos parceiros visionários para nos ajudar a desenvolver as ferramentas do futuro e Terceiras Partes de Confiança para fortalecer a rede que garante a conformidade e responsabilidade da IA.
 
 image:
   src: "/assets/images/about-us/global-network.svg"
-  alt: "Global Network Image"
+  alt: "Imagem da Rede Global"
 
 columns:
-  - title: "Collaborate on Product Innovation"
+  - title: "Colabore na Inovação do Produto"
     description: >
-      Help Fraunhofer AICOS shape AICeBlock's innovative features. Bring your expertise in AI, compliance, or technology to the forefront of innovation, co-developing solutions that empower organizations worldwide.
+      Ajude o Fraunhofer AICOS a desenvolver as funcionalidades inovadoras dõ AICeBlock. Traga a sua experiência em IA, conformidade ou tecnologia para a vanguarda da inovação, co-desenvolvendo soluções que capacitam organizações em todo o mundo.
     button:
-      text: "Collaborate"
+      text: "Colaborar"
       url: "/join-us?subject=2#contacts"
 
-  - title: "Become a Trusted Network Member"
+  - title: "Torne-se um Membro da Rede de Confiança"
     description: >
-      Join the AICeBlock compliance ecosystem started by INCM as a trusted third-party. Play a pivotal role in ensuring AI accountability and verifiability while gaining access to a growing network of trustworthy AI practitioners.
+      Junte-se ao ecossistema de conformidade do AICeBlock, iniciado pela Imprensa Nacional - Casa da Moeda (INCM), como uma Terceira Parte de Confiança. Desempenhe um papel fundamental na garantia da responsabilidade e verificabilidade da IA, enquanto ganha acesso a uma rede crescente de profissionais de IA confiável.
     button:
-      text: "Join Us"
+      text: "Junte-se a Nós"
       url: "/join-us?subject=3#contacts"

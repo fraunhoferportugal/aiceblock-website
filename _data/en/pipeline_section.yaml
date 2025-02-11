@@ -44,7 +44,7 @@ overlays:
       src: "/assets/images/pipeline/pipeline-overlay-3.svg"
       alt: "Illustration of traceable steps in ML workflows"
     title: "Data Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
-    description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Model version and Model Cards are immutable"
+    description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Data Cards are immutable"
     mobile-top: "32.27%"
     position:
       left: "14.96%"
@@ -121,4 +121,4 @@ explanation:
     src: "/assets/images/pipeline/explanation.svg"
     alt: ""
 
-bottom_text: "From data collection to deployment, each phase is transparent, secure, and compliant with key regulations like the EU AI Act and GDPR. Every connection is verifiable and immutable, ensuring your AI solutions are built on a foundation of trust."
+bottom_text: "From data collection to deployment, each phase is transparent, secure, and supports compliance with key regulations like the EU AI Act and GDPR. Every connection is verifiable and immutable, ensuring your AI solutions are built on a trustworthy foundation."
