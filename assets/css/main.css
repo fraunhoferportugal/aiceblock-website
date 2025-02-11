@@ -2348,20 +2348,18 @@ main>section {
 }
 
 @media (max-width: 62.5rem) {
-    .roadmap-row-container {
-        max-width: 80vw;
-    }
-
-    .roadmap-column {
-        max-width: 80vw;
-    }
-}
-
-@media (max-width: 90rem) {
     .roadmap-container {
         flex-direction: column;
         align-items: center;
         gap: 3rem;
+    }
+
+    .roadmap-row-container {
+        max-width: 80vw !important;
+    }
+
+    .roadmap-column {
+        max-width: 80vw !important;
     }
 
     .roadmap-container .section-column {
@@ -2375,9 +2373,15 @@ main>section {
         position: relative;
         top: 1rem;
     }
+}
 
+@media (max-width: 90rem) {
     .roadmap-top-buttons {
         gap: 1rem;
+    }
+
+    .roadmap-row-container {
+        max-width: 55vw;
     }
 }
 
