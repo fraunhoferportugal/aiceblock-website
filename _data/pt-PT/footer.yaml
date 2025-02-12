@@ -3,34 +3,34 @@ logo:
   alt: "AIceBlock Logo"
   #description: "AICeBlock"
 
-copyright: "© 2024 AICeBlock. All Rights Reserved."
+copyright: "© 2024 AICeBlock. Todos os Direitos Reservados."
 
 footer_links:
   - links:
-      #- text: "Guided Tour"
-      #  url: "/guided-tour/"
-      - text: "Resources"
+      - text: "Visita Guiada"
+        url: "/guided-tour"
+      - text: "Recursos"
         url: "/#resources"
-      - text: "Join Us"
+      - text: "Junte-se a Nós"
         url: "/join-us"
-      - text: "About"
+      - text: "Sobre"
         url: "/about"
-      - text: "Contact Us"
+      - text: "Contactos"
         url: "/about#contacts"
   - links:
-      - text: "Privacy Policy"
+      - text: "Política de Privacidade"
         url: "/privacy-policy"
-      - text: "Terms of Service"
+      - text: "Termos de Serviço"
         url: "/terms-of-service"
 
 newsletter:
-  title: "Newsletter sign-up"
-  placeholder: "Your email"
-  button_text: "Subscribe"
+  title: "Subscreva a Newsletter"
+  placeholder: "O seu email"
+  button_text: "Subscrever"
   email_subject: "AICeBlock - New newsletter subscription request"
 
 social_links:
-  title: "Follow us"
+  title: "Siga-nos"
   links:
     - icon: "/assets/images/icons/linkedin-icon.svg"
       alt: "LinkedIn"

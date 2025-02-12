@@ -1,34 +1,34 @@
-title: "Efficiency meets Innovation: compliance made simple for every stakeholder"
+title: "Eficiência e Inovação: conformidade simplificada para todos os intervenientes"
 subtitle: >
-  AICeBlock empowers organizations to achieve compliance with greater efficiency, reducing costs 
-  while unlocking new opportunities for innovation. By simplifying complex processes, mitigating risks, and building trust,
-  we ensure every stakeholder benefits from a streamlined journey toward trustworthy and impactful AI solutions.
+  O AICeBlock capacita as organizações para alcançarem a conformidade de forma mais eficiente, reduzindo custos 
+  e desbloqueando novas oportunidades de inovação. Ao simplificar processos complexos, mitigar riscos e fortalecer a 
+  confiança, garantimos que todos os intervenientes têm os seus esforços otimizados rumo a soluções de IA fiáveis e com impacto.
 
 benefits:
   - title: "Compliance Officers & CIOs"
-    subtitle: "Streamline compliance and reduce costs"
-    description: "Simplify documentation and auditing with verifiable, blockchain-backed records. Reduce the time and resources spent on compliance, aligning effortlessly with regulations like the EU AI Act and GDPR."
+    subtitle: "Simplifique a conformidade e reduza custos"
+    description: "Facilite a documentação e auditoria com registos verificáveis suportados por blockchain. Reduza o tempo e os recursos dedicados à conformidade, garantindo um alinhamento eficaz com regulamentos como o AI Act da UE e o RGPD."
     image:
       src: "/assets/images/benefits/benefit-1.svg"
-      alt: "Illustration representing compliance and technology"
+      alt: "Ilustração representando conformidade da Inteligência Artificial. CIOs."
 
-  - title: "Public Sector & High-Risk Industries"
-    subtitle: "Build public trust and ensure efficiency"
-    description: "Deliver transparent and compliant AI solutions, critical in sectors where trust is paramount. Efficient compliance reduces operational risks and associated costs."
+  - title: "Setor Público & Indústrias de Alto Risco"
+    subtitle: "Reforce a confiança do público e assegure eficiência"
+    description: "Implemente soluções de IA transparentes e em conformidade, essenciais em setores onde a confiança é fundamental. Uma conformidade eficiente reduz riscos operacionais e os custos associados."
     image:
       src: "/assets/images/benefits/benefit-2.svg"
-      alt: "Illustration representing data security and trust"
+      alt: "Ilustração representando segurança de dados e confiança na Inteligência Artificial. Setor Público. Alto Risco."
 
-  - title: "AI Developers"
-    subtitle: "Enhance efficiency and minimize errors"
-    description: "Implement best practices that lead to fewer errors and inaccuracies. Automate adherence checks and maintain traceable workflows, saving time and reducing costs while focusing on innovation."
+  - title: "Desenvolvedores de IA"
+    subtitle: "Aumente a eficiência e minimize erros"
+    description: "Aplique as melhores práticas para reduzir erros e imprecisões. Automatize verificações de conformidade e mantenha fluxos de trabalho rastreáveis, poupando tempo e custos, permitindo-lhe focar-se na inovação."
     image:
       src: "/assets/images/benefits/benefit-3.svg"
-      alt: "Illustration representing AI development and efficiency"
+      alt: "Ilustração representando desenvolvimento eficiente de Inteligência Artificial."
 
-  - title: "Governance and Regulatory Bodies"
-    subtitle: "Access reliable verification frameworks"
-    description: "Utilize immutable records to verify AI solutions against regulatory standards easily, reducing reliance on self-reported compliance and enhancing regulatory efficiency."
+  - title: "Órgãos de Governação e Reguladores"
+    subtitle: "Aceda a estruturas de verificação fiáveis"
+    description: "Utilize registos imutáveis para validar soluções de IA face às normas regulatórias, reduzindo a dependência de conformidade auto-declarada e aumentando a eficiência dos processos de auditoria."
     image:
       src: "/assets/images/benefits/benefit-4.svg"
-      alt: "Illustration representing regulatory compliance and verification"
+      alt: "Ilustração representando conformidade regulatória e verificação em Inteligência Artificial."

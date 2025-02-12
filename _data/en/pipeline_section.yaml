@@ -44,7 +44,7 @@ overlays:
       src: "/assets/images/pipeline/pipeline-overlay-3.svg"
       alt: "Illustration of traceable steps in ML workflows"
     title: "Data Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
-    description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Model version and Model Cards are immutable"
+    description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Data Cards are immutable"
     mobile-top: "32.27%"
     position:
       left: "14.96%"
@@ -119,6 +119,6 @@ explanation:
   text: "Continuous model monitoring identifies opportunities for improvement, driving new iterations that enhance performance while allowing versionable compliance"
   image:
     src: "/assets/images/pipeline/explanation.svg"
-    alt: ""
+    alt: "Diagram showing a continuous improvement cycle for machine learning. It includes four main steps arranged in a circular flow: Model Training and Evaluation, Model Card, Inference and Prediction, and Monitoring. A central clockwise arrow connects these steps, emphasizing the iterative and ongoing nature of the process"
 
-bottom_text: "From data collection to deployment, each phase is transparent, secure, and compliant with key regulations like the EU AI Act and GDPR. Every connection is verifiable and immutable, ensuring your AI solutions are built on a foundation of trust."
+bottom_text: "From data collection to deployment, each phase is transparent, secure, and supports compliance with key regulations like the EU AI Act and GDPR. Every connection is verifiable and immutable, ensuring your AI solutions are built on a trustworthy foundation."

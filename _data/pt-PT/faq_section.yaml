@@ -1,67 +1,64 @@
-title: "Do you need help?"
-subtitle: "Find the answers to your main questions here."
+title: "Precisa de ajuda?"
+subtitle: "Encontre aqui as respostas para as suas principais dúvidas."
 
 faqs:
-  - question: "Does AICeBlock certify my AI-based product as compliant with specific regulations?"
+  - question: "O AICeBlock certifica o meu produto baseado em IA como estando em conformidade com regulamentos específicos?"
     answer: |
-      AICeBlock empowers organizations to build and manage AI solutions with verifiable transparency, ensuring that each step of your pipeline is documented, traceable, and secure. By leveraging AICeBlock, you gain tools to enhance compliance, from managing datasets to cryptographic verification of model artifacts, all within a framework designed for trustworthy AI development.
+      O AICeBlock permite que as organizações desenvolvam e façam a gestão de soluções de IA com transparência verificável, garantindo que cada etapa da pipeline seja documentada, rastreável e segura. Com o AICeBlock, dispõe de ferramentas para reforçar a conformidade, desde a gestão de datasets até à verificação criptográfica de artefactos de modelos, dentro de um enquadramento concebido para o desenvolvimento de IA fiável.
       
-      Although AICeBlock itself does not issue official certifications, it plays a key role in simplifying and supporting the certification process. Additionally, by maintaining a blockchain-backed record of your AI pipeline’s compliance efforts, AICeBlock provides the evidence and structure needed to facilitate certification by regulatory authorities or third-party certifiers.
+      Embora o AICeBlock não emita certificações oficiais, desempenha um papel fundamental na simplificação e suporte ao processo de certificação. Além disso, ao manter um registo sustentado por blockchain dos esforços de conformidade do seu pipeline de IA, fornece a estrutura e as provas necessárias para facilitar a certificação por entidades reguladoras ou certificadores terceiros.
   
-  - question: "Does my organization need to be part of the blockchain network?"
+  - question: "A minha organização necessita de fazer parte da rede blockchain?"
     answer: |
-      No. Organizations can fully utilize AICeBlock's features—such as project governance, experimentation, deployment, and reporting—via the user interface or API without becoming part of the underlying consortium blockchain. However, joining the blockchain network offers added benefits, such as:
+      Não. As organizações podem utilizar todas as funcionalidades do AICeBlock—como gestão de projetos, experimentação, implementação e relatórios—através da interface de utilizador ou API, sem necessidade de aderir à blockchain subjacente. No entanto, a participação na rede blockchain oferece vantagens adicionais, tais como:
 
-      • <strong>Enhanced Trust</strong>: Being part of the consortium blockchain adds your verification to the process, and demonstrates your commitment to transparency and accountability in AI development.
+      • <strong>Maior confiança</strong>: Fazer parte da blockchain de consórcio reforça a verificação dos processos e demonstra o compromisso com transparência e responsabilidade no desenvolvimento de IA.
+      • <strong>Alinhamento com a visão do AICeBlock</strong>: A visão do AICeBlock inclui fomentar um ambiente de colaboração justa, onde os intervenientes no ciclo de vida da IA são reconhecidos e recompensados pelas suas contribuições.
 
-      • <strong>Alignment with AICeBlock's Vision</strong>: AICeBlock's long-term vision includes fostering a fair collaboration environment where contributors to the machine learning lifecycle are recognized and rewarded for their contributions. Joining the blockchain positions your organization to benefit from this evolving ecosystem.
-
-  - question: "My organization handles sensitive data and proprietary code. How does AICeBlock deal with this?"
+  - question: "A minha organização lida com dados sensíveis e código proprietário. Como é que o AICeBlock gere esta questão?"
     answer: |
-      AICeBlock is designed to prioritize security and flexibility when handling sensitive data and proprietary code. Here's how we address these concerns:
+      O AICeBlock foi concebido para garantir segurança e flexibilidade no tratamento de dados sensíveis e código proprietário. Veja como abordamos estas questões:
 
-      <strong>Sensitive Data Handling</strong>:
-      • AICeBlock stores only <strong>metadata</strong> on the blockchain, ensuring that sensitive datasets are not exposed.
-      • Storing datasets on the platform is optional; if stored, strict access controls are enforced.
-      • To benefit from AICeBlock's verifiable declarations, the platform needs data access for executed pipeline steps. However, preprocessing steps, such as anonymization, can be performed locally, and these steps can be <strong>self-declared</strong> for additional privacy.
+      <strong>Gestão de Dados Sensíveis</strong>:
+      • O AICeBlock armazena apenas metadados na blockchain, garantindo que os datasets sensíveis não sejam expostos.
+      • O armazenamento de datasets na plataforma é opcional; quando armazenados, aplicam-se controlos de acesso rigorosos.
+      • Para beneficiar das declarações verificáveis, a plataforma necessita de acesso a dados para a execução de passos do pipeline. No entanto, podem ser aplicadas técnicas de anonimização antes da submissão.
 
-      <strong>Proprietary Code Management</strong>:
-      • Visibility levels for your code modules can be customized: <strong>private</strong> (project-specific), <strong>organization-wide</strong>, or <strong>public</strong>, depending on your requirements.
-      The blockchain stores only metadata about your modules, not the code itself. This ensures your intellectual property remains secure.
+      <strong>Gestão de Código Proprietário</strong>:
+      • Os níveis de visibilidade dos módulos de código podem ser ajustados para privado (específico do projeto), organizacional ou público.
+      • A blockchain apenas armazena metadados sobre os módulos, não o código em si, protegendo assim a propriedade intelectual.
 
-      <strong>Auditing and Transparency</strong>:
-      • In typical auditing processes, organizations must provide access to code, documentation, and data. AICeBlock acts as an <strong>intermediate layer</strong>, securely maintaining necessary metadata and ensuring transparency without compromising sensitive assets.
+      <strong>Auditoria e Transparência</strong>:
+      • Em auditorias tradicionais, as organizações precisam de fornecer acesso a código, documentação e dados. O AICeBlock atua como uma camada intermediária, garantindo transparência sem comprometer ativos sensíveis.
 
-      <strong>Future Enhancements</strong>:
-      • AICeBlock's roadmap includes research into <strong>confidential computing</strong>, which will enable local computations while preserving a zero-trust environment. This will further enhance privacy and security for sensitive data and code.
+      <strong>Futuras Melhorias</strong>:
+      • O roadmap do AICeBlock inclui investigação em computação confidencial, permitindo cálculos locais com um ambiente controlado, reforçando ainda mais a segurança e a privacidade.
 
-      By combining robust controls, metadata-only blockchain storage, and ongoing innovation, AICeBlock ensures your sensitive data and proprietary code are handled securely while supporting compliance and trust.
+      AO combinar controlos de acesso robustos, armazenamento de metadados, e inovação contínua, o AICeBlock promove uma utilização segura dos ativos sensíveis, enquanto suporta a conformidade e confiança.
 
-  - question: "At my organization, the AI-based solutions are already deployed and/or integrated into existing workflows. How does AICeBlock handle these scenarios?"
+  - question: "A minha organização já tem soluções de IA implementadas e integradas nos fluxos de trabalho. Como é que o AICeBlock lida com estes casos?"
     answer: |
-      AICeBlock is designed to adapt to existing workflows, offering flexibility while maintaining a focus on verifiable transparency. Here's how it handles such scenarios:
+      O AICeBlock adapta-se a fluxos de trabalho existentes, garantindo transparência verificável sem impacto negativo nos processos. Aqui está como gerimos estas situações:
 
-      <strong>1. Integration with Existing Workflows:</strong>
-      • AICeBlock's verifiable declaration depends on its ability to <strong>observe and record pipeline steps</strong>, such as data processing, model training, and testing. However, it recognizes that not all steps may be directly executed within its platform.
-      • To address this, AICeBlock allows you to <strong>combine verifiable steps</strong> with <strong>self-declared information</strong>, enabling you to decide which steps you want to track and how they are integrated into the platform.
+      <strong>1. Integração com fluxos de trabalho existentes:</strong>
+      • A verificação pelo AICeBlock depende da sua capacidade de observar e registar etapas do pipeline, tais como processamento de dados, treino de modelos e testes.
+      • No entanto, permite combinar passos verificáveis com informação auto-declarada, permitindo flexibilidade na rastreabilidade.
 
-      <strong>2. API Support for Seamless Communication:</strong>
-      • One of AICeBlock's short-term objectives is to provide an <strong>API</strong> that integrates with your existing workflows, allowing seamless communication of outcomes and metadata between your systems and the platform.
-      • Even if starting from a <strong>self-declaration perspective</strong>, this API will ensure that your deployed solutions can still benefit from transparency and governance features.
+      <strong>2. API para comunicação fluida:</strong>
+      • O desenvolvimento de uma API que permita a integração com fluxos de trabalho existentes está entre os objetivos próximos do AICeBlock, garantindo sincronização automática dos resultados e metadados.
+      • Mesmo para soluções já implementadas, a API permitirá usufruir dos benefícios de governação e conformidade mesmo que auto-declarada.
 
-      <strong>3. Future Enhancements:</strong>
-      • AICeBlock's roadmap includes exploring methods for enabling <strong>external computations that remain verifiable</strong>, ensuring compliance and transparency even for workflows outside the platform. This aligns with our vision of supporting organizations in diverse deployment scenarios.
+      <strong>3. Melhorias futuras:</strong>
+      • Estamos a explorar métodos para possibilitar computações externas verificáveis, garantindo conformidade e transparência, mesmo em fluxos de trabalho externos à plataforma.
 
-      By offering a flexible approach to integration, AICeBlock ensures that your existing AI workflows can benefit from its governance and compliance capabilities without requiring significant changes to your current processes.
-  - question: "How can my organization join AICeBlock's innovation roadmap?"
+  - question: "Como é que a minha organização pode fazer parte do roadmap de inovação do AICeBlock?"
     answer: |
-      We invite organizations to become part of AICeBlock's journey to shape the future of trustworthy AI. There are two distinct ways to contribute:
+      Convidamos organizações a juntarem-se à evolução do AICeBlock para moldar o futuro da IA confiável. Existem duas formas principais de participação:
       
-      <strong>Product Innovation Partnership</strong>:
-      Collaborate with Fraunhofer AICOS to co-develop and enhance cutting-edge features for AICeBlock. By joining as a product innovation partner, your organization can bring expertise, insights, and real-world challenges to influence the platform's evolution while addressing pressing compliance and governance needs.
+      <strong>Parceria para Inovação de Produto</strong>:
+      Colabore com o Fraunhofer Portugal AICOS para desenvolver e melhorar funcionalidades inovadoras do AICeBlock. Como parceiro, a sua organização pode influenciar a evolução da plataforma e resolver desafios reais de conformidade e governação.
 
-      <strong>Trusted Third-Party Network</strong>:
-      Join a network of trusted third parties initiated by INCM. As part of this network, your organization will play a critical role in supporting compliance verification, auditing processes, and fostering trust across the AI ecosystem.
+      <strong>Rede de Terceiras Partes de Confiança</strong>:
+      Junte-se à rede de terceiras partes de confiança promovida pela INCM, apoiando processos de verificação de conformidade, auditoria e fomentando a confiança no ecossistema de IA.
 
-      Both pathways allow your organization to actively participate in advancing trustworthy AI while aligning with AICeBlock's mission of making AI development transparent, efficient, and impactful.
-      To explore these opportunities and discuss potential collaborations, please visit the 'Join us' tab and use the contact form or reach us directly at info@aiceblock.com.
+      Ambas as opções permitem que a sua organização participe ativamente no avanço da IA confiável, alinhando-se com a missão do AICeBlock. Para explorar estas oportunidades, visite a secção 'Junte-se a nós' ou contacte-nos diretamente através de info@aiceblock.com.

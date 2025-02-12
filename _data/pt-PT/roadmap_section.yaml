@@ -1,78 +1,82 @@
-title: "Our Innovation Roadmap: building the future of trustworthy AI Development"
+title: "O Roadmap de Inovação: construir o futuro do desenvolvimento de IA confiável"
 subtitle: >
-  AICeBlock's innovation roadmap outlines our journey from empowering organizations today with cutting-edge compliance tools to shaping the future of trustworthy, efficient, and collaborative AI development.
+  O roadmap de inovação do AICeBlock define o caminho desde a capacitação das organizações com ferramentas avançadas de conformidade até à construção do futuro do desenvolvimento de IA confiável, eficiente e colaborativa.
 
 sections:
   - title: "Now"
-    subtitle: "The foundations for Trustworthy and Transparent AI Development"
+    subtitle: "As bases para o Desenvolvimento de IA Transparente e de Confiança"
     description: >
-      The first version of AICeBlock lays the groundwork to empower organizations in achieving compliance through verifiable declaration.
+      A primeira versão do AICeBlock estabelece a base para capacitar organizações na obtenção da conformidade através de declarações verificáveis.
     image:
       src: "/assets/images/roadmap/now.svg"
-      alt: "Radmap now section illustration"
+      alt: "Ilustração da seção atual do roadmap de inovação do AICeBlock"
     roadmap:
-      - title: "ML Project Governance"
+      - title: "Governação de Projetos de ML"
         description: >
-          Seamlessly manage your machine learning projects, including datasets, modules, experiments, and released pipelines.
-          Assign roles to team members, reuse data and code across projects, and even collaborate across organizations—all with built-in governance for traceability and accountability.
-      - title: "Compliance Checklists"
+          Gerencie facilmente os seus projetos de machine learning, incluindo datasets, módulos de código, experiências e pipelines em produção.
+          Atribua funções aos membros da equipa, reutilize dados e código entre projetos e colabore entre organizações — tudo com governação integrada para rastreabilidade e responsabilidade.
+      - title: "Listas de Verificação de Conformidade"
         description: >
-          Streamline regulatory and standard adherence with predefined or custom checklists.
-          These checklists connect directly to deployed pipeline versions, ensuring verifiable transparency and helping organizations meet compliance requirements more easily.
-      - title: "Verifiable Declarations"
+          Facilite a adesão a regulamentos e normas através de listas de verificação pré-definidas ou personalizadas.
+          Estas listas ligam-se diretamente às versões das pipelines implementados, garantindo transparência verificável e ajudando as organizações a cumprir requisitos regulatórios de forma mais eficiente.
+      - title: "Declarações Verificáveis"
         description: >
-          Go beyond self-declaration with blockchain-backed verification. AICeBlock ensures the integrity of datasets, code modules, and other ML artifacts by linking them to
-          cryptographic signatures on the blockchain. Auditors can instantly verify authenticity and compliance, making the review process faster, more standardized, and secure.
-      - title: "Interactive Workflow Editor"
+          Vá além da auto-declaração com verificação baseada em blockchain. O AICeBlock garante a integridade de datasets, módulos de código e outros artefactos de ML ao vinculá-los a
+          assinaturas criptográficas na blockchain. Os Auditores podem verificar instantaneamente a autenticidade e conformidade, tornando o processo de revisão mais rápido, padronizado e seguro.
+      - title: "Editor Interativo de Pipelines ML"
         description: >
-          Visualize and edit ML pipelines with our one-of-a-kind graphical workflow builder.
-          This tool bridges the gap between technical execution and organizational oversight, enabling non-programmers to
-          iterate quickly while maintaining a direct link between visual representations and the actual pipeline code.
-      
+          Visualize e edite pipelines de ML com o nosso editor gráfico inovador.
+          Esta ferramenta faz a ponte entre a execução técnica e supervisão organizacional, permitindo que profissionais não técnicos façam iterações rapidamente enquanto mantêm uma ligação direta entre as representações visuais e o código real da pipeline.
+  
   - title: "Next"
-    subtitle: "Advancing the Compliance Support"
+    subtitle: "Evolução no Suporte à Conformidade"
     description: >
-      The next step in AICeBlock's journey focuses on expanding our capabilities to simplify compliance,
-      enhance privacy, and empower organizations to build AI responsibly with greater confidence.
+      A próxima etapa da jornada do AICeBlock concentra-se em expandir as nossas capacidades para simplificar a conformidade,
+      reforçar a privacidade e capacitar organizações para desenvolver IA de forma responsável com maior confiança.
     image:
       src: "/assets/images/roadmap/next.svg"
-      alt: "Radmap next section illustration"
+      alt: "Ilustração da seção 'Next' do roadmap do AICeBlock"
     roadmap:
-      - title: "Modules for Compliance Support"
+      - title: "Módulos de Suporte à Conformidade"
         description: >
-          Access a growing library of advanced tools to streamline compliance processes and integrate responsible AI practices directly into your pipelines. These modules range Bias analysis
-          and mitigation tools, data quality validation techniques, sensitive data detection and anonymization capabilities, robustness tests and an explainability suite.
-      - title: "Semi-Automated Checklists"
+          Aceda a uma biblioteca crescente de ferramentas avançadas para simplificar processos de conformidade e integrar práticas de IA responsável diretamente nas suas pipelines.
+          Estes módulos incluem ferramentas de análise e mitigação de viés, técnicas de validação da qualidade dos dados, deteção e anonimização de dados sensíveis, testes de robustez e um conjunto de métodos para explicabilidade.
+      - title: "Listas de Verificação Semi-Automatizadas"
         description: >
-          Save time and reduce errors with intelligent checklists. Map outputs from your pipelines to checklist fields, ensuring real-time, up-to-date documentation for compliance checks.
-          These automated links streamline audits and enhance traceability without the need for constant manual updates.
-      - title: "Privacy-Preserving ML"
-        description: "Ensure data security and compliance with privacy-enhancing technologies like Federated Learning for privacy-preserving collaboration, and Differential Privacy to protect sensitive information while still enabling valuable insights."
+          Poupe tempo e reduza erros com listas de verificação inteligentes. Relacione automaticamente os resultados das suas pipelines com campos específicos da lista, garantindo documentação atualizada em tempo real para verificações de conformidade.
+          Estas ligações automatizadas agilizam auditorias e melhoram a rastreabilidade sem necessidade de atualizações manuais constantes.
+      - title: "ML com Preservação da Privacidade"
+        description: >
+          Assegure a segurança dos dados e conformidade com tecnologias de preservação de privacidade, como Aprendizagem Federada para colaboração segura e Privacidade Diferencial para proteger informações sensíveis sem comprometer extração de conhecimento.
 
   - title: "Beyond"
-    subtitle: "Shaping the Future of Trustworthy and Collaborative AI Development"
+    subtitle: "O Futuro do Desenvolvimento de IA de Confiança e Colaborativa"
     description: >
-      AICeBlock's visionary roadmap aims to set the tone on AI governance, sustainability, and collaboration.
+      O roadmap visionário do AICeBlock pretende definir padrões para governação, sustentabilidade e colaboração em IA.
     image:
       src: "/assets/images/roadmap/beyond.svg"
-      alt: "Radmap beyond section illustration"
+      alt: "Ilustração da seção futura do roadmap do AICeBlock"
     roadmap:
       - title: "ML Copilot"
         description: >
-          Imagine an intelligent guide that bridges the gap between technical and non-technical teams—from decision-makers and end-users to developers and auditors—throughout the
-          entire lifecycle of an AI solution. AICeBlock's ML Copilot will recommend tailored methodologies based on project scope, data, and pipeline goals; and support
-          decision-making during the design, experimentation, and deployment stages.
-      - title: "Support for Green AI"
+          Imagine um assistente inteligente que liga equipas técnicas e não técnicas — desde decisores e utilizadores finais até desenvolvedores e auditores — ao longo de todo o
+          ciclo de vida de uma solução de IA. O Copilot do AICeBlock recomendará metodologias personalizadas com base no âmbito do projeto, nos dados e nos objetivos da pipeline, 
+          apoiando a tomada de decisões em todas as fases: design, experimentação e implementação.
+      - title: "Suporte para IA 'Verde'"
         description: >
-          In the pursuit of sustainable AI, AICeBlock envisions tools that help users optimize their pipelines for data and energy efficiency, reducing redundant or unnecessary
-          data usage, and minimizing energy consumption, tailored to the infrastructure or hardware where solutions will be deployed. These efforts align with the growing
-          demand for eco-conscious AI development, benefiting both the environment and operational costs.
-      - title: "Confidential Computing"
+          Para promover uma IA sustentável, o AICeBlock planeia ferramentas que ajudem utilizadores a otimizar as suas pipelines para eficiência de dados e energia, reduzindo o
+          uso de dados redundantes e minimizando o consumo energético, adaptando-se à infraestrutura e hardware onde as soluções serão implementadas. Estas iniciativas alinham-se 
+          com a crescente procura por desenvolvimento de IA ecologicamente consciente, beneficiando tanto o meio ambiente como os custos operacionais.
+
+      - title: "Computação Confidencial"
         description: >
-          Enabling tamper-aware computations ensures organizations can securely perform local computations while maintaining zero-trust principles. With confidential computing,
-          sensitive operations are protected from unauthorized access, and verifiable declarations remain intact, safeguarding trust and security throughout the process.
-      - title: "Fair Collaboration"
+          A viabilização de computações seguras e invioláveis permitirá que as organizações realizem execuções locais de forma segura, mantendo os princípios de zero-confiança. 
+          Com Computação Confidencial, operações sensíveis estarão protegidas contra acessos não autorizados, garantindo que declarações verificáveis permanecem intactas, 
+          fortalecendo a confiança e a segurança ao longo do processo.
+
+      - title: "Colaboração Justa"
         description: >
-          Building on the transparent tracing of contributions within ML pipelines, AICeBlock will introduce objective payout parameters for revenue-sharing agreements,
-          and transparent reward strategies embedded in smart contracts to fairly distribute value among collaborators. This approach fosters a culture of equitable,
-          transparent, and trustworthy collaboration.
+          Baseando-se no rastreamento transparente de contribuições dentro das pipelines de ML, o AICeBlock introduzirá parâmetros objetivos para distribuição de receitas e 
+          estratégias de recompensa transparentes embutidas em contratos inteligentes, garantindo uma distribuição justa de valor entre colaboradores. Esta abordagem promove uma 
+          cultura de colaboração equitativa, transparente e de confiança.
+

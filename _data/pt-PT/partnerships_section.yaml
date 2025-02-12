@@ -1,23 +1,23 @@
-title: "Our Strategic Partnerships"
-subtitle: "We collaborate with industry leaders to drive innovation and success."
+title: "Parcerias Estratégicas"
+subtitle: "Colaboração com líderes da indústria para impulsionar a inovação e o sucesso."
 
 partnerships:
   - title: "Fraunhofer Portugal AICOS"
     description: >
-      Fraunhofer Portugal AICOS is a leading research center, committed to delivering innovative solutions that address societal challenges through advanced technology.
-      With a strong focus on applied research and practical impact, AICOS bridges the gap between cutting-edge developments and real-world applications.
-      Dedicated to the future of AI governance and compliance, AICOS provides tools to streamline these processes, enhance trust and reliability in AI solutions, and ensure their positive impact on society.
+      O Fraunhofer Portugal AICOS é um centro de investigação de referência, dedicado a desenvolver soluções inovadoras que respondem a desafios societais através de tecnologia avançada.
+      Com um forte foco em investigação aplicada e impacto prático, o AICOS liga os avanços tecnológicos de ponta a aplicações do mundo real.
+      Comprometido com o futuro da governação e conformidade em IA, o AICOS disponibiliza ferramentas para simplificar estes processos, reforçar a confiança e a fiabilidade das soluções de IA e garantir o seu impacto positivo na sociedade.
     image:
       src: "/assets/images/about-us/fhp-logo.svg"
-      alt: "Logo of Fraunhofer Portugal AICOS"
+      alt: "Logo da Fraunhofer Portugal AICOS"
     url: "https://www.aicos.fraunhofer.pt"
 
-  - title: "Imprensa Nacional Casa da Moeda"
+  - title: "Imprensa Nacional - Casa da Moeda"
     description: >
-       INCM (The Portuguese Mint and Official Printing House) is a centennial public owned company fostering trust and security in relations between governments, citizens and companies. 
-       Currently, technological innovation, developed in partnership with some of the main universities and national research centers, is one of the strategic pillars of INCM, whose mission is to create, produce and supply goods and services that require high safety standards, securing the connection between the physical and digital worlds, in Portugal and abroad. 
-       As diverse examples of these essential goods and services, it is possible to highlight, for instance, the production of security documents such as citizen's cards or passports, the authentication of precious metals and other assets based on seamless end-user verifiable high security direct or indirect marking, the publication of fundamental works on the Portuguese language and culture or, within the AICeBlock ecosystem, acting as a Trusted Third Party for the certification of AI algorithms.
+       A INCM é uma empresa pública centenária que promove a confiança e a segurança nas relações entre governos, cidadãos e empresas.
+       Atualmente, a inovação tecnológica, desenvolvida em parceria com algumas das principais universidades e centros de investigação nacionais, é um dos pilares estratégicos da INCM, cuja missão é criar, produzir e fornecer bens e serviços que exigem elevados padrões de segurança, assegurando a ligação entre os mundos físico e digital, em Portugal e no estrangeiro.
+       Como exemplos de bens e serviços essenciais, destacam-se a produção de documentos de segurança, como cartões de cidadão e passaportes, a autenticação de metais preciosos e outros ativos através de marcação de alta segurança verificável pelo utilizador, a publicação de obras fundamentais sobre a língua e cultura portuguesas e, no contexto do ecossistema AICeBlock, a atuação como Terceira Parte de Confiança para a certificação de algoritmos de IA.
     image:
       src: "/assets/images/about-us/incm-logo.svg"
-      alt: "Logo of Imprensa Nacional Casa da Moeda"
+      alt: "Logo da Imprensa Nacional - Casa da Moeda"
     url: "https://incm.pt"
