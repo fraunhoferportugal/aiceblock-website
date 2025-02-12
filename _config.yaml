@@ -1,12 +1,22 @@
+url: "https://aiceblock.eu"
+baseurl: ""
+
 title: "AICeBlock"
 favicon:
   src: "/assets/images/favicon.ico"
   type: "image/x-icon"
 
-#plugins:
-#  - jekyll-dotenv
+plugins:
+  - jekyll-dotenv
+  - jekyll-polyglot
 
 exclude: ["README.md"]
+
+# I18n
+languages: ["en", "pt-PT"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: true
 
 # Default WEB3FORM key associated with info@aiceblock.com
 # If .env isn't set it defaults to this key

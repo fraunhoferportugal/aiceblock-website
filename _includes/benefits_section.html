@@ -1,21 +1,22 @@
 <section class="benefits-section">
     <div class="benefits-content-wrapper">
         <div class="benefits-text-content">
-            <h2>{{ site.data.benefits_section.title }}</h2>
-            <h4>{{ site.data.benefits_section.subtitle }}</h4>
+            <h2>{{ site.data[site.active_lang].benefits_section.title }}</h2>
+            <h4>{{ site.data[site.active_lang].benefits_section.subtitle }}</h4>
         </div>
         <div class="carousel">
             <div class="carousel-dots">
-                {% for pillar in site.data.benefits_section.benefits %}
+                {% for pillar in site.data[site.active_lang].benefits_section.benefits %}
                 <span class="dot{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}"></span>
                 {% endfor %}
             </div>
             <div class="carousel-image">
-                <img id="carousel-main-image" src="{{ site.data.benefits_section.benefits[0].image.src }}"
-                    alt="{{ site.data.benefits_section.benefits[0].image.alt }}">
+                <img id="carousel-main-image"
+                    src="{{ site.data[site.active_lang].benefits_section.benefits[0].image.src }}"
+                    alt="{{ site.data[site.active_lang].benefits_section.benefits[0].image.alt }}">
             </div>
             <div class="carousel-items">
-                {% for pillar in site.data.benefits_section.benefits %}
+                {% for pillar in site.data[site.active_lang].benefits_section.benefits %}
                 <div class="carousel-item{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
                     <h3>{{ pillar.title }}</h3>
                     <h4>{{ pillar.subtitle }}</h4>
@@ -28,7 +29,7 @@
 </section>
 
 <script id="carousel-data" type="application/json">
-    {{ site.data.benefits_section.benefits | jsonify }}
+    {{ site.data[site.active_lang].benefits_section.benefits | jsonify }}
 </script>
 
 <script>
@@ -44,13 +45,20 @@
         let autoScrollTimeout = 4000;
         let currentTimeout;
 
+        const imageCache = benefits.map((benefit) => {
+            const img = new Image();
+            img.src = benefit.image.src;
+            img.alt = benefit.image.alt;
+            return img;
+        });
+
         function updateCarousel(index) {
             dots.forEach(dot => dot.classList.remove("active"));
             items.forEach(item => item.classList.remove("active"));
             dots[index].classList.add("active");
             items[index].classList.add("active");
-            mainImage.src = benefits[index].image.src;
-            mainImage.alt = benefits[index].image.alt;
+            mainImage.src = imageCache[index].src;
+            mainImage.alt = imageCache[index].alt;
             currentIndex = index;
         }
 

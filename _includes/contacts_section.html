@@ -1,13 +1,13 @@
 <section class="contacts-section" id="{{ include.id }}">
     <div class="contacts-content-wrapper">
         <div class="contacts-text-content">
-            <h2>{{ site.data.contacts_section.title }}</h2>
+            <h2>{{ site.data[site.active_lang].contacts_section.title }}</h2>
         </div>
         <div class="contacts-container">
             <div class="contacts-column">
-                <p>{{ site.data.contacts_section.description }}</p>
+                <p>{{ site.data[site.active_lang].contacts_section.description }}</p>
                 <div class="contacts-list">
-                    {% for contact in site.data.contacts_section.contacts %}
+                    {% for contact in site.data[site.active_lang].contacts_section.contacts %}
                     <div class="contacts-item">
                         <img src="{{ contact.image.src }}" alt="{{ contact.image.alt }}">
                         {% if contact.ref %}
@@ -24,30 +24,30 @@
                     value="{{ site.env.WEB3FORMS_ACCESS_KEY | default: site.web3forms_access_key }}">
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                <h3>{{ site.data.contacts_section.form.title }}</h3>
+                <h3>{{ site.data[site.active_lang].contacts_section.form.title }}</h3>
                 <div class="contacts-form-name">
                     <input type="text" name="first_name"
-                        placeholder="{{ site.data.contacts_section.form.first_name_placeholder }}" required>
+                        placeholder="{{ site.data[site.active_lang].contacts_section.form.first_name_placeholder }}" required>
                     <input type="text" name="last_name"
-                        placeholder="{{ site.data.contacts_section.form.last_name_placeholder }}" required>
+                        placeholder="{{ site.data[site.active_lang].contacts_section.form.last_name_placeholder }}" required>
                 </div>
                 <div class="contacts-form-email">
                     <input type="email" name="email"
-                        placeholder="{{ site.data.contacts_section.form.email_placeholder }}" required>
+                        placeholder="{{ site.data[site.active_lang].contacts_section.form.email_placeholder }}" required>
                 </div>
                 <div class="contacts-form-subject">
                     <select name="subject" id="subject-dropdown">
-                        {% for subject in site.data.contacts_section.form.subjects %}
-                        <option value="{{ site.data.contacts_section.form.prepend_subject }} - {{ subject }}">{{ subject
+                        {% for subject in site.data[site.active_lang].contacts_section.form.subjects %}
+                        <option value="{{ site.data[site.active_lang].contacts_section.form.prepend_subject }} - {{ subject }}">{{ subject
                             }}</option>
                         {% endfor %}
                     </select>
                 </div>
                 <div class="contacts-form-message">
-                    <textarea name="Message" placeholder="{{ site.data.contacts_section.form.message_placeholder }}"
+                    <textarea name="Message" placeholder="{{ site.data[site.active_lang].contacts_section.form.message_placeholder }}"
                         required></textarea>
                 </div>
-                <button type="submit">{{ site.data.contacts_section.form.button_text }}</button>
+                <button type="submit">{{ site.data[site.active_lang].contacts_section.form.button_text }}</button>
             </form>
         </div>
     </div>

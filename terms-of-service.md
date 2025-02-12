@@ -3,4 +3,5 @@ title: "AICeBlock | Terms of Service"
 layout: default
 ---
 
-{% include text_section.html content=site.data.terms_of_service_section %}
+{% assign terms_of_service_content = site.data[site.active_lang].terms_of_service_section %}
+{% include text_section.html content=terms_of_service_content %}

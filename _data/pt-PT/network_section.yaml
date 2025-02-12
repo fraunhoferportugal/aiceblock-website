@@ -1,0 +1,23 @@
+title: "Junte-se a nós na construção do Futuro da IA Confiável"
+subtitle: >
+  A colaboração está no centro da missão da plataforma AICeBlock para tornar a IA transparente, conforme e fiável.
+  Procuramos parceiros visionários para nos ajudar a desenvolver as ferramentas do futuro e Terceiras Partes de Confiança para fortalecer a rede que garante a conformidade e responsabilidade da IA.
+
+image:
+  src: "/assets/images/about-us/global-network.svg"
+  alt: "Imagem da Rede Global"
+
+columns:
+  - title: "Colabore na Inovação do Produto"
+    description: >
+      Ajude o Fraunhofer AICOS a desenvolver as funcionalidades inovadoras dõ AICeBlock. Traga a sua experiência em IA, conformidade ou tecnologia para a vanguarda da inovação, co-desenvolvendo soluções que capacitam organizações em todo o mundo.
+    button:
+      text: "Colaborar"
+      url: "/join-us?subject=2#contacts"
+
+  - title: "Torne-se um Membro da Rede de Confiança"
+    description: >
+      Junte-se ao ecossistema de conformidade do AICeBlock, iniciado pela Imprensa Nacional - Casa da Moeda (INCM), como uma Terceira Parte de Confiança. Desempenhe um papel fundamental na garantia da responsabilidade e verificabilidade da IA, enquanto ganha acesso a uma rede crescente de profissionais de IA confiável.
+    button:
+      text: "Junte-se a Nós"
+      url: "/join-us?subject=3#contacts"

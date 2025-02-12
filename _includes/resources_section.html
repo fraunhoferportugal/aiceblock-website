@@ -1,16 +1,16 @@
 <section class="resources-section" id="{{ include.id }}">
     <div class="resources-content-wrapper">
         <div class="resources-text-content">
-            <h2>{{ site.data.resources_section.title }}</h2>
-            <p>{{ site.data.resources_section.subtitle }}</p>
+            <h2>{{ site.data[site.active_lang].resources_section.title }}</h2>
+            <p>{{ site.data[site.active_lang].resources_section.subtitle }}</p>
         </div>
         <div class="resources-container">
-            {% for column in site.data.resources_section.columns %}
+            {% for column in site.data[site.active_lang].resources_section.columns %}
             <div class="resource-column">
                 <img src="{{ column.image.src }}" alt="{{ column.image.alt }}" />
                 <h3>{{ column.title }}</h3>
                 <div class="resource-items">
-                    {% assign resources = site.data.resources[column.resource_group_id] %}
+                    {% assign resources = site.data[site.active_lang].resources[column.resource_group_id] %}
                     {% if resources and resources.size > 0 %}
                     {% for resource in resources %}
                     <div class="resource-item">

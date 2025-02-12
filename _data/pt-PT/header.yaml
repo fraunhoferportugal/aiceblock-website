@@ -4,10 +4,10 @@ logo:
   height: "40px"
 
 nav:
-  #- text: "Guided Tour"
-  #  url: "/guided-tour"
-  - text: "About Us"
+  - text: "Visita Guiada"
+    url: "/guided-tour"
+  - text: "Sobre"
     url: "/about"
-  - text: "Join Us"
+  - text: "Junte-se a Nós"
     url: "/join-us"
   

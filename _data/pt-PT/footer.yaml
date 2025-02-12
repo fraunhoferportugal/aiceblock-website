@@ -1,0 +1,43 @@
+logo:
+  src: "/assets/images/logo-horizontal.svg"
+  alt: "AIceBlock Logo"
+  #description: "AICeBlock"
+
+copyright: "© 2024 AICeBlock. Todos os Direitos Reservados."
+
+footer_links:
+  - links:
+      - text: "Visita Guiada"
+        url: "/guided-tour"
+      - text: "Recursos"
+        url: "/#resources"
+      - text: "Junte-se a Nós"
+        url: "/join-us"
+      - text: "Sobre"
+        url: "/about"
+      - text: "Contactos"
+        url: "/about#contacts"
+  - links:
+      - text: "Política de Privacidade"
+        url: "/privacy-policy"
+      - text: "Termos de Serviço"
+        url: "/terms-of-service"
+
+newsletter:
+  title: "Subscreva a Newsletter"
+  placeholder: "O seu email"
+  button_text: "Subscrever"
+  email_subject: "AICeBlock - New newsletter subscription request"
+
+social_links:
+  title: "Siga-nos"
+  links:
+    - icon: "/assets/images/icons/linkedin-icon.svg"
+      alt: "LinkedIn"
+      url: "https://www.linkedin.com"
+    - icon: "/assets/images/icons/twitter-icon.svg"
+      alt: "Twitter"
+      url: "https://www.twitter.com"
+    # - icon: "/assets/images/icons/github-icon.svg"
+    #   alt: "GitHub"
+    #   url: "https://www.github.com"
