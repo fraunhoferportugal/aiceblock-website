@@ -1,59 +1,12 @@
 <header class="header">
   <div class="header-desktop">
     <a class="logo" href="{{ '/' | relative_url }}">
-      <img src="{{ site.data[site.active_lang].header.logo.src }}"
-        alt="{{ site.data[site.active_lang].header.logo.alt }}">
+      <img src="{{ site.data.header.logo.src }}" alt="{{ site.data.header.logo.alt }}">
     </a>
     <nav class="header-nav">
-      {% for link in site.data[site.active_lang].header.nav %}
+      {% for link in site.data.header.nav %}
       <a href="{{ link.url | relative_url }}" class="button">{{ link.text }}</a>
       {% endfor %}
-
-      {% for lang in site.languages %}
-      {% if lang != site.active_lang %}
-      {% assign other_lang = lang %}
-      {% endif %}
-      {% endfor %}
-
-      {% assign lang_prefix = "/" | append: site.active_lang %}
-
-      {% if other_lang %}
-      <a href="
-        {% if other_lang == site.default_lang %}
-          {{ page.url | remove_first: lang_prefix | split: '.html' | join: '' }}
-        {% else %}
-          /{{ other_lang }}{{ page.url | remove_first: lang_prefix | split: '.html' | join: '' }}
-        {% endif %}" class="button">{{ other_lang }}</a>
-      {% endif %}
     </nav>
-    <button class="hamburger" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
   </div>
-  <nav class="mobile-nav">
-    {% for link in site.data[site.active_lang].header.nav %}
-    <a href="{{ link.url | relative_url }}" class="button">{{ link.text }}</a>
-    {% endfor %}
-    {% if other_lang %}
-    <a href="
-      {% if other_lang == site.default_lang %}
-        {{ page.url | remove_first: lang_prefix | split: '.html' | join: '' }}
-      {% else %}
-        /{{ other_lang }}{{ page.url | remove_first: lang_prefix | split: '.html' | join: '' }}
-      {% endif %}" class="button">{{ other_lang }}</a>
-    {% endif %}
-  </nav>
 </header>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger");
-    const mobileNav = document.querySelector(".mobile-nav");
-
-    hamburger.addEventListener("click", function () {
-      mobileNav.classList.toggle("open");
-    });
-  });
-</script>

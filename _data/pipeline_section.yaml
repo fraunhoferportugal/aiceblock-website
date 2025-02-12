@@ -2,7 +2,7 @@ title: "Interactive ML pipeline: traceable and trustworthy workflows"
 subtitle: "Discover how AICeBlock empowers you to visualize and document every critical stage of your ML pipeline."
 
 main_pipeline_image:
-  src: "/assets/images/pipeline/pipeline-base.svg"
+  src: "/assets/images/pipeline/pipeline.svg"
   alt: "Illustration of an interactive ML pipeline"
 
 main_pipeline_image_mobile:
@@ -13,112 +13,77 @@ overlays:
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-1.svg"
       alt: "Visualization of datasets management in the pipeline"
+    position:
+      top: "14"
+      left: "8"
     title: "Datasets"
     description: "AICeBlock can help you manage your datasets, but it can also only keep metadata for integrity checking"
     mobile-top: "7.45%"
-    position:
-      left: "3.81%"
-      top: "7.94%"
-      align: "left"
-    size:
-      width: "10.97%"
-      height: "20.94%"
-    desktop_image_src: "/assets/images/pipeline/pipeline-1.svg"
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-2.svg"
       alt: "Illustration of data processing operations in the pipeline"
+    position:
+      top: "15"
+      left: "270"
     title: "Data Processing entails different operations performed on the data, including:"
     description: "• Cleaning (e.g., outlier removal, missing data imputation)\n• Anonymization\n• Bias analysis\n• Train/Test splits\n• ..."
     mobile-top: "19.37%"
-    position:
-      left: "20.62%"
-      top: "7.94%"
-      align: "center"
-    size:
-      width: "6.73%"
-      height: "31.77%"
-    desktop_image_src: "/assets/images/pipeline/pipeline-2.svg"
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-3.svg"
       alt: "Illustration of traceable steps in ML workflows"
-    title: "Data Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
-    description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Data Cards are immutable"
-    mobile-top: "32.27%"
     position:
-      left: "14.96%"
-      top: "70.22%"
-      align: "center"
-    size:
-      width: "15.04%"
-      height: "23.47%"
-    desktop_image_src: "/assets/images/pipeline/pipeline-3.svg"
+      top: "478"
+      left: "180"
+    title: "Data Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
+    description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Model version and Model Cards are immutable"
+    mobile-top: "32.27%"
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-4.svg"
       alt: "Visualization of model training and evaluation in the pipeline"
+    position:
+      top: "13"
+      left: "549"
     title: "Model Training & Evaluation comprises steps such as:"
     description: "• Training (possibly including cross-validation, hyperparameter tuning)\n• Hold-out set evaluation\n• Stress-tests\n• Model bias analysis\n• Explainability\n• ..."
     mobile-top: "48.49%"
-    position:
-      left: "39.03%"
-      top: "8.30%"
-      align: "center"
-    size:
-      width: "18.76%"
-      height: "38.63%"
-    desktop_image_src: "/assets/images/pipeline/pipeline-4.svg"
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-5.svg"
       alt: "Representation of reproducibility and traceability for ML processes"
+    position:
+      top: "477"
+      left: "558"
     title: "Model Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
     description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Model version and Model Cards are immutable"
     mobile-top: "60.92%"
-    position:
-      left: "39.56%"
-      top: "70.22%"
-      align: "center"
-    size:
-      width: "15.40%"
-      height: "23.47%"
-    desktop_image_src: "/assets/images/pipeline/pipeline-5.svg"
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-6.svg"
       alt: "Illustration of inference monitoring in the ML pipeline"
+    position:
+      top: "358"
+      left: "1127"
     title: "When inference is performed on AICeBlock, the platform ensures these outcomes and its monitoring results are traceable and reproducible"
     description: "Links from Inference Model version to Monitoring results are immutable"
     mobile-top: "79.21%"
-    position:
-      left: "75.84%"
-      top: "53.97%"
-      align: "center"
-    size:
-      width: "12.92%"
-      height: "25.99%"
-    desktop_image_src: "/assets/images/pipeline/pipeline-6.svg"
 
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-7.svg"
       alt: "Visualization of monitoring steps in the ML pipeline"
+    position:
+      top: "5"
+      left: "1012"
     title: "Monitoring includes steps like:"
     description: "• Drift detection\n• Triggers for retraining\n• Continuous learning\n• ..."
     mobile-top: "95.27%"
-    position:
-      left: "68.94%"
-      top: "6.50%"
-      align: "center"
-    size:
-      width: "24.07%"
-      height: "39.71%"
-    desktop_image_src: "/assets/images/pipeline/pipeline-7.svg"
 
 explanation:
   text: "Continuous model monitoring identifies opportunities for improvement, driving new iterations that enhance performance while allowing versionable compliance"
   image:
     src: "/assets/images/pipeline/explanation.svg"
-    alt: "Diagram showing a continuous improvement cycle for machine learning. It includes four main steps arranged in a circular flow: Model Training and Evaluation, Model Card, Inference and Prediction, and Monitoring. A central clockwise arrow connects these steps, emphasizing the iterative and ongoing nature of the process"
+    alt: ""
 
-bottom_text: "From data collection to deployment, each phase is transparent, secure, and supports compliance with key regulations like the EU AI Act and GDPR. Every connection is verifiable and immutable, ensuring your AI solutions are built on a trustworthy foundation."
+bottom_text: "From data collection to deployment, each phase is transparent, secure, and compliant with key regulations like the EU AI Act and GDPR. Every connection is verifiable and immutable, ensuring your AI solutions are built on a foundation of trust."

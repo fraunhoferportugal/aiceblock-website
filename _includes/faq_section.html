@@ -1,12 +1,12 @@
 <section class="faq-section">
     <div class="faq-content-wrapper">
         <div class="faq-text-content">
-            <h2>{{ site.data[site.active_lang].faq_section.title }}</h2>
-            <p>{{ site.data[site.active_lang].faq_section.subtitle }}</p>
+            <h2>{{ site.data.faq_section.title }}</h2>
+            <p>{{ site.data.faq_section.subtitle }}</p>
         </div>
         <div class="faq-container">
             <div class="questions-list">
-                {% for faq in site.data[site.active_lang].faq_section.faqs %}
+                {% for faq in site.data.faq_section.faqs %}
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleAnswer(this)">
                         <h3>{{ faq.question }}</h3>
