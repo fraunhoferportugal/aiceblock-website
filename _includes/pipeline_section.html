@@ -1,69 +1,84 @@
 <section class="pipeline-section">
     <div class="pipeline-content-wrapper">
         <div class="pipeline-text-content">
-            <h2>{{ site.data.pipeline_section.title }}</h2>
-            <p>{{ site.data.pipeline_section.subtitle }}</p>
+            <h2>{{ site.data[site.active_lang].pipeline_section.title }}</h2>
+            <p>{{ site.data[site.active_lang].pipeline_section.subtitle }}</p>
         </div>
         <div class="pipeline-container">
             <div class="main-pipeline-image">
-                <!-- WIP -->
-                <map name="image-map">
-                    <area target="" alt="" title="" href="" coords="6,4,138,130" shape="rect">
-                    <area target="" alt="" title="" href="" coords="210,198,290,10" shape="rect">
-                    <area target="" alt="" title="" href="" coords="430,6,660,238" shape="rect">
-                    <area target="" alt="" title="" href="" coords="792,0,1094,236" shape="rect">
-                    <area target="" alt="" title="" href="" coords="140,369,324,509" shape="rect">
-                    <area target="" alt="" title="" href="" coords="628,509,436,373" shape="rect">
-                    <area target="" alt="" title="" href="" coords="876,277,1036,451" shape="rect">
-                </map>
-                <img class="desktop" src="{{ site.data.pipeline_section.main_pipeline_image.src }}"
-                    alt="{{ site.data.pipeline_section.main_pipeline_image.alt }}" usemap="#image-map" />
-                <img class="mobile" src="{{ site.data.pipeline_section.main_pipeline_image_mobile.src }}"
-                    alt="{{ site.data.pipeline_section.main_pipeline_image_mobile.alt }}" />
+                <div class="desktop">
+                    <img src="{{ site.data[site.active_lang].pipeline_section.main_pipeline_image.src }}"
+                        alt="{{ site.data[site.active_lang].pipeline_section.main_pipeline_image.alt }}" />
+
+                    {% for overlay in site.data[site.active_lang].pipeline_section.overlays %}
+                    <div class="overlay"
+                        style="position: absolute; left: {{ overlay.position.left }}; top: {{ overlay.position.top }}; width: {{ overlay.size.width }}; height: {{ overlay.size.height }};"
+                        data-position="{{ overlay.position.align }}" data-image-src="{{ overlay.desktop_image_src }}">
+                        <div class="description-bubble">
+                            <span class="bubble-number">{{ forloop.index | prepend: "0" }}</span>
+                            <span class="bubble-title">{{ overlay.title }}</span>
+                            <p class="bubble-description">{{ overlay.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <img class="mobile"
+                    src="{{ site.data[site.active_lang].pipeline_section.main_pipeline_image_mobile.src }}"
+                    alt="{{ site.data[site.active_lang].pipeline_section.main_pipeline_image_mobile.alt }}" />
+
                 <div class="pipeline-descriptions">
-                    {% for overlay in site.data.pipeline_section.overlays %}
+                    {% for overlay in site.data[site.active_lang].pipeline_section.overlays %}
                     <div class="description" data-top="{{ overlay.mobile-top }}">
-                        <span class>{{ overlay.title }}</span>
+                        <span>{{ overlay.title }}</span>
                         <p>{{ overlay.description }}</p>
                     </div>
                     {% endfor %}
                 </div>
             </div>
-            <div class="pipeline-overlays">
-                {% for overlay in site.data.pipeline_section.overlays %}
-                <div class="overlay-image" data-top="{{ overlay.position.top }}" data-left="{{ overlay.position.left }}"
-                    data-description="{{ overlay.description }}">
-                    <img src="{{ overlay.image.src }}" alt="{{ overlay.image.alt }}" />
-                    <div class="description-bubble">
-                        <span class="bubble-number">{{ forloop.index | prepend: "0" }}</span>
-                        <span class="bubble-title">{{ overlay.title }}</span>
-                        <p class="bubble-description">{{ overlay.description }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
         </div>
         <div class="pipeline-explanation-container">
-            <span>{{ site.data.pipeline_section.explanation.text }}</span>
-            <img src="{{ site.data.pipeline_section.explanation.image.src }}" alt="{{ site.data.pipeline_section.explanation.image.alt }}" />
+            <span>{{ site.data[site.active_lang].pipeline_section.explanation.text }}</span>
+            <img src="{{ site.data[site.active_lang].pipeline_section.explanation.image.src }}"
+                alt="{{ site.data[site.active_lang].pipeline_section.explanation.image.alt }}" />
         </div>
-        <p class="pipeline-bottom-text">{{ site.data.pipeline_section.bottom_text }}</p>
+        <p class="pipeline-bottom-text">{{ site.data[site.active_lang].pipeline_section.bottom_text }}</p>
     </div>
 </section>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const overlayImages = document.querySelectorAll('.overlay-image');
-        overlayImages.forEach(function (overlay) {
-            const top = overlay.getAttribute('data-top');
-            const left = overlay.getAttribute('data-left');
-            overlay.style.top = `${Number(top) - 30}px`;
-            overlay.style.left = `${Number(left) - 30}px`;
-        });
-
         const descriptions = document.querySelectorAll('.pipeline-descriptions .description');
         descriptions.forEach(function (description) {
             description.style.top = description.getAttribute('data-top');
+        });
+
+        const overlays = document.querySelectorAll('.overlay');
+        const desktopImage = document.querySelector('.main-pipeline-image .desktop img');
+
+        const originalImageSrc = "{{ site.data[site.active_lang].pipeline_section.main_pipeline_image.src }}";
+
+        const imageCache = {};
+        imageCache[originalImageSrc] = new Image();
+        imageCache[originalImageSrc].src = originalImageSrc;
+
+        overlays.forEach(function (overlay) {
+            const newImageSrc = overlay.getAttribute('data-image-src');
+            if (!imageCache[newImageSrc]) {
+                imageCache[newImageSrc] = new Image();
+                imageCache[newImageSrc].src = newImageSrc;
+            }
+        });
+
+        overlays.forEach(function (overlay) {
+            overlay.addEventListener('mouseover', function () {
+                const newImageSrc = overlay.getAttribute('data-image-src');
+                desktopImage.src = imageCache[newImageSrc].src;
+            });
+
+            overlay.addEventListener('mouseout', function () {
+                desktopImage.src = imageCache[originalImageSrc].src;
+            });
         });
     });
 </script>

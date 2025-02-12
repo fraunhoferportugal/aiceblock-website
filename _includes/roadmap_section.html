@@ -1,15 +1,15 @@
 <section class="roadmap-section">
     <div class="roadmap-content-wrapper">
         <div class="roadmap-text-content">
-            <h2>{{ site.data.roadmap_section.title }}</h2>
-            <h4>{{ site.data.roadmap_section.subtitle }}</h4>
+            <h2>{{ site.data[site.active_lang].roadmap_section.title }}</h2>
+            <h4>{{ site.data[site.active_lang].roadmap_section.subtitle }}</h4>
         </div>
         <div class="roadmap-top-buttons">
-            {% for section in site.data.roadmap_section.sections %}
+            {% for section in site.data[site.active_lang].roadmap_section.sections %}
             <button data-index="{{ forloop.index0 }}" class="roadmap-button">{{ section.title }}</button>
             {% endfor %}
         </div>
-        {% for section in site.data.roadmap_section.sections %}
+        {% for section in site.data[site.active_lang].roadmap_section.sections %}
         <div class="roadmap-container">
             <div class="section-column">
                 <div class="section-column-image">
