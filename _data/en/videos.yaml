@@ -1,10 +1,3 @@
-#title: "AICeBlock Guided Tour"
-#description: "Welcome to our guided tour, where we present AICeBlock from the perspective of three key roles in a healthcare example, where trust is essential: 
-#  Project Manager, Developer, and Auditor. Each video illustrates how the platform supports governance, experimentation, compliance, and efficient auditing in building trustworthy AI solutions.
-#
-#  In this fictional example, we have an AI solution provider developing a patient referral model based on (simplified) clinical records to support decision-making in the primary care system of a healthcare network.
-#  This is a domain where every decision has an impact, demonstrating AICeBlock's potential in supporting development based on best practices, facilitating compliance, and streamlining auditing processes."
-
 video1:
   url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
   title: "Project Administrator"

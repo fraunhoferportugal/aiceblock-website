@@ -1,7 +1,12 @@
-title: "Your Journey to Compliance Starts Here"
 #description: "Embark on an interactive tour and see how AICeBlock makes compliance effortless at every stage of your ML workflow.\n\nBy integrating best practices, we help you reduce errors and inefficiencies, ultimately saving costs while ensuring adherence to regulations like the EU AI Act and GDPR."
 #description: "Embark on a journey to make compliance effortless at every stage of your ML workflow.\n\nBy integrating best practices, we help you reduce errors and inefficiencies, ultimately saving costs while ensuring adherence to regulations like the EU AI Act and GDPR."
-description: "Watch the videos below for a walkthrough from the perspective of three key roles in a project: Project Administrator, Developer, and Auditor."
+#description: "Watch the videos below for a walkthrough from the perspective of three key roles in a project: Project Administrator, Developer, and Auditor."
+
+title: "Your Journey to Compliance Starts Here"
+description: |
+  Welcome to our guided tour, where we present AICeBlock from the perspective of three key roles in a healthcare example, where trust is essential: Project Manager, Developer, and Auditor. Each video illustrates how the platform supports governance, experimentation, compliance, and efficient auditing in building trustworthy AI solutions.
+  
+  In this fictional example, we have an AI solution provider developing a patient referral model based on (simplified) clinical records to support decision-making in the primary care system of a healthcare network. This is a domain where every decision has an impact, demonstrating AICeBlock's potential in supporting development based on best practices, facilitating compliance, and streamlining auditing processes.
 
 cta_button:
   url: "/guided-tour#start"

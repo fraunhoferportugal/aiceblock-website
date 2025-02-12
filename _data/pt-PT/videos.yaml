@@ -1,13 +1,3 @@
-#title: "Visita Guiada ao AICeBlock"
-#description: "Bem-vindo à nossa visita guiada, onde apresentamos o AICeBlock a partir da perspetiva de três perfis-chave num exemplo em Saúde,
-#  onde a confiança é essencial: 
-#  Gestor de Projeto, Desenvolvedor e Auditor. Cada vídeo ilustra como a plataforma apoia a governação, experimentação, conformidade
-#  e auditoria eficiente na construção de soluções de IA de confiança.
-#  Neste exemplo fictício temos um fornecedor de soluções IA que desenvolve um modelo de referenciação de pacientes a partir de registos clínicos (simplificados),
-#  para suportar a decisão nos cuidados primários de um sistema de saúde.
-#  Trata-se de um domínio onde qualquer decisão tem impacto, demonstrando o potencial do AICeBlock em apoiar o desenvolvimento baseado em boas práticas e facilitar
-#  a conformidade bem como os processos de auditoria."
-
 video1:
   url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
   title: "Gestor de Projeto"
