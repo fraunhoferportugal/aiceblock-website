@@ -1,29 +1,37 @@
+#title: "Visita Guiada ao AICeBlock"
+#description: "Bem-vindo à nossa visita guiada, onde apresentamos o AICeBlock a partir da perspetiva de três perfis-chave num exemplo em Saúde,
+#  onde a confiança é essencial: 
+#  Gestor de Projeto, Desenvolvedor e Auditor. Cada vídeo ilustra como a plataforma apoia a governação, experimentação, conformidade
+#  e auditoria eficiente na construção de soluções de IA de confiança.
+#  Neste exemplo fictício temos um fornecedor de soluções IA que desenvolve um modelo de referenciação de pacientes a partir de registos clínicos (simplificados),
+#  para suportar a decisão nos cuidados primários de um sistema de saúde.
+#  Trata-se de um domínio onde qualquer decisão tem impacto, demonstrando o potencial do AICeBlock em apoiar o desenvolvimento baseado em boas práticas e facilitar
+#  a conformidade bem como os processos de auditoria."
+
 video1:
   url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
-  title: "Testing 1"
+  title: "Gestor de Projeto"
   text: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, orci et blandit rutrum, augue libero ullamcorper nisl,
-    non pharetra sem justo a eros. Donec at ornare tortor. In a scelerisque ligula. Aliquam in neque id mauris suscipit varius sed vitae
-    odio. Donec ut erat non diam facilisis tincidunt et et lectus. Morbi sed sollicitudin nulla. Donec nec nisi felis. Donec ullamcorper,
-    tellus a aliquet suscipit, sapien ex scelerisque lorem, eget placerat nisl sapien at eros. Suspendisse hendrerit urna mauris, sit
-    amet lacinia justo vulputate a.
+    Acompanhe o Gestor de Projeto enquanto cria um novo projeto, atribui perfis de utilizador, anexa a checklist de conformidade apropriada
+    e apresenta os painéis de Datasets e Módulos. Com uma pipeline pronta para implementação, veja como o Gestor a revê,
+    aprova e testa o modelo final com novos dados de pacientes para garantir que tudo está a funcionar corretamente.
+    Governação de IA rastreável de forma simplificada.
+
 
 video2:
   url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
-  title: "Testing 2"
+  title: "Desenvolvedor"
   text: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, orci et blandit rutrum, augue libero ullamcorper nisl,
-    non pharetra sem justo a eros. Donec at ornare tortor. In a scelerisque ligula. Aliquam in neque id mauris suscipit varius sed vitae
-    odio. Donec ut erat non diam facilisis tincidunt et et lectus. Morbi sed sollicitudin nulla. Donec nec nisi felis. Donec ullamcorper,
-    tellus a aliquet suscipit, sapien ex scelerisque lorem, eget placerat nisl sapien at eros. Suspendisse hendrerit urna mauris, sit
-    amet lacinia justo vulputate a.
+    Veja os bastidores de como o Desenvolvedor cria módulos, conduz experiências através do editor interativo e implementa a pipeline.
+    Assistirá à execução de uma pipeline e como o Desenvolvedor documenta algumas etapas e decisões na Checklist atribuída
+    para garantir que a pipeline cumpre os requisitos regulamentares, estando pronta para a aprovação do Gestor de Projeto.
+    Ao rastrear cada artefacto na pipeline de ML, o desenvolvimento é otimizado para minimizar erros e facilitar a conformidade.
 
 video3:
   url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
-  title: "Testing 3"
+  title: "Auditor"
   text: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, orci et blandit rutrum, augue libero ullamcorper nisl,
-    non pharetra sem justo a eros. Donec at ornare tortor. In a scelerisque ligula. Aliquam in neque id mauris suscipit varius sed vitae
-    odio. Donec ut erat non diam facilisis tincidunt et et lectus. Morbi sed sollicitudin nulla. Donec nec nisi felis. Donec ullamcorper,
-    tellus a aliquet suscipit, sapien ex scelerisque lorem, eget placerat nisl sapien at eros. Suspendisse hendrerit urna mauris, sit
-    amet lacinia justo vulputate a.
+    Assista ao Auditor a verificar a pipeline real e as Checklists anexadas, com acesso às informações do Dataset e
+    aos módulos de código individuais para revisão. Em seguida, realiza uma verificação da integridade dos artefactos, confirmando que aqueles partilhados
+    pelos fornecedores correspondem exatamente aos reportados, através de uma prova imutável mantida em blockchain.
+    Aqui se demonstra como os registos transparentes de auditoria do AICeBlock asseguram a integridade e a responsabilidade em cada etapa.
