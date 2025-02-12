@@ -1,5 +1,5 @@
-video1:
-  url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
+admin:
+  url: "https://www.youtube.com/embed/SwMgsoLfSP8?si=zq5hCin7QegZ05RE"
   title: "Project Administrator"
   text: |
     Follow the Project Admin as they create a new project, define user roles, attach the appropriate compliance checklist, 
@@ -7,16 +7,16 @@ video1:
     approves it, and then tests the final model with new patient data to confirm everything's running smoothly.
     Traceable AI Governance made easier. 
 
-video2:
-  url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
+developer:
+  url: "https://www.youtube.com/embed/2I2NX7AdnK8?si=2LvhcJ8U_ivAkNHC"
   title: "Developer"
   text: |
     Get a behind-the-scenes look at how the Developer creates modules, conducts experiments by using the interactive editor, and deploys the pipeline. 
     You'll see a pipeline execution and how the Developer documents some steps and decisions in the assigned Checklist to 
     ensure the pipeline meets regulatory requirements, prepared for Admin approval. By tracing every artifact in the ML pipeline, development is optimized to minimize errors and facilitate compliance. 
 
-video3:
-  url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
+auditor:
+  url: "https://www.youtube.com/embed/zzQe820hp1s?si=51188h7UK_a3SxR1"
   title: "Auditor"
   text: |
     Watch the Auditor verify the actual pipeline and the attached Checklists, with access to the Dataset information and 

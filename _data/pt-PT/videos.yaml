@@ -1,5 +1,5 @@
-video1:
-  url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
+admin:
+  url: "https://www.youtube.com/embed/SwMgsoLfSP8?si=zq5hCin7QegZ05RE"
   title: "Gestor de Projeto"
   text: |
     Acompanhe o Gestor de Projeto enquanto cria um novo projeto, atribui perfis de utilizador, anexa a checklist de conformidade apropriada
@@ -7,9 +7,8 @@ video1:
     aprova e testa o modelo final com novos dados de pacientes para garantir que tudo está a funcionar corretamente.
     Governação de IA rastreável de forma simplificada.
 
-
-video2:
-  url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
+developer:
+  url: "https://www.youtube.com/embed/2I2NX7AdnK8?si=2LvhcJ8U_ivAkNHC"
   title: "Desenvolvedor"
   text: |
     Veja os bastidores de como o Desenvolvedor cria módulos, conduz experiências através do editor interativo e implementa a pipeline.
@@ -17,8 +16,8 @@ video2:
     para garantir que a pipeline cumpre os requisitos regulamentares, estando pronta para a aprovação do Gestor de Projeto.
     Ao rastrear cada artefacto na pipeline de ML, o desenvolvimento é otimizado para minimizar erros e facilitar a conformidade.
 
-video3:
-  url: "https://www.youtube.com/embed/LXb3EKWsInQ?si=EtXsWIrAJ9HqJGEv"
+auditor:
+  url: "https://www.youtube.com/embed/zzQe820hp1s?si=51188h7UK_a3SxR1"
   title: "Auditor"
   text: |
     Assista ao Auditor a verificar a pipeline real e as Checklists anexadas, com acesso às informações do Dataset e
