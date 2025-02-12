@@ -8,7 +8,7 @@ cta_button:
   url: "/guided-tour"
   icon:
     src: "/assets/images/icons/arrow-icon.svg"
-    alt: "Arrow Icon"
+    alt: "Ícone de Seta"
 
 pillars:
   - image:

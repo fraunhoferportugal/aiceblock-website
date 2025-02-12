@@ -119,6 +119,6 @@ explanation:
   text: "A monitorização contínua dos modelos identifica oportunidades para melhoria, levando a novas iterações que elevam a capacidade enquanto permitem conformidade versionável."
   image:
     src: "/assets/images/pipeline/explanation.svg"
-    alt: ""
+    alt: "Diagrama a mostrar um ciclo de melhoria contínua para aprendizagem automática. Inclui quatro etapas principais dispostas num fluxo circular: Treinamento e Avaliação do Modelo, Ficha Técnica do Modelo, Inferência e Previsão, e Monitorização. Uma seta central no sentido dos ponteiros do relógio liga estas etapas, realçando a natureza iterativa e contínua do processo"
 
 bottom_text: "Desde a recolha de dados até à implementação, cada fase é transparente, segura e com suporte à conformidade com regulamentos essenciais como o AI Act e o RGPD. Todas as conexões são verificáveis e imutáveis, garantindo que as suas soluções de IA são construídas de forma confiável."

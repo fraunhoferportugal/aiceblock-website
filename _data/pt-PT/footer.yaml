@@ -7,8 +7,8 @@ copyright: "© 2024 AICeBlock. Todos os Direitos Reservados."
 
 footer_links:
   - links:
-      #- text: "Visita Guiada"
-      #  url: "/guided-tour/"
+      - text: "Visita Guiada"
+        url: "/guided-tour"
       - text: "Recursos"
         url: "/#resources"
       - text: "Junte-se a Nós"

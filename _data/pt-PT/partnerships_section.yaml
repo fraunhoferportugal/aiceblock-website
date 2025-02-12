@@ -9,7 +9,7 @@ partnerships:
       Comprometido com o futuro da governação e conformidade em IA, o AICOS disponibiliza ferramentas para simplificar estes processos, reforçar a confiança e a fiabilidade das soluções de IA e garantir o seu impacto positivo na sociedade.
     image:
       src: "/assets/images/about-us/fhp-logo.svg"
-      alt: "Logo of Fraunhofer Portugal AICOS"
+      alt: "Logo da Fraunhofer Portugal AICOS"
     url: "https://www.aicos.fraunhofer.pt"
 
   - title: "Imprensa Nacional - Casa da Moeda"
@@ -19,5 +19,5 @@ partnerships:
        Como exemplos de bens e serviços essenciais, destacam-se a produção de documentos de segurança, como cartões de cidadão e passaportes, a autenticação de metais preciosos e outros ativos através de marcação de alta segurança verificável pelo utilizador, a publicação de obras fundamentais sobre a língua e cultura portuguesas e, no contexto do ecossistema AICeBlock, a atuação como Terceira Parte de Confiança para a certificação de algoritmos de IA.
     image:
       src: "/assets/images/about-us/incm-logo.svg"
-      alt: "Logo of Imprensa Nacional Casa da Moeda"
+      alt: "Logo da Imprensa Nacional - Casa da Moeda"
     url: "https://incm.pt"
