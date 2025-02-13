@@ -1,5 +1,5 @@
-<section class="resources-section" id="{{ include.id }}">
-    <div class="resources-content-wrapper">
+<section class="resources-section{% if include.first == 'true' %} header-space{% endif %}" id="{{ include.id }}">
+    <div class="content-wrapper">
         <div class="resources-text-content">
             <h2>{{ site.data[site.active_lang].resources_section.title }}</h2>
             <p>{{ site.data[site.active_lang].resources_section.subtitle }}</p>

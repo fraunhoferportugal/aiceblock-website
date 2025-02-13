@@ -1,5 +1,5 @@
-<section class="text-section">
-    <div class="text-content-wrapper">
+<section class="text-section{% if include.first == 'true' %} header-space{% endif %}">
+    <div class="content-wrapper">
         <div class="header-wrapper">
             <h2>{{ include.content.heading }}</h2>
             <h4>{{ include.content.subheading }}</h4>

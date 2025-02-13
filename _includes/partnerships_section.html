@@ -1,5 +1,5 @@
-<section class="partnerships-section">
-    <div class="partnerships-content-wrapper">
+<section class="partnerships-section{% if include.first == 'true' %} header-space{% endif %}">
+    <div class="content-wrapper">
         <div class="partnerships-text-content">
             <h2>{{ site.data[site.active_lang].partnerships_section.title }}</h2>
             <p>{{ site.data[site.active_lang].partnerships_section.subtitle }}</p>

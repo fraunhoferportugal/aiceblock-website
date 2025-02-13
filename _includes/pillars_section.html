@@ -1,4 +1,4 @@
-<section class="pillars-section">
+<section class="pillars-section{% if include.first == 'true' %} header-space{% endif %}">
     <a href="{{ site.data[site.active_lang].pillars_section.cta_button.url }}" class="cta-button">
         <span>{{ site.data[site.active_lang].pillars_section.cta_button.text }}</span>
         <div class="cta-button-img-container">
@@ -6,7 +6,7 @@
                 alt="{{ site.data[site.active_lang].pillars_section.cta_button.icon.alt }}">
         </div>
     </a>
-    <div class="pillars-content-wrapper">
+    <div class="content-wrapper">
         <div class="pillars-text-content">
             <h2>{{ site.data[site.active_lang].pillars_section.title }}</h2>
             <p>{{ site.data[site.active_lang].pillars_section.subtitle }}</p>

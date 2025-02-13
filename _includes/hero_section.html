@@ -1,5 +1,5 @@
-<section class="hero-section">
-    <div class="hero-section-content-wrapper">
+<section class="hero-section{% if include.first == 'true' %} header-space{% endif %}">
+    <div class="content-wrapper">
         <div class="hero-section-text-content">
             <h1>{{ site.data[site.active_lang].hero_section.title }}</h1>
             <h2 class="changing-subtitle">
