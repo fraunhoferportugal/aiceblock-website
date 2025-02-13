@@ -1,5 +1,5 @@
-<section class="contacts-section" id="{{ include.id }}">
-    <div class="contacts-content-wrapper">
+<section class="contacts-section{% if include.first == 'true' %} header-space{% endif %}" id="{{ include.id }}">
+    <div class="content-wrapper">
         <div class="contacts-text-content">
             <h2>{{ site.data[site.active_lang].contacts_section.title }}</h2>
         </div>

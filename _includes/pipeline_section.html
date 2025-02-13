@@ -1,5 +1,5 @@
-<section class="pipeline-section">
-    <div class="pipeline-content-wrapper">
+<section class="pipeline-section{% if include.first == 'true' %} header-space{% endif %}">
+    <div class="content-wrapper">
         <div class="pipeline-text-content">
             <h2>{{ site.data[site.active_lang].pipeline_section.title }}</h2>
             <p>{{ site.data[site.active_lang].pipeline_section.subtitle }}</p>

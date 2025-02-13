@@ -1,5 +1,5 @@
-<section class="roadmap-section">
-    <div class="roadmap-content-wrapper">
+<section class="roadmap-section{% if include.first == 'true' %} header-space{% endif %}">
+    <div class="content-wrapper">
         <div class="roadmap-text-content">
             <h2>{{ site.data[site.active_lang].roadmap_section.title }}</h2>
             <h4>{{ site.data[site.active_lang].roadmap_section.subtitle }}</h4>

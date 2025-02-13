@@ -1,5 +1,5 @@
-<section class="demo-section">
-    <div class="demo-section-content-wrapper">
+<section class="demo-section{% if include.first == 'true' %} header-space{% endif %}">
+    <div class="content-wrapper">
         <div class="demo-section-text-content">
             <h1>{{ site.data[site.active_lang].demo_section.title }}</h1>
             <h4>{{ site.data[site.active_lang].demo_section.description }}</h4>

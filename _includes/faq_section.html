@@ -1,5 +1,5 @@
-<section class="faq-section">
-    <div class="faq-content-wrapper">
+<section class="faq-section{% if include.first == 'true' %} header-space{% endif %}">
+    <div class="content-wrapper">
         <div class="faq-text-content">
             <h2>{{ site.data[site.active_lang].faq_section.title }}</h2>
             <p>{{ site.data[site.active_lang].faq_section.subtitle }}</p>

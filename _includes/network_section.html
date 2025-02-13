@@ -1,5 +1,5 @@
-<section class="network-section">
-    <div class="network-content-wrapper">
+<section class="network-section{% if include.first == 'true' %} header-space{% endif %}">
+    <div class="content-wrapper">
         <div class="network-text-content">
             <h2>{{ site.data[site.active_lang].network_section.title }}</h2>
             <p>{{ site.data[site.active_lang].network_section.subtitle }}</p>

@@ -1,5 +1,5 @@
-<section class="benefits-section">
-    <div class="benefits-content-wrapper">
+<section class="benefits-section{% if include.first == 'true' %} header-space{% endif %}">
+    <div class="content-wrapper">
         <div class="benefits-text-content">
             <h2>{{ site.data[site.active_lang].benefits_section.title }}</h2>
             <h4>{{ site.data[site.active_lang].benefits_section.subtitle }}</h4>

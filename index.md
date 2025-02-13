@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include hero_section.html %}
+{% include hero_section.html first="true" %}
 {% include pillars_section.html %}
 {% include benefits_section.html %}
 {% include pipeline_section.html %}
