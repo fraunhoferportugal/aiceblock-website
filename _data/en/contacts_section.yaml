@@ -5,8 +5,8 @@ contacts:
   - image:
       src: "/assets/images/icons/email-icon.svg"
       alt: "Contact 1 Image"
-    text: "info@aiceblock.com"
-    ref: "mailto:info@aiceblock.com"
+    text: "info@aiceblock.eu"
+    ref: "mailto:info@aiceblock.eu"
   # - image:
   #     src: "/assets/images/icons/phone-icon.svg"
   #     alt: "Contact 2 Image"
