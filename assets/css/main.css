@@ -1016,6 +1016,7 @@ section>.content-wrapper {
     transition: opacity 0.3s ease;
     width: 18vw;
     z-index: 20;
+    text-align: left;
 }
 
 @media (max-width: 90rem) {
