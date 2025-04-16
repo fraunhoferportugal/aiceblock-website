@@ -18,3 +18,8 @@ cta_button:
 image:
   src: "/assets/images/hero/blockchain-illustration.svg"
   alt: "Blockchain Illustration"
+
+marquee:
+  quotes:
+    - "<strong>Independence is our backbone</strong> - no tangled interests, just a clear commitment to Trustworthy AI"
+  

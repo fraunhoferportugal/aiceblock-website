@@ -542,6 +542,49 @@ section>.content-wrapper {
     }
 }
 
+.marquee {
+    position: absolute;
+    bottom: 3.5rem;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    color: #88FFF3;
+    --gap: 2.25rem;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    width: 100%;
+    max-width: 100vw;
+}
+
+.marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    animation: scroll 30s linear infinite;
+    list-style-type: none;
+    padding: 0;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.marquee__content li::after {
+    content: '•';
+    margin-left: calc(var(--gap) / 2);
+    margin-right: calc(var(--gap) / 2);
+    color: #88FFF3;
+}
+
 /*============================ CTA BUTTON ============================*/
 
 .cta-button {
