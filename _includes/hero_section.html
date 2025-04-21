@@ -25,37 +25,26 @@
                 <span>{{ site.data[site.active_lang].hero_section.cta_button.text }}</span>
                 <div class="cta-button-img-container">
                     <img src="{{ site.data[site.active_lang].hero_section.cta_button.icon.src }}"
-                    alt="{{ site.data[site.active_lang].hero_section.cta_button.icon.alt }}">
+                        alt="{{ site.data[site.active_lang].hero_section.cta_button.icon.alt }}">
                 </div>
             </a>
         </div>
     </div>
+    {% assign quote_count = site.data[site.active_lang].hero_section.marquee.quotes.size %}
+    {% if quote_count >= 5 %}
+    {% assign repetitions = 1 %}
+    {% else %}
+    {% assign repetitions = 5 | divided_by: quote_count %}
+    {% endif %}
     <div class="marquee">
-        <ul class="marquee__content">
-            {% assign quote_count = site.data[site.active_lang].hero_section.marquee.quotes.size %}
-            {% if quote_count >= 4 %}
-                {% assign repetitions = 1 %}
-            {% else %}
-                {% assign repetitions = 4 | divided_by: quote_count %}
-            {% endif %}
+        {% for content in (1..2) %}
+        <ul class="marquee__content" {% if content==2 %}aria-hidden="true" {% endif %}>
             {% for i in (1..repetitions) %}
-                {% for quote in site.data[site.active_lang].hero_section.marquee.quotes %}
-                    <li>{{ quote }}</li>
-                {% endfor %}
+            {% for quote in site.data[site.active_lang].hero_section.marquee.quotes %}
+            <li>{{ quote }}</li>
+            {% endfor %}
             {% endfor %}
         </ul>
-        <ul class="marquee__content" aria-hidden="true">
-            {% assign quote_count = site.data[site.active_lang].hero_section.marquee.quotes.size %}
-            {% if quote_count >= 4 %}
-                {% assign repetitions = 1 %}
-            {% else %}
-                {% assign repetitions = 4 | divided_by: quote_count %}
-            {% endif %}
-            {% for i in (1..repetitions) %}
-                {% for quote in site.data[site.active_lang].hero_section.marquee.quotes %}
-                    <li>{{ quote }}</li>
-                {% endfor %}
-            {% endfor %}
-        </ul>
+        {% endfor %}
     </div>
 </section>

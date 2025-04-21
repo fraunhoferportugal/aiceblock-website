@@ -18,3 +18,8 @@ cta_button:
 image:
   src: "/assets/images/hero/blockchain-illustration.svg"
   alt: "Ilustração Blockchain"
+
+marquee:
+  quotes:
+    - "<strong>A independência é o nosso pilar</strong> - livre de conflitos, focada em IA confiável"
+    

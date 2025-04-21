@@ -517,6 +517,11 @@ section>.content-wrapper {
     display: none;
 }
 
+.hero-mobile-button,
+.cta-button {
+    z-index: 10;
+}
+
 @media (max-width: 47rem) {
     .hero-section>.content-wrapper {
         flex-direction: column;
