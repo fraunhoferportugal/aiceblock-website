@@ -419,6 +419,7 @@ section>.content-wrapper {
     justify-content: space-between;
     align-items: center;
     text-align: left;
+    gap: 4rem;
 }
 
 .hero-section-text-content {
@@ -503,12 +504,8 @@ section>.content-wrapper {
     padding: 1rem 0;
 }
 
-.hero-section .image-container {
-    background: #180D5B;
-}
-
-.hero-section .image-container img {
-    max-width: 100%;
+.hero-image {
+    max-width: 50%;
     height: 100%;
     object-fit: cover;
 }
@@ -528,7 +525,7 @@ section>.content-wrapper {
         text-align: center;
     }
 
-    .hero-section .image-container img {
+    .hero-image {
         max-width: 100%;
         height: auto;
         max-height: 50vh;
@@ -588,6 +585,12 @@ section>.content-wrapper {
     margin-left: calc(var(--gap) / 2);
     margin-right: calc(var(--gap) / 2);
     color: #88FFF3;
+}
+
+@media (max-height: 47rem) {
+    .marquee {
+        display: none;
+    }
 }
 
 /*============================ CTA BUTTON ============================*/
