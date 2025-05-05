@@ -1861,6 +1861,26 @@ section>.content-wrapper {
     border: none;
 }
 
+.contacts-form-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-form-terms {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.contacts-form-terms>label {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
 @media (max-width: 58rem) {
     .contacts-container {
         text-align: center;
