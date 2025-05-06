@@ -25,7 +25,7 @@
             <div class="footer-extra">
                 <div class="newsletter">
                     <h3>{{ site.data[site.active_lang].footer.newsletter.title }}</h3>
-                    <form action="https://api.web3forms.com/submit" method="POST">
+                    <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return acceptPolicy()">
                         <input type="hidden" name="access_key"
                             value="{{ site.env.WEB3FORMS_ACCESS_KEY | default: site.web3forms_access_key }}">
                         <input type="hidden" name="subject" value="{{ site.data[site.active_lang].footer.newsletter.email_subject }}">
@@ -54,3 +54,9 @@
         </p>
     </div>
 </div>
+
+<script>
+function acceptPolicy() {
+    return confirm("{{ site.data[site.active_lang].footer.newsletter.policy_accept_message }}");
+}
+</script>

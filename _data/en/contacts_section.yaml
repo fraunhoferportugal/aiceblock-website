@@ -25,3 +25,4 @@ form:
     - "Request Demo"
     - "Collaborate in Product Innovation"
     - "Join as Trusted Third-Party"
+  terms_request: 'Accept the <a href="/terms-of-service">terms of service</a>'
