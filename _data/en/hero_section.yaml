@@ -16,5 +16,10 @@ cta_button:
     alt: "Arrow Icon"
 
 image:
-  src: "/assets/images/hero/blockchain-illustration.svg"
-  alt: "Blockchain Illustration"
+  src: "/assets/images/hero/hero_v2.svg"
+  alt: "Hero Illustration"
+
+marquee:
+  quotes:
+    - "<strong>Independence is our backbone</strong> - no tangled interests, just a clear commitment to Trustworthy AI"
+  

@@ -28,6 +28,7 @@ newsletter:
   placeholder: "Your email"
   button_text: "Subscribe"
   email_subject: "AICeBlock - New newsletter subscription request"
+  policy_accept_message: "Please accept our Privacy Policy to proceed with your subscription."
 
 social_links:
   title: "Follow us"

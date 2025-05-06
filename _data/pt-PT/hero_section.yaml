@@ -16,5 +16,10 @@ cta_button:
     alt: "Ícone de Seta"
 
 image:
-  src: "/assets/images/hero/blockchain-illustration.svg"
-  alt: "Ilustração Blockchain"
+  src: "/assets/images/hero/hero_v2.svg"
+  alt: "Ilustração de Secção de Heroí"
+
+marquee:
+  quotes:
+    - "<strong>A independência é o nosso pilar</strong> - livre de conflitos, focada em IA confiável"
+    

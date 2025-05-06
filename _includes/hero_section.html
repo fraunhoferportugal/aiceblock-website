@@ -16,9 +16,8 @@
                 </div>
             </a>
         </div>
-        <div class="image-container">
-            <img src="{{ site.data[site.active_lang].hero_section.image.src }}" alt="{{ site.data[site.active_lang].hero_section.image.alt }}">
-        </div>
+        <img class="hero-image" src="{{ site.data[site.active_lang].hero_section.image.src }}"
+            alt="{{ site.data[site.active_lang].hero_section.image.alt }}">
         <div class="hero-mobile-button">
             <a href="{{ site.data[site.active_lang].hero_section.cta_button.url }}" class="cta-button">
                 <span>{{ site.data[site.active_lang].hero_section.cta_button.text }}</span>
@@ -28,5 +27,22 @@
                 </div>
             </a>
         </div>
+    </div>
+    {% assign quote_count = site.data[site.active_lang].hero_section.marquee.quotes.size %}
+    {% if quote_count >= 5 %}
+    {% assign repetitions = 1 %}
+    {% else %}
+    {% assign repetitions = 5 | divided_by: quote_count %}
+    {% endif %}
+    <div class="marquee">
+        {% for content in (1..2) %}
+        <ul class="marquee__content" {% if content==2 %}aria-hidden="true" {% endif %}>
+            {% for i in (1..repetitions) %}
+            {% for quote in site.data[site.active_lang].hero_section.marquee.quotes %}
+            <li>{{ quote }}</li>
+            {% endfor %}
+            {% endfor %}
+        </ul>
+        {% endfor %}
     </div>
 </section>

@@ -28,6 +28,7 @@ newsletter:
   placeholder: "O seu email"
   button_text: "Subscrever"
   email_subject: "AICeBlock - New newsletter subscription request"
+  policy_accept_message: "Por favor, aceite a nossa Política de Privacidade para prosseguir com a sua subscrição."
 
 social_links:
   title: "Siga-nos"
