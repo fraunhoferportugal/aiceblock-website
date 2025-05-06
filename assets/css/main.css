@@ -1881,6 +1881,10 @@ section>.content-wrapper {
     line-height: 2rem;
 }
 
+.contacts-form-terms a {
+    color: inherit;
+}
+
 @media (max-width: 58rem) {
     .contacts-container {
         text-align: center;

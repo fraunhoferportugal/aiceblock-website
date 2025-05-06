@@ -27,4 +27,4 @@ form:
     - "Solicitar Demonstração"
     - "Colaborar na Inovação do Produto"
     - "Juntar-se como Terceira Parte de Confiança"
-  terms_request: "Aceitar os termos e condições"
+  terms_request: 'Aceitar os <a href="/terms-of-service">termos de serviço</a>'
