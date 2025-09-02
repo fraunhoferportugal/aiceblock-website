@@ -1565,6 +1565,15 @@ section>.content-wrapper {
     gap: 3rem;
 }
 
+.partnerships-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.25rem;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+}
+
 .partnerships-text-content {
     font-family: 'Inter';
     font-style: normal;
@@ -1586,21 +1595,11 @@ section>.content-wrapper {
     width: 100%;
 }
 
-.partnerships-container {
-    display: flex;
-    gap: 1.25rem;
-    justify-content: center;
-    align-items: stretch;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
 .partnership {
     background: linear-gradient(to bottom, #160C55, #180D5B);
     border-radius: 2rem;
     padding: 3.75rem 2.5rem 3.75rem 2.5rem;
     text-align: left;
-    max-width: 43.75rem;
     width: 100%;
     display: flex;
     flex-direction: column;

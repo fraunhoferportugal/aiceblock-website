@@ -21,3 +21,12 @@ partnerships:
       src: "/assets/images/about-us/incm-logo.svg"
       alt: "Logo da Imprensa Nacional - Casa da Moeda"
     url: "https://incm.pt"
+
+  - title: "VdA - Vieira de Almeida"
+    description: >
+      Vieira de Almeida (VdA) is a leading Lisbon-based law firm with over 40 years of history, renowned for its ethical, innovative, and client-focused approach.
+      With a team of over 550 professionals, VdA combines deep industry knowledge, cutting-edge legal solutions, and a culture of trust, collaboration, and diversity to deliver exceptional legal services while fostering social and environmental responsibility.
+    image:
+      src: "/assets/images/about-us/incm-logo.svg"
+      alt: "Logo da VdA - Vieira de Almeida"
+    url: "https://www.vda.pt/pt"
