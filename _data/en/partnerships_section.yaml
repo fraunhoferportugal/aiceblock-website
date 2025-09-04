@@ -2,16 +2,6 @@ title: "Our Strategic Partnerships"
 subtitle: "We collaborate with industry leaders to drive innovation and success."
 
 partnerships:
-  - title: "Fraunhofer Portugal AICOS"
-    description: >
-      Fraunhofer Portugal AICOS is a leading research center, committed to delivering innovative solutions that address societal challenges through advanced technology.
-      With a strong focus on applied research and practical impact, AICOS bridges the gap between cutting-edge developments and real-world applications.
-      Dedicated to the future of AI governance and compliance, AICOS provides tools to streamline these processes, enhance trust and reliability in AI solutions, and ensure their positive impact on society.
-    image:
-      src: "/assets/images/about-us/fhp-logo.svg"
-      alt: "Logo of Fraunhofer Portugal AICOS"
-    url: "https://www.aicos.fraunhofer.pt"
-
   - title: "Imprensa Nacional - Casa da Moeda"
     description: >
       INCM (The Portuguese Mint and Official Printing House) is a centennial public owned company fostering trust and security in relations between governments, citizens and companies. 
@@ -22,11 +12,22 @@ partnerships:
       alt: "Logo of Imprensa Nacional Casa da Moeda"
     url: "https://incm.pt"
 
-  - title: "VdA - Vieira de Almeida"
+  - title: "Fraunhofer Portugal AICOS"
     description: >
-      Vieira de Almeida (VdA) is a leading Lisbon-based law firm with over 40 years of history, renowned for its ethical, innovative, and client-focused approach.
-      With a team of over 550 professionals, VdA combines deep industry knowledge, cutting-edge legal solutions, and a culture of trust, collaboration, and diversity to deliver exceptional legal services while fostering social and environmental responsibility.
+      Fraunhofer Portugal AICOS is a leading research center, committed to delivering innovative solutions that address societal challenges through advanced technology.
+      With a strong focus on applied research and practical impact, AICOS bridges the gap between cutting-edge developments and real-world applications.
+      Dedicated to the future of AI governance and compliance, AICOS provides tools to streamline these processes, enhance trust and reliability in AI solutions, and ensure their positive impact on society.
     image:
-      src: "/assets/images/about-us/incm-logo.svg"
-      alt: "Logo of VdA - Vieira de Almeida"
-    url: "https://www.vda.pt/en"
+      src: "/assets/images/about-us/fhp-logo.svg"
+      alt: "Logo of Fraunhofer Portugal AICOS"
+    url: "https://www.aicos.fraunhofer.pt"
+
+  - title: "Vieira de Almeida (VdA)"
+    description: |
+      Vieira de Almeida (VdA) is a leading international law firm with more than 40 years of history, recognised for its impressive track record and innovative approach in corporate legal services. The excellence of its highly specialised legal services covering several industries and practice areas, enables VdA to overcome the increasingly complex challenges faced by its clients. VdA offers robust solutions grounded in consistent standards of excellence, ethics and professionalism. Recognition of the excellence of our work is shared by the entire team, as well as with clients and stakeholders, and is acknowledged by leading professional associations, legal publications and academic entities. VdA has been consistently recognised for its outstanding and innovative services, having received the most prestigious international accolades and awards of the legal industry. Through the VdA Legal Partners network, clients have access to 8 jurisdictions, with a broad sectoral coverage in all Portuguese-speaking African countries, as well as Timor-Leste.
+      
+      Angola – Brazil –  Cabo Verde – Spain – Mozambique – Portugal – Sao Tome and Principe – Timor-Leste
+    image:
+      src: "/assets/images/about-us/vda-logo.svg"
+      alt: "Logo of Vieira de Almeida (VdA)"
+    url: "http://www.vda.pt/"

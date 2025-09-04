@@ -22,11 +22,12 @@ partnerships:
       alt: "Logo da Imprensa Nacional - Casa da Moeda"
     url: "https://incm.pt"
 
-  - title: "VdA - Vieira de Almeida"
-    description: >
-      Vieira de Almeida (VdA) is a leading Lisbon-based law firm with over 40 years of history, renowned for its ethical, innovative, and client-focused approach.
-      With a team of over 550 professionals, VdA combines deep industry knowledge, cutting-edge legal solutions, and a culture of trust, collaboration, and diversity to deliver exceptional legal services while fostering social and environmental responsibility.
+  - title: "Vieira de Almeida (VdA)"
+    description: |
+      Vieira de Almeida (VdA) é uma sociedade de advogados internacional de referência, com mais de 40 anos de história, reconhecida pelo seu percurso notável e pela abordagem inovadora nos serviços jurídicos de direito empresarial. A excelência dos seus serviços jurídicos altamente especializados, que abrangem vários setores e áreas de prática, permite à VdA responder aos desafios cada vez mais complexos enfrentados pelos seus clientes. A VdA oferece soluções robustas, assentes em padrões consistentes de excelência, ética e profissionalismo. O reconhecimento da qualidade do nosso trabalho é partilhado por toda a equipa, bem como, por clientes e parceiros, sendo validado por associações profissionais de prestígio, publicações jurídicas e entidades académicas. A VdA tem sido consistentemente distinguida pelos seus serviços de excelência e inovação, tendo recebido os mais prestigiados prémios e distinções internacionais do setor jurídico. Através da rede VdA Legal Partners, os clientes têm acesso a 8 jurisdições, com uma ampla cobertura sectorial em todos os países africanos de língua portuguesa, bem como em Timor-Leste.
+
+      Angola – Brasil –  Cabo Verde – Espanha – Moçambique – Portugal – São Tomé and Príncipe – Timor-Leste
     image:
-      src: "/assets/images/about-us/incm-logo.svg"
-      alt: "Logo da VdA - Vieira de Almeida"
-    url: "https://www.vda.pt/pt"
+      src: "/assets/images/about-us/vda-logo.svg"
+      alt: "Logo da Vieira de Almeida (VdA)"
+    url: "http://www.vda.pt/"

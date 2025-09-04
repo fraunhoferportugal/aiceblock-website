@@ -1632,6 +1632,7 @@ section>.content-wrapper {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.625rem;
+    white-space: pre-line;
 }
 
 .partnership a {
