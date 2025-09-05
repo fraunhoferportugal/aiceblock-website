@@ -2,6 +2,16 @@ title: "Our Strategic Partnerships"
 subtitle: "We collaborate with industry leaders to drive innovation and success."
 
 partnerships:
+  - title: "Imprensa Nacional - Casa da Moeda"
+    description: >
+      INCM (The Portuguese Mint and Official Printing House) is a centennial public owned company fostering trust and security in relations between governments, citizens and companies. 
+      Currently, technological innovation, developed in partnership with some of the main universities and national research centers, is one of the strategic pillars of INCM, whose mission is to create, produce and supply goods and services that require high safety standards, securing the connection between the physical and digital worlds, in Portugal and abroad. 
+      As diverse examples of these essential goods and services, it is possible to highlight, for instance, the production of security documents such as citizen's cards or passports, the authentication of precious metals and other assets based on seamless end-user verifiable high security direct or indirect marking, the publication of fundamental works on the Portuguese language and culture or, within the AICeBlock ecosystem, acting as a Trusted Third Party for the certification of AI algorithms.
+    image:
+      src: "/assets/images/about-us/incm-logo.svg"
+      alt: "Logo of Imprensa Nacional Casa da Moeda"
+    url: "https://incm.pt"
+
   - title: "Fraunhofer Portugal AICOS"
     description: >
       Fraunhofer Portugal AICOS is a leading research center, committed to delivering innovative solutions that address societal challenges through advanced technology.
@@ -12,12 +22,12 @@ partnerships:
       alt: "Logo of Fraunhofer Portugal AICOS"
     url: "https://www.aicos.fraunhofer.pt"
 
-  - title: "Imprensa Nacional - Casa da Moeda"
-    description: >
-       INCM (The Portuguese Mint and Official Printing House) is a centennial public owned company fostering trust and security in relations between governments, citizens and companies. 
-       Currently, technological innovation, developed in partnership with some of the main universities and national research centers, is one of the strategic pillars of INCM, whose mission is to create, produce and supply goods and services that require high safety standards, securing the connection between the physical and digital worlds, in Portugal and abroad. 
-       As diverse examples of these essential goods and services, it is possible to highlight, for instance, the production of security documents such as citizen's cards or passports, the authentication of precious metals and other assets based on seamless end-user verifiable high security direct or indirect marking, the publication of fundamental works on the Portuguese language and culture or, within the AICeBlock ecosystem, acting as a Trusted Third Party for the certification of AI algorithms.
+  - title: "Vieira de Almeida (VdA)"
+    description: |
+      Vieira de Almeida (VdA) is a leading international law firm with more than 40 years of history, recognised for its impressive track record and innovative approach in corporate legal services. The excellence of its highly specialised legal services covering several industries and practice areas, enables VdA to overcome the increasingly complex challenges faced by its clients. VdA offers robust solutions grounded in consistent standards of excellence, ethics and professionalism. Recognition of the excellence of our work is shared by the entire team, as well as with clients and stakeholders, and is acknowledged by leading professional associations, legal publications and academic entities. VdA has been consistently recognised for its outstanding and innovative services, having received the most prestigious international accolades and awards of the legal industry. Through the VdA Legal Partners network, clients have access to 8 jurisdictions, with a broad sectoral coverage in all Portuguese-speaking African countries, as well as Timor-Leste.
+      
+      Angola – Brazil –  Cabo Verde – Spain – Mozambique – Portugal – Sao Tome and Principe – Timor-Leste
     image:
-      src: "/assets/images/about-us/incm-logo.svg"
-      alt: "Logo of Imprensa Nacional Casa da Moeda"
-    url: "https://incm.pt"
+      src: "/assets/images/about-us/vda-logo.svg"
+      alt: "Logo of Vieira de Almeida (VdA)"
+    url: "http://www.vda.pt/"
