@@ -1,0 +1,31 @@
+@use "shared" as *;
+
+.coming-soon-section {
+    background-image: url("/assets/images/backgrounds/top-left-blocks.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    @include section-base;
+    background-color: #fcfcfc;
+    color: $dark;
+}
+
+.coming-soon>.content-wrapper {
+    @include content-wrapper-col(1.25rem);
+    text-align: center;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 2.625rem;
+        margin: 1.25rem 0;
+    }
+
+    p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.625rem;
+        width: 60%;
+        margin: 0 auto;
+    }
+}

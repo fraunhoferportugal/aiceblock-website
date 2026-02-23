@@ -1,0 +1,69 @@
+@use "shared" as *;
+
+.partnerships-section {
+    @include flex-center;
+    background-color: $light;
+    color: $dark;
+
+    >.content-wrapper {
+        @include content-wrapper-col;
+        justify-content: space-between;
+    }
+}
+
+.partnerships-text-content {
+    font-family: $font-family;
+    @include section-heading;
+}
+
+.partnerships-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.25rem;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.partnership {
+    @include card-gradient-dark;
+    padding: 3.75rem 2.5rem;
+    text-align: left;
+    width: 100%;
+    @include flex-col(0.9375rem);
+    align-items: start;
+    font-family: $font-family;
+    color: $light;
+
+    img {
+        margin: 0 0 1.25rem;
+        height: 3.125rem;
+        width: auto;
+    }
+
+    h3,
+    p {
+        margin: 0;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 2.125rem;
+        white-space: pre-line;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        white-space: pre-line;
+    }
+
+    a {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        color: $accent;
+    }
+}

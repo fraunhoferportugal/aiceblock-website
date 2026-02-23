@@ -1,0 +1,100 @@
+@use "shared" as *;
+
+.pillars-section {
+    position: relative;
+    @include section-base;
+    background-color: $light;
+    color: $dark;
+
+    >.content-wrapper {
+        @include content-wrapper-col;
+        justify-content: space-between;
+    }
+
+    .cta-button {
+        position: absolute;
+        top: 3.125rem;
+        right: 3.125rem;
+        background: $dark;
+        z-index: 10;
+        box-shadow: $glow-sm $dark-glow;
+
+        span {
+            color: $accent;
+        }
+
+        img {
+            filter: $filter-dark;
+        }
+
+        &:hover {
+            box-shadow: $glow-lg $dark-glow;
+        }
+
+        &.scrolled {
+            position: fixed;
+            top: 3.125rem;
+            right: 3.125rem;
+        }
+    }
+
+    .cta-button-img-container {
+        background-color: $accent;
+    }
+}
+
+.pillars-text-content {
+    @include section-heading;
+}
+
+.pillars-container {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pillar {
+    @include card-gradient-light;
+    padding: 2.5rem;
+    text-align: left;
+    max-width: 25rem;
+    width: 100%;
+    @include flex-col(1rem);
+    align-items: center;
+    font-family: $font-family;
+
+    img {
+        margin: 0 0 1.25rem;
+        width: 12.875rem;
+        height: 16.9375rem;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 2.125rem;
+        white-space: pre-line;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+
+    h3,
+    p {
+        align-self: flex-start;
+        margin: 0;
+        color: $dark;
+    }
+}
+
+@include bp($bp-section) {
+    .pillars-section .cta-button {
+        display: none;
+    }
+}

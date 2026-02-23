@@ -1,0 +1,92 @@
+@use "shared" as *;
+
+.network-section {
+    @include flex-center;
+    background-color: $dark;
+    color: $light;
+
+    >.content-wrapper {
+        @include content-wrapper-col;
+        justify-content: space-between;
+    }
+}
+
+.network-text-content {
+    font-family: $font-family;
+    @include section-heading;
+
+    h2 {
+        margin: 0 0 1.25rem;
+    }
+}
+
+.network-container {
+    @include flex-row(2rem);
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+    img {
+        max-width: 24rem;
+        width: 100%;
+        height: auto;
+        filter: $filter-accent;
+        margin: 0;
+    }
+}
+
+.network-column {
+    @include card-gradient-dark;
+    padding: 3.75rem 2.5rem;
+    text-align: left;
+    width: 29rem;
+    @include flex-col(1.25rem);
+    align-items: start;
+    font-family: $font-family;
+    color: $light;
+
+    h3,
+    p,
+    a {
+        margin: 0;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 2.125rem;
+        color: $accent;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+
+    a {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 2rem;
+        background-color: $accent;
+        padding: 0.625rem 0;
+        border-radius: $border-radius-pill;
+        min-width: 10.9375rem;
+        text-align: center;
+        text-decoration: none;
+        color: $dark;
+        margin: 0.625rem 0 0;
+        box-shadow: $glow-sm $accent-glow;
+        transition: box-shadow 0.2s ease;
+
+        &:hover {
+            box-shadow: $glow-lg $accent-glow;
+        }
+    }
+}
+
+@include bp(30rem) {
+    .network-container img {
+        max-width: 60vw;
+    }
+}

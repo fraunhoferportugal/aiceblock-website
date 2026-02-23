@@ -1,0 +1,220 @@
+@use "shared" as *;
+
+.pipeline-section {
+    @include section-base;
+    background-color: $dark;
+    color: $light;
+
+    >.content-wrapper {
+        @include content-wrapper-col;
+    }
+}
+
+.pipeline-text-content {
+    @include section-heading;
+    @include flex-col;
+    align-items: center;
+    width: 100%;
+}
+
+.pipeline-container {
+    max-width: 80rem;
+}
+
+.main-pipeline-image {
+    .desktop {
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+.pipeline-overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover .description-bubble {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &[data-position="left"] .description-bubble {
+        left: 0;
+        transform: translateX(0%);
+    }
+
+    &[data-position="right"] .description-bubble {
+        left: auto;
+        right: 0;
+        transform: translateX(0%);
+    }
+
+    &[data-position="center"] .description-bubble {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.description-bubble {
+    @include flex-col(0.9375rem);
+    position: absolute;
+    bottom: 80%;
+    background: rgba(12, 3, 65, 0.9);
+    padding: 1.875rem 1.125rem;
+    border-radius: 0.625rem;
+    border: 0.0625rem solid $accent;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 18vw;
+    z-index: 20;
+    text-align: left;
+
+    @include bp($bp-xxl) {
+        width: 30vw;
+    }
+}
+
+.bubble-number {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.125rem;
+    color: $accent;
+}
+
+.bubble-title {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: $white;
+}
+
+.bubble-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 0;
+    white-space: pre-line;
+    color: $white;
+}
+
+.pipeline-descriptions {
+    display: none;
+    width: 100%;
+    text-align: center;
+
+    .description {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 19.625rem;
+        width: 100%;
+        @include flex-col(1rem);
+
+        span {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 600;
+            line-height: 1.2rem;
+        }
+
+        p {
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            font-weight: 400;
+            line-height: 1.5rem;
+            margin: 0;
+            white-space: pre-line;
+        }
+    }
+}
+
+.pipeline-explanation-container {
+    display: none;
+    width: 100%;
+
+    span {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        color: $accent-alt;
+        text-align: center;
+    }
+
+    img {
+        max-width: 21.8125rem;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.pipeline-bottom-text {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@include bp($bp-md) {
+    .pipeline-container {
+        position: relative;
+        height: 100%;
+        width: auto;
+    }
+
+    .main-pipeline-image {
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .pipeline-overlays {
+        display: none;
+    }
+
+    .pipeline-descriptions {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        width: 75%;
+    }
+
+    .pipeline-section>.content-wrapper {
+        gap: 0;
+    }
+
+    .pipeline-explanation-container {
+        @include flex-col(2.4375rem);
+        align-items: center;
+        margin: 0 0 2.4375rem;
+    }
+}

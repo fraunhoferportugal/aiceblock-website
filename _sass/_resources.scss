@@ -1,0 +1,94 @@
+@use "shared" as *;
+
+.resources-section {
+    @include section-base;
+    background-color: $light;
+    color: $dark;
+
+    >.content-wrapper {
+        @include content-wrapper-col;
+    }
+}
+
+.resources-text-content {
+    @include section-heading;
+}
+
+.resources-container {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.resource-column {
+    @include card-gradient-light;
+    font-family: $font-family;
+    padding: 2.5rem;
+    text-align: left;
+    max-width: 25rem;
+    height: 30rem;
+    width: 100%;
+    @include flex-col(1rem);
+    align-items: start;
+
+    >img {
+        max-width: 5rem;
+        width: 100%;
+        height: auto;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 2.125rem;
+        color: $dark;
+        margin: 0;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        color: $dark;
+        margin: 0;
+    }
+}
+
+.resource-items {
+    @include flex-col(0.625rem);
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    margin-right: -0.5rem;
+    @include custom-scrollbar;
+}
+
+.resource-link {
+    h4 {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        color: $dark;
+        margin: 0;
+        display: inline;
+    }
+
+    img {
+        margin: 0 0 0 0.3125rem;
+        display: inline;
+        width: auto;
+        height: 0.75rem;
+    }
+}
+
+@include bp($bp-xl) {
+    .resources-container {
+        gap: 1rem;
+    }
+
+    .resource-column {
+        height: auto;
+        max-height: 30rem;
+    }
+}

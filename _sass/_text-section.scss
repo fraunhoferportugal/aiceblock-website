@@ -1,0 +1,45 @@
+@use "shared" as *;
+
+.text-section {
+    @include section-base;
+    background-color: #fcfcfc;
+    color: $dark;
+
+    >.content-wrapper {
+        max-width: $max-width;
+        width: 100%;
+        @include flex-col(5.125rem);
+        align-items: center;
+        text-align: center;
+
+        .header-wrapper {
+            @include flex-col(1rem);
+            align-items: center;
+            text-align: center;
+
+            h2 {
+                font-size: 2.25rem;
+                font-weight: 400;
+                line-height: 2.75rem;
+                margin: 0;
+            }
+
+            h4 {
+                font-size: 1.25rem;
+                font-weight: 400;
+                line-height: 2rem;
+                margin: 0;
+            }
+        }
+
+        p {
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.625rem;
+            width: 100%;
+            margin: 0 auto;
+            text-align: left;
+            white-space: pre-line;
+        }
+    }
+}

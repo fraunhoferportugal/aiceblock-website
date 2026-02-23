@@ -1,0 +1,115 @@
+@use "shared" as *;
+
+.header {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 1.8125rem;
+    height: $header-height;
+    background: $dark;
+    border-bottom: 0.0625rem solid $light;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    font-family: $font-family;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 2.8rem;
+            width: auto;
+        }
+    }
+}
+
+.header-desktop {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: $max-width;
+    height: $header-height;
+}
+
+.header-nav {
+    @include flex-row(2.5rem);
+    align-items: center;
+    height: 1.375rem;
+
+    .button {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        color: $light;
+        text-decoration: none;
+
+        &:hover {
+            color: #d1d6db;
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3125rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 1.875rem;
+        height: 0.1875rem;
+        background: $light;
+        border-radius: 0.125rem;
+    }
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: $header-height;
+    right: 0;
+    width: 100%;
+    background: $dark;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+
+    .button {
+        display: block;
+        padding: 1rem;
+        color: $light;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
+@include bp($bp-nav) {
+    .header-desktop {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-nav.open {
+        display: flex;
+    }
+}
