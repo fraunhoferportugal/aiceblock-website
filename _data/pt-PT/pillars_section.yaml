@@ -4,8 +4,8 @@ subtitle: >
   O AICeBlock assenta em três pilares essenciais para uma conformidade robusta em IA: Metas, Suporte à Adesão e Verificação.
 
 cta_button:
-  text: "Inicie a Visita Guiada"
-  url: "/guided-tour"
+  text: "Discuta o seu caso de uso de IA"
+  url: "/join-us?subject=0#contacts"
   icon:
     src: "/assets/images/icons/arrow-icon.svg"
     alt: "Ícone de Seta"

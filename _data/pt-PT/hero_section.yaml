@@ -9,8 +9,8 @@ description: >
   com conformidade verificável, sustentada por blockchain para uma transparência sem precedentes.
 
 cta_button:
-  text: "Inicie a Visita Guiada"
-  url: "/guided-tour"
+  text: "Discuta o seu caso de uso de IA"
+  url: "/join-us?subject=0#contacts"
   icon:
     src: "/assets/images/icons/arrow-icon.svg"
     alt: "Ícone de Seta"

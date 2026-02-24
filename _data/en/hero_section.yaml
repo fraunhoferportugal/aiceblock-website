@@ -9,8 +9,8 @@ description: >
   with verifiable compliance, built on blockchain for unparalleled transparency.
 
 cta_button:
-  text: "Start Your Guided Tour"
-  url: "/guided-tour"
+  text: "Discuss your AI use case"
+  url: "/join-us?subject=0#contacts"
   icon:
     src: "/assets/images/icons/arrow-icon.svg"
     alt: "Arrow Icon"

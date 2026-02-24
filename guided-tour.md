@@ -1,6 +1,7 @@
 ---
 title: "AICeBlock | Guided Tour"
 layout: default
+published: false
 ---
 
 {% include demo_section.html first="true" %}
