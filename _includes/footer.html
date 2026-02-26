@@ -2,14 +2,15 @@
     <div class="footer-container">
         <div class="footer-left">
             <div class="logo-section">
-                <img src="{{ site.baseurl }}{{ site.data[site.active_lang].footer.logo.src }}" alt="{{ site.data[site.active_lang].footer.logo.alt }}"
-                    class="footer-logo">
+                <img src="{{ site.baseurl }}{{ site.data[site.active_lang].footer.logo.src }}"
+                    alt="{{ site.data[site.active_lang].footer.logo.alt }}" class="footer-logo">
                 {% if site.data[site.active_lang].footer.logo.description %}
                 <p>{{ site.data[site.active_lang].footer.logo.description }}</p>
                 {% endif %}
             </div>
             <p class="footer-copyright-left">
-                {{ site.data[site.active_lang].footer.copyright }}
+                © {% assign year = site.time | date: "%Y" %}{{ year }} {{ site.data[site.active_lang].footer.copyright
+                }}
             </p>
         </div>
         <div class="footer-right">
@@ -28,12 +29,14 @@
                     <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return acceptPolicy()">
                         <input type="hidden" name="access_key"
                             value="{{ site.env.WEB3FORMS_ACCESS_KEY | default: site.web3forms_access_key }}">
-                        <input type="hidden" name="subject" value="{{ site.data[site.active_lang].footer.newsletter.email_subject }}">
+                        <input type="hidden" name="subject"
+                            value="{{ site.data[site.active_lang].footer.newsletter.email_subject }}">
                         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                         <div class="footer-input-wrapper">
-                            <input type="email" name="email" placeholder="{{ site.data[site.active_lang].footer.newsletter.placeholder }}"
-                                required>
-                            <button type="submit">{{ site.data[site.active_lang].footer.newsletter.button_text }}</button>
+                            <input type="email" name="email"
+                                placeholder="{{ site.data[site.active_lang].footer.newsletter.placeholder }}" required>
+                            <button type="submit">{{ site.data[site.active_lang].footer.newsletter.button_text
+                                }}</button>
                         </div>
                     </form>
                 </div>
@@ -50,13 +53,13 @@
             </div>
         </div>
         <p class="footer-copyright-bottom">
-            {{ site.data[site.active_lang].footer.copyright }}
+            © {% assign year = site.time | date: "%Y" %}{{ year }} {{ site.data[site.active_lang].footer.copyright }}
         </p>
     </div>
 </div>
 
 <script>
-function acceptPolicy() {
-    return confirm("{{ site.data[site.active_lang].footer.newsletter.policy_accept_message }}");
-}
+    function acceptPolicy() {
+        return confirm("{{ site.data[site.active_lang].footer.newsletter.policy_accept_message }}");
+    }
 </script>

@@ -17,6 +17,7 @@ The repository is organized into the following directories:
 - **`_data`** - Contains YAML files with all the content used across the site. Each component or page can be configured accordingly within these files.
 - **`_includes`** - Houses reusable HTML components that are included in the various layouts or pages. This allows for modularity and efficient code reuse.
 - **`_layouts`** - Contains the layout templates for the pages, including common elements such as headers, footers, and global styles. Layouts define the general structure and require assets such as fonts, CSS, and scripts (if applicable).
+- **`_sass`** - Contains SCSS partials that define the site's styles. These partials are imported into the main stylesheet and compiled by Jekyll into a single CSS file.
 - **`assets`** - Stores all media files such as images, icons, and JavaScript. In this project, JavaScript files are not stored here. Instead, each component includes its own small scripts as needed, ensuring that unnecessary scripts are not loaded.
 - **`base_dir`** - Contains the Markdown files that define the individual pages of the site. Each page specifies which layout it uses and which components are incorporated within that page.
 

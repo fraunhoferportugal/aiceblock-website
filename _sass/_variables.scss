@@ -1,0 +1,44 @@
+// ─── Colors ───
+$dark: #180d5b;
+$dark-alt: #160c55;
+$light: #eff2f5;
+$white: #ffffff;
+$accent: #88fff3;
+$accent-alt: #88fff2;
+$accent-glow: rgba(136, 255, 243, 0.33);
+$dark-glow: rgba(24, 13, 91, 0.33);
+$text-muted: #eff2f5b3;
+$placeholder: #180d5b33;
+
+// ─── Typography ───
+$font-family: "Inter", sans-serif;
+
+// ─── Layout ───
+$max-width: 90rem;
+$header-height: 4.375rem;
+$section-padding: 3rem;
+$border-radius-card: 2rem;
+$border-radius-pill: 2.5rem;
+$border-radius-input: 1.625rem;
+
+// ─── Breakpoints ───
+$bp-sm: 27rem; // ~432px
+$bp-md: 42.5rem; // ~680px
+$bp-tablet: 45rem; // ~720px
+$bp-lg: 47rem; // ~752px
+$bp-section: 48rem; // ~768px
+$bp-contacts: 58rem; // ~928px
+$bp-xl: 62.5rem; // ~1000px
+$bp-nav: 64rem; // ~1024px
+$bp-xxl: 90rem; // ~1440px
+
+// ─── Shadows ───
+$glow-sm: 0 0 1.875rem 0.375rem;
+$glow-lg: 0 0 1.875rem 0.9375rem;
+
+// ─── Filters ───
+$filter-accent: brightness(0) saturate(100%) invert(85%) sepia(49%) saturate(349%) hue-rotate(106deg) brightness(101%) contrast(102%);
+$filter-light: brightness(0) saturate(100%) invert(98%) sepia(3%) saturate(237%) hue-rotate(177deg) brightness(98%) contrast(96%);
+$filter-light-hover: brightness(0) saturate(100%) invert(97%) sepia(2%) saturate(1002%) hue-rotate(181deg) brightness(89%) contrast(93%);
+$filter-dark: brightness(0) saturate(100%) invert(10%) sepia(75%) saturate(2865%) hue-rotate(242deg) brightness(82%) contrast(111%);
+$filter-cta-arrow: invert(72%) sepia(77%) saturate(203%) hue-rotate(120deg) brightness(108%) contrast(104%);

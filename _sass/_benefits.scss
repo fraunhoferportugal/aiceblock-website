@@ -1,0 +1,156 @@
+@use "shared" as *;
+
+.benefits-section {
+    @include section-base;
+    background-color: $white;
+    color: $dark;
+
+    >.content-wrapper {
+        @include content-wrapper-col;
+    }
+}
+
+.benefits-text-content {
+    @include section-heading;
+
+    h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 2rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.carousel {
+    @include flex-center;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.carousel-dots {
+    @include flex-col(0.625rem);
+    margin-right: 1.25rem;
+
+    .dot {
+        width: 0.75rem;
+        height: 0.75rem;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &.active {
+            background-color: $dark;
+        }
+    }
+}
+
+.carousel-image {
+    flex: 1;
+    @include flex-center;
+
+    img {
+        max-width: 31rem;
+        height: auto;
+    }
+}
+
+.carousel-items {
+    flex: 1;
+    @include flex-col(1.875rem);
+}
+
+.carousel-item {
+    cursor: pointer;
+    border-radius: $border-radius-card;
+    padding: 0 1.75rem;
+    position: relative;
+    transition: padding 0.2s ease;
+    text-align: left;
+
+    &.active {
+        background: linear-gradient(to right, $light, $white);
+        padding: 1.75rem;
+
+        h3,
+        h4,
+        p {
+            opacity: 1;
+        }
+
+        p {
+            position: static;
+            visibility: visible;
+        }
+    }
+
+    h3,
+    h4,
+    p {
+        margin: 0;
+        opacity: 0.5;
+        transition: opacity 1s ease;
+    }
+
+    p {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 2.125rem;
+        margin-bottom: 0.3125rem;
+    }
+
+    h4 {
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-bottom: 0.9375rem;
+    }
+}
+
+@include bp($bp-section) {
+    .carousel {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .carousel-items {
+        align-items: center;
+    }
+
+    .carousel-item {
+        display: none;
+        text-align: center;
+
+        &.active {
+            display: block;
+            background: transparent;
+            padding: 0;
+            width: 100%;
+            min-height: 14rem;
+        }
+    }
+
+    .carousel-dots {
+        flex-direction: row;
+        margin-right: 0;
+
+        .dot {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    .carousel-image img {
+        width: 90%;
+    }
+}

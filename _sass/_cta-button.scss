@@ -1,0 +1,46 @@
+@use "shared" as *;
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 0 0.375rem 0 1.5rem;
+    gap: 1.5rem;
+    background: $accent;
+    box-shadow: $glow-sm $accent-glow;
+    border-radius: $border-radius-pill;
+    height: 3.75rem;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease;
+    z-index: 10;
+
+    &:hover {
+        box-shadow: $glow-lg $accent-glow;
+    }
+
+    span {
+        display: inline-block;
+        text-align: center;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        color: $dark;
+        margin: 0;
+        animation: inherit;
+    }
+
+    img {
+        filter: $filter-cta-arrow;
+    }
+}
+
+.cta-button-img-container {
+    width: 3rem;
+    height: 3rem;
+    background-color: $dark;
+    border-radius: 50%;
+    @include flex-center;
+    overflow: hidden;
+}

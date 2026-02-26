@@ -1,0 +1,61 @@
+@use "shared" as *;
+
+.video-section {
+    @include flex-center;
+    color: $dark;
+
+    >.content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 3rem;
+    }
+}
+
+.video-description {
+    font-family: $font-family;
+    text-align: center;
+    width: 80%;
+
+    h2 {
+        font-weight: 400;
+        font-size: 2.25rem;
+        line-height: 2.625rem;
+        margin: 1.25rem 0;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+.video {
+    width: 80vw;
+    height: 45vw;
+    max-height: 60vh;
+    max-width: 107vh;
+}
+
+iframe {
+    border-radius: 1.25rem;
+    width: 100%;
+    height: 100%;
+}
+
+@include bp($bp-md) {
+    .video-section {
+        min-height: 0;
+
+        >.content-wrapper {
+            gap: 1.25rem;
+        }
+    }
+
+    .video-description {
+        width: 90%;
+    }
+}
