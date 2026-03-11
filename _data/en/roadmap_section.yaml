@@ -1,15 +1,20 @@
-title: "Our Innovation Roadmap: building the future of trustworthy AI Development"
-subtitle: >
-  AICeBlock's innovation roadmap outlines our journey from empowering organizations today with cutting-edge compliance tools to shaping the future of trustworthy, efficient, and collaborative AI development.
+title: "How does AICeBlock support the AI lifecycle?"
+subtitle: 
+
+cta_button:
+  text: "Discuss your AI use case"
+  url: "/join-us?subject=0#contacts"
+  icon:
+    src: "/assets/images/icons/arrow-icon.svg"
+    alt: "Arrow Icon"
 
 sections:
-  - title: "Now"
-    subtitle: "The foundations for Trustworthy and Transparent AI Development"
-    description: >
-      The first version of AICeBlock lays the groundwork to empower organizations in achieving compliance through verifiable declaration.
+  - title: "Scope & Risk"
+    subtitle: "Define the scope of AI use cases, classify risk under the EU AI Act, and understand applicable regulatory obligations before development begins."
+    description:
     image:
-      src: "/assets/images/roadmap/now.svg"
-      alt: "Radmap now section illustration"
+      src: "/assets/images/roadmap/scope-and-risk.svg"
+      alt: "Roadmap scope & risk section illustration"
     roadmap:
       - title: "ML Project Governance"
         description: >
@@ -29,14 +34,14 @@ sections:
           This tool bridges the gap between technical execution and organizational oversight, enabling non-programmers to
           iterate quickly while maintaining a direct link between visual representations and the actual pipeline code.
       
-  - title: "Next"
+  - title: "Build & Implement"
     subtitle: "Advancing the Compliance Support"
     description: >
       The next step in AICeBlock's journey focuses on expanding our capabilities to simplify compliance,
       enhance privacy, and empower organizations to build AI responsibly with greater confidence.
     image:
-      src: "/assets/images/roadmap/next.svg"
-      alt: "Radmap next section illustration"
+      src: "/assets/images/roadmap/build-and-implement.svg"
+      alt: "Roadmap build & implement section illustration"
     roadmap:
       - title: "Modules for Compliance Support"
         description: >
@@ -49,13 +54,13 @@ sections:
       - title: "Privacy-Preserving ML"
         description: "Ensure data security and compliance with privacy-enhancing technologies like Federated Learning for privacy-preserving collaboration, and Differential Privacy to protect sensitive information while still enabling valuable insights."
 
-  - title: "Beyond"
+  - title: "Monitor & Audit"
     subtitle: "Shaping the Future of Trustworthy and Collaborative AI Development"
     description: >
       AICeBlock's visionary roadmap aims to set the tone on AI governance, sustainability, and collaboration.
     image:
-      src: "/assets/images/roadmap/beyond.svg"
-      alt: "Radmap beyond section illustration"
+      src: "/assets/images/roadmap/monitor-and-audit.svg"
+      alt: "Roadmap monitor & audit section illustration"
     roadmap:
       - title: "ML Copilot"
         description: >

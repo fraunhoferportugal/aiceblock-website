@@ -1,12 +1,11 @@
-title: "Elevate your AI with AICeBlock."
+title: "Compliance tools for the AI lifecycle."
 subtitle:
   - "Secure."
   - "Transparent."
   - "Compliant."
 
 description: >
-  Making the right thing the easiest thing to do — streamline your ML workflows
-  with verifiable compliance, built on blockchain for unparalleled transparency.
+  AICeBlock offers practical compliance tools across the lifecycle of AI-based solutions, for organisations building and deploying AI.
 
 cta_button:
   text: "Discuss your AI use case"
@@ -16,7 +15,7 @@ cta_button:
     alt: "Arrow Icon"
 
 image:
-  src: "/assets/images/hero/hero_v2.svg"
+  src: "/assets/images/hero/hero_v3.svg"
   alt: "Hero Illustration"
 
 marquee:

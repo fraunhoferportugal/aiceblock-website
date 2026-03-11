@@ -1,8 +1,13 @@
-<header class="header">
+<header class="header {% if page.header_dark %}header-dark{% endif %}">
   <div class="header-desktop">
     <a class="logo" href="{{ '/' | relative_url }}">
-      <img src="{{ site.data[site.active_lang].header.logo.src }}"
+      {% if page.header_dark %}
+      <img src="{{ site.data[site.active_lang].header.logo.light_src }}"
         alt="{{ site.data[site.active_lang].header.logo.alt }}">
+      {% else %}
+      <img src="{{ site.data[site.active_lang].header.logo.dark_src }}"
+        alt="{{ site.data[site.active_lang].header.logo.alt }}">
+      {% endif %}
     </a>
     <nav class="header-nav">
       {% for link in site.data[site.active_lang].header.nav %}

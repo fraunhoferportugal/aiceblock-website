@@ -2,13 +2,45 @@
 @use "shared" as *;
 
 .roadmap-section {
+    position: relative;
     @include section-base;
-    background-color: $white;
-    color: $dark;
+    background-color: $dark;
+    color: $light;
 
     >.content-wrapper {
         @include content-wrapper-col(4rem);
         text-align: left;
+    }
+
+    .cta-button {
+        position: absolute;
+        top: 3.125rem;
+        right: 3.125rem;
+        background: $accent;
+        box-shadow: $glow-sm $accent-glow;
+        z-index: 10;
+
+        span {
+            color: $dark;
+        }
+
+        img {
+            filter: $filter-cta-arrow;
+        }
+
+        &:hover {
+            box-shadow: $glow-lg $accent-glow;
+        }
+
+        &.scrolled {
+            position: fixed;
+            top: 3.125rem;
+            right: 3.125rem;
+        }
+    }
+
+    .cta-button-img-container {
+        background-color: $dark;
     }
 }
 
@@ -34,7 +66,7 @@
     &::after {
         align-self: stretch;
         content: "";
-        border: 0.0625rem solid $dark;
+        border: 0.0625rem solid $light;
     }
 }
 
@@ -180,16 +212,16 @@
 
 // Color cycle for roadmap containers (3n pattern)
 $roadmap-themes: (
-    "3n": (bg: $dark,
-        accent: $accent,
-        text: $white,
-    ),
-    "3n+1": (bg: $accent,
+    "3n": (bg: $accent,
         accent: $dark,
         text: $dark,
     ),
-    "3n+2": (bg: $light,
-        accent: #42e8e0,
+    "3n+1": (bg: $off-white,
+        accent: $dark,
+        text: $dark,
+    ),
+    "3n+2": (bg: $off-white,
+        accent: $dark,
         text: $dark,
     ),
 );
@@ -223,6 +255,7 @@ $roadmap-themes: (
     * img {
         width: 1.125rem;
         height: auto;
+        filter: $filter-light;
     }
 
     button:first-child img {

@@ -17,20 +17,15 @@
 }
 
 .partnerships-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.25rem;
-    justify-content: center;
-    justify-items: center;
-    width: 100%;
+    @include flex-row(1.25rem);
 }
 
 .partnership {
     @include card-gradient-dark;
+    @include flex-col(0.9375rem);
     padding: 3.75rem 2.5rem;
     text-align: left;
     width: 100%;
-    @include flex-col(0.9375rem);
     align-items: start;
     font-family: $font-family;
     color: $light;
@@ -65,5 +60,11 @@
         font-size: 1.125rem;
         line-height: 1.625rem;
         color: $accent;
+    }
+}
+
+@include bp($bp-xl) {
+    .partnerships-container {
+        @include flex-col(1.25rem);
     }
 }

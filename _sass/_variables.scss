@@ -9,6 +9,10 @@ $accent-glow: rgba(136, 255, 243, 0.33);
 $dark-glow: rgba(24, 13, 91, 0.33);
 $text-muted: #eff2f5b3;
 $placeholder: #180d5b33;
+$off-white: #e4e5E5;
+
+// ─── Backgrounds ───
+$off-white-background: linear-gradient(180deg, $off-white 0%, $light 100%);
 
 // ─── Typography ───
 $font-family: "Inter", sans-serif;
