@@ -8,7 +8,7 @@
     color: $light;
 
     >.content-wrapper {
-        @include content-wrapper-col(4rem);
+        @include content-wrapper-col;
         text-align: left;
     }
 
@@ -114,10 +114,9 @@
 
     .section-column {
         @include flex-col(2.25rem);
-        width: 100%;
-        max-width: 29rem;
-        padding: 0 1.125rem;
-        margin-top: 10rem;
+        width: 29rem;
+        height: 29rem;
+        align-items: start;
 
         * {
             margin: 0;
@@ -135,23 +134,10 @@
             line-height: 2rem;
         }
 
-        p {
-            font-weight: 400;
-            font-size: 1.125rem;
-            line-height: 1.625rem;
-        }
-    }
-
-    .section-column-image {
-        @include flex-col;
-        justify-content: end;
-        height: 17rem;
-        position: absolute;
-        top: -9rem;
-
         img {
-            width: 16.3125rem;
-            height: auto;
+            max-height: 14rem;
+            height: 100%;
+            width: auto;
         }
     }
 }
@@ -205,7 +191,7 @@
     p {
         font-weight: 400;
         font-size: 1rem;
-        line-height: 1.5rem;
+        line-height: 1.8rem;
         white-space: pre-line;
     }
 }

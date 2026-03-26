@@ -19,18 +19,15 @@
         {% for section in site.data[site.active_lang].roadmap_section.sections %}
         <div class="roadmap-container">
             <div class="section-column">
-                <div class="section-column-image">
-                    <img src="{{ section.image.src }}" alt="{{ section.image.alt }}" />
-                </div>
+                <img src="{{ section.image.src }}" alt="{{ section.image.alt }}" />
                 <h2>{{ section.title }}</h2>
                 <h4>{{ section.subtitle }}</h4>
-                <p>{{ section.description }}</p>
             </div>
             <div class="roadmap-row-container">
                 <div class="roadmap-row">
                     {% for roadmap in section.roadmap %}
                     <div class="roadmap-column">
-                        <span>{{ forloop.index | prepend: "0" }}</span>
+                        <span>{{ roadmap.index }}</span>
                         <h4>{{ roadmap.title }}</h4>
                         <p>{{ roadmap.description }}</p>
                     </div>

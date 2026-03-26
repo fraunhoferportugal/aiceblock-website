@@ -1,82 +1,93 @@
-title: "O Roadmap de Inovação: construir o futuro do desenvolvimento de IA confiável"
-subtitle: >
-  O roadmap de inovação do AICeBlock define o caminho desde a capacitação das organizações com ferramentas avançadas de conformidade até à construção do futuro do desenvolvimento de IA confiável, eficiente e colaborativa.
+title: AICeBlock evolui como um sistema modular.
+subtitle: A versão atual (MVP) disponibiliza as capacidades base de gestão da conformidade, enquanto módulos adicionais irão reforçar progressivamente a automação, rastreabilidade e auditabilidade ao longo do ciclo de vida da IA.
+
+cta_button:
+  text: Discuta o seu caso de uso de IA
+  url: /about?subject=0#contacts
+  icon:
+    src: /assets/images/icons/arrow-icon.svg
+    alt: Ícone de Seta
 
 sections:
-  - title: "Now"
-    subtitle: "As bases para o Desenvolvimento de IA Transparente e de Confiança"
-    description: >
-      A primeira versão do AICeBlock estabelece a base para capacitar organizações na obtenção da conformidade através de declarações verificáveis.
+  - title: Âmbito e Risco
+    subtitle: Da classificação estruturada à orquestração regulatória inteligente.
     image:
-      src: "/assets/images/roadmap/now.svg"
-      alt: "Ilustração da seção atual do roadmap de inovação do AICeBlock"
+      src: /assets/images/roadmap/scope-and-risk.svg
+      alt: Ilustração da secção sobre âmbito e riscos
     roadmap:
-      - title: "Governação de Projetos de ML"
-        description: >
-          Gerencie facilmente os seus projetos de machine learning, incluindo datasets, módulos de código, experiências e pipelines em produção.
-          Atribua funções aos membros da equipa, reutilize dados e código entre projetos e colabore entre organizações — tudo com governação integrada para rastreabilidade e responsabilidade.
-      - title: "Listas de Verificação de Conformidade"
-        description: >
-          Facilite a adesão a regulamentos e normas através de listas de verificação pré-definidas ou personalizadas.
-          Estas listas ligam-se diretamente às versões das pipelines implementados, garantindo transparência verificável e ajudando as organizações a cumprir requisitos regulatórios de forma mais eficiente.
-      - title: "Declarações Verificáveis"
-        description: >
-          Vá além da auto-declaração com verificação baseada em blockchain. O AICeBlock garante a integridade de datasets, módulos de código e outros artefactos de ML ao vinculá-los a
-          assinaturas criptográficas na blockchain. Os Auditores podem verificar instantaneamente a autenticidade e conformidade, tornando o processo de revisão mais rápido, padronizado e seguro.
-      - title: "Editor Interativo de Pipelines ML"
-        description: >
-          Visualize e edite pipelines de ML com o nosso editor gráfico inovador.
-          Esta ferramenta faz a ponte entre a execução técnica e supervisão organizacional, permitindo que profissionais não técnicos façam iterações rapidamente enquanto mantêm uma ligação direta entre as representações visuais e o código real da pipeline.
-  
-  - title: "Next"
-    subtitle: "Evolução no Suporte à Conformidade"
-    description: >
-      A próxima etapa da jornada do AICeBlock concentra-se em expandir as nossas capacidades para simplificar a conformidade,
-      reforçar a privacidade e capacitar organizações para desenvolver IA de forma responsável com maior confiança.
+      - index: Agora
+        title: Ponto de entrada estruturado para a conformidade com o AI Act.
+        description: |
+          • Registo de múltiplos sistemas de IA
+          • Determinação de exposição ao AI Act
+          • Classificação de risco baseada em RAG
+          • Motor de classificação baseado em regras
+          • Mapeamento de obrigações por perfil
+          • Relatório exportável de Âmbito e Risco
+      - index: A Seguir
+        title: Maior robustez regulatória e determinismo.
+        description: |
+          • Lógica condicional de obrigações
+          • Maior transparência na explicação
+          • Mapeamento de dependências melhorado
+          • Integração com outros enquadramentos (ex.: GDPR)
+      - index: Para Além
+        title: Orquestração regulatória inteligente.
+        description: |
+          • Planeamento avançado de mitigação
+          • Perfis de conformidade ao nível da organização
+          • Apoio assistido por IA (LLM privado/local)
+
+  - title: Desenvolver e Implementar
+    subtitle: Da documentação estruturada à conformidade integrada no desenvolvimento.
     image:
-      src: "/assets/images/roadmap/next.svg"
-      alt: "Ilustração da seção 'Next' do roadmap do AICeBlock"
+      src: /assets/images/roadmap/build-and-implement.svg
+      alt: Ilustração da secção sobre desenvolvimento e implementação
     roadmap:
-      - title: "Módulos de Suporte à Conformidade"
-        description: >
-          Aceda a uma biblioteca crescente de ferramentas avançadas para simplificar processos de conformidade e integrar práticas de IA responsável diretamente nas suas pipelines.
-          Estes módulos incluem ferramentas de análise e mitigação de viés, técnicas de validação da qualidade dos dados, deteção e anonimização de dados sensíveis, testes de robustez e um conjunto de métodos para explicabilidade.
-      - title: "Listas de Verificação Semi-Automatizadas"
-        description: >
-          Poupe tempo e reduza erros com listas de verificação inteligentes. Relacione automaticamente os resultados das suas pipelines com campos específicos da lista, garantindo documentação atualizada em tempo real para verificações de conformidade.
-          Estas ligações automatizadas agilizam auditorias e melhoram a rastreabilidade sem necessidade de atualizações manuais constantes.
-      - title: "ML com Preservação da Privacidade"
-        description: >
-          Assegure a segurança dos dados e conformidade com tecnologias de preservação de privacidade, como Aprendizagem Federada para colaboração segura e Privacidade Diferencial para proteger informações sensíveis sem comprometer extração de conhecimento.
+      - index: Agora
+        title: Documentação estruturada de compliance-by-design.
+        description: |
+          • Checklists por obrigação
+          • Templates (Annex IV, DPIA, FRIA)
+          • Upload de documentos por obrigação
+          • Dashboard de estado/progresso
+          • Integração com artefactos de desenvolvimento
+      - index: A Seguir
+        title: Maior rastreabilidade e governação.
+        description: |
+          • Matriz obrigação-evidência
+          • Fluxos de aprovação e governação
+          • Relatórios estruturados
+          • Extração de metadados de artefactos
+      - index: Para Além
+        title: Conformidade integrada no desenvolvimento.
+        description: |
+          • Rastreabilidade obrigação-código
+          • Camadas automáticas de validação de conformidade
 
-  - title: "Beyond"
-    subtitle: "O Futuro do Desenvolvimento de IA de Confiança e Colaborativa"
-    description: >
-      O roadmap visionário do AICeBlock pretende definir padrões para governação, sustentabilidade e colaboração em IA.
+  - title: Monitorizar e Auditar
+    subtitle: Da gestão de evidência à inteligência contínua de conformidade.
     image:
-      src: "/assets/images/roadmap/beyond.svg"
-      alt: "Ilustração da seção futura do roadmap do AICeBlock"
+      src: /assets/images/roadmap/monitor-and-audit.svg
+      alt: Ilustração da secção sobre monitorização e auditoria
     roadmap:
-      - title: "ML Copilot"
-        description: >
-          Imagine um assistente inteligente que liga equipas técnicas e não técnicas — desde decisores e utilizadores finais até desenvolvedores e auditores — ao longo de todo o
-          ciclo de vida de uma solução de IA. O Copilot do AICeBlock recomendará metodologias personalizadas com base no âmbito do projeto, nos dados e nos objetivos da pipeline, 
-          apoiando a tomada de decisões em todas as fases: design, experimentação e implementação.
-      - title: "Suporte para IA 'Verde'"
-        description: >
-          Para promover uma IA sustentável, o AICeBlock planeia ferramentas que ajudem utilizadores a otimizar as suas pipelines para eficiência de dados e energia, reduzindo o
-          uso de dados redundantes e minimizando o consumo energético, adaptando-se à infraestrutura e hardware onde as soluções serão implementadas. Estas iniciativas alinham-se 
-          com a crescente procura por desenvolvimento de IA ecologicamente consciente, beneficiando tanto o meio ambiente como os custos operacionais.
-
-      - title: "Computação Confidencial"
-        description: >
-          A viabilização de computações seguras e invioláveis permitirá que as organizações realizem execuções locais de forma segura, mantendo os princípios de zero-confiança. 
-          Com Computação Confidencial, operações sensíveis estarão protegidas contra acessos não autorizados, garantindo que declarações verificáveis permanecem intactas, 
-          fortalecendo a confiança e a segurança ao longo do processo.
-
-      - title: "Colaboração Justa"
-        description: >
-          Baseando-se no rastreamento transparente de contribuições dentro das pipelines de ML, o AICeBlock introduzirá parâmetros objetivos para distribuição de receitas e 
-          estratégias de recompensa transparentes embutidas em contratos inteligentes, garantindo uma distribuição justa de valor entre colaboradores. Esta abordagem promove uma 
-          cultura de colaboração equitativa, transparente e de confiança.
-
+      - index: Agora
+        title: Gestão estruturada de evidência de conformidade.
+        description: |
+          • Registo de evidências
+          • Pacotes de conformidade auditáveis exportáveis
+          • Timestamping por entidades de certificação
+      - index: A Seguir
+        title: Maior robustez e credibilidade para auditoria.
+        description: |
+          • Lógica avançada de registo de auditoria
+          • Agendamento de revisões periódicas
+          • Registo externo de evidência
+      - index: Para Além
+        title: Inteligência contínua de conformidade.
+        description: |
+          • Planeamento de monitorização
+          • Registo de desvios e investigações
+          • Alertas automáticos
+          • Declarações verificáveis de conformidade
+          • Templates de testes alinhados com o AI Act

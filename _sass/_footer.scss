@@ -1,6 +1,8 @@
 @use "shared" as *;
 
 .footer {
+    @include flex-col;
+    align-items: center;
     background-color: $dark;
     color: $white;
     border-top: 0.0625rem solid $light;
@@ -14,6 +16,8 @@
     @include flex-row;
     justify-content: space-between;
     align-items: center;
+    max-width: $max-width;
+    width: 100%;
 
     >* {
         flex: 1 1 0;
