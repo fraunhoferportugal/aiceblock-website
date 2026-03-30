@@ -1,5 +1,7 @@
-title: AICeBlock evolves as a modular system.
-subtitle: The current MVP delivers core compliance management capabilities, while future modules progressively enhance automation, traceability, and auditability across the AI lifecycle.
+title: AICeBlock evolves as a modular system
+subtitle: |
+  The current MVP delivers core compliance management capabilities, while future modules
+  progressively enhance automation, traceability, and auditability across the AI lifecycle.
 
 cta_button:
   text: Discuss your AI use case
@@ -14,6 +16,9 @@ sections:
     image:
       src: /assets/images/roadmap/scope-and-risk.svg
       alt: Roadmap scope & risk section illustration
+    mockup:
+      src: /assets/images/roadmap/scope-and-risk-mockup.png
+      alt: Roadmap scope & risk section mockup
     roadmap:
       - index: Now
         title: Structured compliance-by-design documentation.
@@ -43,6 +48,9 @@ sections:
     image:
       src: /assets/images/roadmap/build-and-implement.svg
       alt: Roadmap build & implement section illustration
+    mockup:
+      src: /assets/images/roadmap/build-and-implement-mockup.png
+      alt: Roadmap build & implement section mockup
     roadmap:
       - index: Now
         title: Structured compliance-by-design documentation.
@@ -69,6 +77,9 @@ sections:
     image:
       src: /assets/images/roadmap/monitor-and-audit.svg
       alt: Roadmap monitor & audit section illustration
+    mockup:
+      src: /assets/images/roadmap/monitor-and-audit-mockup.png
+      alt: Roadmap monitor & audit section mockup
     roadmap:
       - index: Now
         title: Structured compliance evidence management.

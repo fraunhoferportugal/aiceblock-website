@@ -1,5 +1,7 @@
-title: AICeBlock evolui como um sistema modular.
-subtitle: A versão atual (MVP) disponibiliza as capacidades base de gestão da conformidade, enquanto módulos adicionais irão reforçar progressivamente a automação, rastreabilidade e auditabilidade ao longo do ciclo de vida da IA.
+title: AICeBlock evolui como um sistema modular
+subtitle: |
+  A versão atual (MVP) disponibiliza as capacidades base de gestão da conformidade, enquanto módulos adicionais
+  irão reforçar progressivamente a automação, rastreabilidade e auditabilidade ao longo do ciclo de vida da IA.
 
 cta_button:
   text: Discuta o seu caso de uso de IA
@@ -14,6 +16,9 @@ sections:
     image:
       src: /assets/images/roadmap/scope-and-risk.svg
       alt: Ilustração da secção sobre âmbito e riscos
+    mockup:
+      src: /assets/images/roadmap/scope-and-risk-mockup.png
+      alt: Mockup da secção sobre âmbito e riscos
     roadmap:
       - index: Agora
         title: Ponto de entrada estruturado para a conformidade com o AI Act.
@@ -43,6 +48,9 @@ sections:
     image:
       src: /assets/images/roadmap/build-and-implement.svg
       alt: Ilustração da secção sobre desenvolvimento e implementação
+    mockup:
+      src: /assets/images/roadmap/build-and-implement-mockup.png
+      alt: Mockup da secção sobre desenvolvimento e implementação
     roadmap:
       - index: Agora
         title: Documentação estruturada de compliance-by-design.
@@ -70,6 +78,9 @@ sections:
     image:
       src: /assets/images/roadmap/monitor-and-audit.svg
       alt: Ilustração da secção sobre monitorização e auditoria
+    mockup:
+      src: /assets/images/roadmap/monitor-and-audit-mockup.png
+      alt: Mockup da secção sobre monitorização e auditoria
     roadmap:
       - index: Agora
         title: Gestão estruturada de evidência de conformidade.

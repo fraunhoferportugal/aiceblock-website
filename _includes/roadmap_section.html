@@ -18,25 +18,34 @@
         </div>
         {% for section in site.data[site.active_lang].roadmap_section.sections %}
         <div class="roadmap-container">
-            <div class="section-column">
-                <img src="{{ section.image.src }}" alt="{{ section.image.alt }}" />
-                <h2>{{ section.title }}</h2>
-                <h4>{{ section.subtitle }}</h4>
-            </div>
-            <div class="roadmap-row-container">
-                <div class="roadmap-row">
-                    {% for roadmap in section.roadmap %}
-                    <div class="roadmap-column">
-                        <span>{{ roadmap.index }}</span>
-                        <h4>{{ roadmap.title }}</h4>
-                        <p>{{ roadmap.description }}</p>
+            <div class="roadmap-panel-left">
+                <div class="roadmap-header">
+                    <img src="{{ section.image.src }}" alt="{{ section.image.alt }}" />
+                    <div class="roadmap-header-text">
+                        <h2>{{ section.title }}</h2>
+                        <h4>{{ section.subtitle }}</h4>
                     </div>
-                    {% endfor %}
                 </div>
-                <div class="roadmap-bottom-buttons">
-                    <button><img src="/assets/images/icons/arrow-icon.svg" alt="Roadmap button - backward"></button>
-                    <button><img src="/assets/images/icons/arrow-icon.svg" alt="Roadmap button - forward"></button>
+                <div class="roadmap-carousel">
+                    <div class="roadmap-slides">
+                        {% for roadmap in section.roadmap %}
+                        <div class="roadmap-slide">
+                            <span>{{ roadmap.index }}</span>
+                            <h4>{{ roadmap.title }}</h4>
+                            <p>{{ roadmap.description }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="roadmap-dots">
+                        {% for roadmap in section.roadmap %}
+                        <button class="roadmap-dot{% if forloop.first %} active{% endif %}"
+                            data-slide="{{ forloop.index0 }}"></button>
+                        {% endfor %}
+                    </div>
                 </div>
+            </div>
+            <div class="roadmap-panel-right">
+                <img src="{{ section.mockup.src }}" alt="{{ section.mockup.alt }}" />
             </div>
         </div>
         {% endfor %}
@@ -46,85 +55,48 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const buttons = document.querySelectorAll(".roadmap-button");
-        const sections = document.querySelectorAll(".roadmap-container");
+        const containers = document.querySelectorAll(".roadmap-container");
 
         buttons.forEach((button, index) => {
             button.addEventListener("click", () => {
-                buttons.forEach((button) => {
-                    button.classList.remove("active");
-                });
-                sections.forEach(section => {
-                    section.classList.remove("active");
-                });
-                const sectionToShow = sections[index];
-                sectionToShow.classList.add("active");
+                buttons.forEach((b) => b.classList.remove("active"));
+                containers.forEach((c) => c.classList.remove("active"));
+                containers[index].classList.add("active");
                 button.classList.add("active");
             });
         });
 
-        if (buttons.length > 0) {
-            buttons[0].classList.add("active");
-        }
+        if (buttons.length > 0) buttons[0].classList.add("active");
+        if (containers.length > 0) containers[0].classList.add("active");
 
-        if (sections.length > 0) {
-            sections[0].classList.add("active");
-        }
+        containers.forEach((container) => {
+            const slides = container.querySelector(".roadmap-slides");
+            const dots = container.querySelectorAll(".roadmap-dot");
 
-        sections.forEach(section => {
-            const row = section.querySelector(".roadmap-row");
-            const prevButton = section.querySelector(".roadmap-bottom-buttons button:first-child");
-            const nextButton = section.querySelector(".roadmap-bottom-buttons button:last-child");
+            dots.forEach((dot) => {
+                dot.addEventListener("click", () => {
+                    const index = parseInt(dot.dataset.slide);
+                    const gap = parseFloat(getComputedStyle(slides).gap) || 0;
+                    const slideWidth = slides.children[0].offsetWidth + gap;
 
-            let scrollAmount = 0;
-            const gap = parseInt(window.getComputedStyle(row).getPropertyValue("gap"));
-            const columnWidth = row.children[0].offsetWidth + gap;
-
-            function updateButtonStates() {
-                const maxScroll = row.scrollWidth - row.offsetWidth;
-
-                if (scrollAmount === 0) {
-                    prevButton.disabled = true;
-                } else {
-                    prevButton.disabled = false;
-                }
-
-                if (scrollAmount >= maxScroll) {
-                    nextButton.disabled = true;
-                } else {
-                    nextButton.disabled = false;
-                }
-            }
-
-            nextButton.addEventListener("click", () => {
-                const maxScroll = row.scrollWidth - row.offsetWidth;
-                if (scrollAmount + columnWidth <= maxScroll) {
-                    scrollAmount += columnWidth;
-                    row.scrollTo({
-                        left: scrollAmount,
-                        behavior: "smooth"
+                    slides.scrollTo({
+                        left: slideWidth * index,
+                        behavior: "smooth",
                     });
-                } else {
-                    scrollAmount = maxScroll;
-                    row.scrollTo({
-                        left: scrollAmount,
-                        behavior: "smooth"
-                    });
-                }
-                updateButtonStates();
+
+                    dots.forEach((d) => d.classList.remove("active"));
+                    dot.classList.add("active");
+                });
             });
 
-            prevButton.addEventListener("click", () => {
-                if (scrollAmount - columnWidth >= 0) {
-                    scrollAmount -= columnWidth;
-                    row.scrollTo({
-                        left: scrollAmount,
-                        behavior: "smooth"
-                    });
-                }
-                updateButtonStates();
-            });
+            slides.addEventListener("scroll", () => {
+                const gap = parseFloat(getComputedStyle(slides).gap) || 0;
+                const slideWidth = slides.children[0].offsetWidth + gap;
+                const activeIndex = Math.round(slides.scrollLeft / slideWidth);
 
-            updateButtonStates();
+                dots.forEach((d) => d.classList.remove("active"));
+                if (dots[activeIndex]) dots[activeIndex].classList.add("active");
+            });
         });
     });
 </script>
@@ -132,18 +104,13 @@
 <script>
     window.addEventListener("load", function () {
         const section = document.querySelector(".roadmap-section");
-        const targetElement = section.querySelector(".cta-button");
-        const sectionTop = section.getBoundingClientRect().top;
-        targetElement.dataset.originalTop = sectionTop;
+        const cta = section.querySelector(".cta-button");
+        cta.dataset.originalTop = section.getBoundingClientRect().top;
     });
 
     window.addEventListener("scroll", function () {
-        const targetElement = document.querySelector(".roadmap-section .cta-button");
-        const originalTop = parseFloat(targetElement.dataset.originalTop);
-        if (window.scrollY > originalTop) {
-            targetElement.classList.add("scrolled");
-        } else {
-            targetElement.classList.remove("scrolled");
-        }
+        const cta = document.querySelector(".roadmap-section .cta-button");
+        const originalTop = parseFloat(cta.dataset.originalTop);
+        cta.classList.toggle("scrolled", window.scrollY > originalTop);
     });
 </script>
