@@ -1,11 +1,13 @@
 logo:
-  src: "/assets/images/logo.svg"
+  light_src: "/assets/images/logo-horizontal-light.svg"
+  dark_src: "/assets/images/logo-horizontal-dark.svg"
   alt: "AICeBlock Homepage"
   height: "40px"
 
 nav:
-  - text: "Sobre"
+  - text: "O que é AICeBlock?"
+    url: "/"
+  - text: "Ciclo de Vida de IA"
+    url: "/#lifecycle"
+  - text: "Sobre Nós"
     url: "/about"
-  - text: "Junte-se a Nós"
-    url: "/join-us"
-  

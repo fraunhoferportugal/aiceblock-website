@@ -1,25 +1,24 @@
-title: "Elevate your AI with AICeBlock."
+title: Operationalising AI Act Compliance.
 subtitle:
-  - "Secure."
-  - "Transparent."
-  - "Compliant."
+  - Secure.
+  - Transparent.
+  - Compliant.
 
-description: >
-  Making the right thing the easiest thing to do — streamline your ML workflows
-  with verifiable compliance, built on blockchain for unparalleled transparency.
+description: |
+  AICeBlock is an AI Compliance Management System that enables organisations to register, document, and audit their AI systems — delivering audit-ready compliance with the EU AI Act.
 
 cta_button:
-  text: "Discuss your AI use case"
-  url: "/join-us?subject=0#contacts"
+  text: Discuss your AI use case
+  url: /about?subject=0#contacts
   icon:
-    src: "/assets/images/icons/arrow-icon.svg"
-    alt: "Arrow Icon"
+    src: /assets/images/icons/arrow-icon.svg
+    alt: Arrow Icon
 
 image:
-  src: "/assets/images/hero/hero_v2.svg"
-  alt: "Hero Illustration"
+  src: /assets/images/hero/hero_v3.svg
+  alt: Hero Illustration
 
 marquee:
   quotes:
-    - "<strong>Independence is our backbone</strong> - no tangled interests, just a clear commitment to Trustworthy AI"
+    - <strong>Independence is our backbone</strong> - no tangled interests, just a clear commitment to Trustworthy AI
   
