@@ -1,32 +1,19 @@
 logo:
-  src: "/assets/images/logo-horizontal.svg"
+  src: "/assets/images/logo-horizontal-light.svg"
   alt: "AIceBlock Logo"
-  #description: "AICeBlock"
-
-copyright: "AICeBlock. All Rights Reserved."
+  description: |
+    AICeBlock - Artificial Intelligence
+    Certification Through the Blockchain
 
 footer_links:
-  - links:
-      - text: "Resources"
-        url: "/#resources"
-      - text: "Join Us"
-        url: "/join-us"
-      - text: "About"
-        url: "/about"
-      - text: "Contact Us"
-        url: "/about#contacts"
-  - links:
-      - text: "Privacy Policy"
-        url: "/privacy-policy"
-      - text: "Terms of Service"
-        url: "/terms-of-service"
-
-newsletter:
-  title: "Newsletter sign-up"
-  placeholder: "Your email"
-  button_text: "Subscribe"
-  email_subject: "AICeBlock - New newsletter subscription request"
-  policy_accept_message: "Please accept our Privacy Policy to proceed with your subscription."
+  - text: "Contact Us"
+    url: "/about#contacts"
+  - text: "About Us"
+    url: "/about"
+  - text: "Terms of Service"
+    url: "/terms-of-service"
+  - text: "Privacy Policy"
+    url: "/privacy-policy"
 
 social_links:
   title: "Follow us"
@@ -37,6 +24,20 @@ social_links:
     - icon: "/assets/images/icons/twitter-icon.svg"
       alt: "Twitter"
       url: "https://www.twitter.com"
-    # - icon: "/assets/images/icons/github-icon.svg"
-    #   alt: "GitHub"
-    #   url: "https://www.github.com"
+    - icon: "/assets/images/icons/github-icon.svg"
+      alt: "GitHub"
+      url: "https://www.github.com"
+
+partner_logos:
+  - src: "/assets/images/about-us/incm-logo.svg"
+    alt: "Logo of Imprensa Nacional Casa da Moeda"
+  - src: "/assets/images/about-us/fhp-logo.svg"
+    alt: "Logo of Fraunhofer Portugal AICOS"
+  - src: "/assets/images/about-us/vda-logo.svg"
+    alt: "Logo of Vieira de Almeida (VdA)"
+
+disclaimer: |
+  Designed for providers, deployers, and compliance teams, AICeBlock
+  is an initiative promoted by INCM, Fraunhofer Portugal, and VdA.
+
+copyright: "AICeBlock. All Rights Reserved."

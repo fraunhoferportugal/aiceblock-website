@@ -1,6 +1,7 @@
 ---
 title: "AICeBlock | Join Us"
 layout: default
+published: false
 ---
 
 {% include network_section.html first="true" %}

@@ -1,6 +1,7 @@
 ---
 title: "AICeBlock | About"
 layout: default
+header_dark: true
 ---
 
 {% include about_us_section.html first="true" %}

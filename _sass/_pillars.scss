@@ -15,20 +15,20 @@
         position: absolute;
         top: 3.125rem;
         right: 3.125rem;
-        background: $dark;
+        background: $accent;
+        box-shadow: $glow-sm $accent-glow;
         z-index: 10;
-        box-shadow: $glow-sm $dark-glow;
 
         span {
-            color: $accent;
+            color: $dark;
         }
 
         img {
-            filter: $filter-dark;
+            filter: $filter-cta-arrow;
         }
 
         &:hover {
-            box-shadow: $glow-lg $dark-glow;
+            box-shadow: $glow-lg $accent-glow;
         }
 
         &.scrolled {
@@ -39,7 +39,7 @@
     }
 
     .cta-button-img-container {
-        background-color: $accent;
+        background-color: $dark;
     }
 }
 
