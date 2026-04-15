@@ -20,13 +20,7 @@ social_links:
   links:
     - icon: "/assets/images/icons/linkedin-icon.svg"
       alt: "LinkedIn"
-      url: "https://www.linkedin.com"
-    - icon: "/assets/images/icons/twitter-icon.svg"
-      alt: "Twitter"
-      url: "https://www.twitter.com"
-    - icon: "/assets/images/icons/github-icon.svg"
-      alt: "GitHub"
-      url: "https://www.github.com"
+      url: "https://www.linkedin.com/company/aiceblock"
 
 partner_logos:
   - src: "/assets/images/about-us/incm-logo.svg"
@@ -36,8 +30,6 @@ partner_logos:
   - src: "/assets/images/about-us/vda-logo.svg"
     alt: "Logo of Vieira de Almeida (VdA)"
 
-disclaimer: |
-  Designed for providers, deployers, and compliance teams, AICeBlock
-  is an initiative promoted by INCM, Fraunhofer Portugal, and VdA.
+disclaimer: Designed for providers, deployers, and compliance teams, AICeBlock is an initiative promoted by INCM, Fraunhofer Portugal, and VdA.
 
 copyright: "AICeBlock. All Rights Reserved."

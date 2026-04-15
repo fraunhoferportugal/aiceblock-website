@@ -27,7 +27,7 @@
                 <img src="{{ partner.src }}" alt="{{ partner.alt }}">
                 {% endfor %}
             </div>
-            <p>{{ site.data[site.active_lang].footer.disclaimer }}</p>
+            <p class="disclaimer">{{ site.data[site.active_lang].footer.disclaimer }}</p>
             <p>
                 © {% assign year = site.time | date: "%Y" %}{{ year }} {{ site.data[site.active_lang].footer.copyright
                 }}
