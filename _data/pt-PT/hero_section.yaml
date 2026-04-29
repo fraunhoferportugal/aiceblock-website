@@ -1,24 +1,29 @@
-title: Operacionalizar a conformidade com o AI Act.
-subtitle:
-  - Segura.
-  - Transparente.
-  - Conforme.
-
-description: |
-  AICeBlock é um Sistema de Gestão de Conformidade para IA que permite às organizações registar, documentar e auditar os seus sistemas de IA — assegurando conformidade auditável com o AI Act. 
+title: Torne os seus sistemas de IA auditáveis — desde o primeiro dia.
+description: aiceblock estrutura o ciclo de vida da sua IA em torno do AI Act — desde a classificação de risco até às evidências documentadas — permitindo que construa, implemente e comprove conformidade com total confiança.
 
 cta_button:
-  text: Discuta o seu caso de uso de IA
+  text: Experimente agora
   url: /about?subject=0#contacts
   icon:
     src: /assets/images/icons/arrow-icon.svg
-    alt: Ícone de Seta
+    alt: Arrow Icon
 
-image:
-  src: /assets/images/hero/hero_v3.svg
-  alt: Ilustração de Secção de Heroí
-
-marquee:
-  quotes:
-    - <strong>A independência é o nosso pilar</strong> - livre de conflitos, focada em IA confiável
-    
+carousel_slides:
+  - number: "01"
+    title: Classificar e Enquadrar
+    description: Classifique o seu risco de IA. Conheça as suas obrigações antes de desenvolver.
+    image:
+      src: /assets/images/roadmap/scope-and-risk.svg
+      alt: Roadmap scope & risk section illustration
+  - number: "02"
+    title: Desenvolver & Implementar
+    description: Transforme os requisitos do AI Act em provas de conformidade rastreáveis.
+    image:
+      src: /assets/images/roadmap/build-and-implement.svg
+      alt: Roadmap build & implement section illustration
+  - number: "03"
+    title: Monitorizar & Auditar
+    description: Mantenha a conformidade ativa, verificável e pronta para qualquer auditoria.
+    image:
+      src: /assets/images/roadmap/monitor-and-audit.svg
+      alt: Roadmap monitor & audit section illustration

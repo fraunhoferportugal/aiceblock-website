@@ -1,5 +1,5 @@
 title: "Pipeline de ML InterativaL: fluxos rastreáveis e fiáveis"
-subtitle: "Descubra como o AICeBlock permite visualizar e documentar cada etapa crítica da sua pipeline de ML."
+subtitle: "Descubra como o aiceblock permite visualizar e documentar cada etapa crítica da sua pipeline de ML."
 
 main_pipeline_image:
   src: "/assets/images/pipeline/pipeline-base.svg"
@@ -14,7 +14,7 @@ overlays:
       src: "/assets/images/pipeline/pipeline-overlay-1.svg"
       alt: "Visualização da gestão de datasets na pipeline"
     title: "Datasets"
-    description: "O AICeBlock pode ajudar a gerir os seus datasets, sendo possível manter apenas metadados para verificação de integridade."
+    description: "O aiceblock pode ajudar a gerir os seus datasets, sendo possível manter apenas metadados para verificação de integridade."
     mobile-top: "7.45%"
     position:
       left: "3.81%"
@@ -43,7 +43,7 @@ overlays:
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-3.svg"
       alt: "Ilustração dos passos rastreáveis em pipelines de ML"
-    title: "Data Cards - Quando processados na plataforma, o AICeBlock assegura que os passos, parâmetros e resultados são rastreáveis e reproduzíveis."
+    title: "Data Cards - Quando processados na plataforma, o aiceblock assegura que os passos, parâmetros e resultados são rastreáveis e reproduzíveis."
     description: "Não é necessário repetir operações se tiver acesso à versão correta dos dados - as ligações entre versões de dados e os Data Cards são imutáveis."
     mobile-top: "32.27%"
     position:
@@ -73,7 +73,7 @@ overlays:
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-5.svg"
       alt: "Representação da rastreabilidade e reprodutibilidade dos processos de ML"
-    title: "Model Cards - Quando treinados na plataforma, o AICeBlock assegura que os passos, parâmetros e resultados são rastreáveis e reproduzíveis."
+    title: "Model Cards - Quando treinados na plataforma, o aiceblock assegura que os passos, parâmetros e resultados são rastreáveis e reproduzíveis."
     description: "Não é necessário repetir operações se tiver acesso à versão correta dos dados e modelos - as ligações entre versões de dados, modelos, e Model Cards são imutáveis."
     mobile-top: "60.92%"
     position:
@@ -88,7 +88,7 @@ overlays:
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-6.svg"
       alt: "Ilustração da monitorização de inferências na pipeline de ML"
-    title: "Quando a inferência é realizada no AICeBlock, a plataforma assegura que os resultados e sua monitorização são rastreáveis e reproduzíveis."
+    title: "Quando a inferência é realizada no aiceblock, a plataforma assegura que os resultados e sua monitorização são rastreáveis e reproduzíveis."
     description: "As ligações entre a versão do modelo de inferência e os resultados da monitorização são imutáveis."
     mobile-top: "79.21%"
     position:

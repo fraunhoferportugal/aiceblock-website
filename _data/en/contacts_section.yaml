@@ -1,5 +1,5 @@
 title: "Get in touch"
-description: "Have questions or want to learn more about how AICeBlock can support your AI compliance journey?\n\nReach out to us - we're here to help!"
+description: "Have questions or want to learn more about how aiceblock can support your AI compliance journey?\n\nReach out to us - we're here to help!"
 
 contacts:
   - image:
@@ -7,10 +7,6 @@ contacts:
       alt: "Contact 1 Image"
     text: "info@aiceblock.eu"
     ref: "mailto:info@aiceblock.eu"
-  # - image:
-  #     src: "/assets/images/icons/phone-icon.svg"
-  #     alt: "Contact 2 Image"
-  #   text: "+351 222 222 222"
 
 form:
   title: "Contact form"
@@ -19,7 +15,7 @@ form:
   email_placeholder: "*Email"
   message_placeholder: "*Your Message"
   button_text: "Submit"
-  prepend_subject: "AICeBlock"
+  prepend_subject: "aiceblock"
   subjects:
     - "General"
     - "Request Demo"

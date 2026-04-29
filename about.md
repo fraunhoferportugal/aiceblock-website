@@ -1,5 +1,5 @@
 ---
-title: "AICeBlock | About"
+title: "aiceblock | About"
 layout: default
 header_dark: true
 ---

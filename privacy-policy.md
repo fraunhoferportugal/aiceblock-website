@@ -1,5 +1,5 @@
 ---
-title: "AICeBlock | Privacy Policy"
+title: "aiceblock | Privacy Policy"
 layout: default
 ---
 

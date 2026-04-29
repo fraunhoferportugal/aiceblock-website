@@ -1,24 +1,29 @@
-title: Operationalising AI Act Compliance.
-subtitle:
-  - Secure.
-  - Transparent.
-  - Compliant.
-
-description: |
-  AICeBlock is an AI Compliance Management System that enables organisations to register, document, and audit their AI systems — delivering audit-ready compliance with the EU AI Act.
+title: Make your AI systems audit-ready — from day one.
+description: aiceblock structures your AI lifecycle around the AI Act — from risk classification to documented evidence — so you can build, deploy, and prove compliance with confidence.
 
 cta_button:
-  text: Discuss your AI use case
+  text: Try now
   url: /about?subject=0#contacts
   icon:
     src: /assets/images/icons/arrow-icon.svg
     alt: Arrow Icon
 
-image:
-  src: /assets/images/hero/hero_v3.svg
-  alt: Hero Illustration
-
-marquee:
-  quotes:
-    - <strong>Independence is our backbone</strong> - no tangled interests, just a clear commitment to Trustworthy AI
-  
+carousel_slides:
+  - number: "01"
+    title: Scope & Risk
+    description: Classify your AI risk. Know your obligations before you build.
+    image:
+      src: /assets/images/roadmap/scope-and-risk.svg
+      alt: Roadmap scope & risk section illustration
+  - number: "02"
+    title: Build & Implement
+    description: Turn AI Act requirements into traceable evidence.
+    image:
+      src: /assets/images/roadmap/build-and-implement.svg
+      alt: Roadmap build & implement section illustration
+  - number: "03"
+    title: Monitor & Audit
+    description: Keep compliance live, verifiable, and audit-ready.
+    image:
+      src: /assets/images/roadmap/monitor-and-audit.svg
+      alt: Roadmap monitor & audit section illustration

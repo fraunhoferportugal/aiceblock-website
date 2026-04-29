@@ -1,5 +1,5 @@
 ---
-title: "AICeBlock | Coming Soon"
+title: "aiceblock | Coming Soon"
 layout: default
 ---
 

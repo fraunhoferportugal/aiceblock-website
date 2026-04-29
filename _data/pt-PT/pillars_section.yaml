@@ -1,7 +1,7 @@
 title: "Os três pilares da conformidade em IA"
 subtitle: >
   Construir uma IA confiável não se resume apenas à tecnologia — trata-se de cumprir e superar os padrões que garantem segurança, privacidade e fiabilidade.
-  O AICeBlock assenta em três pilares essenciais para uma conformidade robusta em IA: Metas, Suporte à Adesão e Verificação.
+  O aiceblock assenta em três pilares essenciais para uma conformidade robusta em IA: Metas, Suporte à Adesão e Verificação.
 
 cta_button:
   text: "Discuta o seu caso de uso de IA"
@@ -23,12 +23,12 @@ pillars:
       alt: "Ilustração de Suporte à Adesão de Conformidade em Inteligência Artificial"
     title: "Apoiar a Conformidade com Processos Robustos"
     description: >
-      Implemente processos e use tecnologia para facilitar a conformidade. O AICeBlock fornece ferramentas que se integram
+      Implemente processos e use tecnologia para facilitar a conformidade. O aiceblock fornece ferramentas que se integram
       nos seus fluxos de trabalho, tornando a adesão às normas simples e eficiente.
   - image:
       src: "/assets/images/pillars/verification.svg"
       alt: "Ilustração de Verificação de Conformidade em Inteligência Artificial"
     title: "Garantir Verificação através de Prova Imutável"
     description: >
-      Estabeleça evidências objetivas e sustentadas por blockchain para comprovar a conformidade. Com o AICeBlock, cada ação é registada de forma imutável,
+      Estabeleça evidências objetivas e sustentadas por blockchain para comprovar a conformidade. Com o aiceblock, cada ação é registada de forma imutável,
       fornecendo prova verificável dos seus esforços para cumprir os regulamentos e normas em vigor.

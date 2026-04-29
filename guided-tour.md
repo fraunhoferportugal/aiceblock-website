@@ -1,5 +1,5 @@
 ---
-title: "AICeBlock | Guided Tour"
+title: "aiceblock | Guided Tour"
 layout: default
 published: false
 ---

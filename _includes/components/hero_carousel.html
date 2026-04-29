@@ -1,0 +1,82 @@
+<div class="hero-carousel">
+    {% for pillar in site.data[site.active_lang].hero_section.carousel_slides %}
+    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <img class="carousel-image" src="{{ pillar.image.src }}" alt="{{ pillar.image.alt }}">
+        <div class="carousel-text">
+            <div class="carousel-header">
+                <h3 class="carousel-number">{{ pillar.number }} </h3>
+                <h3>{{ pillar.title }}</h3>
+            </div>
+            <p>{{ pillar.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="carousel-dots">
+        {% for pillar in site.data[site.active_lang].hero_section.carousel_slides %}
+        <span class="dot {% if forloop.first %}active{% endif %}"></span>
+        {% endfor %}
+    </div>
+</div>
+
+<script id="hero-carousel-data" type="application/json">
+    {{ site.data[site.active_lang].hero_section.carousel_slides | jsonify }}
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dots = document.querySelectorAll(".hero-carousel .carousel-dots .dot");
+        const items = document.querySelectorAll(".hero-carousel .carousel-item");
+        const images = JSON.parse(document.getElementById("hero-carousel-data").textContent);
+
+        let currentIndex = 0;
+        let autoScrollInterval;
+        let autoScrollDuration = 4000;
+        let autoScrollTimeout = 4000;
+        let currentTimeout;
+
+        const imageCache = images.map((it) => {
+            const img = new Image();
+            img.src = it.image.src;
+            img.alt = it.image.alt;
+            return img;
+        });
+
+        function updateCarousel(idx) {
+            dots.forEach(it => it.classList.remove("active"));
+            items.forEach(it => it.classList.remove("active"));
+            dots[idx].classList.add("active");
+            items[idx].classList.add("active");
+            currentIndex = idx;
+        }
+
+        function startAutoScroll(intervalDuration) {
+            autoScrollInterval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateCarousel(currentIndex);
+            }, intervalDuration);
+        }
+
+        function stopAutoScroll() {
+            clearInterval(autoScrollInterval);
+        }
+
+        function restartAutoScrollAfterDelay() {
+            if (currentTimeout) {
+                clearTimeout(currentTimeout);
+            }
+            currentTimeout = setTimeout(() => {
+                startAutoScroll(autoScrollDuration);
+            }, autoScrollTimeout);
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                stopAutoScroll();
+                updateCarousel(index);
+                restartAutoScrollAfterDelay();
+            });
+        });
+
+        startAutoScroll(autoScrollDuration);
+    });
+</script>

@@ -2,7 +2,7 @@ logo:
   src: "/assets/images/logo-horizontal-light.svg"
   alt: "AIceBlock Logo"
   description: |
-    AICeBlock - Artificial Intelligence
+    aiceblock - Artificial Intelligence
     Certification Through the Blockchain
 
 footer_links:
@@ -30,6 +30,6 @@ partner_logos:
   - src: "/assets/images/about-us/vda-logo.svg"
     alt: "Logo of Vieira de Almeida (VdA)"
 
-disclaimer: Designed for providers, deployers, and compliance teams, AICeBlock is an initiative promoted by INCM, Fraunhofer Portugal, and VdA.
+disclaimer: Designed for providers, deployers, and compliance teams, aiceblock is an initiative promoted by INCM, Fraunhofer Portugal, and VdA.
 
-copyright: "AICeBlock. All Rights Reserved."
+copyright: "aiceblock. All Rights Reserved."

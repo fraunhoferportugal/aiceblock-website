@@ -1,5 +1,5 @@
 ---
-title: "AICeBlock | Terms of Service"
+title: "aiceblock | Terms of Service"
 layout: default
 ---
 

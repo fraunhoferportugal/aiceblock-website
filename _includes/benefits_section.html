@@ -4,14 +4,14 @@
             <h2>{{ site.data[site.active_lang].benefits_section.title }}</h2>
             <h4>{{ site.data[site.active_lang].benefits_section.subtitle }}</h4>
         </div>
-        <div class="carousel">
+        <div class="benefits-carousel">
             <div class="carousel-dots">
                 {% for pillar in site.data[site.active_lang].benefits_section.benefits %}
                 <span class="dot{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}"></span>
                 {% endfor %}
             </div>
             <div class="carousel-image">
-                <img id="carousel-main-image"
+                <img id="benefits-carousel-main-image"
                     src="{{ site.data[site.active_lang].benefits_section.benefits[0].image.src }}"
                     alt="{{ site.data[site.active_lang].benefits_section.benefits[0].image.alt }}">
             </div>
@@ -28,16 +28,16 @@
     </div>
 </section>
 
-<script id="carousel-data" type="application/json">
+<script id="benefits-carousel-data" type="application/json">
     {{ site.data[site.active_lang].benefits_section.benefits | jsonify }}
 </script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const dots = document.querySelectorAll(".carousel-dots .dot");
-        const items = document.querySelectorAll(".carousel-item");
-        const mainImage = document.getElementById("carousel-main-image");
-        const benefits = JSON.parse(document.getElementById("carousel-data").textContent);
+        const dots = document.querySelectorAll(".benefits-carousel .carousel-dots .dot");
+        const items = document.querySelectorAll(".benefits-carousel .carousel-item");
+        const mainImage = document.getElementById("benefits-carousel-main-image");
+        const benefits = JSON.parse(document.getElementById("benefits-carousel-data").textContent);
 
         let currentIndex = 0;
         let autoScrollInterval;
