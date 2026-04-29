@@ -10,7 +10,7 @@ cta_button:
 
 carousel_slides:
   - number: "01"
-    title: Classificar e Enquadrar
+    title: Classificar & Enquadrar
     description: Classifique o seu risco de IA. Conheça as suas obrigações antes de desenvolver.
     image:
       src: /assets/images/roadmap/scope-and-risk.svg
