@@ -1,11 +1,11 @@
 logo:
   light_src: "/assets/images/logo-horizontal-light.svg"
   dark_src: "/assets/images/logo-horizontal-dark.svg"
-  alt: "AICeBlock Homepage"
+  alt: "aiceblock Homepage"
   height: "40px"
 
 nav:
-  - text: "O que é AICeBlock?"
+  - text: "O que é aiceblock?"
     url: "/"
   - text: "Ciclo de Vida de IA"
     url: "/#lifecycle"

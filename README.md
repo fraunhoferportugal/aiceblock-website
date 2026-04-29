@@ -1,8 +1,8 @@
-# AICeBlock Website
+# aiceblock Website
 
-Welcome to the official repository for the AICeBlock website.
+Welcome to the official repository for the aiceblock website.
 
-AICeBlock is an innovative technological venture dedicated to advancing AI and blockchain technologies. Stay tuned for exciting updates and developments.
+aiceblock is an innovative technological venture dedicated to advancing AI and blockchain technologies. Stay tuned for exciting updates and developments.
 
 ## Configuration
 

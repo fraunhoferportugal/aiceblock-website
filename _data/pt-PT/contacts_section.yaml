@@ -1,5 +1,5 @@
 title: "Entre em contacto"
-description: "Tem dúvidas ou quer saber mais sobre como o AICeBlock pode apoiar a sua jornada de conformidade com IA? 
+description: "Tem dúvidas ou quer saber mais sobre como o aiceblock pode apoiar a sua jornada de conformidade com IA? 
 
   Fale connosco - estamos aqui para ajudar!"
 
@@ -21,7 +21,7 @@ form:
   email_placeholder: "*Email"
   message_placeholder: "*A sua Mensagem"
   button_text: "Enviar"
-  prepend_subject: "AICeBlock"
+  prepend_subject: "aiceblock"
   subjects:
     - "Geral"
     - "Solicitar Demonstração"

@@ -1,5 +1,5 @@
 ---
-title: "AICeBlock | Join Us"
+title: "aiceblock | Join Us"
 layout: default
 published: false
 ---

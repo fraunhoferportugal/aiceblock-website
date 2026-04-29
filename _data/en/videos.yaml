@@ -22,4 +22,4 @@ auditor:
     Watch the Auditor verify the actual pipeline and the attached Checklists, with access to the Dataset information and 
     individual code modules for review. Then, they perform a check on integrity of the artifacts, confirming that those handed
     by the providers actually match the ones reported, through a blockchain-kept immutable proof. 
-    This role demonstrates how AICeBlock's transparent records and audit trails make it straightforward to ensure integrity and accountability at every stage.
+    This role demonstrates how aiceblock's transparent records and audit trails make it straightforward to ensure integrity and accountability at every stage.

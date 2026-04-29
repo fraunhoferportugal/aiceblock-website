@@ -1,5 +1,5 @@
 title: "Interactive ML pipeline: traceable and trustworthy workflows"
-subtitle: "Discover how AICeBlock empowers you to visualize and document every critical stage of your ML pipeline."
+subtitle: "Discover how aiceblock empowers you to visualize and document every critical stage of your ML pipeline."
 
 main_pipeline_image:
   src: "/assets/images/pipeline/pipeline-base.svg"
@@ -14,7 +14,7 @@ overlays:
       src: "/assets/images/pipeline/pipeline-overlay-1.svg"
       alt: "Visualization of datasets management in the pipeline"
     title: "Datasets"
-    description: "AICeBlock can help you manage your datasets, but it can also only keep metadata for integrity checking"
+    description: "aiceblock can help you manage your datasets, but it can also only keep metadata for integrity checking"
     mobile-top: "7.45%"
     position:
       left: "3.81%"
@@ -43,7 +43,7 @@ overlays:
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-3.svg"
       alt: "Illustration of traceable steps in ML workflows"
-    title: "Data Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
+    title: "Data Cards - when computed on the platform, aiceblock ensures the steps, parameters, and outcomes are traceable and reproducible"
     description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Data Cards are immutable"
     mobile-top: "32.27%"
     position:
@@ -73,7 +73,7 @@ overlays:
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-5.svg"
       alt: "Representation of reproducibility and traceability for ML processes"
-    title: "Model Cards - when computed on the platform, AICeBlock ensures the steps, parameters, and outcomes are traceable and reproducible"
+    title: "Model Cards - when computed on the platform, aiceblock ensures the steps, parameters, and outcomes are traceable and reproducible"
     description: "No need to re-run things every time if you have access to the correct data version - links from Data version to Model version and Model Cards are immutable"
     mobile-top: "60.92%"
     position:
@@ -88,7 +88,7 @@ overlays:
   - image:
       src: "/assets/images/pipeline/pipeline-overlay-6.svg"
       alt: "Illustration of inference monitoring in the ML pipeline"
-    title: "When inference is performed on AICeBlock, the platform ensures these outcomes and its monitoring results are traceable and reproducible"
+    title: "When inference is performed on aiceblock, the platform ensures these outcomes and its monitoring results are traceable and reproducible"
     description: "Links from Inference Model version to Monitoring results are immutable"
     mobile-top: "79.21%"
     position:
