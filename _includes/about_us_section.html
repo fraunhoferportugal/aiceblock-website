@@ -4,6 +4,13 @@
             <h1>{{ site.data[site.active_lang].about_us_section.title }}</h1>
             <h2>{{ site.data[site.active_lang].about_us_section.subtitle }}</h2>
             <p>{{ site.data[site.active_lang].about_us_section.description }}</p>
+            <a class="cta-button buttonmodal">
+                <span>{{ site.data[site.active_lang].about_us_section.cta_button.text }}</span>
+                <div class="cta-button-img-container">
+                    <img src="{{ site.data[site.active_lang].about_us_section.cta_button.icon.src }}"
+                        alt="{{ site.data[site.active_lang].about_us_section.cta_button.icon.alt }}">
+                </div>
+            </a>
         </div>
         <div class="image-container">
             <img src="{{ site.data[site.active_lang].about_us_section.image.src }}" alt="{{ site.data[site.active_lang].about_us_section.image.alt }}">

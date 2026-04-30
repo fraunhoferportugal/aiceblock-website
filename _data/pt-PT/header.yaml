@@ -11,3 +11,5 @@ nav:
     url: "/#roadmap"
   - text: "Sobre Nós"
     url: "/about"
+  - text: "Perguntas Frequentes"
+    url: "/#faq"

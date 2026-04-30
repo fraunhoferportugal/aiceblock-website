@@ -131,6 +131,12 @@
 }
 
 @include bp($bp-lg) {
+    .mockups-section {
+        .cta-button {
+            display: none;
+        }
+    }
+
     .mockups-container {
         flex-direction: column;
         align-items: center;
@@ -144,10 +150,6 @@
 
     .mockups-button {
         font-size: 1.05rem;
-    }
-
-    .cta-button {
-        display: none;
     }
 }
 
