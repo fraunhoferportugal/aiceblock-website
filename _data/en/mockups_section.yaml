@@ -1,0 +1,36 @@
+title: From AI inventory to audit readiness
+subtitle: aiceblock helps you classify systems, build compliance evidence, and maintain a clear, traceable record of your AI governance journey.
+
+sections:
+  - title: Scope & Risk
+    description: |
+      → Classify AI systems in minutes
+      → Get interpretable AI Act risk assessments
+      → Standardise intake across your AI portfolio
+      → Identify likely obligations from day one
+      → Create a clear baseline for the next compliance steps
+    image:
+      src: /assets/images/mockups/scope-and-risk-mockup.png
+      alt: Roadmap scope & risk mockup illustration
+      
+  - title: Build & Implement
+    description: |
+      → Turn obligations into action
+      → Upload evidence where it belongs
+      → Track documentation against AI Act requirements
+      → Close compliance gaps before review
+      → Build a traceable record as you go
+    image:
+      src: /assets/images/mockups/build-and-implement-mockup.png
+      alt: Roadmap build & implement mockup illustration
+  
+  - title: Monitor & Audit
+    description: |
+      → Stay audit-ready at all times
+      → Export proof, not just paperwork
+      → Turn records into audit-ready reports
+      → Reduce audit friction with structured evidence
+      → Bring everything together in one bundle
+    image:
+      src: /assets/images/mockups/monitor-and-audit-mockup.png
+      alt: Roadmap monitor & audit mockup illustration

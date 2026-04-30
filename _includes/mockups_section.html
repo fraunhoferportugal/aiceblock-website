@@ -1,0 +1,48 @@
+<section class="mockups-section{% if include.first == 'true' %} header-space{% endif %}">
+    <div class="content-wrapper">
+        <div class="mockups-header">
+            <h2>{{ site.data[site.active_lang].mockups_section.title }}</h2>
+            <h4>{{ site.data[site.active_lang].mockups_section.subtitle }}</h4>
+        </div>
+        <div class="mockups-top-buttons">
+            {% for section in site.data[site.active_lang].mockups_section.sections %}
+            <button data-index="{{ forloop.index0 }}" class="mockups-button">{{ section.title }}</button>
+            {% endfor %}
+        </div>
+        {% for section in site.data[site.active_lang].mockups_section.sections %}
+        <div class="mockups-container">
+            <img src="{{ section.image.src }}" alt="{{ section.image.alt }}" />
+            <p>{{ section.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".mockups-button");
+        const sections = document.querySelectorAll(".mockups-container");
+
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                buttons.forEach((button) => {
+                    button.classList.remove("active");
+                });
+                sections.forEach(section => {
+                    section.classList.remove("active");
+                });
+                const sectionToShow = sections[index];
+                sectionToShow.classList.add("active");
+                button.classList.add("active");
+            });
+        });
+
+        if (buttons.length > 0) {
+            buttons[0].classList.add("active");
+        }
+
+        if (sections.length > 0) {
+            sections[0].classList.add("active");
+        }
+    });
+</script>

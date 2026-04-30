@@ -1,0 +1,118 @@
+@use "sass:map";
+@use "shared" as *;
+
+.mockups-section {
+    background-image: url("/assets/images/backgrounds/bottom-left-blocks.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    @include section-base;
+    background-color: $off-white;
+    color: $dark;
+
+    >.content-wrapper {
+        @include content-wrapper-col(4rem);
+        text-align: left;
+    }
+}
+
+.mockups-header {
+    @include section-heading;
+
+    h4 {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.625rem;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+}
+
+.mockups-top-buttons {
+    @include flex-row(2rem);
+    align-items: center;
+
+    &::before,
+    &::after {
+        align-self: stretch;
+        content: "";
+        border: 0.0625rem solid $dark;
+    }
+}
+
+.mockups-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 1.375rem;
+    line-height: 1.8rem;
+    opacity: 25%;
+    flex-grow: 1;
+
+    &:first-child {
+        order: -1;
+    }
+
+    &:last-child {
+        order: 1;
+    }
+
+    &:hover {
+        opacity: 50%;
+    }
+
+    &.active {
+        opacity: 100%;
+    }
+}
+
+.mockups-container {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    @include flex-row(5rem);
+    align-items: center;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        justify-content: center;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 2.5rem;
+        white-space: pre-line;
+    }
+
+    img {
+        max-width: 54.375rem;
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+    }
+}
+
+@include bp($bp-lg) {
+    .mockups-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        img {
+            display: block;
+            position: relative;
+        }
+    }
+}
+
+@include bp($bp-xxl) {
+    .mockups-top-buttons {
+        gap: 1rem;
+    }
+}
