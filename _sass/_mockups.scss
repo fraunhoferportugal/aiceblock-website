@@ -109,6 +109,10 @@
             position: relative;
         }
     }
+
+    .mockups-button {
+        font-size: 1.05rem;
+    }
 }
 
 @include bp($bp-xxl) {
