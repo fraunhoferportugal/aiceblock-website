@@ -3,6 +3,6 @@ layout: default
 ---
 
 {% include hero_section.html first="true" %}
-{% include mockups_section.html first="true" %}
-{% include roadmap_section.html id="lifecycle" %}
+{% include mockups_section.html id="lifecycle" %}
+{% include roadmap_section.html id="roadmap" %}
 {% include benefits_section.html %}

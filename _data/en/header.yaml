@@ -4,9 +4,9 @@ logo:
   alt: "aiceblock Homepage"
 
 nav:
-  - text: "What is aiceblock?"
-    url: "/"
   - text: "AI Lifecycle"
     url: "/#lifecycle"
+  - text: "Roadmap"
+    url: "/#roadmap"
   - text: "About Us"
     url: "/about"

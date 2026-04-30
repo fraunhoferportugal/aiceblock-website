@@ -5,9 +5,9 @@ logo:
   height: "40px"
 
 nav:
-  - text: "O que é aiceblock?"
-    url: "/"
   - text: "Ciclo de Vida de IA"
     url: "/#lifecycle"
+  - text: "Plano de Ação"
+    url: "/#roadmap"
   - text: "Sobre Nós"
     url: "/about"
