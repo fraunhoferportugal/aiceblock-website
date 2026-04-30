@@ -1,4 +1,11 @@
 <section class="mockups-section{% if include.first == 'true' %} header-space{% endif %}">
+    <a class="cta-button buttonmodal">
+        <span>{{ site.data[site.active_lang].mockups_section.cta_button.text }}</span>
+        <div class="cta-button-img-container">
+            <img src="{{ site.data[site.active_lang].mockups_section.cta_button.icon.src }}"
+                alt="{{ site.data[site.active_lang].mockups_section.cta_button.icon.alt }}">
+        </div>
+    </a>
     <div class="content-wrapper">
         <div class="mockups-header">
             <h2>{{ site.data[site.active_lang].mockups_section.title }}</h2>
@@ -44,5 +51,20 @@
         if (sections.length > 0) {
             sections[0].classList.add("active");
         }
+    });
+</script>
+
+<script>
+    window.addEventListener("load", function () {
+        const section = document.querySelector(".mockups-section");
+        const cta = section.querySelector(".cta-button");
+        cta.dataset.originalTop = section.getBoundingClientRect().top + window.scrollY;
+    });
+
+    window.addEventListener("scroll", function () {
+        const section = document.querySelector(".mockups-section");
+        const cta = section.querySelector(".cta-button");
+        const originalTop = parseFloat(cta.dataset.originalTop);
+        cta.classList.toggle("scrolled", window.scrollY > originalTop);
     });
 </script>

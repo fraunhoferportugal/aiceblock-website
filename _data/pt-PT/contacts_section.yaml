@@ -24,7 +24,7 @@ form:
   prepend_subject: "aiceblock"
   subjects:
     - "Geral"
-    - "Solicitar Demonstração"
+    - "Desbloquear Versão Piloto"
     - "Colaborar na Inovação do Produto"
     - "Juntar-se como Terceira Parte de Confiança"
-  terms_request: 'Aceitar os <a href="/terms-of-service">termos de serviço</a>'
+  terms_request: 'Aceitar os <a href="/pt-PT/terms-of-service">termos de serviço</a>'

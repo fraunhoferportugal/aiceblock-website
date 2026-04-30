@@ -9,10 +9,42 @@
     @include section-base;
     background-color: $off-white;
     color: $dark;
+    position: relative;
 
     >.content-wrapper {
         @include content-wrapper-col(4rem);
         text-align: left;
+    }
+
+    .cta-button {
+        position: absolute;
+        top: 3.125rem;
+        right: 3.125rem;
+        background: $accent;
+        box-shadow: $glow-sm $accent-glow;
+        z-index: 10;
+
+        span {
+            color: $dark;
+        }
+
+        img {
+            filter: $filter-cta-arrow;
+        }
+
+        &:hover {
+            box-shadow: $glow-lg $accent-glow;
+        }
+
+        &.scrolled {
+            position: fixed;
+            top: 3.125rem;
+            right: 3.125rem;
+        }
+    }
+
+    .cta-button-img-container {
+        background-color: $dark;
     }
 }
 
@@ -112,6 +144,10 @@
 
     .mockups-button {
         font-size: 1.05rem;
+    }
+
+    .cta-button {
+        display: none;
     }
 }
 

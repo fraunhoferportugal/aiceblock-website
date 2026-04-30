@@ -3,7 +3,7 @@
         <div class="hero-section-text-content">
             <h1>{{ site.data[site.active_lang].hero_section.title }}</h1>
             <p>{{ site.data[site.active_lang].hero_section.description }}</p>
-            <a href="{{ site.data[site.active_lang].hero_section.cta_button.url }}" class="cta-button">
+            <a class="cta-button buttonmodal">
                 <span>{{ site.data[site.active_lang].hero_section.cta_button.text }}</span>
                 <div class="cta-button-img-container">
                     <img src="{{ site.data[site.active_lang].hero_section.cta_button.icon.src }}"
@@ -13,7 +13,7 @@
         </div>
         {% include components/hero_carousel.html %}
         <div class="hero-mobile-button">
-            <a href="{{ site.data[site.active_lang].hero_section.cta_button.url }}" class="cta-button">
+            <a class="cta-button buttonmodal">
                 <span>{{ site.data[site.active_lang].hero_section.cta_button.text }}</span>
                 <div class="cta-button-img-container">
                     <img src="{{ site.data[site.active_lang].hero_section.cta_button.icon.src }}"

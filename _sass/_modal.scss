@@ -1,0 +1,91 @@
+@use "shared" as *;
+
+#buttonmodal {
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    font-family: $font-family;
+    color: $dark;
+
+    .modal {
+        @include flex-col(3.125rem);
+        max-width: 60rem;
+        width: 100%;
+        background: $off-white;
+        padding: 3.125rem;
+        border-radius: 2rem;
+
+        h3 {
+            font-size: 1.375rem;
+            font-weight: 500;
+            line-height: 2.125rem;
+            margin: 0;
+        }
+
+        p,
+        label {
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.625rem;
+            margin: 0;
+            white-space: pre-line;
+        }
+
+        .button-row {
+            @include flex-row(0.75rem);
+            justify-content: flex-end;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 0.75rem 1.5rem;
+                border-radius: 9999px;
+                font-size: 1rem;
+                font-weight: 500;
+                text-decoration: none;
+                cursor: pointer;
+                transition: opacity 0.2s ease;
+
+                &:hover {
+                    opacity: 0.85;
+                }
+
+                &.cancel {
+                    background: transparent;
+                    border: 1.5px solid $dark;
+                    color: $dark;
+                }
+
+                &.apply {
+                    background: $dark;
+                    border: 1.5px solid $dark;
+                    color: $white;
+                }
+
+                &.proceed {
+                    background: $accent;
+                    border: 1.5px solid $accent;
+                    color: $dark;
+
+                    &.disabled {
+                        background: #c8c8c8;
+                        border-color: #c8c8c8;
+                        color: #888888;
+                        pointer-events: none;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+    }
+
+}

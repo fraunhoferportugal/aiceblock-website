@@ -1,6 +1,13 @@
 title: From AI inventory to audit readiness
 subtitle: aiceblock helps you classify systems, build compliance evidence, and maintain a clear, traceable record of your AI governance journey.
 
+cta_button:
+  text: Try now
+  url: /about?subject=0#contacts
+  icon:
+    src: /assets/images/icons/arrow-icon.svg
+    alt: Arrow Icon
+
 sections:
   - title: Scope & Risk
     description: |
