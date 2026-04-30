@@ -1,0 +1,18 @@
+title: Explore aiceblock with a trial account
+
+disclaimer: |
+  You can manage <strong>one AI system</strong>, perform <strong>AI Act risk classification</strong>, organise compliance evidence, and experience how verifiable AI governance works.
+  Some export features are disabled in Trial Mode, including the <strong>risk classification report export</strong> and the <strong>audit-ready evidence bundle</strong>.
+  To unlock up to <strong>5 AI systems</strong> and export capabilities, apply to our <strong>Pilot Programme</strong> through the contact form.
+
+tos_text: Before continuing, please review and accept our <strong><a href='/terms-of-service'>Terms of Service</a></strong>.
+tos_label: I have read and accept the <strong><a href='/terms-of-service'>Terms of Service</a></strong>.
+
+buttons:
+  cancel: Cancel
+  apply:
+    text: Apply to Pilot Programme
+    href: /about?subject=1#contacts
+  proceed:
+    text: Proceed to Trial
+    href: https://app.aiceblock.eu

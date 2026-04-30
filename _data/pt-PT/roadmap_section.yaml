@@ -3,59 +3,59 @@ subtitle: O MVP atual disponibiliza capacidades essenciais de gestão de conform
 
 sections:
   - title: Classificar & Enquadrar
-    description: Classifique o seu risco de IA. Conheça as suas obrigações antes de desenvolver.
+    description: Classifique o risco da sua IA. Conheça as suas obrigações antes de desenvolver.
     image:
       src: /assets/images/roadmap/scope-and-risk.svg
       alt: Ilustração da secção Ámbito e Risco do roadmap
     roadmap:
       - title: Agora
-        subtitle: Documentação de conformidade estruturada por design.
+        subtitle: Documentação de conformidade estruturada e nativa.
         description: |
-          • Registo multi-solução
-          • Determinação da exposição ao AI Act
-          • Classificação de risco baseada em RAG
-          • Motor de classificação baseado em regras
-          • Mapeamento de obrigações por perfil
-          • Relatório de Âmbito & Risco exportável
+          • Registo multi-solução 
+          • Determinação de exposição ao AI Act 
+          • Classificação de risco baseada em RAG 
+          • Motor de classificação baseado em regras 
+          • Mapeamento de obrigações por função 
+          • Relatório de Âmbito & Risco exportável 
       - title: Próximo
         subtitle: Maior determinismo e robustez regulatória.
         description: |
-          • Lógica de obrigações condicionais
-          • Maior transparência nas explicações
-          • Mapeamento de dependências melhorado
-          • Mapeamento entre regulamentos (ex.: RGPD, frameworks sectoriais)
+          • Lógica de obrigações condicionais 
+          • Maior transparência nas explicações 
+          • Mapeamento de dependências melhorado 
+          • Mapeamento entre regulamentos (ex.: RGPD, quadros setoriais) 
       - title: Para Além
         subtitle: Orquestração regulatória inteligente.
         description: |
-          • Planeamento avançado de medidas de mitigação
-          • Perfil de conformidade ao nível da organização
-          • Orientação assistida por IA através de LLM privado/local
+          • Planeamento avançado de medidas de mitigação 
+          • Perfil de conformidade ao nível da organização 
+          • Orientação assistida por IA através de LLM privado/local 
 
   - title: Desenvolver & Implementar
-    description: Transforme os requisitos do AI Act em provas de conformidade rastreáveis.
+    description: Transforme os requisitos do AI Act em evidências rastreáveis.
     image:
       src: /assets/images/roadmap/build-and-implement.svg
       alt: Ilustração da secção Construir e Implementar do roadmap
     roadmap:
       - title: Agora
-        subtitle: Documentação de conformidade estruturada por design.
+        subtitle: Documentação de conformidade estruturada e nativa.
         description: |
-          • Checklists ao nível das obrigações
-          • Modelos do Anexo IV, AIPD e AFIA
-          • Carregamento de documentos por obrigação
-          • Dashboard de prontidão e conclusão
+          • Checklists ao nível das obrigações 
+          • Modelos do Anexo IV, AIPD e AFIA 
+          • Carregamento de documentos por obrigação 
+          • Dashboard de prontidão e conclusão 
       - title: Próximo
         subtitle: Maior rastreabilidade e governação.
         description: |
-          • Matriz de rastreabilidade obrigação-evidência
-          • Fluxo de governação e acompanhamento de aprovações
-          • Relatórios avançados e documentação estruturada
-          • Extração de metadados de artefactos de origem
+          • Matriz de rastreabilidade obrigação-evidência 
+          • Fluxo de governação e acompanhamento de aprovações 
+          • Relatórios avançados e documentação estruturada 
+          • Extração de metadados a partir de artefactos de origem 
       - title: Para Além
         subtitle: Conformidade integrada no desenvolvimento.
         description: |
-          • Rastreabilidade obrigação-código
-          • Camadas automatizadas de validação de conformidade
+          • Rastreabilidade da obrigação ao código 
+          • Camadas automatizadas de validação de conformidade 
 
   - title: Monitorizar & Auditar
     description: Mantenha a conformidade ativa, verificável e pronta para qualquer auditoria.
@@ -66,20 +66,20 @@ sections:
       - title: Agora
         subtitle: Gestão estruturada de evidências de conformidade.
         description: |
-          • Registo de evidências
-          • Pacote de conformidade exportável e pronto para auditoria
-          • Timestamping por autoridade de certificação terceira
+          • Registo de evidências 
+          • Pacote de conformidade exportável e pronto para auditoria 
+          • Carimbos temporais de autoridades de certificação externas 
       - title: Próximo
-        subtitle: Gestão estruturada de evidências de conformidade.
+        subtitle: Credibilidade externa e solidez de auditoria.
         description: |
-          • Registo de evidências
-          • Pacote de conformidade exportável e pronto para auditoria
-          • Timestamping por autoridade de certificação terceira
+          • Lógica de trilho de auditoria reforçada 
+          • Agendamento de revisões de conformidade periódicas 
+          • Registo de snapshots de evidências de terceiros 
       - title: Para Além
-        subtitle: Inteligência contínua de conformidade.
+        subtitle: Inteligência de conformidade contínua.
         description: |
-          • Construtor de planos de monitorização
-          • Registo de desvios e registos estruturados de investigação
-          • Alertas automatizados de conformidade
-          • Declarações de conformidade verificáveis
-          • Modelos de teste pré-construídos alinhados com o AI Act
+          • Gerador de planos de monitorização 
+          • Registo de desvios e relatórios de investigação estruturados 
+          • Alertas automatizados de conformidade 
+          • Declarações de conformidade verificáveis 
+          • Modelos de teste pré-definidos e alinhados com o AI Act 

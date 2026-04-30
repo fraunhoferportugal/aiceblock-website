@@ -6,6 +6,13 @@ description: >
   Unidos pela missão de promover tecnologia de confiança, estamos empenhados em tornar o caminho correto o mais simples no desenvolvimento de IA.
   Ao alinharmo-nos com regulamentos chave como o AI Act da UE e o RGPD, e ao contribuir para o desenvolvimento e conformidade com normas ISO, apoiamos desenvolvedores e decisores em todas as fases do processo.
 
+cta_button:
+  text: Experimente agora
+  url: /about?subject=0#contacts
+  icon:
+    src: /assets/images/icons/arrow-icon.svg
+    alt: Arrow Icon
+
 image:
   src: "/assets/images/about-us/block-stack.svg"
   alt: "Ilustração Sobre Nós - aiceblock"

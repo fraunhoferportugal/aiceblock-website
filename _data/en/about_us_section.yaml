@@ -7,6 +7,13 @@ description: >
   By aligning with key regulations like the EU AI Act and GDPR, and contributing to the development of and compliance with ISO standards,
   we support developers and decision-makers every step of the way.
 
+cta_button:
+  text: Try now
+  url: /about?subject=0#contacts
+  icon:
+    src: /assets/images/icons/arrow-icon.svg
+    alt: Arrow Icon
+
 image:
   src: "/assets/images/about-us/block-stack.svg"
   alt: "About Us Illustration"

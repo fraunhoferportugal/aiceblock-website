@@ -21,6 +21,7 @@
     font-family: $font-family;
     max-width: 45rem;
     @include flex-col(2.5rem);
+    align-items: flex-start;
 
     h1 {
         font-weight: 500;
@@ -45,9 +46,35 @@
         color: $light;
         margin: 0;
     }
+
+    .cta-button {
+        background: $accent;
+        box-shadow: $glow-sm $accent-glow;
+        z-index: 10;
+
+        span {
+            color: $dark;
+        }
+
+        img {
+            filter: $filter-cta-arrow;
+        }
+
+        &:hover {
+            box-shadow: $glow-lg $accent-glow;
+        }
+    }
+
+    .cta-button-img-container {
+        background-color: $dark;
+    }
 }
 
 @include bp($bp-lg) {
+    .about-section-text-content {
+        align-items: center;
+    }
+
     .about-section>.content-wrapper {
         flex-direction: column;
         text-align: center;

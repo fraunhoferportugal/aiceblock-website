@@ -1,0 +1,18 @@
+title: Explore o aiceblock com uma conta de teste
+
+disclaimer: |
+  Pode gerir <strong>um sistema de IA</strong>, realizar a <strong>classificação de risco segundo o AI Act</strong>, organizar evidências de conformidade e experimentar como funciona uma governação de IA verificável.
+  Algumas funcionalidades de exportação estão desativadas no Modo de Teste, incluindo a <strong>exportação do relatório de classificação de risco</strong> e o <strong>pacote de evidências pronto para auditoria</strong>.
+  Para desbloquear até <strong>5 sistemas de IA</strong> e as capacidades de exportação, candidate-se ao nosso <strong>Programa Piloto</strong> através do formulário de contacto.
+
+tos_text: Antes de continuar, por favor leia e aceite os nossos <strong><a href='/pt-PT/terms-of-service'>Termos de Serviço</a></strong>.
+tos_label: Li e aceito os <strong><a href='/pt-PT/terms-of-service'>Termos de Serviço</a></strong>.
+
+buttons:
+  cancel: Cancelar
+  apply:
+    text: Candidatar-me ao Programa Piloto
+    href: /about?subject=1#contacts
+  proceed:
+    text: Avançar para o Modo de Teste
+    href: https://app.aiceblock.eu

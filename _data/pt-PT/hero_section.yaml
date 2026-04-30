@@ -1,5 +1,5 @@
-title: Torne os seus sistemas de IA auditáveis — desde o primeiro dia.
-description: aiceblock estrutura o ciclo de vida da sua IA em torno do AI Act — desde a classificação de risco até às evidências documentadas — permitindo que construa, implemente e comprove conformidade com total confiança.
+title: Sistemas de IA prontos para auditoria — desde o primeiro dia.
+description: O aiceblock estrutura o ciclo de vida da sua IA com base no AI Act — da classificação de risco às evidências documentadas — para que possa construir, implementar e comprovar a conformidade com confiança.
 
 cta_button:
   text: Experimente agora
@@ -11,19 +11,19 @@ cta_button:
 carousel_slides:
   - number: "01"
     title: Classificar & Enquadrar
-    description: Classifique o seu risco de IA. Conheça as suas obrigações antes de desenvolver.
+    description: Classifique o risco da sua IA. Conheça suas obrigações antes de desenvolver.
     image:
       src: /assets/images/roadmap/scope-and-risk.svg
       alt: Roadmap scope & risk section illustration
   - number: "02"
     title: Desenvolver & Implementar
-    description: Transforme os requisitos do AI Act em provas de conformidade rastreáveis.
+    description: Transforme os requisitos do AI Act em evidências rastreáveis.
     image:
       src: /assets/images/roadmap/build-and-implement.svg
       alt: Roadmap build & implement section illustration
   - number: "03"
     title: Monitorizar & Auditar
-    description: Mantenha a conformidade ativa, verificável e pronta para qualquer auditoria.
+    description: Garanta conformidade contínua, verificável e preparada para auditoria.
     image:
       src: /assets/images/roadmap/monitor-and-audit.svg
       alt: Roadmap monitor & audit section illustration

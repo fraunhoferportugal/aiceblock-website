@@ -18,7 +18,7 @@ form:
   prepend_subject: "aiceblock"
   subjects:
     - "General"
-    - "Request Demo"
+    - "Apply to Pilot Programme"
     - "Collaborate in Product Innovation"
     - "Join as Trusted Third-Party"
   terms_request: 'Accept the <a href="/terms-of-service">terms of service</a>'

@@ -1,6 +1,13 @@
 title: Do inventário de IA à preparação para auditoria
 subtitle: O aiceblock ajuda-o a classificar sistemas, construir evidência de conformidade e manter um registo claro e rastreável da sua jornada de governação de IA.
 
+cta_button:
+  text: Experimente agora
+  url: /about?subject=0#contacts
+  icon:
+    src: /assets/images/icons/arrow-icon.svg
+    alt: Arrow Icon
+
 sections:
   - title: Classificar & Enquadrar
     description: |

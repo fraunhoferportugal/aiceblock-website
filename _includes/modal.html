@@ -1,0 +1,58 @@
+<div id="buttonmodal">
+    <div class="modal">
+        <h3>{{ site.data[site.active_lang].modal.title }}</h3>
+        <p>{{ site.data[site.active_lang].modal.disclaimer }}</p>
+        <p>{{ site.data[site.active_lang].modal.tos_text }}</p>
+        <div>
+            <input type="checkbox" id="test" name="" value="IDK">
+            <label for="test">{{ site.data[site.active_lang].modal.tos_label }}</label>
+        </div>
+        <div class="button-row">
+            <a href="#" class="buttonmodal cancel">
+                <span>{{ site.data[site.active_lang].modal.buttons.cancel }}</span>
+            </a>
+            <a href="{{ site.data[site.active_lang].modal.buttons.apply.href }}" class="apply">
+                <span>{{ site.data[site.active_lang].modal.buttons.apply.text }}</span>
+            </a>
+            <a href="{{ site.data[site.active_lang].modal.buttons.proceed.href }}" class="proceed">
+                <span>{{ site.data[site.active_lang].modal.buttons.proceed.text }}</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById('buttonmodal');
+        const checkbox = document.getElementById('test');
+        const proceedBtn = document.querySelector('#buttonmodal a.proceed');
+
+        function updateProceed() {
+            checkbox.checked
+                ? proceedBtn.classList.remove('disabled')
+                : proceedBtn.classList.add('disabled');
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+            checkbox.checked = false;
+            updateProceed();
+        }
+
+        document.querySelectorAll('a.buttonmodal').forEach(element => {
+            element.addEventListener('click', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                modal.style.display === 'flex' ? closeModal() : modal.style.display = 'flex';
+            });
+        });
+
+        modal.addEventListener('click', function (event) {
+            if (event.target.closest('.modal')) return;
+            closeModal();
+        });
+
+        checkbox.addEventListener('change', updateProceed);
+        updateProceed();
+    });
+</script>
