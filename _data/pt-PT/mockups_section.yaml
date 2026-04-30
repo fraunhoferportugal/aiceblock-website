@@ -1,0 +1,36 @@
+title: Do inventário de IA à preparação para auditoria
+subtitle: O aiceblock ajuda-o a classificar sistemas, construir evidência de conformidade e manter um registo claro e rastreável da sua jornada de governação de IA.
+
+sections:
+  - title: Classificar & Enquadrar
+    description: |
+      → Classifique sistemas de IA em minutos 
+      → Obtenha avaliações de risco do AI Act interpretáveis 
+      → Padronize a triagem em todo o seu portfólio de IA 
+      → Identifique possíveis obrigações logo no primeiro dia 
+      → Crie uma base clara para as próximas etapas de conformidade 
+    image:
+      src: /assets/images/mockups/scope-and-risk-mockup.png
+      alt: Roadmap scope & risk mockup illustration
+      
+  - title: Desenvolver & Implementar
+    description: |
+      → Converta obrigações em resultados práticos
+      → Carregue as evidências nos locais corretos
+      → Acompanhe a conformidade da documentação com o AI Act
+      → Corrija falhas de conformidade antes da auditoria
+      → Construa um histórico rastreável durante o processo
+    image:
+      src: /assets/images/mockups/build-and-implement-mockup.png
+      alt: Roadmap build & implement mockup illustration
+  
+  - title: Monitorizar & Auditar
+    description: |
+      → Esteja sempre pronto para auditorias 
+      → Exporte provas, não apenas papelada 
+      → Converta os seus registos em relatórios auditáveis 
+      → Reduza o atrito em auditorias com evidências estruturadas 
+      → Reúna tudo num só lugar 
+    image:
+      src: /assets/images/mockups/monitor-and-audit-mockup.png
+      alt: Roadmap monitor & audit mockup illustration

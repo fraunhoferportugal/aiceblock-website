@@ -45,6 +45,17 @@
         }
     }
 
+    .carousel-image {
+        flex: 1;
+        @include flex-center;
+
+        img {
+            max-width: 31rem;
+            width: 100%;
+            height: auto;
+        }
+    }
+
     .carousel-items {
         flex: 1;
         @include flex-col(1.875rem);
@@ -56,16 +67,6 @@
             position: relative;
             transition: padding 0.2s ease;
             text-align: left;
-
-            .carousel-image {
-                flex: 1;
-                @include flex-center;
-
-                img {
-                    max-width: 31rem;
-                    height: auto;
-                }
-            }
 
             &.active {
                 background: linear-gradient(to right, $light, $white);
@@ -138,10 +139,6 @@
             .carousel-item {
                 display: none;
                 text-align: center;
-
-                .carousel-image img {
-                    width: 90%;
-                }
 
                 &.active {
                     display: block;
