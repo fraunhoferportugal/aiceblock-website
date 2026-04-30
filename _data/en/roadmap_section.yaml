@@ -1,100 +1,82 @@
 title: aiceblock evolves as a modular system
-subtitle: |
-  The current MVP delivers core compliance management capabilities, while future modules
-  progressively enhance automation, traceability, and auditability across the AI lifecycle.
-
-cta_button:
-  text: Discuss your AI use case
-  url: /about?subject=0#contacts
-  icon:
-    src: /assets/images/icons/arrow-icon.svg
-    alt: Arrow Icon
+subtitle: The current MVP delivers core compliance management capabilities, while future modules progressively enhance automation, traceability, and auditability across the AI lifecycle.
 
 sections:
   - title: Scope & Risk
-    subtitle: From structured classification to intelligent regulatory orchestration.
+    description: Classify your AI risk. Know your obligations before you build.
     image:
       src: /assets/images/roadmap/scope-and-risk.svg
       alt: Roadmap scope & risk section illustration
-    mockup:
-      src: /assets/images/roadmap/scope-and-risk-mockup.png
-      alt: Roadmap scope & risk section mockup
     roadmap:
-      - index: Now
-        title: Structured compliance-by-design documentation.
+      - title: Now
+        subtitle: Structured compliance-by-design documentation.
         description: |
           • Multi-solution registry
-          • AI Act exposure determination
-          • RAG-based risk classification
-          • Rule-based classification engine
-          • Role-based obligation mapping
+          • AI Act exposure determination 
+          • RAG-based risk classification 
+          • Rule-based classification engine 
+          • Role-based obligation mapping 
           • Exportable Scope & Risk report
-      - index: Next
-        title: Increased determinism and regulatory robustness.
+      - title: Next
+        subtitle: Increased determinism and regulatory robustness.
         description: |
           • Conditional obligation logic
           • Enhanced explanation transparency
           • Improved dependency mapping
           • Cross-regulation mapping (e.g., GDPR, sectoral frameworks)
-      - index: Beyond
-        title: Intelligent regulatory orchestration.
+      - title: Beyond
+        subtitle: Intelligent regulatory orchestration.
         description: |
           • Advanced mitigation planning
           • Organization-level compliance profiling
           • AI-assisted guidance through private/local LLM
-
+      
   - title: Build & Implement
-    subtitle: From structured documentation to development-integrated compliance.
+    description: Turn AI Act requirements into traceable evidence.
     image:
       src: /assets/images/roadmap/build-and-implement.svg
       alt: Roadmap build & implement section illustration
-    mockup:
-      src: /assets/images/roadmap/build-and-implement-mockup.png
-      alt: Roadmap build & implement section mockup
     roadmap:
-      - index: Now
-        title: Structured compliance-by-design documentation.
+      - title: Now
+        subtitle: Structured compliance-by-design documentation.
         description: |
           • Obligation-level checklists
           • Annex IV, DPIA, FRIA templates
           • Document upload per obligation
           • Readiness/completion dashboard
-      - index: Next
-        title: Stronger traceability and governance.
+      - title: Next
+        subtitle: Stronger traceability and governance.
         description: |
           • Obligation-to-evidence traceability matrix
           • Governance workflow and approval tracking
-          • Advanced reporting and structured documentation
+          • Advanced reporting and structured documentation 
           • Metadata extraction from source artefacts
-      - index: Beyond
-        title: Development-integrated compliance.
+      - title: Beyond
+        subtitle: Development-integrated compliance.
         description: |
           • Obligation-to-code traceability
-          • Automated compliance validation layers
-
+          • Automated compliance validation layers  
+  
   - title: Monitor & Audit
-    subtitle: From evidence management to audit-ready compliance and continuous intelligence.
+    description: Keep compliance live, verifiable, and audit-ready.
     image:
       src: /assets/images/roadmap/monitor-and-audit.svg
       alt: Roadmap monitor & audit section illustration
-    mockup:
-      src: /assets/images/roadmap/monitor-and-audit-mockup.png
-      alt: Roadmap monitor & audit section mockup
     roadmap:
-      - index: Now
-        title: Structured compliance evidence management.
+      - title: Now
+        subtitle: Structured compliance evidence management.
         description: |
           • Evidence register
           • Exportable audit-ready compliance package 
           • Third-party certification authority timestamping
-      - index: Next
-        title: External credibility and audit strength.
+      - title: Next
+        subtitle: External credibility and audit strength.
         description: |
           • Enhanced audit trail logic
           • Periodic compliance review scheduler
           • Third-party evidence snapshot registry
-      - index: Beyond
-        title: Continuous compliance intelligence.
+      - title: Beyond
+        subtitle: Continuous compliance intelligence.
         description: |
           • Monitoring plan builder
           • Deviation logging and structured investigation records

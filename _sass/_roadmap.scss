@@ -2,45 +2,13 @@
 @use "shared" as *;
 
 .roadmap-section {
-    position: relative;
     @include section-base;
     background-color: $dark;
     color: $light;
 
     >.content-wrapper {
-        @include content-wrapper-col;
+        @include content-wrapper-col(4rem);
         text-align: left;
-    }
-
-    .cta-button {
-        position: absolute;
-        top: 3.125rem;
-        right: 3.125rem;
-        background: $accent;
-        box-shadow: $glow-sm $accent-glow;
-        z-index: 10;
-
-        span {
-            color: $dark;
-        }
-
-        img {
-            filter: $filter-cta-arrow;
-        }
-
-        &:hover {
-            box-shadow: $glow-lg $accent-glow;
-        }
-
-        &.scrolled {
-            position: fixed;
-            top: 3.125rem;
-            right: 3.125rem;
-        }
-    }
-
-    .cta-button-img-container {
-        background-color: $dark;
     }
 }
 
@@ -57,8 +25,6 @@
 }
 
 .roadmap-top-buttons {
-    font-weight: 100;
-    font-size: 1.5rem;
     @include flex-row(2rem);
     align-items: center;
 
@@ -77,8 +43,8 @@
     color: inherit;
     font-weight: 500;
     font-size: 1.375rem;
-    line-height: 2.125rem;
-    opacity: 0.25;
+    line-height: 1.8rem;
+    opacity: 25%;
     flex-grow: 1;
 
     &:first-child {
@@ -90,12 +56,11 @@
     }
 
     &:hover {
-        opacity: 0.5;
+        opacity: 50%;
     }
 
     &.active {
-        color: $accent;
-        opacity: 1;
+        opacity: 100%;
     }
 }
 
@@ -103,66 +68,68 @@
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    transition: opacity 0.6s ease-in-out;
-    @include flex-row(0);
-    border-radius: 1rem;
-    overflow: hidden;
-    width: 100%;
+    transition: opacity 1s ease-in-out;
+    @include flex-row(5rem);
 
     &.active {
         opacity: 1;
         visibility: visible;
         position: relative;
+        justify-content: center;
+    }
+
+    .section-column {
+        @include flex-col(2.25rem);
+        width: 25rem;
+        padding-bottom: 2rem;
+        justify-content: flex-end;
+
+        * {
+            margin: 0;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+        }
+
+        h4 {
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 2rem;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.625rem;
+        }
+    }
+
+    .section-column-image {
+        @include flex-col;
+        justify-content: end;
+
+        img {
+            width: 11.25rem;
+            height: auto;
+        }
     }
 }
 
-.roadmap-panel-left {
-    @include flex-col(1.5rem);
-    padding: 4rem;
-    width: 45%;
-    flex-shrink: 0;
-    background-color: #fcfcfc;
+.roadmap-row-container {
+    @include flex-col;
+    justify-content: start;
+    width: 59.5rem;
 }
 
-.roadmap-header {
-    @include flex-row(1.25rem);
-    align-items: center;
-
-    >img {
-        width: 7.5rem;
-        height: auto;
-        flex-shrink: 0;
-    }
-}
-
-.roadmap-header-text {
-    @include flex-col(0.25rem);
-
-    h2 {
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 2.5rem;
-        margin: 0;
-        color: $dark;
-    }
-
-    h4 {
-        font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 1.625rem;
-        margin: 0;
-        color: $dark;
-        opacity: 0.7;
-    }
-}
-
-.roadmap-carousel {
-    @include flex-col(1.25rem);
-}
-
-.roadmap-slides {
-    @include flex-row(1.25rem);
-    overflow-x: auto;
+.roadmap-row {
+    @include flex-row(1.5rem);
+    justify-content: start;
+    width: 100%;
+    height: 30rem;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -172,153 +139,140 @@
     }
 }
 
-.roadmap-slide {
-    @include flex-col(0.75rem);
+.roadmap-column {
+    border-radius: 2.25rem;
+    padding: 2.25rem;
+    width: 29rem;
+    height: 29rem;
     flex-shrink: 0;
-    width: 100%;
+    @include flex-col(1.2rem);
     scroll-snap-align: start;
-    border-radius: 0.625rem;
-    padding: 2rem 1.5rem;
-    background-color: $accent;
-    color: $dark;
+    overflow: hidden;
 
-    span {
-        font-weight: 700;
-        font-size: 0.875rem;
-        line-height: 1.125rem;
+    * {
+        margin: 0;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 2.125rem;
     }
 
     h4 {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 1.125rem;
         line-height: 1.625rem;
-        margin: 0;
     }
 
     p {
         font-weight: 400;
-        font-size: 0.9375rem;
-        line-height: 1.75rem;
+        font-size: 1rem;
+        line-height: 2rem;
         white-space: pre-line;
-        margin: 0;
     }
 }
 
-.roadmap-dots {
-    @include flex-row(0.5rem);
-    justify-content: center;
+$roadmap-themes: (
+    "3n": (bg: $accent,
+        accent: $dark,
+        text: $dark,
+    ),
+    "3n+1": (bg: $light,
+        accent: $dark,
+        text: $dark,
+    ),
+    "3n+2": (bg: $light,
+        accent: $dark,
+        text: $dark,
+    ),
+);
+
+@each $nth, $theme in $roadmap-themes {
+    .roadmap-container:nth-child(#{$nth}) .roadmap-column {
+        background-color: map.get($theme, bg);
+
+        h3,
+        h4 {
+            color: map.get($theme, accent);
+        }
+
+        p {
+            color: map.get($theme, text);
+        }
+    }
 }
 
-.roadmap-dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    background-color: $dark;
-    opacity: 0.25;
-    padding: 0;
-    transition: opacity 0.3s ease;
+.roadmap-bottom-buttons {
+    width: 100%;
+    @include flex-row(1rem);
+    justify-content: end;
 
-    &.active {
-        opacity: 1;
+    * {
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 
-    &:hover {
-        opacity: 0.5;
+    button {
+        img {
+            width: 1.125rem;
+            height: auto;
+            filter: $filter-light;
+        }
     }
-}
 
-.roadmap-panel-right {
-    width: 55%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background-color: $off-white;
+    button:first-child img {
+        transform: rotate(180deg);
+    }
 
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 0.5rem;
-        object-fit: contain;
+    button:disabled {
+        opacity: 25%;
+        cursor: default;
+
+        img {
+            pointer-events: none;
+        }
     }
 }
 
 @include bp($bp-lg) {
-    .roadmap-section {
-        .cta-button {
-            display: none;
-        }
-
-        >.content-wrapper {
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-        }
-    }
-
-    .roadmap-top-buttons {
-        gap: 1rem;
-    }
-
     .roadmap-container {
         flex-direction: column;
-        max-width: calc(100vw - 3rem);
-        box-sizing: border-box;
-    }
-
-    .roadmap-panel-left {
-        width: 100%;
-        padding: 2rem 1.5rem;
-    }
-
-    .roadmap-panel-right {
-        width: 100%;
-        padding: 1.5rem;
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    }
-
-    .roadmap-header {
-        flex-direction: column;
-        text-align: center;
-
-        >img {
-            width: 5.5rem;
-        }
-    }
-
-    .roadmap-header-text {
         align-items: center;
+        gap: 3rem;
+
+        .section-column {
+            text-align: center;
+            margin: 0;
+            gap: 1rem;
+        }
+
+        .section-column-image {
+            display: block;
+            position: relative;
+        }
+    }
+
+    .roadmap-row-container {
+        max-width: 80vw !important;
+    }
+
+    .roadmap-column {
+        max-width: 80vw !important;
+    }
+
+    .roadmap-button {
+        font-size: 1.05rem;
     }
 }
 
 @include bp($bp-xxl) {
-    .roadmap-section>.content-wrapper {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
     .roadmap-top-buttons {
-        gap: 0.75rem;
+        gap: 1rem;
     }
 
-    .roadmap-container {
-        max-width: calc(100vw - 2rem);
-    }
-
-    .roadmap-panel-left {
-        padding: 1.5rem 1.25rem;
-    }
-
-    .roadmap-panel-right {
-        padding: 1.25rem;
-    }
-
-    .roadmap-header>img {
-        width: 4.5rem;
+    .roadmap-row-container {
+        max-width: 55vw;
     }
 }
