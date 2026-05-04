@@ -67,13 +67,26 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const urlParams = new URLSearchParams(window.location.search);
+
         const selectedIndex = parseInt(urlParams.get("subject"), 10);
         if (!isNaN(selectedIndex)) {
-            console.log(selectedIndex);
             const dropdown = document.getElementById("subject-dropdown");
             const options = dropdown.options;
             if (selectedIndex >= 0 && selectedIndex < options.length) {
                 dropdown.selectedIndex = selectedIndex;
+            }
+        }
+
+        const fieldMap = {
+            first_name: urlParams.get("first_name"),
+            last_name: urlParams.get("last_name"),
+            email: urlParams.get("email"),
+        };
+
+        for (const [name, value] of Object.entries(fieldMap)) {
+            if (value) {
+                const input = document.querySelector(`input[name="${name}"]`);
+                if (input) input.value = value;
             }
         }
     });
