@@ -19,10 +19,10 @@
                     {% endfor %}
                 </div>
             </div>
-            <form class="contacts-form" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key"
-                    value="{{ site.env.WEB3FORMS_ACCESS_KEY | default: site.web3forms_access_key }}">
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <form class="contacts-form" id="contacts-form"
+                data-sending="{{ site.data[site.active_lang].contacts_section.form.status_sending }}"
+                data-success="{{ site.data[site.active_lang].contacts_section.form.status_success }}"
+                data-error="{{ site.data[site.active_lang].contacts_section.form.status_error }}">
 
                 <h3>{{ site.data[site.active_lang].contacts_section.form.title }}</h3>
                 <div class="contacts-form-name">
@@ -40,10 +40,11 @@
                 </div>
                 <div class="contacts-form-subject">
                     <select name="subject" id="subject-dropdown">
-                        {% for subject in site.data[site.active_lang].contacts_section.form.subjects %}
-                        <option
-                            value="{{ site.data[site.active_lang].contacts_section.form.prepend_subject }} - {{ subject }}">
-                            {{ subject }}</option>
+                        {% assign translated_subjects = site.data[site.active_lang].contacts_section.form.subjects %}
+                        {% assign english_subjects = site.data["en"].contacts_section.form.subjects %}
+                        {% for subject in translated_subjects %}
+                            {% assign english_value = english_subjects[forloop.index0] %}
+                            <option value="{{ english_value }}">{{ subject }}</option>
                         {% endfor %}
                     </select>
                 </div>
@@ -57,7 +58,10 @@
                         <input type="checkbox" id="terms" name="terms" required>
                         <label for="terms">{{ site.data[site.active_lang].contacts_section.form.terms_request }}</label>
                     </div>
-                    <button type="submit">{{ site.data[site.active_lang].contacts_section.form.button_text }}</button>
+                    <button type="submit" id="submit-btn">
+                        <span id="btn-text">{{ site.data[site.active_lang].contacts_section.form.button_text }}</span>
+                        <span id="btn-spinner" class="spinner hidden"></span>
+                    </button>
                 </div>
             </form>
         </div>
@@ -88,6 +92,55 @@
                 const input = document.querySelector(`input[name="${name}"]`);
                 if (input) input.value = value;
             }
+        }
+    });
+</script>
+
+<script>
+    document.getElementById("contacts-form").addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const form = e.target;
+        const btn = document.getElementById("submit-btn");
+        const btnText = document.getElementById("btn-text");
+        const spinner = document.getElementById("btn-spinner");
+
+        const strings = {
+            sending: form.dataset.sending,
+            success: form.dataset.success,
+            error: form.dataset.error,
+        };
+
+        btn.disabled = true;
+        btnText.textContent = strings.sending;
+        spinner.classList.remove("hidden");
+
+        const token = await grecaptcha.execute("{{ site.recaptcha_key_id }}", { action: "contact" });
+
+        const payload = {
+            first_name: form.first_name.value,
+            last_name: form.last_name.value,
+            email: form.email.value,
+            subject: form.subject.value,
+            message: form.Message.value,
+            recaptcha_token: token,
+        };
+
+        try {
+            await fetch("{{ site.contact_form_app_uri }}", {
+                method: "POST",
+                mode: "no-cors",
+                body: JSON.stringify(payload),
+            });
+            btnText.textContent = strings.success;
+            form.reset();
+        } catch (err) {
+            btnText.textContent = strings.error;
+        } finally {
+            spinner.classList.add("hidden");
+            btn.disabled = false;
+            setTimeout(() => {
+                btnText.textContent = "{{ site.data[site.active_lang].contacts_section.form.button_text }}";
+            }, 3000);
         }
     });
 </script>
