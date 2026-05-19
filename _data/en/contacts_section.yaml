@@ -18,8 +18,6 @@ form:
   subjects:
     - "General"
     - "Apply to Pilot Programme"
-    - "Collaborate in Product Innovation"
-    - "Join as Trusted Third-Party"
   terms_request: 'Accept the <a href="/terms-of-service">terms of service</a>'
   status_sending: "Submitting..."
   status_success: "Submitted!"

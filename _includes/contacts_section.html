@@ -43,8 +43,8 @@
                         {% assign translated_subjects = site.data[site.active_lang].contacts_section.form.subjects %}
                         {% assign english_subjects = site.data["en"].contacts_section.form.subjects %}
                         {% for subject in translated_subjects %}
-                            {% assign english_value = english_subjects[forloop.index0] %}
-                            <option value="{{ english_value }}">{{ subject }}</option>
+                        {% assign english_value = english_subjects[forloop.index0] %}
+                        <option value="{{ english_value }}">{{ subject }}</option>
                         {% endfor %}
                     </select>
                 </div>
@@ -134,7 +134,7 @@
             btnText.textContent = strings.success;
             form.reset();
         } catch (err) {
-            btnText.textContent = strings.error;
+            btnText.textContent = strings.error; // only real network failures
         } finally {
             spinner.classList.add("hidden");
             btn.disabled = false;

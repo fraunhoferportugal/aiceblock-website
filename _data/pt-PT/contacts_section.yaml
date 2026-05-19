@@ -18,8 +18,6 @@ form:
   subjects:
     - "Geral"
     - "Desbloquear Versão Piloto"
-    - "Colaborar na Inovação do Produto"
-    - "Juntar-se como Terceira Parte de Confiança"
   terms_request: 'Aceitar os <a href="/pt-PT/terms-of-service">termos de serviço</a>'
   status_sending: "A submeter..."
   status_success: "Submetido!"
