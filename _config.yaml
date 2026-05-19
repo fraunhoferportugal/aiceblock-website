@@ -2,10 +2,10 @@ url: https://aiceblock.eu
 baseurl: ""
 description: Make your AI systems audit-ready — from day one. aiceblock structures your AI lifecycle around the AI Act — from risk classification to documented evidence — so you can build, deploy, and prove compliance with confidence.
 
-title: "aiceblock"
+title: aiceblock
 favicon:
-  src: "/assets/images/favicon.ico"
-  type: "image/x-icon"
+  src: /assets/images/favicon.ico
+  type: image/x-icon
 
 plugins:
   - jekyll-dotenv
@@ -19,6 +19,5 @@ default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 parallel_localization: true
 
-# Default WEB3FORM key associated with info@aiceblock.com
-# If .env isn't set it defaults to this key
-web3forms_access_key: "f3c588cf-4beb-40a2-b94f-54a4f13936d1"
+contact_form_app_uri: https://script.google.com/macros/s/AKfycbz9i6uxl4eK5ALV4-HWktNS0_ylUH1TKIsCoxSQKGdG_eWB3SxZCvV1lLeI_EH5Qz4kwQ/exec
+recaptcha_key_id: 6Lf5qOssAAAAAO6Wgkgt4o2elp-oINt_ObaLL-lZ
