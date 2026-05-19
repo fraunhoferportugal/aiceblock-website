@@ -15,10 +15,10 @@ form:
   email_placeholder: "*Email"
   message_placeholder: "*Your Message"
   button_text: "Submit"
-  prepend_subject: "aiceblock"
   subjects:
     - "General"
     - "Apply to Pilot Programme"
-    - "Collaborate in Product Innovation"
-    - "Join as Trusted Third-Party"
   terms_request: 'Accept the <a href="/terms-of-service">terms of service</a>'
+  status_sending: "Submitting..."
+  status_success: "Submitted!"
+  status_error: "Failed. Try again."

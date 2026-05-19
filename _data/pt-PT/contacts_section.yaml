@@ -1,7 +1,5 @@
 title: "Entre em contacto"
-description: "Tem dúvidas ou quer saber mais sobre como o aiceblock pode apoiar a sua jornada de conformidade com IA? 
-
-  Fale connosco - estamos aqui para ajudar!"
+description: "Tem dúvidas ou quer saber mais sobre como o aiceblock pode apoiar a sua jornada de conformidade com IA?\n\nFale connosco - estamos aqui para ajudar!"
 
 contacts:
   - image:
@@ -9,10 +7,6 @@ contacts:
       alt: "Imagem de Contacto 1"
     text: "info@aiceblock.eu"
     ref: "mailto:info@aiceblock.eu"
-  # - image:
-  #     src: "/assets/images/icons/phone-icon.svg"
-  #     alt: "Imagem de Contacto 2"
-  #   text: "+351 222 222 222"
 
 form:
   title: "Formulário de Contacto"
@@ -20,11 +14,11 @@ form:
   last_name_placeholder: "*Apelido"
   email_placeholder: "*Email"
   message_placeholder: "*A sua Mensagem"
-  button_text: "Enviar"
-  prepend_subject: "aiceblock"
+  button_text: "Submeter"
   subjects:
     - "Geral"
     - "Desbloquear Versão Piloto"
-    - "Colaborar na Inovação do Produto"
-    - "Juntar-se como Terceira Parte de Confiança"
   terms_request: 'Aceitar os <a href="/pt-PT/terms-of-service">termos de serviço</a>'
+  status_sending: "A submeter..."
+  status_success: "Submetido!"
+  status_error: "Falhou. Tente novamente."

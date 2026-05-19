@@ -104,6 +104,30 @@
         line-height: 2rem;
         padding: 0.375rem 0;
         border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        transition: opacity 0.2s ease;
+
+        &:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            border: 0.125rem solid rgba($accent, 0.35);
+            border-top-color: $accent;
+            border-radius: 50%;
+            animation: spinner-rotate 0.7s linear infinite;
+
+            &.hidden {
+                display: none;
+            }
+        }
     }
 }
 
@@ -155,6 +179,12 @@
 
     a {
         color: inherit;
+    }
+}
+
+@keyframes spinner-rotate {
+    to {
+        transform: rotate(360deg);
     }
 }
 
